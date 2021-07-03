@@ -1,0 +1,135 @@
+---
+title: "EURO Group Tables and Knockout Performances"
+description: |
+  Everybody loves cinderella stories and fairy-tale runs
+author:
+  - name: qntkhvn
+    url: https://github.com/qntkhvn
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    code_folding: true
+    self_contained: false
+    toc: true
+    toc_depth: 4
+categories:
+  - data viz
+  - ggplot2
+  - football
+  - euro 2020
+---
+
+
+## Motivation
+
+It all began with a suggestion from my professor, [\@statsinthewild](https://twitter.com/statsinthewild):
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/qntkhvn?ref_src=twsrc%5Etfw">@qntkhvn</a> I think something like this would be cool. And you could go back to past Euros to see what this would look like.<br><br>It&#39;s possible that THREE teams who finished third in their group will be in the final 8! And no one from group F advanced to final 8! <a href="https://t.co/T9fUeXuoOs">pic.twitter.com/T9fUeXuoOs</a></p>&mdash; Volume Tweeter (@StatsInTheWild) <a href="https://twitter.com/StatsInTheWild/status/1409962031055196162?ref_src=twsrc%5Etfw">June 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+So I went back and looked at the group positions and knockout outcomes for the national teams that competed in the 6 most recent UEFA EURO tournaments - 1996, 2000, 2004, 2008, 2012, 2016. These are competitions with 16 or 24 teams, as prior to '96, the EURO was either an 8- or 4-team tournament. I visited the Wikipedia page of each one those EUROs and quickly collected the desired data. After that, I utilized `R` packages `ggplot2` and `plotly` to make a simple heatmap of how the national teams performed in past European championships.
+
+## Heatmap
+
+As you can see, each observation in the heatmap below is represented by their group name (y-axis), group position (x-axis), tournament result (coded by different color values), and tournament year. The plot is also interactive, so you can actually reveal more information about the teams and their performances by simply moving your cursor inside the plot area. As always, you can find my code below. For this blog post, I'm not going to go over the details of the plotting process, rather I'm going to save it for a future tutorial blog post.
+
+```{r, echo = FALSE, fig.height=6, fig.width=7.5}
+library(tidyverse)
+library(plotly)
+
+Team <- c(
+  "England", "Netherlands", "Scotland", "Switzerland",
+  "France", "Spain", "Bulgaria", "Romania",
+  "Germany", "CzechRepublic", "Italy", "Russia",
+  "Portugal", "Croatia", "Denmark", "Turkey",
+  
+  "Portugal", "Romania", "England", "Germany",
+  "Italy", "Turkey", "Belgium", "Sweden",
+  "Spain", "Yugoslavia", "Norway", "Slovenia",
+  "Netherlands", "France", "CzechRepublic", "Denmark",
+  
+  "Portugal", "Greece", "Spain", "Russia",
+  "France", "England", "Croatia", "Switzerland",
+  "Sweden", "Denmark", "Italy", "Bulgaria",
+  "CzechRepublic", "Netherlands", "Germany", "Latvia",
+  
+  "Portugal", "Turkey", "CzechRepublic", "Switzerland",
+  "Croatia", "Germany", "Austria", "Poland",
+  "Netherlands", "Italy", "Romania", "France",
+  "Spain", "Russia", "Sweden", "Greece",
+  
+  "CzechRepublic", "Greece", "Russia", "Poland",
+  "Germany", "Portugal", "Denmark", "Netherlands",
+  "Spain", "Italy", "Croatia", "Ireland",
+  "England", "France", "Ukraine", "Sweden",
+  
+  "France", "Switzerland", "Albania", "Romania",
+  "Wales", "England", "Slovakia", "Russia",
+  "Germany", "Poland", "NorthernIreland", "Ukraine",
+  "Croatia", "Spain", "Turkey", "CzechRepublic",
+  "Italy", "Belgium", "Ireland", "Sweden",
+  "Hungary", "Iceland", "Portugal", "Austria"
+)
+
+Outcome <- c(
+  "SF", "QF", "G", "G", "SF", "QF", "G", "G", "W", "F", "G", "G", "QF",
+  "QF", "G", "G", "SF", "QF", "G", "G", "F", "QF", "G", "G", "QF", "QF",
+  "G", "G", "SF", "W", "G", "G", "F", "W", "G", "G", "QF", "QF", "G",
+  "G", "QF", "QF", "G", "G", "SF", "SF", "G", "G", "QF", "SF", "G", "G",
+  "QF", "F", "G", "G", "QF", "QF", "G", "G", "W", "SF", "G", "G", "QF",
+  "QF", "G", "G", "SF", "SF", "G", "G", "W", "F", "G", "G", "QF", "QF",
+  "G", "G", "F", "R16", "G", "G", "SF", "R16", "R16", "G", "SF", "QF", "R16",
+  "G", "R16", "R16", "G", "G", "QF", "QF", "R16", "G", "R16", "QF", "W", "G"
+)
+
+
+euro <- tibble(
+  Year = c(rep(seq(1996, 2012, 4), each = 16), rep(2016, 24)),
+  Team,
+  Group = c(rep(rep(c("A", "B", "C", "D"), each = 4), 6), 
+            rep(c("E", "F"), each = 4)),
+  Place = rep(1:4, 26),
+  Outcome
+) %>% 
+  mutate(Outcome = factor(Outcome, 
+                          levels = c("G", "R16", "QF", "SF", "F", "W")))
+
+p <- euro %>% 
+  mutate(Group = fct_rev(Group)) %>% 
+  ggplot(aes(x = Place, y = Group, fill = Outcome, group = Team)) +
+  geom_tile(color = "white") +
+  scale_x_continuous(expand = c(0,0)) +
+  scale_fill_brewer(palette = "PuOr", direction = -1) +
+  theme_minimal() +
+  facet_wrap(~ Year, scales = "free_y") +
+  labs(
+    title = "Euro Performances and Group Positions"
+  ) +
+  theme(
+    legend.title = element_blank(),
+    axis.title = element_blank(),
+    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
+    panel.spacing = unit(1, "lines"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_blank(),
+    plot.title = element_text(hjust = 0.5)
+  )
+
+ggplotly(p) %>% layout(legend = list(x = 0.25, y = -0.1, orientation = "h"))
+```
+
+## Thoughts
+
+There are a couple of things I wanted to highlight here:
+
+-   In '96, '04 and '12, teams that were in the same group met again in the final!
+
+    -   Germany and Czech Republic in '96. I was -3 back then.
+    -   Greece and Portugal in '04. Portugal was the host that year, and played Greece on the opening and final days of EURO 2004. Greece won in both occasions. (Czech Republic were the best team that year - I'm sure most people agreed with 4-year-old Quang then.) GREECE!
+    -   Spain and Italy in '12. Italy defeated a very strong German squad in the SF. [Super Mario](https://www.youtube.com/watch?v=Uvuuc0fVZFg)! Many people, including my 12-year-old self, believed they would end Spain's dynasty, who were the defending EURO champs and also the reigning World Cup champs coming into the tournament. Nope, Spain won 4-0 (and Fernando Torres, who was a shell of himself at that point, and despite starting 0 knockout matches, [won the Golden Boot](https://www.uefa.com/uefaeuro-2020/news/0253-0d7ed277e55d-2b432cd9cf0d-1000--torres-receives-adidas-golden-boot/)). The dynasty eventually fell apart at the 2014 World Cup... 
+    
+-   Portugal, despite finishing third in their group in 2016, went on to become the champions. They barely made it through the group stage. 3 draws... and down 1-3 to Hungary in the second half of their final group stage match...
+
+
+## What's Next?
+
+There are many other situations where we could apply this type of plot to. In regards to sports, heatmap is a great visual tool when we have data on rankings, or seedings; for example, grand slam tennis, NCAA March Madness, or even weekly tables for football leagues. I will eventually write up a blog post on how to make heatmaps with `ggplot2`. Stay tuned!

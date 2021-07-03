@@ -11,7 +11,12 @@ navbar:
       href: about.html
     - text: "Contact"
       href: contact.html
-  search: true
+    - icon: fab fa-github
+      href: https://github.com/qntkhvn
+    - icon: fab fa-twitter
+      href: https://twitter.com/qntkhvn
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/mqnnguyen
 output: 
   distill::distill_article:
     css: styles.css
