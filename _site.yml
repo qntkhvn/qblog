@@ -1,7 +1,7 @@
 name: "qblog"
-title: "The Q Blog"
+title: "The Q"
 description: |
-  The Q Blog
+  Blog Posts
 output_dir: "_site"
 navbar:
   right:
