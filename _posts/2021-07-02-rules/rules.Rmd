@@ -10,6 +10,7 @@ output:
     self_contained: false
 categories:
   - rules
+preview: rules.png
 ---
 
 -   Football means the real football here, not the American one.
