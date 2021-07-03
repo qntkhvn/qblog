@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About",
+      "description": "I'm Quang Nguyen",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-07-02T20:42:59-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "The Q Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-07-02T20:42:28-04:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

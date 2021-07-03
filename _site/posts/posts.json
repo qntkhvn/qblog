@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to The Q Blog",
+    "description": "Welcome to The Q Blog. Mostly data science and sports.",
+    "author": [
+      {
+        "name": "qntkhvn",
+        "url": "https://github.com/qntkhvn"
+      }
+    ],
+    "date": "2021-07-02",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-02T20:42:28-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-07-02-data-viz/",
+    "title": "Data Viz",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "qntkhvn",
+        "url": "https://github.com/qntkhvn"
+      }
+    ],
+    "date": "2021-07-02",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-02T20:45:52-04:00",
+    "input_file": "data-viz.knit.md"
+  }
+]
