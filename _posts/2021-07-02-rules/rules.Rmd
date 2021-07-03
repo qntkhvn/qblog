@@ -1,0 +1,33 @@
+---
+title: "Rules"
+description: |
+  Just a few simple rules on this blog
+author:
+  - name: qntkhvn
+date: 07-02-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+-   Football means the real football here, not the American one.
+
+    -   Match, not game.
+
+    -   Draw, not tie.
+
+    -   Pitch, not field.
+
+    -   Table, not standings.
+
+    -   Nil, not zero/zip/nothing/whatever.
+
+    -   Boots, not cleats.
+
+    -   Kit, not uniform.
+    
+    -   What else?
+
+-   Cereals, pancakes, and waffles are desserts.
+
+

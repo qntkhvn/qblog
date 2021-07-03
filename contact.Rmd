@@ -1,0 +1,7 @@
+---
+title: "Contact"
+---
+
+<i class="fas fa-envelope"></i> &nbsp; <nminhquang.99@gmail.com>
+
+<i class="fab fa-twitter-square"></i> &nbsp; [\@qntkhvn](https://twitter.com/qntkhvn)

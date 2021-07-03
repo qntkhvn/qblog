@@ -1,36 +1,36 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to The Q Blog",
-    "description": "Welcome to The Q Blog. Mostly data science and sports.",
-    "author": [
-      {
-        "name": "qntkhvn",
-        "url": "https://github.com/qntkhvn"
-      }
-    ],
-    "date": "2021-07-02",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-07-02T20:42:28-04:00",
-    "input_file": {}
-  },
-  {
-    "path": "posts/2021-07-02-data-viz/",
-    "title": "Data Viz",
+    "path": "posts/2021-07-02-rankings-heatmap/",
+    "title": "Rankings Heatmap",
     "description": "A short description of the post.",
     "author": [
       {
         "name": "qntkhvn",
-        "url": "https://github.com/qntkhvn"
+        "url": {}
       }
     ],
     "date": "2021-07-02",
     "categories": [],
     "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-07-02T20:45:52-04:00",
-    "input_file": "data-viz.knit.md"
+    "last_modified": "2021-07-02T23:05:53-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-07-02-rules/",
+    "title": "Rules",
+    "description": "Just a few simple rules on this blog",
+    "author": [
+      {
+        "name": "qntkhvn",
+        "url": {}
+      }
+    ],
+    "date": "2021-07-02",
+    "categories": [],
+    "contents": "\nFootball means the real football here, not the American one.\nMatch, not game.\nDraw, not tie.\nPitch, not field.\nTable, not standings.\nNil, not zero/zip/nothing/whatever.\nBoots, not cleats.\nKit, not uniform.\nWhat else?\n\nCereals, pancakes, and waffles are desserts.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-07-02T23:04:00-04:00",
+    "input_file": {}
   }
 ]
