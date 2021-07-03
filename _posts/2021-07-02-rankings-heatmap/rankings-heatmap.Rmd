@@ -4,8 +4,8 @@ description: |
   (Work in progress)
 author:
   - name: qntkhvn
-    url: {}
-date: 07-02-2021
+    url: https://github.com/qntkhvn
+date: July 2, 2021
 output:
   distill::distill_article:
     self_contained: false
