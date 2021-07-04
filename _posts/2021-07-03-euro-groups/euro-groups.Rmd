@@ -130,4 +130,4 @@ There are a couple of things I wanted to highlight here:
 
 ## What's Next?
 
-There are many other situations where we could apply this type of plot to. In regards to sports, heatmap is a great visual tool when we have data on rankings, or seedings; for example, grand slam tennis, NCAA March Madness, or even weekly tables for football leagues. I will eventually write up a blog post on how to make heatmaps with `ggplot2`. Stay tuned!
+There are many other situations where we could apply this type of plot to. In regard to sports, heatmap is a great visual tool when we have data on rankings, or seedings; for example, grand slam tennis, NCAA March Madness, or even weekly tables for football leagues. I will eventually write up a blog post on how to make heatmaps with `ggplot2`. Stay tuned!
