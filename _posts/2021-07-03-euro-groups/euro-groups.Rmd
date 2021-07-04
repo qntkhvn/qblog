@@ -33,7 +33,7 @@ So I went back and looked at the group positions and knockout outcomes for the n
 
 As you can see, each observation in the heatmap below is represented by their group name (y-axis), group position (x-axis), tournament result (coded by different color values), and tournament year. The plot is also interactive, so you can actually reveal more information about the teams and their performances by simply moving your cursor inside the plot area. As always, you can find my code below. For this blog post, I'm not going to go over the details of the plotting process, rather I'm going to save it for a future tutorial blog post.
 
-```{r, echo = FALSE, fig.height=6, fig.width=7.5}
+```{r, echo = FALSE, fig.height=6, fig.width=8}
 library(tidyverse)
 library(plotly)
 
@@ -85,23 +85,20 @@ euro <- tibble(
   Year = c(rep(seq(1996, 2012, 4), each = 16), rep(2016, 24)),
   Team,
   Group = c(rep(rep(c("A", "B", "C", "D"), each = 4), 6), 
-              rep(c("E", "F"), each = 4)),
+            rep(c("E", "F"), each = 4)),
   Place = rep(1:4, 26),
-  Outcome) %>% 
-  mutate(Outcome = factor(Outcome, 
-                          levels = c("G", "R16", "QF", "SF", "F", "W")))
+  Outcome
+) %>% 
+  mutate(Outcome = factor(Outcome, levels = c("G", "R16", "QF", "SF", "F", "W")))
 
 p <- euro %>% 
   mutate(Group = fct_rev(Group)) %>% 
   ggplot(aes(x = Place, y = Group, fill = Outcome, group = Team)) +
   geom_tile(color = "white") +
-  scale_x_continuous(expand = c(0,0)) +
-  scale_fill_brewer(palette = "PuOr", direction = -1) +
-  theme_minimal() +
   facet_wrap(~ Year, scales = "free_y") +
-  labs(
-    title = "Euro Performances and Group Positions"
-  ) +
+  scale_fill_brewer(palette = "PuOr", direction = -1) +
+  ggtitle("EURO Performances and Group Positions") +
+  theme_minimal() +
   theme(
     plot.title = element_text(hjust = 0.5),
     legend.title = element_blank(),
