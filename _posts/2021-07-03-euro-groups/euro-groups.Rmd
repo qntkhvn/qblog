@@ -40,33 +40,33 @@ library(plotly)
 Team <- c(
   "England", "Netherlands", "Scotland", "Switzerland",
   "France", "Spain", "Bulgaria", "Romania",
-  "Germany", "CzechRepublic", "Italy", "Russia",
+  "Germany", "Czech Republic", "Italy", "Russia",
   "Portugal", "Croatia", "Denmark", "Turkey",
   
   "Portugal", "Romania", "England", "Germany",
   "Italy", "Turkey", "Belgium", "Sweden",
   "Spain", "Yugoslavia", "Norway", "Slovenia",
-  "Netherlands", "France", "CzechRepublic", "Denmark",
+  "Netherlands", "France", "Czech Republic", "Denmark",
   
   "Portugal", "Greece", "Spain", "Russia",
   "France", "England", "Croatia", "Switzerland",
   "Sweden", "Denmark", "Italy", "Bulgaria",
-  "CzechRepublic", "Netherlands", "Germany", "Latvia",
+  "Czech Republic", "Netherlands", "Germany", "Latvia",
   
-  "Portugal", "Turkey", "CzechRepublic", "Switzerland",
+  "Portugal", "Turkey", "Czech Republic", "Switzerland",
   "Croatia", "Germany", "Austria", "Poland",
   "Netherlands", "Italy", "Romania", "France",
   "Spain", "Russia", "Sweden", "Greece",
   
-  "CzechRepublic", "Greece", "Russia", "Poland",
+  "Czech Republic", "Greece", "Russia", "Poland",
   "Germany", "Portugal", "Denmark", "Netherlands",
   "Spain", "Italy", "Croatia", "Ireland",
   "England", "France", "Ukraine", "Sweden",
   
   "France", "Switzerland", "Albania", "Romania",
   "Wales", "England", "Slovakia", "Russia",
-  "Germany", "Poland", "NorthernIreland", "Ukraine",
-  "Croatia", "Spain", "Turkey", "CzechRepublic",
+  "Germany", "Poland", "Northern Ireland", "Ukraine",
+  "Croatia", "Spain", "Turkey", "Czech Republic",
   "Italy", "Belgium", "Ireland", "Sweden",
   "Hungary", "Iceland", "Portugal", "Austria"
 )
@@ -105,10 +105,8 @@ p <- euro %>%
   ) +
   theme(
     plot.title = element_text(hjust = 0.5),
-    plot.margin = margin(0.5, 0.5, 0.5, 0.5, "cm"),
     legend.title = element_blank(),
     axis.title = element_blank(),
-    panel.spacing = unit(1, "lines"),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank()
   )
