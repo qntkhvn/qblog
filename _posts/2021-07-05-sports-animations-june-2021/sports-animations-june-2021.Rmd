@@ -31,7 +31,7 @@ Over the past few weeks, I have been playing around with [`gganimate`](https://g
 
 ## Football: EURO 2020
 
-The biggest sporting event in the world this summer prior to the Olympics is no doubt, the [UEFA EURO 2020](https://www.uefa.com/uefaeuro-2020) (or to be more exact... EURO 2020ne). The following graphs contains information on past tournament performances of a storied national squad, and a roller-coaster EURO 2020 group stage.
+The biggest sporting event in the world this summer prior to the Olympics is no doubt, the [UEFA EURO 2020](https://www.uefa.com/uefaeuro-2020) (or to be more exact... EURO 2020ne). The following graphs contain information on past tournament performances of a storied national squad, and a roller-coaster EURO 2020 group stage.
 
 ### England Performances 
 
