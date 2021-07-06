@@ -8,6 +8,8 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Biography
+
 <center>
 
 ![](https://raw.githubusercontent.com/qntkhvn/quang/main/images/me.png){width=45%}
@@ -15,3 +17,9 @@ knitr::opts_chunk$set(echo = FALSE)
 </center>
 
 I am currently a graduate student at Loyola University Chicago, pursuing a Master of Science degree in Applied Statistics. I previously completed my undergraduate study at Wittenberg University in Springfield, Ohio, graduating in May 2020 with a Bachelor of Science degree in Mathematics and Data Science. I am originally from Nha Trang, Khanh Hoa, which is located in the South Central Coast of Vietnam (hence this is what the username `qntkhvn` represents). In my free time, you may find me watching sports, listening to podcasts, and cooking. I am a huge supporter of Manchester United F.C. of the English Premier League as well as NBA's LA Clippers.
+
+## Contact
+
+<i class="fas fa-envelope"></i> &nbsp; <nminhquang.99@gmail.com>
+
+<i class="fab fa-twitter-square"></i> &nbsp; [\@qntkhvn](https://twitter.com/qntkhvn)
