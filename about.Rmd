@@ -20,6 +20,6 @@ I am currently a graduate student at Loyola University Chicago, pursuing a Maste
 
 ## Contact
 
-<i class="fas fa-envelope"></i> &nbsp; <nminhquang.99@gmail.com>
+<font size="5"><i class="fas fa-envelope"></i></font> &nbsp; <nminhquang.99@gmail.com>
 
-<i class="fab fa-twitter-square"></i> &nbsp; [\@qntkhvn](https://twitter.com/qntkhvn)
+<font size="5"><i class="fab fa-twitter"></i></font> &nbsp; [\@qntkhvn](https://twitter.com/qntkhvn)
