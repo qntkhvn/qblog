@@ -131,7 +131,7 @@ res %>%
   ggtitle("Rank distribution for 1-8-8 climbers")
 ```
 
-Sure enough, being good a speed climbing doesn't guarantee you a top 3 finish. In fact, according to my simulations, the chance of winning a medal for a 1-8-8 combination is very small - only 2.95%. Moreover, in almost half of the simulations, a 1-8-8 climber got 5th position in the standings. 
+Sure enough, being good at speed climbing doesn't guarantee you a top 3 finish. In fact, according to my simulations, the chance of winning a medal for a 1-8-8 combination is very small - only 2.95%. Moreover, in almost half of the simulations, a 1-8-8 climber got 5th position in the standings. 
 
 ```{r}
 res %>% 
