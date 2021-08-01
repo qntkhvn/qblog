@@ -144,7 +144,7 @@ Finally, to answer [\@jchaskell2](https://twitter.com/jchaskell2)'s initial ques
 
 This section is motivated by one question: **What would happen to the rankings if one climber was left out?**
 
-The idea of Independence of Irrelevant Alternatives (IIA) comes up here. In layman's terms, IIA is a rule which states that a competition results (rankings) should not change if a losing party is excluded.
+The idea of **Independence of Irrelevant Alternatives (IIA)** comes up here. In layman's terms, IIA is a rule which states that a competition results (rankings) should not change if a losing party is excluded.
 
 Let's continue to use data from the 2018 Youth Olympics, but this time I'm going to examine the final rankings of both male and female events. The data manipulating process here is very simple: after an athlete is dropped, the new ranks for each discipline of the remaining players are calculated. The new final scores can then be obtained (by multiplying the three event ranks), which determine the new overall ranks.
 
