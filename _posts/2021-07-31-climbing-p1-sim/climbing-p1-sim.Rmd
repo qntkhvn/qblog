@@ -252,7 +252,7 @@ final %>%
   row_spec(3, background = "#AD8A56")
 ```
 
-A finalist is very likely to finish in the top 3 and stand in the tri-level podium if they win the first event (83.03% chance) or any event (85.01%). In order to bring home a climbing medal, the average score (rounded down) for getting gold, silver, and bronze are 9, 20, and 33, respectively.
+A finalist is very likely to finish in the top 3 and stand in the tri-level podium if they win the first event (83.08% chance) or any event (85.02%). In order to bring home a climbing medal, the average score (rounded down) for getting gold, silver, and bronze are 9, 20, and 33, respectively.
 
 ## Future Work
 
