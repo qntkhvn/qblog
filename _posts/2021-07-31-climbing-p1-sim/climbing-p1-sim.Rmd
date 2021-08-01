@@ -3,7 +3,7 @@ title: "Sport Climbing at Tokyo 2020, Part I: A Simulation Study"
 description: |
   Simulation time!
 author:
-  - name: qntkhvn
+  - name: Quang Nguyen
     url: https://github.com/qntkhvn
 date: "`r Sys.Date()`"
 output:
@@ -13,6 +13,7 @@ output:
     self_contained: false
     toc: true
     toc_depth: 4
+citation_url: https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim
 categories:
   - sport climbing
   - 2020 olympics
@@ -38,7 +39,7 @@ The focus of this post is going to be on a simulation study examining the perfor
 options(scipen = 999)
 ```
 
-```{r}
+```{r, code_folding = FALSE}
 library(tidyverse)
 library(kableExtra)
 theme_set(theme_light())
@@ -46,7 +47,7 @@ theme_set(theme_light())
 
 Let's first write a function to simulate the climbing competitions for any given number of climbers. This function takes in the number of simulations and players and returns a simulated data frame with the following attributes: player ID, the rank for each discipline, final combined score, final rank, and simulation number. In this particular case, I'm going to use this function to simulate both qualification (20 climbers) and final (8 climbers) rounds of sport climbing.
 
-```{r}
+```{r, code_folding = FALSE}
 climbing_sim <- function(nsim = 10000, nplay) {
   sims <- list()
   for (i in 1:nsim) {
