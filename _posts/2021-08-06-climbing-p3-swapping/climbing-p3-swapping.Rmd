@@ -1,0 +1,153 @@
+---
+title: "Sport Climbing at Tokyo 2020, Part III: Rank Swapping"
+description: |
+  How much worse can this ranking system be?
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    highlight: tango
+    code_folding: true
+    self_contained: false
+    toc: true
+    toc_depth: 4
+# citation_url: https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim
+draft: true
+categories:
+  - sport climbing
+  - 2020 olympics
+  - rankings
+  - swapping
+---
+
+
+```{r, include = FALSE}
+options(scipen = 999)
+```
+
+This is the third post in a series about sport climbing at the 2020 Summer Olympics. In the [first](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim) and [second](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format) blog posts, I provided analyses on the ranking system of sport climbing using both simulated data and historical results from recent tournaments. This time, I will continue to address the limitations of this scoring format, utilizing brand new data from Tokyo 2020.
+
+## Background
+
+Sport climbing at Tokyo 2020 has concluded, and it can only mean one thing: there's more data to analyze. In my previous post, I pointed out several problems with sport climbing's scoring system; in particular, the disadvantage of speed climbers under this format, and how this format violates the IIA property. (i.e. there's great dependence on irrelevant (lower-ranked) climbers).
+
+## Analysis
+
+### Data Prep
+
+The data for both [men's](https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Men%27s_combined) and [women's](https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Women%27s_combined) sport climbing events at the 2020 Olympics were obtained from Wikipedia (here's the [scraping script](https://github.com/qntkhvn/climbing/blob/main/R/tokyo_scraping.R) if you're interested). 
+
+Since I'm interested in doing a what-if analysis to see what happens to the overall rankings when players' ranks are being swapped, let's also write a helper function to perform rank swapping.
+
+```{r, code_folding = FALSE}
+library(tidyverse)
+library(kableExtra)
+theme_set(theme_light())
+```
+
+```{r}
+climbing_swap <- function(df, ranks = c(1, 2)) {
+  speed_swap <- df %>% 
+    select(climber, overall, speed, bouldering, lead, total) %>% 
+    mutate(speed = ifelse(speed == ranks[1], ranks[2],
+                  ifelse(speed == ranks[2], ranks[1], speed)),
+           total = speed * bouldering * lead,
+           overall = rank(total, ties.method = "first"),
+           type = paste("Swap speed ranks", ranks[1], "&", ranks[2]))
+  
+  bouldering_swap <- df %>% 
+    select(climber, overall, speed, bouldering, lead, total) %>% 
+    mutate(bouldering = ifelse(bouldering == ranks[1], ranks[2],
+                          ifelse(bouldering == ranks[1], ranks[2], bouldering)),
+           total = speed * bouldering * lead,
+           overall = rank(total, ties.method = "first"),
+           type = paste("Swap bouldering ranks", ranks[1], "&", ranks[2]))
+  
+   lead_swap <- df %>% 
+    select(climber, overall, speed, bouldering, lead, total) %>% 
+    mutate(lead = ifelse(lead == ranks[1], ranks[2],
+                          ifelse(lead == ranks[1], ranks[2], lead)),
+           total = speed * bouldering * lead,
+           overall = rank(total, ties.method = "first"),
+           type = paste("Swap lead ranks", ranks[1], "&", ranks[2]))
+   
+   swap <- df %>% 
+     mutate(type = "Original") %>% 
+     bind_rows(speed_swap) %>% 
+     bind_rows(bouldering_swap) %>% 
+     bind_rows(lead_swap) %>% 
+     mutate(climber = fct_rev(factor(climber, levels = df$climber)),
+            medal = ifelse(overall == 1, "gold",
+                        ifelse(overall == 2, "silver",
+                               ifelse(overall == 3, "bronze", "none"))),
+            type = factor(type, 
+                          levels = c("Original",
+                                     paste("Swap speed ranks", ranks[1], "&", ranks[2]),
+                                     paste("Swap bouldering ranks", ranks[1], "&", ranks[2]),
+                                     paste("Swap lead ranks", ranks[1], "&", ranks[2]))))
+   return(swap)
+}
+```
+
+
+### Swapping ranks 1 and 2 for all 3 disciplines
+
+The analysis that follows will center around the men's finals
+
+```{r}
+mf <- read_csv("https://raw.githubusercontent.com/qntkhvn/climbing/main/data/2020_olympics/mf.csv") %>% 
+  select(climber, overall, speed, bouldering, lead, total)
+```
+
+
+Let's first filter out the 8th-ranked ,
+
+since he got injured before the start of the finals; hence was not able to participate and got 8th place in all three events.
+
+```{r}
+mf_swap_12 <- climbing_swap(mf, ranks = c(1, 2)) %>% 
+  filter(overall < 8)
+```
+
+```{r}
+mf_swap_12 %>% 
+  ggplot(aes(x = climber, y = total, fill = medal)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = overall), hjust = -0.2, size = 3) +
+  coord_flip() +
+  facet_wrap(~ type) +
+  scale_fill_manual(values = c("#A77044", "#FFD700", "#95BFE5", "#C0C0C0")) +
+  labs(subtitle = "Rank Swapping - Tokyo 2020 Men's Finals") +
+  theme(strip.background = element_rect(fill = "midnightblue"))
+```
+
+Speeds: narasaki moved from 4 to 1
+
+top 3 could fall to 6 of 7
+
+### Swapping ranks 4 and 5 for all 3 disciplines
+
+IIA
+
+Similar, but instead of excluding, use the swapping method
+
+```{r}
+mf_swap_45 <- climbing_swap(mf, ranks = c(4, 5)) %>% 
+  filter(overall < 8)
+```
+
+```{r}
+mf_swap_45 %>% 
+  ggplot(aes(x = climber, y = total, fill = medal)) +
+  geom_col(show.legend = FALSE) +
+  geom_text(aes(label = overall), hjust = -0.2, size = 3) +
+  coord_flip() +
+  facet_wrap(~ type) +
+  scale_fill_manual(values = c("#A77044", "#FFD700", "#95BFE5", "#C0C0C0")) +
+  labs(subtitle = "Rank Swapping - Tokyo 2020 Men's Finals") +
+  theme(strip.background = element_rect(fill = "midnightblue"))
+```
+
+[Ondra](https://www.nytimes.com/2021/08/04/sports/olympics/mens-climbing-final-olympics.html)

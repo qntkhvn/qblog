@@ -87,6 +87,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 
 <meta property="description" itemprop="description" content="Everybody loves cinderella stories and fairy-tale runs."/>
 
+<link rel="canonical" href="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2021-07-03"/>
@@ -97,19 +98,33 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 <meta property="og:title" content="The Q: EURO Group Tables and Knockout Performances"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Everybody loves cinderella stories and fairy-tale runs."/>
+<meta property="og:url" content="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"/>
+<meta property="og:image" content="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/euro_group.png"/>
+<meta property="og:image:width" content="704"/>
+<meta property="og:image:height" content="576"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="The Q"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="The Q: EURO Group Tables and Knockout Performances"/>
 <meta property="twitter:description" content="Everybody loves cinderella stories and fairy-tale runs."/>
+<meta property="twitter:url" content="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"/>
+<meta property="twitter:image" content="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/euro_group.png"/>
+<meta property="twitter:image:width" content="704"/>
+<meta property="twitter:image:height" content="576"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="The Q: EURO Group Tables and Knockout Performances"/>
+<meta name="citation_fulltext_html_url" content="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"/>
+<meta name="citation_online_date" content="2021/07/03"/>
+<meta name="citation_publication_date" content="2021/07/03"/>
+<meta name="citation_author" content="qntkhvn"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","preview"]}},"value":[{"type":"character","attributes":{},"value":["EURO Group Tables and Knockout Performances"]},{"type":"character","attributes":{},"value":["Everybody loves cinderella stories and fairy-tale runs."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["qntkhvn"]},{"type":"character","attributes":{},"value":["https://github.com/qntkhvn"]}]}]},{"type":"character","attributes":{},"value":["2021-07-03"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["highlight","code_folding","self_contained","toc","toc_depth"]}},"value":[{"type":"character","attributes":{},"value":["rstudio"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]}]}]},{"type":"character","attributes":{},"value":["data viz","ggplot2","football","euro 2020"]},{"type":"character","attributes":{},"value":["euro_group.png"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","preview","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["EURO Group Tables and Knockout Performances"]},{"type":"character","attributes":{},"value":["Everybody loves cinderella stories and fairy-tale runs."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["qntkhvn"]},{"type":"character","attributes":{},"value":["https://github.com/qntkhvn"]}]}]},{"type":"character","attributes":{},"value":["2021-07-03"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["highlight","code_folding","self_contained","toc","toc_depth"]}},"value":[{"type":"character","attributes":{},"value":["rstudio"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]}]}]},{"type":"character","attributes":{},"value":["data viz","ggplot2","football","euro 2020"]},{"type":"character","attributes":{},"value":["euro_group.png"]},{"type":"character","attributes":{},"value":["https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"]},{"type":"character","attributes":{},"value":["https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -2150,6 +2165,9 @@ p a, aside a, li a, d-appendix a, a.footnote-backlink {
 <a href="https://www.linkedin.com/in/mqnnguyen">
 <i class="fab fa-linkedin" aria-hidden="true"></i>
 </a>
+<a href="../../index.xml">
+<i class="fa fa-rss" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2308,6 +2326,29 @@ Show code
 <p>There are many other situations where we could apply this type of plot to. In regard to sports, heatmap is a great visual tool when we have data on rankings, or seedings; for example, grand slam tennis, NCAA March Madness, or even weekly tables for football leagues. I will eventually write up a blog post on how to make heatmaps with <code>ggplot2</code>. Stay tuned!</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
+<div class="article-footer">
+  <p class="social_footer">
+    <span class="article-sharing">
+      Share: &nbsp;
+      <a href="https://twitter.com/share?text=EURO%20Group%20Tables%20and%20Knockout%20Performances&amp;url=https%3A%2F%2Fqntkhvn.netlify.app%2Fposts%2F2021-07-03-euro-groups%2F">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fqntkhvn.netlify.app%2Fposts%2F2021-07-03-euro-groups%2F&amp;title=EURO%20Group%20Tables%20and%20Knockout%20Performances">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </span>
+  </p>
+  <p>
+    <div class="subscribe"><form method='post' action='https://blogtrottr.com'>
+  <p>Enjoy this blog? Get notified of new posts via email:</p>
+  <input type='text' name='btr_email' />
+  <input type='hidden' name='btr_url'
+         value='https://qntkhvn.netlify.app/index.xml'/>
+  <input type='hidden' name='schedule_type' value='0' />
+  <input type='submit' value='Subscribe' />
+</form></div>
+  </p>
+</div>
 <!--/radix_placeholder_article_footer-->
 </div>
 
@@ -2318,7 +2359,18 @@ Show code
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">qntkhvn (2021, July 3). The Q: EURO Group Tables and Knockout Performances. Retrieved from https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{qntkhvn2021euro,
+  author = {qntkhvn, },
+  title = {The Q: EURO Group Tables and Knockout Performances},
+  url = {https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/},
+  year = {2021}
+}</pre>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://qntkhvn.netlify.app/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -51,671 +50,74 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  background-color: #f8f8f8; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ad0000; } /* Alert */
-code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
-code span.bn { color: #ad0000; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
-code span.ch { color: #20794d; } /* Char */
-code span.cn { color: #8f5902; } /* Constant */
-code span.co { color: #5e5e5e; } /* Comment */
-code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #ad0000; } /* DataType */
-code span.dv { color: #ad0000; } /* DecVal */
-code span.er { color: #ad0000; } /* Error */
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #ad0000; } /* Float */
-code span.fu { color: #4758ab; } /* Function */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
-code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
-code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
-code span.ss { color: #20794d; } /* SpecialString */
-code span.st { color: #20794d; } /* String */
-code span.va { color: #111111; } /* Variable */
-code span.vs { color: #20794d; } /* VerbatimString */
-code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>The Q: Blog Posts</title>
+  <title>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</title>
+
+  <meta property="description" itemprop="description" content="How much worse can this ranking system be?"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-08-07"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-08-07"/>
+  <meta name="article:author" content="Quang Nguyen"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="The Q: Blog Posts"/>
+  <meta property="og:title" content="Sport Climbing at Tokyo 2020, Part III: Rank Swapping"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="How much worse can this ranking system be?"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="The Q"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="The Q: Blog Posts"/>
+  <meta property="twitter:title" content="Sport Climbing at Tokyo 2020, Part III: Rank Swapping"/>
+  <meta property="twitter:description" content="How much worse can this ranking system be?"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog Posts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft","categories"]}},"value":[{"type":"character","attributes":{},"value":["Sport Climbing at Tokyo 2020, Part III: Rank Swapping"]},{"type":"character","attributes":{},"value":["How much worse can this ranking system be?\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Quang Nguyen"]},{"type":"character","attributes":{},"value":["https://github.com/qntkhvn"]}]}]},{"type":"character","attributes":{},"value":["2021-08-07"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["highlight","code_folding","self_contained","toc","toc_depth"]}},"value":[{"type":"character","attributes":{},"value":["tango"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]}]}]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["sport climbing","2020 olympics","rankings","swapping"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["climbing-p3-swapping_files/anchor-4.2.2/anchor.min.js","climbing-p3-swapping_files/bowser-1.9.3/bowser.min.js","climbing-p3-swapping_files/crosstalk-1.1.1/css/crosstalk.css","climbing-p3-swapping_files/crosstalk-1.1.1/js/crosstalk.js","climbing-p3-swapping_files/crosstalk-1.1.1/js/crosstalk.js.map","climbing-p3-swapping_files/crosstalk-1.1.1/js/crosstalk.min.js","climbing-p3-swapping_files/crosstalk-1.1.1/js/crosstalk.min.js.map","climbing-p3-swapping_files/datatables-binding-0.18/datatables.js","climbing-p3-swapping_files/datatables-css-0.0.0/datatables-crosstalk.css","climbing-p3-swapping_files/distill-2.2.21/template.v2.js","climbing-p3-swapping_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","climbing-p3-swapping_files/dt-core-1.10.20/css/jquery.dataTables.min.css","climbing-p3-swapping_files/dt-core-1.10.20/js/jquery.dataTables.min.js","climbing-p3-swapping_files/figure-html5/unnamed-chunk-6-1.png","climbing-p3-swapping_files/figure-html5/unnamed-chunk-7-1.png","climbing-p3-swapping_files/figure-html5/unnamed-chunk-8-1.png","climbing-p3-swapping_files/figure-html5/unnamed-chunk-9-1.png","climbing-p3-swapping_files/header-attrs-2.9/header-attrs.js","climbing-p3-swapping_files/htmlwidgets-1.5.3/htmlwidgets.js","climbing-p3-swapping_files/jquery-1.11.3/jquery.min.js","climbing-p3-swapping_files/jquery-3.5.1/jquery-AUTHORS.txt","climbing-p3-swapping_files/jquery-3.5.1/jquery.js","climbing-p3-swapping_files/jquery-3.5.1/jquery.min.js","climbing-p3-swapping_files/jquery-3.5.1/jquery.min.map","climbing-p3-swapping_files/popper-2.6.0/popper.min.js","climbing-p3-swapping_files/tippy-6.2.7/tippy-bundle.umd.min.js","climbing-p3-swapping_files/tippy-6.2.7/tippy-light-border.css","climbing-p3-swapping_files/tippy-6.2.7/tippy.css","climbing-p3-swapping_files/tippy-6.2.7/tippy.umd.min.js","climbing-p3-swapping_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2031,471 +1433,222 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="climbing-p3-swapping_files/header-attrs-2.9/header-attrs.js"></script>
+  <script src="climbing-p3-swapping_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="climbing-p3-swapping_files/popper-2.6.0/popper.min.js"></script>
+  <link href="climbing-p3-swapping_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="climbing-p3-swapping_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="climbing-p3-swapping_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="climbing-p3-swapping_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="climbing-p3-swapping_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="climbing-p3-swapping_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="climbing-p3-swapping_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!/posts/.test(location.pathname)) {
-        return;
-      }
-
-      var script = document.createElement("script");
-      script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "qntkhvn/qblog");
-      script.setAttribute("issue-term", "title");
-      script.setAttribute("crossorigin", "anonymous");
-      script.setAttribute("label", "comments 💬");
-      script.setAttribute("theme", "github-light");
-
-      /* wait for article to load, append script to article element */
-      var observer = new MutationObserver(function (mutations, observer) {
-        var article = document.querySelector("d-article");
-        if (article) {
-          observer.disconnect();
-          /* HACK: article scroll */
-          article.setAttribute("style", "overflow-y: hidden");
-          article.appendChild(script);
-        }
-      });
-
-      observer.observe(document.body, { childList: true });
-    });
-  </script>
-  <style type="text/css">
-
-  .distill-site-nav {
-    color: white;
-    background-color: #990033;
-  }
-
-  .posts-with-sidebar .posts-sidebar {
-    float: right;
-    width: 10%;    
-    margin-top: 60px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .posts-with-sidebar .posts-list {
-    width: 67%;
-    margin-left: 10%;
-  }
-
-  .posts-sidebar {
-    font-size: 75%;
-    margin-right: 10%;
-  }
-
-  p a, aside a, li a, d-appendix a, a.footnote-backlink {
-      color: #3366BB;
-      display: inline-block;
-      text-decoration: none;
-      transition: background-size .4s ease;
-      border-bottom: 0px solid;
-  }
-  </style>
   <!--/radix_placeholder_site_in_header-->
 
-  <link rel="stylesheet" href="styles.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog Posts","authors":[]}
+{"title":"Sport Climbing at Tokyo 2020, Part III: Rank Swapping","description":"How much worse can this ranking system be?","authors":[{"author":"Quang Nguyen","authorURL":"https://github.com/qntkhvn","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-08-07T00:00:00.000+00:00","citationText":"Nguyen, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">The Q</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="https://github.com/qntkhvn">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="https://twitter.com/qntkhvn">
-<i class="fab fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="https://www.linkedin.com/in/mqnnguyen">
-<i class="fab fa-linkedin" aria-hidden="true"></i>
-</a>
-<a href="index.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Blog Posts">Blog Posts</h1>
-<a href="posts/2021-08-06-climbing-p3-swapping/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","rankings","swapping"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 7, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-08-06-climbing-p3-swapping/climbing-p3-swapping_files/figure-html5/unnamed-chunk-6-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">rankings</div>
-<div class="dt-tag">swapping</div>
-</div>
-<p>How much worse can this ranking system be?</p>
-</div>
-</a>
-<a href="posts/2021-07-31-climbing-p2-format/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","rankings"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-31-climbing-p2-format/climbing-p2-format_files/figure-html5/unnamed-chunk-2-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part II: Competition Format</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">rankings</div>
-</div>
-<p>Who's Suffering? Who's Relevant?</p>
-</div>
-</a>
-<a href="posts/2021-07-31-climbing-p1-sim/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","simulation"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 31, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-31-climbing-p1-sim/climbing-p1-sim_files/figure-html5/unnamed-chunk-4-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part I: A Simulation Study</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">simulation</div>
-</div>
-<p>Simulation time!</p>
-</div>
-</a>
-<a href="posts/2021-07-05-sports-animations-june-2021/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data viz","ggplot2","gganimate","football","euro 2020","tennis"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 5, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-05-sports-animations-june-2021/euro_group_stage.png"/>
-</div>
-<div class="description">
-<h2>Sports Animation Gallery - June 2021</h2>
-<div class="dt-tags">
-<div class="dt-tag">data viz</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">gganimate</div>
-<div class="dt-tag">football</div>
-<div class="dt-tag">euro 2020</div>
-<div class="dt-tag">tennis</div>
-</div>
-<p>Leveling up with {gganimate}</p>
-</div>
-</a>
-<a href="posts/2021-07-03-euro-groups/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data viz","ggplot2","football","euro 2020"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 3, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-03-euro-groups/euro_group.png"/>
-</div>
-<div class="description">
-<h2>EURO Group Tables and Knockout Performances</h2>
-<div class="dt-tags">
-<div class="dt-tag">data viz</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">football</div>
-<div class="dt-tag">euro 2020</div>
-</div>
-<p>Everybody loves cinderella stories and fairy-tale runs.</p>
-</div>
-</a>
-<a href="posts/2021-07-02-rules/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rules"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 2, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-07-02-rules/rules.png"/>
-</div>
-<div class="description">
-<h2>Rules</h2>
-<div class="dt-tags">
-<div class="dt-tag">rules</div>
-</div>
-<p>Just a few simple rules on this blog</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section subscribe">
-<h3>Subscribe</h3>
-<form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
-  <input type='text' name='btr_email' />
-  <input type='hidden' name='btr_url'
-         value='https://qntkhvn.netlify.app/index.xml'/>
-  <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe' />
-</form>
-</div>
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(6)</span>
-</li>
-<li>
-<a href="#category:2020_olympics">2020 olympics</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:data_viz">data viz</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:euro_2020">euro 2020</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:football">football</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:gganimate">gganimate</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ggplot2">ggplot2</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rankings">rankings</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rules">rules</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:simulation">simulation</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:sport_climbing">sport climbing</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:swapping">swapping</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:tennis">tennis</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Blog Posts</h1>
+<h1>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt=tag">sport climbing</div>
+<div class="dt=tag">2020 olympics</div>
+<div class="dt=tag">rankings</div>
+<div class="dt=tag">swapping</div>
+</div>
 <!--/radix_placeholder_categories-->
-
+<p><p>How much worse can this ranking system be?</p></p>
 </div>
 
+<div class="d-byline">
+  Quang Nguyen <a href="https://github.com/qntkhvn" class="uri">https://github.com/qntkhvn</a> 
+  
+<br/>2021-08-07
+</div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#analysis">Analysis</a>
+<ul>
+<li><a href="#data-prep">Data Prep</a></li>
+<li><a href="#swapping-ranks-1-and-2-for-all-3-disciplines">Swapping ranks 1 and 2 for all 3 disciplines</a></li>
+<li><a href="#swapping-ranks-4-and-5-for-all-3-disciplines">Swapping ranks 4 and 5 for all 3 disciplines</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<p>This is the third post in a series about sport climbing at the 2020 Summer Olympics. In the <a href="https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim">first</a> and <a href="https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format">second</a> blog posts, I provided analyses on the ranking system of sport climbing using both simulated data and historical results from recent tournaments. This time, I will continue to address the limitations of this scoring format, utilizing brand new data from Tokyo 2020.</p>
+<h2 id="background">Background</h2>
+<p>Sport climbing at Tokyo 2020 has concluded, and it can only mean one thing: there’s more data to analyze. In my previous post, I pointed out several problems with sport climbing’s scoring system; in particular, the disadvantage of speed climbers under this format, and how this format violates the IIA property. (i.e. there’s great dependence on irrelevant (lower-ranked) climbers).</p>
+<h2 id="analysis">Analysis</h2>
+<h3 id="data-prep">Data Prep</h3>
+<p>The data for both <a href="https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Men%27s_combined">men’s</a> and <a href="https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Women%27s_combined">women’s</a> sport climbing events at the 2020 Olympics were obtained from Wikipedia (here’s the <a href="https://github.com/qntkhvn/climbing/blob/main/R/tokyo_scraping.R">scraping script</a> if you’re interested).</p>
+<p>Since I’m interested in doing a what-if analysis to see what happens to the overall rankings when players’ ranks are being swapped, let’s also write a helper function to perform rank swapping.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://haozhu233.github.io/kableExtra/'>kableExtra</a></span><span class='op'>)</span>
+<span class='fu'>theme_set</span><span class='op'>(</span><span class='fu'>theme_light</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>climbing_swap</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>df</span>, <span class='va'>ranks</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='va'>speed_swap</span> <span class='op'>&lt;-</span> <span class='va'>df</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>select</span><span class='op'>(</span><span class='va'>climber</span>, <span class='va'>overall</span>, <span class='va'>speed</span>, <span class='va'>bouldering</span>, <span class='va'>lead</span>, <span class='va'>total</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>mutate</span><span class='op'>(</span>speed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>speed</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>,
+                  <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>speed</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>speed</span><span class='op'>)</span><span class='op'>)</span>,
+           total <span class='op'>=</span> <span class='va'>speed</span> <span class='op'>*</span> <span class='va'>bouldering</span> <span class='op'>*</span> <span class='va'>lead</span>,
+           overall <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rank.html'>rank</a></span><span class='op'>(</span><span class='va'>total</span>, ties.method <span class='op'>=</span> <span class='st'>"first"</span><span class='op'>)</span>,
+           type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap speed ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span>
+  
+  <span class='va'>bouldering_swap</span> <span class='op'>&lt;-</span> <span class='va'>df</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>select</span><span class='op'>(</span><span class='va'>climber</span>, <span class='va'>overall</span>, <span class='va'>speed</span>, <span class='va'>bouldering</span>, <span class='va'>lead</span>, <span class='va'>total</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>mutate</span><span class='op'>(</span>bouldering <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>bouldering</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>,
+                          <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>bouldering</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='va'>bouldering</span><span class='op'>)</span><span class='op'>)</span>,
+           total <span class='op'>=</span> <span class='va'>speed</span> <span class='op'>*</span> <span class='va'>bouldering</span> <span class='op'>*</span> <span class='va'>lead</span>,
+           overall <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rank.html'>rank</a></span><span class='op'>(</span><span class='va'>total</span>, ties.method <span class='op'>=</span> <span class='st'>"first"</span><span class='op'>)</span>,
+           type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap bouldering ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span>
+  
+   <span class='va'>lead_swap</span> <span class='op'>&lt;-</span> <span class='va'>df</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>select</span><span class='op'>(</span><span class='va'>climber</span>, <span class='va'>overall</span>, <span class='va'>speed</span>, <span class='va'>bouldering</span>, <span class='va'>lead</span>, <span class='va'>total</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+    <span class='fu'>mutate</span><span class='op'>(</span>lead <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>lead</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>,
+                          <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>lead</span> <span class='op'>==</span> <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span>, <span class='va'>lead</span><span class='op'>)</span><span class='op'>)</span>,
+           total <span class='op'>=</span> <span class='va'>speed</span> <span class='op'>*</span> <span class='va'>bouldering</span> <span class='op'>*</span> <span class='va'>lead</span>,
+           overall <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rank.html'>rank</a></span><span class='op'>(</span><span class='va'>total</span>, ties.method <span class='op'>=</span> <span class='st'>"first"</span><span class='op'>)</span>,
+           type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap lead ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span>
+   
+   <span class='va'>swap</span> <span class='op'>&lt;-</span> <span class='va'>df</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'>mutate</span><span class='op'>(</span>type <span class='op'>=</span> <span class='st'>"Original"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'>bind_rows</span><span class='op'>(</span><span class='va'>speed_swap</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'>bind_rows</span><span class='op'>(</span><span class='va'>bouldering_swap</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'>bind_rows</span><span class='op'>(</span><span class='va'>lead_swap</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+     <span class='fu'>mutate</span><span class='op'>(</span>climber <span class='op'>=</span> <span class='fu'>fct_rev</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>climber</span>, levels <span class='op'>=</span> <span class='va'>df</span><span class='op'>$</span><span class='va'>climber</span><span class='op'>)</span><span class='op'>)</span>,
+            medal <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>overall</span> <span class='op'>==</span> <span class='fl'>1</span>, <span class='st'>"gold"</span>,
+                        <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>overall</span> <span class='op'>==</span> <span class='fl'>2</span>, <span class='st'>"silver"</span>,
+                               <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='va'>overall</span> <span class='op'>==</span> <span class='fl'>3</span>, <span class='st'>"bronze"</span>, <span class='st'>"none"</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>,
+            type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>type</span>, 
+                          levels <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Original"</span>,
+                                     <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap speed ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>,
+                                     <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap bouldering ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>,
+                                     <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='st'>"Swap lead ranks"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span>, <span class='st'>"&amp;"</span>, <span class='va'>ranks</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
+   <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>swap</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+</details>
+</div>
+<h3 id="swapping-ranks-1-and-2-for-all-3-disciplines">Swapping ranks 1 and 2 for all 3 disciplines</h3>
+<p>The analysis that follows will center around the men’s finals</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mf</span> <span class='op'>&lt;-</span> <span class='fu'>read_csv</span><span class='op'>(</span><span class='st'>"https://raw.githubusercontent.com/qntkhvn/climbing/main/data/2020_olympics/mf.csv"</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>select</span><span class='op'>(</span><span class='va'>climber</span>, <span class='va'>overall</span>, <span class='va'>speed</span>, <span class='va'>bouldering</span>, <span class='va'>lead</span>, <span class='va'>total</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<p>Let’s first filter out the 8th-ranked ,</p>
+<p>since he got injured before the start of the finals; hence was not able to participate and got 8th place in all three events.</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mf_swap_12</span> <span class='op'>&lt;-</span> <span class='fu'>climbing_swap</span><span class='op'>(</span><span class='va'>mf</span>, ranks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>overall</span> <span class='op'>&lt;</span> <span class='fl'>8</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mf_swap_12</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>ggplot</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>climber</span>, y <span class='op'>=</span> <span class='va'>total</span>, fill <span class='op'>=</span> <span class='va'>medal</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_col</span><span class='op'>(</span>show.legend <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_text</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>label <span class='op'>=</span> <span class='va'>overall</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='op'>-</span><span class='fl'>0.2</span>, size <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>coord_flip</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>facet_wrap</span><span class='op'>(</span><span class='op'>~</span> <span class='va'>type</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_fill_manual</span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"#A77044"</span>, <span class='st'>"#FFD700"</span>, <span class='st'>"#95BFE5"</span>, <span class='st'>"#C0C0C0"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>labs</span><span class='op'>(</span>subtitle <span class='op'>=</span> <span class='st'>"Rank Swapping - Tokyo 2020 Men's Finals"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>strip.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"midnightblue"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<p><img src="climbing-p3-swapping_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<p>Speeds: narasaki moved from 4 to 1</p>
+<p>top 3 could fall to 6 of 7</p>
+<h3 id="swapping-ranks-4-and-5-for-all-3-disciplines">Swapping ranks 4 and 5 for all 3 disciplines</h3>
+<p>IIA</p>
+<p>Similar, but instead of excluding, use the swapping method</p>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mf_swap_45</span> <span class='op'>&lt;-</span> <span class='fu'>climbing_swap</span><span class='op'>(</span><span class='va'>mf</span>, ranks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>4</span>, <span class='fl'>5</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>overall</span> <span class='op'>&lt;</span> <span class='fl'>8</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<details>
+<summary>
+Show code
+</summary>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>mf_swap_45</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'>ggplot</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>climber</span>, y <span class='op'>=</span> <span class='va'>total</span>, fill <span class='op'>=</span> <span class='va'>medal</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_col</span><span class='op'>(</span>show.legend <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>geom_text</span><span class='op'>(</span><span class='fu'>aes</span><span class='op'>(</span>label <span class='op'>=</span> <span class='va'>overall</span><span class='op'>)</span>, hjust <span class='op'>=</span> <span class='op'>-</span><span class='fl'>0.2</span>, size <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>coord_flip</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>facet_wrap</span><span class='op'>(</span><span class='op'>~</span> <span class='va'>type</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>scale_fill_manual</span><span class='op'>(</span>values <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"#A77044"</span>, <span class='st'>"#FFD700"</span>, <span class='st'>"#95BFE5"</span>, <span class='st'>"#C0C0C0"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>labs</span><span class='op'>(</span>subtitle <span class='op'>=</span> <span class='st'>"Rank Swapping - Tokyo 2020 Men's Finals"</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'>theme</span><span class='op'>(</span>strip.background <span class='op'>=</span> <span class='fu'>element_rect</span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"midnightblue"</span><span class='op'>)</span><span class='op'>)</span>
+</code></pre>
+</div>
+</details>
+<p><img src="climbing-p3-swapping_files/figure-html5/unnamed-chunk-8-1.png" width="624" /></p>
+</div>
+<p><a href="https://www.nytimes.com/2021/08/04/sports/olympics/mens-climbing-final-olympics.html">Ondra</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
