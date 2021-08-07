@@ -14,7 +14,6 @@ output:
     toc: true
     toc_depth: 4
 # citation_url: https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim
-draft: true
 categories:
   - sport climbing
   - 2020 olympics
