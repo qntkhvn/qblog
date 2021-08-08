@@ -1,7 +1,7 @@
 ---
 title: "Sport Climbing at Tokyo 2020, Part III: Rank Swapping"
 description: |
-  A sport of small margins.
+  A competition of small margins.
 author:
   - name: Quang Nguyen
     url: https://github.com/qntkhvn
