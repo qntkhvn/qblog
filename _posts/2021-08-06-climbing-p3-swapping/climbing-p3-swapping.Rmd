@@ -1,11 +1,11 @@
 ---
 title: "Sport Climbing at Tokyo 2020, Part III: Rank Swapping"
 description: |
-  How much worse can this ranking system be?
+  A sport of small margins.
 author:
   - name: Quang Nguyen
     url: https://github.com/qntkhvn
-date: "`r Sys.Date()`"
+date: "August 7, 2021"
 output:
   distill::distill_article:
     highlight: tango
@@ -13,13 +13,11 @@ output:
     self_contained: false
     toc: true
     toc_depth: 4
-# citation_url: https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim
-draft: true
+citation_url: https://qntkhvn.netlify.app/posts/2021-08-06-climbing-p3-swapping
 categories:
   - sport climbing
   - 2020 olympics
   - rankings
-  - swapping
 ---
 
 
@@ -27,25 +25,35 @@ categories:
 options(scipen = 999)
 ```
 
-This is the third post in a series about sport climbing at the 2020 Summer Olympics. In the [first](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim) and [second](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format) blog posts, I provided analyses on the ranking system of sport climbing using both simulated data and historical results from recent tournaments. This time, I will continue to address the limitations of this scoring format, utilizing brand new data from Tokyo 2020.
+This is the third post in a series about sport climbing at the 2020 Summer Olympics. In the [first](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim) and [second](https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format) blog posts, I analyzed the ranking system of sport climbing using both simulated data and historical results from recent tournaments. This time, I'm going to continue to address the limitations of this scoring format, utilizing brand new data from Tokyo 2020.
 
-## Background
+## Introduction
 
-Sport climbing at Tokyo 2020 has concluded, and it can only mean one thing: there's more data to analyze. In my previous post, I pointed out several problems with sport climbing's scoring system; in particular, the disadvantage of speed climbers under this format, and how this format violates the IIA property. (i.e. there's great dependence on irrelevant (lower-ranked) climbers).
+Sport climbing at Tokyo 2020 has concluded, and it can only mean one thing: there's more data to analyze. Previously, I pointed out several problems with sport climbing's scoring system; in particular, the disadvantage that speed climbers are facing under this format, and how this ranking system violates the independence of irrelevant alternatives property. (i.e. there's great dependence on irrelevant (lower-ranked) climbers). 
+
+<!-- In this edition, I'm going to provide another discussion on the issues related to this scoring system, from a data science point of view, of course. -->
+
+In this edition, I'm going to conduct a sensitivity (what-if) analysis on the overall results of sport climbing at the 2020 Summer Olympics. The main motivated question for this post is: **"What would happen to the overall rankings if the ranks within an individual climbing discipline are being swapped?"**
 
 ## Analysis
 
 ### Data Prep
 
-The data for both [men's](https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Men%27s_combined) and [women's](https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Women%27s_combined) sport climbing events at the 2020 Olympics were obtained from Wikipedia (here's the [scraping script](https://github.com/qntkhvn/climbing/blob/main/R/tokyo_scraping.R) if you're interested). 
+The analysis that follows is going to center around the men's finals of sport climbing at Tokyo 2020. The data were obtained from the [Wikipedia page of the men's event](https://en.wikipedia.org/wiki/Sport_climbing_at_the_2020_Summer_Olympics_%E2%80%93_Men%27s_combined) (here's the [scraping script](https://github.com/qntkhvn/climbing/blob/main/R/tokyo_scraping.R) if you're interested). 
 
-Since I'm interested in doing a what-if analysis to see what happens to the overall rankings when players' ranks are being swapped, let's also write a helper function to perform rank swapping.
-
-```{r, code_folding = FALSE}
+```{r}
 library(tidyverse)
-library(kableExtra)
 theme_set(theme_light())
+
+mf <- read_csv("https://raw.githubusercontent.com/qntkhvn/climbing/main/data/2020_olympics/mf.csv") %>% 
+  mutate(climber = paste(str_sub(climber, 1, 1), word(climber, -1))) # shorten climber's name
 ```
+
+Let's begin by writing a helper function to rank swapping to the final standings. 
+
+<!-- 
+This function first takes in a pair of rank values. After the inputted pair of ranks are swapped, the new final scores are calculated, which ultimately determines the new standings. For the purpose of simplicity, and returns a tibble of modified rankings for speed, bouldering, and lead climbing. 
+-->
 
 ```{r}
 climbing_swap <- function(df, ranks = c(1, 2)) {
@@ -60,7 +68,7 @@ climbing_swap <- function(df, ranks = c(1, 2)) {
   bouldering_swap <- df %>% 
     select(climber, overall, speed, bouldering, lead, total) %>% 
     mutate(bouldering = ifelse(bouldering == ranks[1], ranks[2],
-                          ifelse(bouldering == ranks[1], ranks[2], bouldering)),
+                          ifelse(bouldering == ranks[2], ranks[1], bouldering)),
            total = speed * bouldering * lead,
            overall = rank(total, ties.method = "first"),
            type = paste("Swap bouldering ranks", ranks[1], "&", ranks[2]))
@@ -68,7 +76,7 @@ climbing_swap <- function(df, ranks = c(1, 2)) {
    lead_swap <- df %>% 
     select(climber, overall, speed, bouldering, lead, total) %>% 
     mutate(lead = ifelse(lead == ranks[1], ranks[2],
-                          ifelse(lead == ranks[1], ranks[2], lead)),
+                          ifelse(lead == ranks[2], ranks[1], lead)),
            total = speed * bouldering * lead,
            overall = rank(total, ties.method = "first"),
            type = paste("Swap lead ranks", ranks[1], "&", ranks[2]))
@@ -91,27 +99,18 @@ climbing_swap <- function(df, ranks = c(1, 2)) {
 }
 ```
 
+### Swapping ranks 1 and 2
 
-### Swapping ranks 1 and 2 for all 3 disciplines
-
-The analysis that follows will center around the men's finals
-
-```{r}
-mf <- read_csv("https://raw.githubusercontent.com/qntkhvn/climbing/main/data/2020_olympics/mf.csv") %>% 
-  select(climber, overall, speed, bouldering, lead, total)
-```
-
-
-Let's first filter out the 8th-ranked ,
-
-since he got injured before the start of the finals; hence was not able to participate and got 8th place in all three events.
+Let's first filter out the 8th-ranked climber (Bassa Mawem), since he [got injured](https://www.reuters.com/lifestyle/sports/climbing-injury-forces-frances-bassa-mawem-out-mens-final-2021-08-04/) before the start of the finals; hence was not able to play for a medal and was placed 8th in all three events. Thus swapping the top 2 in any event is not going to affect his score line. (Why didn't they replace him with somebody else? If they did, would they use the qualification results with or without him? That's something to think about.)
 
 ```{r}
 mf_swap_12 <- climbing_swap(mf, ranks = c(1, 2)) %>% 
   filter(overall < 8)
 ```
 
-```{r}
+Now I'm going to make a couple of plots to illustrate the changes to the overall orderings of climbers after switching the first and second positions in each of the three climbing concentrations. First, below is a figure of multi-panel plots showing the modified leaderboard in each case after swapping alongside the original final standings. 
+
+```{r, fig.height = 5}
 mf_swap_12 %>% 
   ggplot(aes(x = climber, y = total, fill = medal)) +
   geom_col(show.legend = FALSE) +
@@ -119,35 +118,53 @@ mf_swap_12 %>%
   coord_flip() +
   facet_wrap(~ type) +
   scale_fill_manual(values = c("#A77044", "#FFD700", "#95BFE5", "#C0C0C0")) +
-  labs(subtitle = "Rank Swapping - Tokyo 2020 Men's Finals") +
+  labs(subtitle = "Modified rankings after swapping ranks 1 and 2 - Tokyo 2020 Men's Finals",
+       y = "Score",
+       x = NULL) +
   theme(strip.background = element_rect(fill = "midnightblue"))
 ```
 
-Speeds: narasaki moved from 4 to 1
-
-top 3 could fall to 6 of 7
-
-### Swapping ranks 4 and 5 for all 3 disciplines
-
-IIA
-
-Similar, but instead of excluding, use the swapping method
+And second, here's a bump chart showing the rankings across the different types of rank modification.
 
 ```{r}
-mf_swap_45 <- climbing_swap(mf, ranks = c(4, 5)) %>% 
-  filter(overall < 8)
+library(ggbump)
+mf_swap_12 %>% 
+  ggplot(aes(type, overall, group = climber, color = climber)) +
+  geom_bump(size = 3, smooth = 20) +
+  geom_point(size = 5) +
+  scale_y_reverse(breaks = 1:7) +
+  scale_x_discrete(labels = c("Original", "Swap speed", "Swap bouldering", "Swap lead")) +
+  theme(axis.title = element_blank()) +
+  scale_color_ordinal() +
+  labs(subtitle = "Modified rankings after swapping ranks 1 and 2 - Tokyo 2020 Men's Finals")
 ```
 
-```{r}
-mf_swap_45 %>% 
-  ggplot(aes(x = climber, y = total, fill = medal)) +
-  geom_col(show.legend = FALSE) +
-  geom_text(aes(label = overall), hjust = -0.2, size = 3) +
-  coord_flip() +
-  facet_wrap(~ type) +
-  scale_fill_manual(values = c("#A77044", "#FFD700", "#95BFE5", "#C0C0C0")) +
-  labs(subtitle = "Rank Swapping - Tokyo 2020 Men's Finals") +
-  theme(strip.background = element_rect(fill = "midnightblue"))
+There are lots of stories to tell from the two figures above. The two major ones are: 
+
+*   Each swap gives us a different overall winner. In the case of swapping ranks 1 and 2 of speed climbing, it's Narasaki going from 4th to 1st. For bouldering, it's Mawem going from 5th to claim gold. And for lead, it's Ondra jumping 5 spots from 6th to earn the victory medal.
+
+*   Things could have easily been very different for the top 3 finishers. Swapping ranks 1 and 2 of speed would have put the gold medalist, Lopez, down 5 positions to 6th overall. Likewise, the silver medal winner, Coleman, would have fallen 4 spots to 6th if there was a change in the finishing order of the top 2 bouldering athletes. And even worse, Schubert, who won bronze in Tokyo, could have easily had the worst record among the active final competitors, if number 1 and 2 in lead climbing switched places. 
+
+The margin of victory as narrow as it could get. Anyone could have gone from hero to zero (and vice versa) very quickly. Crazy. Wild. Insane.
+
+<!-- **Analysis 2: Swapping ranks 4 and 5** -->
+
+<!-- Now, let's repeat what I just did, but this time ranks 4 and 5 are being swapped instead of 1 and 2. The reason I wanted to look into the rank changes associated with these two mid-table positions is because of a familiar concept: independence of irrelevant alternatives (IIA). -->
+
+<!-- Recall that in order for the IIA property to hold for a ranking system, if a winner was previously declared, they should retain their winning status when a lower-ranked party drops out. In my last post, I showed that the IIA fails for sport climbing's ranking system, by performing a "leave-one-climber-out" analysis. This time, instead of the leave-one-out strategy, I'm going to look for evidence of violations of IIA by examining the case of rank swapping. If this rule is satisfied here, swapping the ranks of irrelevant parties (non-medalists) should not affect the winning outcome (medalists). -->
+
+```{r, fig.height = 5, include = FALSE}
+# mf_swap_45 <- climbing_swap(mf, ranks = c(4, 5)) %>% 
+#   filter(overall < 8)
+# mf_swap_45 %>% 
+#   ggplot(aes(x = climber, y = total, fill = medal)) +
+#   geom_col(show.legend = FALSE) +
+#   geom_text(aes(label = overall), hjust = -0.2, size = 3) +
+#   coord_flip() +
+#   facet_wrap(~ type) +
+#   scale_fill_manual(values = c("#A77044", "#FFD700", "#95BFE5", "#C0C0C0")) +
+#   labs(subtitle = "Modified rankings after swapping - Tokyo 2020 Men's Finals") +
+#   theme(strip.background = element_rect(fill = "midnightblue"))
 ```
 
-[Ondra](https://www.nytimes.com/2021/08/04/sports/olympics/mens-climbing-final-olympics.html)
+<!-- Clearly, the case of swapping ranks 4 and 5 of lead climbing shows a violation to the IIA. Lopez would have given up his gold in exchange for a silver from Coleman. Also, if there was a switch between the 4th and 5th positions of bouldering, Schubert would have moved up to 2nd and Coleman would have dropped to 3rd. -->
