@@ -9,6 +9,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "CV"
+      href: https://qntkhvn.github.io/quang/docs/cv.pdf
     - icon: fab fa-github
       href: https://github.com/qntkhvn
     - icon: fab fa-twitter
