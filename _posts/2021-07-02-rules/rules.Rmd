@@ -13,6 +13,14 @@ categories:
 preview: rules.png
 ---
 
+Welcome to my new blog, The Q! This post is nothing more than a "Hello, World" post.
+
+<center>
+
+#### RULES
+
+</center>
+
 -   Football means the real football here, not the American one.
 
     -   Match, not game.
