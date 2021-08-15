@@ -135,7 +135,7 @@
     "contents": "\nWelcome to my new blog, The Q! This post is nothing more than a “Hello, World!” post.\n\nRULES\n\nFootball means the real football here, not the American one.\nMatch, not game.\nDraw, not tie.\nPitch, not field.\nTable, not standings.\nNil, not zero/zip/nothing/whatever.\nBoots, not cleats.\nKit, not uniform.\nWhat else?\n\nCereals, pancakes, and waffles are desserts.\n\n\n\n",
     "preview": "posts/2021-07-02-rules/rules.png",
     "last_modified": "2021-08-14T20:03:36-04:00",
-    "input_file": "rules.knit.md",
+    "input_file": {},
     "preview_width": 820,
     "preview_height": 436
   }
