@@ -13,7 +13,7 @@ categories:
 preview: rules.png
 ---
 
-Welcome to my new blog, The Q! This post is nothing more than a "Hello, World!" post.
+Welcome to my new blog, The Q! This post is nothing more than a "Hello, World!" message for the blog.
 
 <center>
 
