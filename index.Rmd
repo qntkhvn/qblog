@@ -1,5 +1,24 @@
 ---
-title: "Blog Posts"
+title: "Quang Nguyen"
 site: distill::distill_website
-listing: posts
+image: "qpic.png"
+links:
+  - label: '<i class="fas fa-envelope"></i> Email'
+    url: "mailto:nminhquang.99@gmail.com"
+  - label: '<i class="fab fa-github"></i> GitHub'
+    url: "https://github.com/qntkhvn"
+  - label: '<i class="fab fa-twitter"></i> Twitter'
+    url: "https://twitter.com/qntkhvn"
+  - label: '<i class="fab fa-linkedin"></i> LinkedIn'
+    url: "https://www.linkedin.com/in/mqnnguyen"
+base_url: https://qntkhvn.netlify.app/
+preview: qpic.png
+twitter:
+  creator: "@qntkhvn"
+output:
+  postcards::jolla
 ---
+
+Welcome to my personal website! 
+I am a MS student in Applied Statistics at Loyola University Chicago.
+My interests include statistics in sports, data visualization, and using R and RStudio for data science.
