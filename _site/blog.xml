@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>The Q</title>
+    <link>https://qntkhvn.netlify.app/</link>
+    <atom:link href="https://qntkhvn.netlify.app/blog.xml" rel="self" type="application/rss+xml"/>
+    <description>Blog Posts
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-08-06-climbing-p3-swapping</link>
+      <description>A competition of small margins.</description>
+      <category>sport climbing</category>
+      <category>2020 olympics</category>
+      <category>rankings</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-08-06-climbing-p3-swapping</guid>
+      <pubDate>Sat, 07 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-08-06-climbing-p3-swapping/climbing-p3-swapping_files/figure-html5/unnamed-chunk-5-1.png" medium="image" type="image/png" width="1248" height="960"/>
+    </item>
+    <item>
+      <title>Sport Climbing at Tokyo 2020, Part II: Competition Format</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format</link>
+      <description>Who's Suffering? Who's Relevant?</description>
+      <category>sport climbing</category>
+      <category>2020 olympics</category>
+      <category>rankings</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format</guid>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p2-format/climbing-p2-format_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="960"/>
+    </item>
+    <item>
+      <title>Sport Climbing at Tokyo 2020, Part I: A Simulation Study</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim</link>
+      <description>Simulation time!</description>
+      <category>sport climbing</category>
+      <category>2020 olympics</category>
+      <category>simulation</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim</guid>
+      <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim/climbing-p1-sim_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Sports Animation Gallery - June 2021</title>
+      <dc:creator>qntkhvn</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</link>
+      <description>Leveling up with {gganimate}</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>gganimate</category>
+      <category>football</category>
+      <category>euro 2020</category>
+      <category>tennis</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</guid>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021/euro_group_stage.png" medium="image" type="image/png" width="1072" height="858"/>
+    </item>
+    <item>
+      <title>EURO Group Tables and Knockout Performances</title>
+      <dc:creator>qntkhvn</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups</link>
+      <description>Everybody loves cinderella stories and fairy-tale runs.</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>football</category>
+      <category>euro 2020</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups</guid>
+      <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/euro_group.png" medium="image" type="image/png" width="704" height="576"/>
+    </item>
+    <item>
+      <title>Rules</title>
+      <dc:creator>qntkhvn</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-07-02-rules</link>
+      <description>Just a few simple rules on this blog</description>
+      <category>rules</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-07-02-rules</guid>
+      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-02-rules/rules.png" medium="image" type="image/png" width="820" height="436"/>
+    </item>
+  </channel>
+</rss>
