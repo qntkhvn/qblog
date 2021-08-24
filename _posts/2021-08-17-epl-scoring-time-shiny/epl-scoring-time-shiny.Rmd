@@ -112,7 +112,7 @@ goals %>%
   kable()
 ```
 
-(Note: There were 22 clubs and 42 matchweeks in the first 3 EPL seasons (92-93, 93-94, 94-95), before the number of clubs was reduced to 20 (hence 38 matchweeks) at the start of 95-96)
+(Note: There were 22 clubs and 42 matchweeks in the first 3 EPL seasons (92-93, 93-94, 94-95), before the number of clubs was reduced to 20 (hence 38 matchweeks) at the start of 95-96.)
 
 **What are the highest-scoring teams in the EPL history?**
 
