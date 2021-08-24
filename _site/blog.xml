@@ -7,7 +7,19 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 07 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>EPL Goal Scoring Time Data Shiny App</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2021-08-17-epl-scoring-time-shiny</link>
+      <description>My first Shiny app.</description>
+      <category>shiny</category>
+      <category>football</category>
+      <category>goals</category>
+      <guid>https://qntkhvn.netlify.app/posts/2021-08-17-epl-scoring-time-shiny</guid>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2021-08-17-epl-scoring-time-shiny/shiny_screenshot.png" medium="image" type="image/png" width="2054" height="1038"/>
+    </item>
     <item>
       <title>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</title>
       <dc:creator>Quang Nguyen</dc:creator>
@@ -48,7 +60,7 @@
       <title>Sports Animation Gallery - June 2021</title>
       <dc:creator>qntkhvn</dc:creator>
       <link>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</link>
-      <description>Leveling up with {gganimate}</description>
+      <description>Leveling up with {gganimate}.</description>
       <category>data viz</category>
       <category>ggplot2</category>
       <category>gganimate</category>
@@ -76,7 +88,7 @@
       <title>Rules</title>
       <dc:creator>qntkhvn</dc:creator>
       <link>https://qntkhvn.netlify.app/posts/2021-07-02-rules</link>
-      <description>Just a few simple rules on this blog</description>
+      <description>Just a few simple rules on this blog.</description>
       <category>rules</category>
       <guid>https://qntkhvn.netlify.app/posts/2021-07-02-rules</guid>
       <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>

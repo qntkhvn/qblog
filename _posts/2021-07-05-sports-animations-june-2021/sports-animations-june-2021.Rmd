@@ -1,11 +1,11 @@
 ---
 title: "Sports Animation Gallery - June 2021"
 description: |
-  Leveling up with {gganimate}
+  Leveling up with {gganimate}.
 author:
   - name: qntkhvn
     url: https://github.com/qntkhvn
-date: "`r Sys.Date()`"
+date: "July 5, 2021"
 output:
   distill::distill_article:
     highlight: rstudio

@@ -1,7 +1,7 @@
 ---
 title: "Rules"
 description: |
-  Just a few simple rules on this blog
+  Just a few simple rules on this blog.
 author:
   - name: qntkhvn
 date: "July 2, 2021"
