@@ -22,7 +22,7 @@
   margin-right: 10%;
 }
 
-p a, aside a, li a, d-appendix a, a.footnote-backlink {
+p a, aside a, li a, d-appendix a, a.footnote-backlink, table a {
     color: #3366BB;
     display: inline-block;
     text-decoration: none;
