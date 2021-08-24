@@ -1,0 +1,92 @@
+---
+title: "My First Shiny App: EPL Goal Scoring Time Data"
+description: |
+  A simple shiny app.
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "August 17, 2021"
+output:
+  distill::distill_article:
+    highlight: tango
+    code_folding: false
+    self_contained: false
+    toc: true
+    toc_depth: 4
+draft: true
+preview: shiny_screenshot.png
+categories:
+  - shiny
+  - football
+  - goals
+---
+
+One of the items on my to-do list for this summer is to learn and make a Shiny app. I finally did it! Check out the app here: https://qntkhvn.shinyapps.io/epl_goal_time
+
+![](shiny_screenshot.png)
+
+## Description
+
+This is a very simple Shiny app which provides data on all goal scoring events in the English Premier League, from its first season, 1992-93, to the last completed season, 2020-21. 
+
+Some flaws:
+
+Goals weren't classified as own goals
+
+Future work:
+
+
+
+## EDA
+
+```{r}
+library(tidyverse)
+theme_set(theme_bw())
+```
+
+```{r}
+goals <- read_csv("goals.csv")
+```
+
+**Who were the Top 5 All-Time EPL Goal Scorers?**
+
+```{r}
+goals %>% 
+  count(goal_scorer, sort = TRUE) %>% 
+  slice_head(n = 5)
+```
+
+**Which players have scored more than 30 goals in a season?**
+
+```{r}
+goals %>% 
+  count(goal_scorer, season, sort = TRUE) %>% 
+  filter(n >= 30)
+```
+
+(Note: There were 22 clubs and 42 matchweeks in the first 3 EPL seasons (92-93, 93-94, 94-95))
+
+**What are the highest-scoring teams in the EPL history?**
+
+```{r}
+goals %>% 
+  count(goal_club, season, sort = TRUE) %>% 
+  filter(n >= 90)
+```
+
+**What is the goal scoring trend since 2010?**
+
+```{r, fig.height = 6}
+goals %>% 
+  filter(as.numeric(str_sub(season, end = -6)) > 2009) %>% 
+  mutate(season = str_replace(season, "-", "-\n")) %>% 
+  count(season) %>% 
+  ggplot(aes(x = season, y = n, group = 1)) +
+  geom_point(aes(size = n), show.legend = FALSE) +
+  geom_line() +
+  labs(subtitle = "2014-2015 seems to be an outlier")
+```
+
+## Resources
+
+
