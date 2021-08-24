@@ -5,7 +5,7 @@ description: |
 author:
   - name: qntkhvn
     url: https://github.com/qntkhvn
-date: "`r Sys.Date()`"
+date: "July 3, 2021"
 output:
   distill::distill_article:
     highlight: rstudio
@@ -96,8 +96,8 @@ p <- euro %>%
   ggplot(aes(x = Place, y = Group, fill = Outcome, group = Team)) +
   geom_tile(color = "white") +
   facet_wrap(~ Year, scales = "free_y") +
-  scale_fill_brewer(palette = "PuOr", direction = -1) +
   ggtitle("EURO Performances and Group Positions") +
+  scale_fill_brewer(palette = "PRGn") +
   theme_minimal() +
   theme(
     plot.title = element_text(hjust = 0.5),
