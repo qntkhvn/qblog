@@ -1,0 +1,135 @@
+---
+title: "Predicting the 2021 AFL Brownlow Medal Winner"
+description: |
+  ... without any knowledge of Australian rules football
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "September 19, 2021"
+output:
+  distill::distill_article:
+    highlight: tango
+    code_folding: false
+    self_contained: false
+    toc: true
+    toc_depth: 4
+categories:
+  - machine learning
+  - australian football
+draft: true
+---
+
+## Idea
+
+On Wednesday morning, I got a message from my stats professor Greg Matthews ([\@statsinthewild](https://twitter.com/StatsInTheWild))...
+
+Robert Nguyen ([\@roberto_boberto](https://twitter.com/roberto_boberto)), a sports analytics guru in Australia, and the host of the famous sports analytics podcast [Chilling with Charlie](https://open.spotify.com/show/2oA00D3IyqFfhgrZfdn8EO), reached out to Greg about a crazy sports idea. Rob was interested in organizing a live coding stream, where a sports statistics person who has no knowledge of Australian football (like Greg) is paired up with a journalist with domain expertise to see how well they can do at predicting a sport problem. The topic here is predicting the 2021 [Brownlow Medal](https://www.abc.net.au/news/2021-09-18/brownlow-medal-how-to-watch-when-is-it-afl/100473292) winner (sort of like MVP in American sports) for the Australian Football League (AFL).
+
+Greg asked if I'm interested in doing this, and I said yes. So Greg arranged for me to do it instead of him. 
+
+However, time is an issue here...
+
+1) The winner would be announced Sunday, September 19 evening (Sydney time), and Rob wanted to do the stream on Friday evening (again, Aussie time), so it was like really late notice.
+
+2) Friday evening in Sydney means early Friday morning in Chicago. Rob wanted to start the stream at 6pm Sydney time, which means I'd have to be present at 3am US Central time... so it would be no sleep or a quick evening nap for me
+
+Despite the short notice and the time difference, I decided to do it anyway. I was a bit hesitant and nervous at first, due to the lack of preparation that I would have. I even told Rob that I wouldn't think I can do it, but after a conversation with him, I decided to give it a shot.
+
+So, on Friday morning, at 3am Chicago time, I got up and did this live coding thing. My companion was [David Mark](https://www.abc.net.au/news/david-mark/167166), an experience sport editor who worked for ABC (Australia). 
+
+
+
+## Model
+
+### Data Exploring
+
+```{r}
+library(tidyverse)
+library(tidytext)
+library(lubridate)
+library(fitzRoy)
+theme_set(theme_bw())
+```
+
+```{r}
+afl <- fetch_player_stats_fryzigg(season = 2011:2021)
+```
+
+#### Who finished in the top 5 and their total votes?
+
+```{r}
+aggregated_votes <- afl %>% 
+  mutate(year = year(match_date)) %>% 
+  filter(year != 2021) %>% 
+  group_by(year, player_id, player_last_name) %>% 
+  summarize(total = sum(brownlow_votes)) %>% 
+  ungroup()
+```
+
+```{r, fig.height=8}
+aggregated_votes %>% 
+  group_by(year) %>% 
+  slice_max(n = 5, order_by = total) %>% 
+  mutate(year = as.factor(year),
+         player_last_name = reorder_within(player_last_name, total, year)) %>% 
+  ggplot(aes(total, player_last_name, fill = year)) +
+  geom_col(show.legend = FALSE) +
+  scale_y_reordered() +
+  facet_wrap(~ year, scales = "free", ncol = 3) +
+  geom_text(aes(label = total), hjust = 1.2, size = 3)
+```
+
+#### Position
+
+```{r}
+afl %>% 
+  mutate(
+    position_group = case_when(
+      player_position %in% c("C", "WL", "WR", "RR", "R", "RK") ~ "Midfielders",
+      player_position %in% c("HBFR", "HBFL", "BPR", "CHB", "FB", "BPL") ~ "Defenders",
+      player_position %in% c("FF", "CHF", "HFFR", "HFFL", "FPL", "FPR") ~ "Forwards",
+      player_position %in% c("INT", "SUB") ~ "Bench"),
+    voted = ifelse(brownlow_votes == 0, "no", "yes")) %>% 
+  group_by(position_group) %>% 
+  summarize(pct_voted = sum(voted == "yes") / n()) %>% 
+  drop_na() %>% 
+  mutate(position_group = fct_reorder(position_group, pct_voted)) %>% 
+  ggplot(aes(pct_voted, position_group)) +
+  geom_col()
+```
+
+#### Heat map 
+
+```{r}
+winners <- aggregated_votes %>% 
+  group_by(year) %>% 
+  slice_max(order_by = total) %>% 
+  ungroup() %>% 
+  select(-total)
+
+afl %>% 
+  mutate(year = year(match_date)) %>% 
+  inner_join(winners) %>% 
+  filter(!str_detect(match_round, "Final")) %>% 
+  mutate(match_round = as.numeric(match_round)) %>%
+  ggplot(aes(match_round, year, fill = factor(brownlow_votes))) +
+  geom_tile(color = "white") +
+  scale_y_continuous(breaks = 2011:2020) +
+  scale_x_continuous(breaks = 1:24, position = "top") +
+  scale_fill_brewer(palette = "PuOr") +
+  coord_equal() +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank()) +
+  labs(x = NULL,
+       y = NULL,
+       fill = "Brownlow Votes")
+```
+
+### `xgboost` Model
+
+Set up and feature engineering
+
+Though I did my EDA using data from 2011 to now, for the modeling, I used data from 2015.
+
