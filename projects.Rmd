@@ -4,23 +4,6 @@ title: "Projects"
 
 Below is a list of research, class, and fun projects that I'm either currently working on or have completed.
 
-## Statistics and Data Science
-
-*   [SHAP and Shapley values](projects/shap.pdf)
-
-*   [Sentiment Analysis](projects/sentiment.html)
-
-*   [Making a bingo board with `ggplot2`](projects/bingo.html)
-
-*   [Wimbledon seeding heatmap](https://qntkhvn.github.io/wimbledon) (as of 2021)
-
-*   [Data wrangling with `dplyr`/`tidyverse`](projects/tidy.html)
-
-*   [Me, myself, and Man United](projects/mu/mu.html) (written in 2018 - my first exposure to `bookdown`)
-
-*   [Intro to Data Science Portfolio](projects/dsportfolio/index.html)
-
-
 ## Research
 
 ### Current
@@ -39,3 +22,25 @@ Below is a list of research, class, and fun projects that I'm either currently w
 |Titanic - Machine Learning from Disaster (Kaggle Competition)|||[`r fontawesome::fa("file-code")`](projects/titanic.html)|||
 
 <!-- |Predicting NFL Field Goal Outcomes||[`r fontawesome::fa("file-pdf")`](projects/nflfg.pdf)||[`r fontawesome::fa("laptop")`](projects/nflfg_pres.pdf)|[`r fontawesome::fa("play-circle")`](projects/nflfg.mp4)| -->
+
+## Miscellaneous
+
+*   [SHAP and Shapley values](projects/shap.pdf)
+
+*   [Sentiment analysis](projects/sentiment.html)
+
+*   [Making a bingo board with `ggplot2`](projects/bingo.html)
+
+*   [Wimbledon seeding heatmap](https://qntkhvn.github.io/wimbledon) (as of 2021)
+
+*   [Data wrangling with `dplyr`/`tidyverse`](projects/tidy.html)
+
+*   [Essays on The Lady Tasting Tea](projects/ltt.pdf)
+
+*   [Gauss and the parallel postulate](projects/gauss.pdf)
+
+*   [Intro to Proofs portfolio and reflections](projects/proof.pdf)
+
+*   [Me, myself, and Man United](projects/mu/mu.html) (written in 2018 - my first exposure to `bookdown`)
+
+*   [Intro to Data Science portfolio](projects/dsportfolio/index.html)
