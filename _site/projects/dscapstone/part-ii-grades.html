@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DATA 229 - FINAL PROJECT</title>
+  <meta name="description" content="DATA 229 - FINAL PROJECT">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="DATA 229 - FINAL PROJECT" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DATA 229 - FINAL PROJECT" />
+  
+  
+  
+
+<meta name="author" content="Quang Nguyen">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="part-ii-goals.html">
+<link rel="next" href="part-ii-tennis2017.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About The Project</a></li>
+<li class="chapter" data-level="2" data-path="part-i-kenken.html"><a href="part-i-kenken.html"><i class="fa fa-check"></i><b>2</b> Part I - KenKen</a><ul>
+<li class="chapter" data-level="2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#topic"><i class="fa fa-check"></i><b>2.1.1</b> Topic</a></li>
+<li class="chapter" data-level="2.1.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#data"><i class="fa fa-check"></i><b>2.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#analysis"><i class="fa fa-check"></i><b>2.2</b> Analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#solution-time"><i class="fa fa-check"></i><b>2.2.1</b> Solution Time</a></li>
+<li class="chapter" data-level="2.2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#factors-that-affect-the-solution-time"><i class="fa fa-check"></i><b>2.2.2</b> Factors that affect the solution time</a></li>
+<li class="chapter" data-level="2.2.3" data-path="part-i-kenken.html"><a href="part-i-kenken.html#did-the-solvers-get-faster"><i class="fa fa-check"></i><b>2.2.3</b> Did the solvers get faster?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-i-solar.html"><a href="part-i-solar.html"><i class="fa fa-check"></i><b>3</b> Part I - Solar</a><ul>
+<li class="chapter" data-level="3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#introduction-1"><i class="fa fa-check"></i><b>3.1</b> Introduction</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="part-i-solar.html"><a href="part-i-solar.html#topic-1"><i class="fa fa-check"></i><b>3.1.1</b> Topic</a></li>
+<li class="chapter" data-level="3.1.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-1"><i class="fa fa-check"></i><b>3.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-wrangling"><i class="fa fa-check"></i><b>3.2</b> Data Wrangling</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="part-i-solar.html"><a href="part-i-solar.html#early-reports"><i class="fa fa-check"></i><b>3.2.1</b> Early Reports</a></li>
+<li class="chapter" data-level="3.2.2" data-path="part-i-solar.html"><a href="part-i-solar.html#remaining-reports"><i class="fa fa-check"></i><b>3.2.2</b> Remaining Reports</a></li>
+<li class="chapter" data-level="3.2.3" data-path="part-i-solar.html"><a href="part-i-solar.html#joining-tables"><i class="fa fa-check"></i><b>3.2.3</b> Joining Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#data-exploring"><i class="fa fa-check"></i><b>3.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#energy"><i class="fa fa-check"></i><b>3.3.1</b> 2017 Energy</a></li>
+<li class="chapter" data-level="3.3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#monthly-energy"><i class="fa fa-check"></i><b>3.3.2</b> Monthly Energy</a></li>
+<li class="chapter" data-level="3.3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#no-energy-generated"><i class="fa fa-check"></i><b>3.3.3</b> No Energy Generated</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html"><i class="fa fa-check"></i><b>4</b> Part I - Dolphins</a><ul>
+<li class="chapter" data-level="4.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#introduction-2"><i class="fa fa-check"></i><b>4.1</b> Introduction</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#topic-2"><i class="fa fa-check"></i><b>4.1.1</b> Topic</a></li>
+<li class="chapter" data-level="4.1.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-2"><i class="fa fa-check"></i><b>4.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-wrangling-1"><i class="fa fa-check"></i><b>4.2</b> Data Wrangling</a></li>
+<li class="chapter" data-level="4.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-exploring-1"><i class="fa fa-check"></i><b>4.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size"><i class="fa fa-check"></i><b>4.3.1</b> Pod Size</a></li>
+<li class="chapter" data-level="4.3.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#sea-surface-temperature"><i class="fa fa-check"></i><b>4.3.2</b> Sea Surface Temperature</a></li>
+<li class="chapter" data-level="4.3.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size-vs-temperature"><i class="fa fa-check"></i><b>4.3.3</b> Pod Size vs Temperature</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-ii-goals.html"><a href="part-ii-goals.html"><i class="fa fa-check"></i><b>5</b> Part II - Goals</a><ul>
+<li class="chapter" data-level="5.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#introduction-3"><i class="fa fa-check"></i><b>5.1</b> Introduction</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#topic-3"><i class="fa fa-check"></i><b>5.1.1</b> Topic</a></li>
+<li class="chapter" data-level="5.1.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#data-3"><i class="fa fa-check"></i><b>5.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#analysis-1"><i class="fa fa-check"></i><b>5.2</b> Analysis</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#club-goals"><i class="fa fa-check"></i><b>5.2.1</b> Club Goals</a></li>
+<li class="chapter" data-level="5.2.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#competition-goals"><i class="fa fa-check"></i><b>5.2.2</b> Competition Goals</a></li>
+<li class="chapter" data-level="5.2.3" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-vs-appearances"><i class="fa fa-check"></i><b>5.2.3</b> Goals vs Appearances</a></li>
+<li class="chapter" data-level="5.2.4" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-per-season"><i class="fa fa-check"></i><b>5.2.4</b> Goals per Season</a></li>
+<li class="chapter" data-level="5.2.5" data-path="part-ii-goals.html"><a href="part-ii-goals.html#multiple-goals"><i class="fa fa-check"></i><b>5.2.5</b> Multiple Goals</a></li>
+<li class="chapter" data-level="5.2.6" data-path="part-ii-goals.html"><a href="part-ii-goals.html#types-of-goal"><i class="fa fa-check"></i><b>5.2.6</b> Types of Goal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="part-ii-grades.html"><a href="part-ii-grades.html"><i class="fa fa-check"></i><b>6</b> Part II - Grades</a><ul>
+<li class="chapter" data-level="6.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#introduction-4"><i class="fa fa-check"></i><b>6.1</b> Introduction</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#topic-4"><i class="fa fa-check"></i><b>6.1.1</b> Topic</a></li>
+<li class="chapter" data-level="6.1.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-4"><i class="fa fa-check"></i><b>6.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#analysis-2"><i class="fa fa-check"></i><b>6.2</b> Analysis</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-wrangling-2"><i class="fa fa-check"></i><b>6.2.1</b> Data Wrangling</a></li>
+<li class="chapter" data-level="6.2.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-exploring-2"><i class="fa fa-check"></i><b>6.2.2</b> Data Exploring</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html"><i class="fa fa-check"></i><b>7</b> Part II - Tennis2017</a><ul>
+<li class="chapter" data-level="7.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#introduction-5"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#topic-5"><i class="fa fa-check"></i><b>7.1.1</b> Topic</a></li>
+<li class="chapter" data-level="7.1.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#data-5"><i class="fa fa-check"></i><b>7.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#analysis-3"><i class="fa fa-check"></i><b>7.2</b> Analysis</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#wins-and-losses"><i class="fa fa-check"></i><b>7.2.1</b> Wins and Losses</a></li>
+<li class="chapter" data-level="7.2.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#match-duration"><i class="fa fa-check"></i><b>7.2.2</b> Match Duration</a></li>
+<li class="chapter" data-level="7.2.3" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#number-of-aces-vs-height"><i class="fa fa-check"></i><b>7.2.3</b> Number of Aces vs Height</a></li>
+<li class="chapter" data-level="7.2.4" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#roger-federer"><i class="fa fa-check"></i><b>7.2.4</b> Roger Federer</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DATA 229 - FINAL PROJECT</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-ii---grades" class="section level1">
+<h1><span class="header-section-number">6</span> Part II - Grades</h1>
+<div id="introduction-4" class="section level2">
+<h2><span class="header-section-number">6.1</span> Introduction</h2>
+<div id="topic-4" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> Topic</h3>
+<p>Grades seems to be a lame topic, but wouldn’t it be fun to look at all of your grades from middle school to high school? And that’s what this analysis is all about. I’m going to take a look back at my grades from 6th to 10th grade (my time back in Vietnam). I think this is also a good opportunity for me to look at what I have accomplished and how I have improved as a learner during those years.</p>
+</div>
+<div id="data-4" class="section level3">
+<h3><span class="header-section-number">6.1.2</span> Data</h3>
+<p>It is easy for me to collect the data because I brought my middle school and high school transcipt with me. I created 5 separate excel files. They are my 6th, 7th, 8th, 9th and 10th Grade’s grades (my “Vietnamese grades”). Each one the 5 dataset is in the wide format and has 3 variables:</p>
+<ul>
+<li><p>Subject: The classes that I took in those years</p></li>
+<li><p>My Term I grade</p></li>
+<li><p>My Term II grade</p></li>
+</ul>
+<p>The grades are my semester average grades for each one of the subject and in Vietnam, we use a 10-point grading scale.</p>
+</div>
+</div>
+<div id="analysis-2" class="section level2">
+<h2><span class="header-section-number">6.2</span> Analysis</h2>
+<p>As always, I loaded the following R packages before making my data analysis</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(readxl)
+<span class="kw">library</span>(knitr)
+<span class="kw">library</span>(mosaic)</code></pre></div>
+<div id="data-wrangling-2" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Data Wrangling</h3>
+<p>Since I wanted to import 5 of my Vietnamese grades’ files, it’s a good idea not to repeat the same importing process and so I write a function to capture this process. I named the function “Grades”</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Grades &lt;-<span class="st"> </span><span class="cf">function</span>(grade){
+  GradesFile &lt;-<span class="st"> </span><span class="kw">paste</span>(<span class="st">&quot;~/Data229/Project/Grades/Q_Grades_VN_&quot;</span>, grade, <span class="st">&quot;thGrade.xlsx&quot;</span> ,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)
+  GradesTable &lt;-<span class="st"> </span><span class="kw">read_excel</span>(GradesFile)
+}</code></pre></div>
+<p>Now after creating my function, I can just simply get the tables of my grades in 6th, 7th, 8th , 9th and 10th Grade.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Grade6 &lt;-<span class="st"> </span><span class="kw">Grades</span>(<span class="dv">6</span>)
+Grade7 &lt;-<span class="st"> </span><span class="kw">Grades</span>(<span class="dv">7</span>)
+Grade8 &lt;-<span class="st"> </span><span class="kw">Grades</span>(<span class="dv">8</span>)
+Grade9 &lt;-<span class="st"> </span><span class="kw">Grades</span>(<span class="dv">9</span>)
+Grade10 &lt;-<span class="st"> </span><span class="kw">Grades</span>(<span class="dv">10</span>)</code></pre></div>
+<p>Ultimately, my goal is to have a table in a narrow (tall) format with 3 variables: Subject, Term and Grade. So I first used 4 full_join’s to create a table in a wide format. I also renamed the all the term columns.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">GradeVN &lt;-<span class="st"> </span>Grade6 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">full_join</span>(Grade7, <span class="dt">by =</span> <span class="st">&quot;Subject&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">full_join</span>(Grade8, <span class="dt">by =</span> <span class="st">&quot;Subject&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">full_join</span>(Grade9, <span class="dt">by =</span> <span class="st">&quot;Subject&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">full_join</span>(Grade10, <span class="dt">by =</span> <span class="st">&quot;Subject&quot;</span>)
+<span class="kw">colnames</span>(GradeVN) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Subject&quot;</span>, <span class="st">&quot;TermI.6&quot;</span>, <span class="st">&quot;TermII.6&quot;</span>, <span class="st">&quot;TermI.7&quot;</span>, <span class="st">&quot;TermII.7&quot;</span>, <span class="st">&quot;TermI.8&quot;</span>, <span class="st">&quot;TermII.8&quot;</span>, <span class="st">&quot;TermI.9&quot;</span>, <span class="st">&quot;TermII.9&quot;</span>, <span class="st">&quot;TermI.10&quot;</span>, <span class="st">&quot;TermII.10&quot;</span>)</code></pre></div>
+<p>After that, I used the gather() function to get all of my grades in a single column.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">GradeVN &lt;-<span class="st"> </span>GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">gather</span>(<span class="st">&quot;TermI.6&quot;</span>, <span class="st">&quot;TermII.6&quot;</span>, <span class="st">&quot;TermI.7&quot;</span>, <span class="st">&quot;TermII.7&quot;</span>, <span class="st">&quot;TermI.8&quot;</span>, <span class="st">&quot;TermII.8&quot;</span>, <span class="st">&quot;TermI.9&quot;</span>, <span class="st">&quot;TermII.9&quot;</span>, <span class="st">&quot;TermI.10&quot;</span>, <span class="st">&quot;TermII.10&quot;</span>, <span class="dt">key =</span> <span class="st">&quot;Term&quot;</span>, <span class="dt">value =</span> <span class="st">&quot;Grade&quot;</span>)</code></pre></div>
+<p>Finally, to make my job easier, I got rid of all of my “S” grades as well as all the missing cells in the final table.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">GradeVN &lt;-<span class="st"> </span>GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Grade <span class="op">!=</span><span class="st"> &quot;S&quot;</span>, <span class="op">!</span><span class="kw">is.na</span>(Grade))
+GradeVN<span class="op">$</span>Grade &lt;-<span class="st"> </span><span class="kw">as.double</span>(GradeVN<span class="op">$</span>Grade)</code></pre></div>
+<p>Here’s a look at my final table</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(GradeVN <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Subject</th>
+<th align="left">Term</th>
+<th align="right">Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Math</td>
+<td align="left">TermI.6</td>
+<td align="right">8.0</td>
+</tr>
+<tr class="even">
+<td align="left">Physics</td>
+<td align="left">TermI.6</td>
+<td align="right">6.7</td>
+</tr>
+<tr class="odd">
+<td align="left">Biology</td>
+<td align="left">TermI.6</td>
+<td align="right">9.8</td>
+</tr>
+<tr class="even">
+<td align="left">Vietnamese Literature</td>
+<td align="left">TermI.6</td>
+<td align="right">8.2</td>
+</tr>
+<tr class="odd">
+<td align="left">History</td>
+<td align="left">TermI.6</td>
+<td align="right">9.9</td>
+</tr>
+<tr class="even">
+<td align="left">Geography</td>
+<td align="left">TermI.6</td>
+<td align="right">8.7</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="data-exploring-2" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Data Exploring</h3>
+<p>First, let’s take a look at the distribution for my grades. Below are the visual and numerical summaries for this distribution:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(Grade)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">20</span>, <span class="dt">fill =</span> <span class="st">&quot;navy&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-81-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">favstats</span>(<span class="op">~</span><span class="st"> </span>Grade, <span class="dt">data =</span> GradeVN))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">min</th>
+<th align="right">Q1</th>
+<th align="right">median</th>
+<th align="right">Q3</th>
+<th align="right">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n</th>
+<th align="right">missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="right">5.9</td>
+<td align="right">8.6</td>
+<td align="right">9.3</td>
+<td align="right">9.7</td>
+<td align="right">10</td>
+<td align="right">9.054783</td>
+<td align="right">0.8090761</td>
+<td align="right">115</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>The distribution of my grades from 6th to 10th is skewed to the left, meaning that I tend to get higher grades during those 5 school years. My average (mean) grade is 9.05, and the grade median is 9.3, meaning that half of my grades are greater than 9.3, and the other half is less than 9.3. The lowest grade I had during that time was 5.9, whereas my highest one was a perfect grade (10). That 5.9 grade can be an outlier to this distribution.</p>
+<div id="grade-frequency" class="section level4">
+<h4><span class="header-section-number">6.2.2.1</span> Grade Frequency</h4>
+<p>Which grades did I get the most and the least during the period of 6th to 10th grade? We’ll about to find out…</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Grade) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Frequency =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(Frequency)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">9.9</td>
+<td align="right">11</td>
+</tr>
+<tr class="even">
+<td align="right">9.4</td>
+<td align="right">10</td>
+</tr>
+<tr class="odd">
+<td align="right">9.7</td>
+<td align="right">8</td>
+</tr>
+<tr class="even">
+<td align="right">9.3</td>
+<td align="right">7</td>
+</tr>
+<tr class="odd">
+<td align="right">10.0</td>
+<td align="right">7</td>
+</tr>
+<tr class="even">
+<td align="right">9.1</td>
+<td align="right">6</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Grade) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Frequency =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">arrange</span>((Frequency)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.9</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">6.6</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">6.7</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">7.6</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">8.1</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">7.8</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p>My most popular grade was 9.9, whereas 9.4 came in second place with just 1 less appearance. All of my top grades were all above 9 (90%), and a perfect score (10.0) also made the top list. On the other hand, there were 5 grades that I only got each one of them once (5.9, 6.6, 6.7, 7.6, 8.1, 7.8). They were all close to 8 or below that.</p>
+</div>
+<div id="semester-average" class="section level4">
+<h4><span class="header-section-number">6.2.2.2</span> Semester Average</h4>
+<p>To find my average grade for each semester, I first find the cells corresponding to the each one of the term and then take the mean of column “Grade” of those cells. I put everything in a table in a narrow format with 3 variables Grade, Term and Average</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">AverageGrade &lt;-<span class="st"> </span><span class="kw">tribble</span>(
+  <span class="op">~</span>Grade,<span class="op">~</span>Term, <span class="op">~</span>Average,
+  <span class="dv">6</span>, <span class="st">&quot;I&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">1</span><span class="op">:</span><span class="dv">13</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">6</span>, <span class="st">&quot;II&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">14</span><span class="op">:</span><span class="dv">26</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">7</span>, <span class="st">&quot;I&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">27</span><span class="op">:</span><span class="dv">39</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">7</span>, <span class="st">&quot;II&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">39</span><span class="op">:</span><span class="dv">49</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">8</span>, <span class="st">&quot;I&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">50</span><span class="op">:</span><span class="dv">60</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">8</span>, <span class="st">&quot;II&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">61</span><span class="op">:</span><span class="dv">71</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">9</span>, <span class="st">&quot;I&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">72</span><span class="op">:</span><span class="dv">81</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">9</span>, <span class="st">&quot;II&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">82</span><span class="op">:</span><span class="dv">91</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">10</span>, <span class="st">&quot;I&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">92</span><span class="op">:</span><span class="dv">103</span>,<span class="dv">3</span>]<span class="op">$</span>Grade),
+  <span class="dv">10</span>, <span class="st">&quot;II&quot;</span>, <span class="kw">mean</span>(GradeVN[<span class="dv">104</span><span class="op">:</span><span class="dv">115</span>,<span class="dv">3</span>]<span class="op">$</span>Grade)
+)</code></pre></div>
+<p>Here’s a look at the table that I just created.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(AverageGrade)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="left">Term</th>
+<th align="right">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6</td>
+<td align="left">I</td>
+<td align="right">8.838461</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">II</td>
+<td align="right">9.338461</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">I</td>
+<td align="right">9.200000</td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">II</td>
+<td align="right">9.372727</td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">I</td>
+<td align="right">8.781818</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">II</td>
+<td align="right">9.318182</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">I</td>
+<td align="right">9.550000</td>
+</tr>
+<tr class="even">
+<td align="right">9</td>
+<td align="left">II</td>
+<td align="right">9.280000</td>
+</tr>
+<tr class="odd">
+<td align="right">10</td>
+<td align="left">I</td>
+<td align="right">8.458333</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">II</td>
+<td align="right">8.591667</td>
+</tr>
+</tbody>
+</table>
+<p>I also made a boxplot to compare my grades throughout the semesters:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">GradeVN <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> Term, <span class="dt">y =</span> Grade, <span class="dt">color =</span> Term)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>()</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-87-1.png" width="672" /></p>
+<p>My highest semester average was Term I of 9th Grade, where I had a 9.6 overall average; whereas the term that I received the lowest grade average was Term I of 10th Grade, where I got an average of 8.5. All of my semester averages were greater than or equal to 8.5, and there were 6 semesters where I had an average above 9. The are some outliers in TermI.8, TermI.9, TermII.8 and TermII.9.</p>
+</div>
+<div id="math-vs-literature" class="section level4">
+<h4><span class="header-section-number">6.2.2.3</span> Math vs Literature</h4>
+<p>In Vietnam, the 2 most important subject are Math and Vietnamese Literature. So I wanted to look at how well I did in those 2 classes throughout the years.</p>
+<p>Using my final Grade table, I created a table called “MathLit” by filtering out every subject but Math and Vietnamese Literature. Here’s a look at the first few rows of my new table:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MathLit &lt;-<span class="st"> </span>GradeVN <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Subject <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Math&quot;</span>,<span class="st">&quot;Vietnamese Literature&quot;</span>))
+<span class="kw">kable</span>(MathLit <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Subject</th>
+<th align="left">Term</th>
+<th align="right">Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Math</td>
+<td align="left">TermI.6</td>
+<td align="right">8.0</td>
+</tr>
+<tr class="even">
+<td align="left">Vietnamese Literature</td>
+<td align="left">TermI.6</td>
+<td align="right">8.2</td>
+</tr>
+<tr class="odd">
+<td align="left">Math</td>
+<td align="left">TermII.6</td>
+<td align="right">9.7</td>
+</tr>
+<tr class="even">
+<td align="left">Vietnamese Literature</td>
+<td align="left">TermII.6</td>
+<td align="right">8.9</td>
+</tr>
+<tr class="odd">
+<td align="left">Math</td>
+<td align="left">TermI.7</td>
+<td align="right">8.8</td>
+</tr>
+<tr class="even">
+<td align="left">Vietnamese Literature</td>
+<td align="left">TermI.7</td>
+<td align="right">8.7</td>
+</tr>
+</tbody>
+</table>
+<p>Then I made this graph to compare my Math and Literature Grades</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">MathLit <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> Term, <span class="dt">y =</span> Grade, <span class="dt">group =</span> Subject, <span class="dt">color =</span> Subject))</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-89-1.png" width="672" /></p>
+<p>Overall, I had higher grade in Math than Literature in every semester but the first term of 6th grade. My lowest Math grade was an 8.0 in Term I.6; whereas my highest grade for this class is 10.0 in my second semester of 9th grade. For Literature, the 2 semester where I had the lowest grade were term 1 and 2 of 10th grade, where my grades were both slightly less than 7.5. My highest Lit semester grade was TermII.7 where I received a grade slightly above 9. The difference in Math and Lit grades were the greatest in TermI.9 and TermII.9, as my Math grades were about 1.5 points higher than Literature.</p>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-ii-goals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-ii-tennis2017.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

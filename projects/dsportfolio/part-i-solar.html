@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DATA 229 - FINAL PROJECT</title>
+  <meta name="description" content="DATA 229 - FINAL PROJECT">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="DATA 229 - FINAL PROJECT" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DATA 229 - FINAL PROJECT" />
+  
+  
+  
+
+<meta name="author" content="Quang Nguyen">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="part-i-kenken.html">
+<link rel="next" href="part-i-dolphins.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About The Project</a></li>
+<li class="chapter" data-level="2" data-path="part-i-kenken.html"><a href="part-i-kenken.html"><i class="fa fa-check"></i><b>2</b> Part I - KenKen</a><ul>
+<li class="chapter" data-level="2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#topic"><i class="fa fa-check"></i><b>2.1.1</b> Topic</a></li>
+<li class="chapter" data-level="2.1.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#data"><i class="fa fa-check"></i><b>2.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#analysis"><i class="fa fa-check"></i><b>2.2</b> Analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#solution-time"><i class="fa fa-check"></i><b>2.2.1</b> Solution Time</a></li>
+<li class="chapter" data-level="2.2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#factors-that-affect-the-solution-time"><i class="fa fa-check"></i><b>2.2.2</b> Factors that affect the solution time</a></li>
+<li class="chapter" data-level="2.2.3" data-path="part-i-kenken.html"><a href="part-i-kenken.html#did-the-solvers-get-faster"><i class="fa fa-check"></i><b>2.2.3</b> Did the solvers get faster?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-i-solar.html"><a href="part-i-solar.html"><i class="fa fa-check"></i><b>3</b> Part I - Solar</a><ul>
+<li class="chapter" data-level="3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#introduction-1"><i class="fa fa-check"></i><b>3.1</b> Introduction</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="part-i-solar.html"><a href="part-i-solar.html#topic-1"><i class="fa fa-check"></i><b>3.1.1</b> Topic</a></li>
+<li class="chapter" data-level="3.1.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-1"><i class="fa fa-check"></i><b>3.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-wrangling"><i class="fa fa-check"></i><b>3.2</b> Data Wrangling</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="part-i-solar.html"><a href="part-i-solar.html#early-reports"><i class="fa fa-check"></i><b>3.2.1</b> Early Reports</a></li>
+<li class="chapter" data-level="3.2.2" data-path="part-i-solar.html"><a href="part-i-solar.html#remaining-reports"><i class="fa fa-check"></i><b>3.2.2</b> Remaining Reports</a></li>
+<li class="chapter" data-level="3.2.3" data-path="part-i-solar.html"><a href="part-i-solar.html#joining-tables"><i class="fa fa-check"></i><b>3.2.3</b> Joining Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#data-exploring"><i class="fa fa-check"></i><b>3.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#energy"><i class="fa fa-check"></i><b>3.3.1</b> 2017 Energy</a></li>
+<li class="chapter" data-level="3.3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#monthly-energy"><i class="fa fa-check"></i><b>3.3.2</b> Monthly Energy</a></li>
+<li class="chapter" data-level="3.3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#no-energy-generated"><i class="fa fa-check"></i><b>3.3.3</b> No Energy Generated</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html"><i class="fa fa-check"></i><b>4</b> Part I - Dolphins</a><ul>
+<li class="chapter" data-level="4.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#introduction-2"><i class="fa fa-check"></i><b>4.1</b> Introduction</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#topic-2"><i class="fa fa-check"></i><b>4.1.1</b> Topic</a></li>
+<li class="chapter" data-level="4.1.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-2"><i class="fa fa-check"></i><b>4.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-wrangling-1"><i class="fa fa-check"></i><b>4.2</b> Data Wrangling</a></li>
+<li class="chapter" data-level="4.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-exploring-1"><i class="fa fa-check"></i><b>4.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size"><i class="fa fa-check"></i><b>4.3.1</b> Pod Size</a></li>
+<li class="chapter" data-level="4.3.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#sea-surface-temperature"><i class="fa fa-check"></i><b>4.3.2</b> Sea Surface Temperature</a></li>
+<li class="chapter" data-level="4.3.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size-vs-temperature"><i class="fa fa-check"></i><b>4.3.3</b> Pod Size vs Temperature</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-ii-goals.html"><a href="part-ii-goals.html"><i class="fa fa-check"></i><b>5</b> Part II - Goals</a><ul>
+<li class="chapter" data-level="5.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#introduction-3"><i class="fa fa-check"></i><b>5.1</b> Introduction</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#topic-3"><i class="fa fa-check"></i><b>5.1.1</b> Topic</a></li>
+<li class="chapter" data-level="5.1.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#data-3"><i class="fa fa-check"></i><b>5.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#analysis-1"><i class="fa fa-check"></i><b>5.2</b> Analysis</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#club-goals"><i class="fa fa-check"></i><b>5.2.1</b> Club Goals</a></li>
+<li class="chapter" data-level="5.2.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#competition-goals"><i class="fa fa-check"></i><b>5.2.2</b> Competition Goals</a></li>
+<li class="chapter" data-level="5.2.3" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-vs-appearances"><i class="fa fa-check"></i><b>5.2.3</b> Goals vs Appearances</a></li>
+<li class="chapter" data-level="5.2.4" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-per-season"><i class="fa fa-check"></i><b>5.2.4</b> Goals per Season</a></li>
+<li class="chapter" data-level="5.2.5" data-path="part-ii-goals.html"><a href="part-ii-goals.html#multiple-goals"><i class="fa fa-check"></i><b>5.2.5</b> Multiple Goals</a></li>
+<li class="chapter" data-level="5.2.6" data-path="part-ii-goals.html"><a href="part-ii-goals.html#types-of-goal"><i class="fa fa-check"></i><b>5.2.6</b> Types of Goal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="part-ii-grades.html"><a href="part-ii-grades.html"><i class="fa fa-check"></i><b>6</b> Part II - Grades</a><ul>
+<li class="chapter" data-level="6.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#introduction-4"><i class="fa fa-check"></i><b>6.1</b> Introduction</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#topic-4"><i class="fa fa-check"></i><b>6.1.1</b> Topic</a></li>
+<li class="chapter" data-level="6.1.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-4"><i class="fa fa-check"></i><b>6.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#analysis-2"><i class="fa fa-check"></i><b>6.2</b> Analysis</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-wrangling-2"><i class="fa fa-check"></i><b>6.2.1</b> Data Wrangling</a></li>
+<li class="chapter" data-level="6.2.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-exploring-2"><i class="fa fa-check"></i><b>6.2.2</b> Data Exploring</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html"><i class="fa fa-check"></i><b>7</b> Part II - Tennis2017</a><ul>
+<li class="chapter" data-level="7.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#introduction-5"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#topic-5"><i class="fa fa-check"></i><b>7.1.1</b> Topic</a></li>
+<li class="chapter" data-level="7.1.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#data-5"><i class="fa fa-check"></i><b>7.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#analysis-3"><i class="fa fa-check"></i><b>7.2</b> Analysis</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#wins-and-losses"><i class="fa fa-check"></i><b>7.2.1</b> Wins and Losses</a></li>
+<li class="chapter" data-level="7.2.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#match-duration"><i class="fa fa-check"></i><b>7.2.2</b> Match Duration</a></li>
+<li class="chapter" data-level="7.2.3" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#number-of-aces-vs-height"><i class="fa fa-check"></i><b>7.2.3</b> Number of Aces vs Height</a></li>
+<li class="chapter" data-level="7.2.4" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#roger-federer"><i class="fa fa-check"></i><b>7.2.4</b> Roger Federer</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DATA 229 - FINAL PROJECT</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-i---solar" class="section level1">
+<h1><span class="header-section-number">3</span> Part I - Solar</h1>
+<div id="introduction-1" class="section level2">
+<h2><span class="header-section-number">3.1</span> Introduction</h2>
+<div id="topic-1" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Topic</h3>
+<p>I (D.Andrews) have a small home solar array. Its electrical energy generation not only offsets my own consumption, but the surplus essentially pays off my other fees from the electrical company each month. The inverter (which converts the DC current produced by the photoelectric panels to the AC current that we actually use) records how much power is generated at any given time, and it reports this to the manufacturer’s data repository via my home wifi. The manufacturer’s system then automatically sends me daily and weekly reports on the system’s energy performance.</p>
+</div>
+<div id="data-1" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Data</h3>
+<p>In the Solar subfolder are all my weekly reports from 2017. Each weekly report has 8 lines - a header and data for each day of that week - so the cases are days. The report format changed early in the year. Here are the variables for the first few reports:</p>
+<ul>
+<li>date</li>
+<li>time of the report</li>
+<li>energy generated by this inverter, in Watt-hours (Wh)</li>
+<li>total energy generated by all inverters on the array</li>
+<li>ratio of the energy generated (in Wh) to the maximum power rating (in W) of the array</li>
+</ul>
+<p>The time of the report is always 00:00:00, so that’s worthless. I have only one inverter, so the total energy is always identical to the energy of my lone inverter. That ratio will always be perfectly proportional to the energy generated, so it’s redundant info, too.</p>
+<p>Here are the variables in the remaining reports:</p>
+<ul>
+<li>date</li>
+<li>energy generated by this inverter, in kiloWatt-hours (kWh)</li>
+<li>ratio of energy generated to maximum power rating (in kWh/kW)</li>
+<li>total energy generated that day by all my inverters</li>
+</ul>
+</div>
+</div>
+<div id="data-wrangling" class="section level2">
+<h2><span class="header-section-number">3.2</span> Data Wrangling</h2>
+<p>Before making any data analysis, the following packages must be loaded:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(mosaic)
+<span class="kw">library</span>(knitr)</code></pre></div>
+<div id="early-reports" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Early Reports</h3>
+<p>I wanted to combine the early reports into 1 table, since there are 3 early reports files and I didn’t want to import each one of those, do some wrangling and duplicate my work again.</p>
+<p>So to combine the files, I did the following:</p>
+<p>First, I set the working directory, using the setwd() function. Then, the list.files() function was used to get a list of all files in the directory. I also used getwd() to get the working directory.</p>
+<p>Since I only wanted the early reports, I used grepl() to look for all files that begins with “W” - which are the early reports’ files.</p>
+<p>After that, I utilized the lapply() function to apply read.csv() to all values of EarlyFiles. I also set header = FALSE, stringsAsFactors = FALSE (to make sure character values are imported as characters, not factors) and skipped the first row of each file (the row that contains the variable names).</p>
+<p>The result of each read.csv() was stored in a list, so I used do.call() and rbind to turn it into one data table. I called this output table “Solar1”</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;~/Data229/Project/Solar/&quot;</span>)
+EarlyFiles &lt;-<span class="st"> </span><span class="kw">list.files</span>(<span class="kw">getwd</span>())
+EarlyFiles &lt;-<span class="st">  </span>EarlyFiles[<span class="kw">grepl</span>(<span class="st">&quot;^W&quot;</span>, EarlyFiles)]
+Solar1 &lt;-<span class="st"> </span><span class="kw">lapply</span>(EarlyFiles, read.csv, <span class="dt">header =</span> <span class="ot">FALSE</span>, <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>, <span class="dt">skip =</span> <span class="dv">1</span>)
+Solar1 &lt;-<span class="st">  </span><span class="kw">do.call</span>(rbind, Solar1)</code></pre></div>
+<p>I renamed the first and second columns as “Date” and “Energy_Wh” (since the energy is measured in Wh in these first files). I then used select() to select the first 2 columns because I only need those 2.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(Solar1)[<span class="dv">1</span>] &lt;-<span class="st"> &quot;Date&quot;</span>
+<span class="kw">colnames</span>(Solar1)[<span class="dv">2</span>] &lt;-<span class="st"> &quot;Energy_Wh&quot;</span>
+Solar1 &lt;-<span class="st"> </span><span class="kw">select</span>(Solar1, Date, Energy_Wh)</code></pre></div>
+<p>Now let’s take a quick look at the data table we get by combining the early reports.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(Solar1 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="right">Energy_Wh</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">02.01.2017 00:00:00</td>
+<td align="right">2017.9711</td>
+</tr>
+<tr class="even">
+<td align="left">03.01.2017 00:00:00</td>
+<td align="right">1051.9311</td>
+</tr>
+<tr class="odd">
+<td align="left">04.01.2017 00:00:00</td>
+<td align="right">16025.5489</td>
+</tr>
+<tr class="even">
+<td align="left">05.01.2017 00:00:00</td>
+<td align="right">726.2458</td>
+</tr>
+<tr class="odd">
+<td align="left">06.01.2017 00:00:00</td>
+<td align="right">10947.3014</td>
+</tr>
+<tr class="even">
+<td align="left">07.01.2017 00:00:00</td>
+<td align="right">16800.0856</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="remaining-reports" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Remaining Reports</h3>
+<p>To combine the remaining reports, I repeated the same process I used to combine the early reports. The only changes I made was that I looked for filenames that starts with “PV” (which are the remaining files) and skipped the first 2 rows of these files. The output table is named “Solar2”</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">setwd</span>(<span class="st">&quot;~/Data229/Project/Solar&quot;</span>)
+RemainingFiles &lt;-<span class="st">  </span><span class="kw">list.files</span>(<span class="kw">getwd</span>())
+RemainingFiles &lt;-<span class="st">  </span>RemainingFiles[<span class="kw">grepl</span>(<span class="st">&quot;^PV&quot;</span>, RemainingFiles)]
+Solar2 &lt;-<span class="st">  </span><span class="kw">lapply</span>(RemainingFiles, read.csv, <span class="dt">header =</span> <span class="ot">FALSE</span>, <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>, <span class="dt">skip =</span> <span class="dv">2</span>)
+Solar2 &lt;-<span class="st">  </span><span class="kw">do.call</span>(rbind, Solar2)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(Solar2)[<span class="dv">1</span>] &lt;-<span class="st"> &quot;Date&quot;</span>
+<span class="kw">colnames</span>(Solar2)[<span class="dv">2</span>] &lt;-<span class="st"> &quot;Energy&quot;</span>
+Solar2 &lt;-<span class="st"> </span><span class="kw">select</span>(Solar2, Date, Energy)</code></pre></div>
+</div>
+<div id="joining-tables" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Joining Tables</h3>
+<p>Now, in order to make the some data analysis, I need to figure out how to join the tables together.</p>
+<p>The final data table should have the following variables:</p>
+<ul>
+<li>Month</li>
+<li>Day</li>
+<li>Energy</li>
+</ul>
+<p>The following wrangling techniques were performed on both tables:</p>
+<ul>
+<li><p>Separating the date</p></li>
+<li><p>For table 1, since energy in the remaining files is measured in kWh, I wanted to change the unit of energy in these early files into the exact same unit, using this conversion: 1 kWh = 1000 Wh.</p></li>
+<li><p>Creating a new variable called “FakeYear” (we need a year for the date variable)</p></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar1 &lt;-<span class="st"> </span>Solar1 <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">separate</span>(Date, <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;Day&quot;</span>, <span class="st">&quot;Month&quot;</span>, <span class="st">&quot;Year&quot;</span>,<span class="st">&quot;Time1&quot;</span>, <span class="st">&quot;Time2&quot;</span>, <span class="st">&quot;Time3&quot;</span>)) <span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Energy =</span> Energy_Wh<span class="op">/</span><span class="dv">1000</span>, <span class="dt">FakeYear =</span> <span class="dv">1000</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unite</span>(FakeDate, FakeYear, Month, Day, <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">FakeDate =</span> <span class="kw">as.Date</span>(FakeDate), <span class="dt">Energy =</span> <span class="kw">as.double</span>(Energy)) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">select</span>(FakeDate, Year, Energy)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2 &lt;-<span class="st"> </span>Solar2 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">separate</span>(Date, <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;Day&quot;</span>, <span class="st">&quot;Month&quot;</span>, <span class="st">&quot;Year&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">FakeYear =</span> <span class="dv">1000</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unite</span>(FakeDate, FakeYear, Month, Day, <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">FakeDate =</span> <span class="kw">as.Date</span>(FakeDate), <span class="dt">Energy =</span> <span class="kw">as.double</span>(Energy))</code></pre></div>
+<p>After that, it’s time to join the 2 tables. I named the final table “Solar2017”.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2017 &lt;-<span class="st"> </span><span class="kw">full_join</span>(Solar1, Solar2, <span class="dt">by =</span> <span class="st">&quot;FakeDate&quot;</span>)
+Solar2017 &lt;-<span class="st"> </span><span class="kw">select</span>(Solar2017, FakeDate, Energy.x, Energy.y)</code></pre></div>
+<p>The output table is “wide”. To turn it into a “narrow” table, I gathered the energy into one column.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">colnames</span>(Solar2017)[<span class="dv">1</span>] &lt;-<span class="st"> &quot;Date&quot;</span>
+Solar2017 &lt;-<span class="st"> </span><span class="kw">gather</span>(Solar2017, Energy.x, Energy.y, <span class="dt">key =</span> <span class="st">&quot;EnergyXY&quot;</span>, <span class="dt">value =</span> <span class="st">&quot;Energy&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2017 &lt;-<span class="st"> </span>Solar2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(Energy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>EnergyXY) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">arrange</span>((Date)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">separate</span>(Date, <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;Year&quot;</span>, <span class="st">&quot;Month&quot;</span>, <span class="st">&quot;Day&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Year)</code></pre></div>
+<p>After a few other wrangling steps, I finally got the data table that I need. Here is the first few rows of the final table:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(Solar2017 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Month</th>
+<th align="left">Day</th>
+<th align="right">Energy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">01</td>
+<td align="left">02</td>
+<td align="right">2.0179711</td>
+</tr>
+<tr class="even">
+<td align="left">01</td>
+<td align="left">03</td>
+<td align="right">1.0519311</td>
+</tr>
+<tr class="odd">
+<td align="left">01</td>
+<td align="left">04</td>
+<td align="right">16.0255489</td>
+</tr>
+<tr class="even">
+<td align="left">01</td>
+<td align="left">05</td>
+<td align="right">0.7262458</td>
+</tr>
+<tr class="odd">
+<td align="left">01</td>
+<td align="left">06</td>
+<td align="right">10.9473014</td>
+</tr>
+<tr class="even">
+<td align="left">01</td>
+<td align="left">07</td>
+<td align="right">16.8000856</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="data-exploring" class="section level2">
+<h2><span class="header-section-number">3.3</span> Data Exploring</h2>
+<div id="energy" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> 2017 Energy</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(Energy)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">20</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;grey&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">favstats</span>(<span class="op">~</span><span class="st"> </span>Energy, <span class="dt">data =</span> Solar2017))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">min</th>
+<th align="right">Q1</th>
+<th align="right">median</th>
+<th align="right">Q3</th>
+<th align="right">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n</th>
+<th align="right">missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="right">0</td>
+<td align="right">5.405</td>
+<td align="right">12.89</td>
+<td align="right">17.275</td>
+<td align="right">23.9</td>
+<td align="right">11.54916</td>
+<td align="right">6.625288</td>
+<td align="right">364</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>The distribution of 2017 Energy is somewhat skewed to the left. The average enery the array generated was 11.55 kWh. The maximum energy generated on one day was 23.8; whereas the minimum is 0, which means the array was down during those day.</p>
+</div>
+<div id="monthly-energy" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Monthly Energy</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> Month, <span class="dt">y =</span> Energy)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_boxplot</span>() </code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>The distribution of energy looks normalish. The 3 summer months (June, July and August) have the most amount of energy generated, which is no surprised since summer is the “sunniest” time of the year. The highest enery generated day is actually in May. On the other hand, January and December are when the energy generated the least, because those are 2 winter months and we can hardly see the sun during wintertime.</p>
+</div>
+<div id="no-energy-generated" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> No Energy Generated</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(Solar2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Energy <span class="op">==</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">count</span>(Month))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Month</th>
+<th align="right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">10</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">11</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">12</td>
+<td align="right">8</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Solar2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Energy <span class="op">==</span><span class="st"> </span><span class="dv">0</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(Month)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>()</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p>The array was down 2 times in October, 3 times in November and 8 times in December, so it was down for a total of 13 days in 2017.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-i-kenken.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="part-i-dolphins.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

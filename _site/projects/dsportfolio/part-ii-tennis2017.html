@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DATA 229 - FINAL PROJECT</title>
+  <meta name="description" content="DATA 229 - FINAL PROJECT">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="DATA 229 - FINAL PROJECT" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DATA 229 - FINAL PROJECT" />
+  
+  
+  
+
+<meta name="author" content="Quang Nguyen">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="part-ii-grades.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About The Project</a></li>
+<li class="chapter" data-level="2" data-path="part-i-kenken.html"><a href="part-i-kenken.html"><i class="fa fa-check"></i><b>2</b> Part I - KenKen</a><ul>
+<li class="chapter" data-level="2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#topic"><i class="fa fa-check"></i><b>2.1.1</b> Topic</a></li>
+<li class="chapter" data-level="2.1.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#data"><i class="fa fa-check"></i><b>2.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#analysis"><i class="fa fa-check"></i><b>2.2</b> Analysis</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="part-i-kenken.html"><a href="part-i-kenken.html#solution-time"><i class="fa fa-check"></i><b>2.2.1</b> Solution Time</a></li>
+<li class="chapter" data-level="2.2.2" data-path="part-i-kenken.html"><a href="part-i-kenken.html#factors-that-affect-the-solution-time"><i class="fa fa-check"></i><b>2.2.2</b> Factors that affect the solution time</a></li>
+<li class="chapter" data-level="2.2.3" data-path="part-i-kenken.html"><a href="part-i-kenken.html#did-the-solvers-get-faster"><i class="fa fa-check"></i><b>2.2.3</b> Did the solvers get faster?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="part-i-solar.html"><a href="part-i-solar.html"><i class="fa fa-check"></i><b>3</b> Part I - Solar</a><ul>
+<li class="chapter" data-level="3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#introduction-1"><i class="fa fa-check"></i><b>3.1</b> Introduction</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="part-i-solar.html"><a href="part-i-solar.html#topic-1"><i class="fa fa-check"></i><b>3.1.1</b> Topic</a></li>
+<li class="chapter" data-level="3.1.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-1"><i class="fa fa-check"></i><b>3.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#data-wrangling"><i class="fa fa-check"></i><b>3.2</b> Data Wrangling</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="part-i-solar.html"><a href="part-i-solar.html#early-reports"><i class="fa fa-check"></i><b>3.2.1</b> Early Reports</a></li>
+<li class="chapter" data-level="3.2.2" data-path="part-i-solar.html"><a href="part-i-solar.html#remaining-reports"><i class="fa fa-check"></i><b>3.2.2</b> Remaining Reports</a></li>
+<li class="chapter" data-level="3.2.3" data-path="part-i-solar.html"><a href="part-i-solar.html#joining-tables"><i class="fa fa-check"></i><b>3.2.3</b> Joining Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#data-exploring"><i class="fa fa-check"></i><b>3.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="part-i-solar.html"><a href="part-i-solar.html#energy"><i class="fa fa-check"></i><b>3.3.1</b> 2017 Energy</a></li>
+<li class="chapter" data-level="3.3.2" data-path="part-i-solar.html"><a href="part-i-solar.html#monthly-energy"><i class="fa fa-check"></i><b>3.3.2</b> Monthly Energy</a></li>
+<li class="chapter" data-level="3.3.3" data-path="part-i-solar.html"><a href="part-i-solar.html#no-energy-generated"><i class="fa fa-check"></i><b>3.3.3</b> No Energy Generated</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html"><i class="fa fa-check"></i><b>4</b> Part I - Dolphins</a><ul>
+<li class="chapter" data-level="4.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#introduction-2"><i class="fa fa-check"></i><b>4.1</b> Introduction</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#topic-2"><i class="fa fa-check"></i><b>4.1.1</b> Topic</a></li>
+<li class="chapter" data-level="4.1.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-2"><i class="fa fa-check"></i><b>4.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-wrangling-1"><i class="fa fa-check"></i><b>4.2</b> Data Wrangling</a></li>
+<li class="chapter" data-level="4.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#data-exploring-1"><i class="fa fa-check"></i><b>4.3</b> Data Exploring</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size"><i class="fa fa-check"></i><b>4.3.1</b> Pod Size</a></li>
+<li class="chapter" data-level="4.3.2" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#sea-surface-temperature"><i class="fa fa-check"></i><b>4.3.2</b> Sea Surface Temperature</a></li>
+<li class="chapter" data-level="4.3.3" data-path="part-i-dolphins.html"><a href="part-i-dolphins.html#pod-size-vs-temperature"><i class="fa fa-check"></i><b>4.3.3</b> Pod Size vs Temperature</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="part-ii-goals.html"><a href="part-ii-goals.html"><i class="fa fa-check"></i><b>5</b> Part II - Goals</a><ul>
+<li class="chapter" data-level="5.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#introduction-3"><i class="fa fa-check"></i><b>5.1</b> Introduction</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#topic-3"><i class="fa fa-check"></i><b>5.1.1</b> Topic</a></li>
+<li class="chapter" data-level="5.1.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#data-3"><i class="fa fa-check"></i><b>5.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#analysis-1"><i class="fa fa-check"></i><b>5.2</b> Analysis</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="part-ii-goals.html"><a href="part-ii-goals.html#club-goals"><i class="fa fa-check"></i><b>5.2.1</b> Club Goals</a></li>
+<li class="chapter" data-level="5.2.2" data-path="part-ii-goals.html"><a href="part-ii-goals.html#competition-goals"><i class="fa fa-check"></i><b>5.2.2</b> Competition Goals</a></li>
+<li class="chapter" data-level="5.2.3" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-vs-appearances"><i class="fa fa-check"></i><b>5.2.3</b> Goals vs Appearances</a></li>
+<li class="chapter" data-level="5.2.4" data-path="part-ii-goals.html"><a href="part-ii-goals.html#goals-per-season"><i class="fa fa-check"></i><b>5.2.4</b> Goals per Season</a></li>
+<li class="chapter" data-level="5.2.5" data-path="part-ii-goals.html"><a href="part-ii-goals.html#multiple-goals"><i class="fa fa-check"></i><b>5.2.5</b> Multiple Goals</a></li>
+<li class="chapter" data-level="5.2.6" data-path="part-ii-goals.html"><a href="part-ii-goals.html#types-of-goal"><i class="fa fa-check"></i><b>5.2.6</b> Types of Goal</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="part-ii-grades.html"><a href="part-ii-grades.html"><i class="fa fa-check"></i><b>6</b> Part II - Grades</a><ul>
+<li class="chapter" data-level="6.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#introduction-4"><i class="fa fa-check"></i><b>6.1</b> Introduction</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#topic-4"><i class="fa fa-check"></i><b>6.1.1</b> Topic</a></li>
+<li class="chapter" data-level="6.1.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-4"><i class="fa fa-check"></i><b>6.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#analysis-2"><i class="fa fa-check"></i><b>6.2</b> Analysis</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-wrangling-2"><i class="fa fa-check"></i><b>6.2.1</b> Data Wrangling</a></li>
+<li class="chapter" data-level="6.2.2" data-path="part-ii-grades.html"><a href="part-ii-grades.html#data-exploring-2"><i class="fa fa-check"></i><b>6.2.2</b> Data Exploring</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html"><i class="fa fa-check"></i><b>7</b> Part II - Tennis2017</a><ul>
+<li class="chapter" data-level="7.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#introduction-5"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#topic-5"><i class="fa fa-check"></i><b>7.1.1</b> Topic</a></li>
+<li class="chapter" data-level="7.1.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#data-5"><i class="fa fa-check"></i><b>7.1.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#analysis-3"><i class="fa fa-check"></i><b>7.2</b> Analysis</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#wins-and-losses"><i class="fa fa-check"></i><b>7.2.1</b> Wins and Losses</a></li>
+<li class="chapter" data-level="7.2.2" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#match-duration"><i class="fa fa-check"></i><b>7.2.2</b> Match Duration</a></li>
+<li class="chapter" data-level="7.2.3" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#number-of-aces-vs-height"><i class="fa fa-check"></i><b>7.2.3</b> Number of Aces vs Height</a></li>
+<li class="chapter" data-level="7.2.4" data-path="part-ii-tennis2017.html"><a href="part-ii-tennis2017.html#roger-federer"><i class="fa fa-check"></i><b>7.2.4</b> Roger Federer</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">DATA 229 - FINAL PROJECT</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="part-ii---tennis2017" class="section level1">
+<h1><span class="header-section-number">7</span> Part II - Tennis2017</h1>
+<div id="introduction-5" class="section level2">
+<h2><span class="header-section-number">7.1</span> Introduction</h2>
+<div id="topic-5" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Topic</h3>
+<div class="figure">
+<img src="Tennis.jpg" alt="." />
+<p class="caption">.</p>
+</div>
+<p>Tennis is one of my 3 favorite sports - alongside with soccer and basketball. I have been following tennis since 2010, and have also witnessed so many great matches over the years. I actually stopped watching it for a little while after my third year, mainly due to the fact that my favorite tennis player - Roger Federer - was dealing with injury back then. But then I started paying attention to tennis again last year (2017), because Federer has made an incredible comeback and played very well. So for all of those reasons, I decided to choose a dataset about men’s tennis in 2017 and make some analysis.</p>
+</div>
+<div id="data-5" class="section level3">
+<h3><span class="header-section-number">7.1.2</span> Data</h3>
+<p>I started looking for data, and I was fortunate to find one dataset about tennis matches in 2017 available online. Here’s the link to the online dataset: <a href="https://github.com/JeffSackmann/tennis_atp/blob/master/atp_matches_2017.csv" class="uri">https://github.com/JeffSackmann/tennis_atp/blob/master/atp_matches_2017.csv</a> . I copied and put everything in a text file (.txt)</p>
+<p>This dataset consists of 2886 observational units - which are the number of tennis matches in 2017. It has a total of 49 variables which can be divided into the following groups:</p>
+<ul>
+<li>Tournament: tourney_id, tourney_name, surface, draw_size, tourney_level, tourney_date</li>
+<li>Match: match_num, best_of (3 or 5), round, minutes</li>
+<li>Player (winner/loser) information: id, seed, entry, name, hand (L/R), ht (height - in cm), ioc (country code), age, rank, rank_points</li>
+<li>Player(winner/loser)’s stats: ace, df (double-fault), svpt (service points), 1stIn, 1stWon, 2ndWon (1st/2nd = First/Second serve), svGms (service games), bpSaved, bpFaced (bp = break points)</li>
+</ul>
+</div>
+</div>
+<div id="analysis-3" class="section level2">
+<h2><span class="header-section-number">7.2</span> Analysis</h2>
+<p>As usual, before making any analysis, the following packages must be loaded.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<span class="kw">library</span>(knitr)
+<span class="kw">library</span>(mosaic)</code></pre></div>
+<p>The data file was read in from my personal folder.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ATP2017 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;~/Data229/Project/Tennis2017/ATP2017.txt&quot;</span>)</code></pre></div>
+<div id="wins-and-losses" class="section level3">
+<h3><span class="header-section-number">7.2.1</span> Wins and Losses</h3>
+<p>First, let’s do some simple data transformation to find out who had the most W’s and L’s last year.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(winner_name) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Wins =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(Wins)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">head</span>(<span class="dv">8</span>))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">winner_name</th>
+<th align="right">Wins</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Rafael Nadal</td>
+<td align="right">67</td>
+</tr>
+<tr class="even">
+<td align="left">David Goffin</td>
+<td align="right">59</td>
+</tr>
+<tr class="odd">
+<td align="left">Alexander Zverev</td>
+<td align="right">55</td>
+</tr>
+<tr class="even">
+<td align="left">Roger Federer</td>
+<td align="right">53</td>
+</tr>
+<tr class="odd">
+<td align="left">Grigor Dimitrov</td>
+<td align="right">49</td>
+</tr>
+<tr class="even">
+<td align="left">Roberto Bautista Agut</td>
+<td align="right">48</td>
+</tr>
+<tr class="odd">
+<td align="left">Dominic Thiem</td>
+<td align="right">47</td>
+</tr>
+<tr class="even">
+<td align="left">Marin Cilic</td>
+<td align="right">45</td>
+</tr>
+</tbody>
+</table>
+<p>Rafael Nadal - who ended 2017 as the number 1 ranked single tennis player - led the way with 67 wins. We also found out that 4 players had 50+ wins last year: Nadal, D.Goffin, A.Zverev, R.Federer.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(loser_name) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">losses =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(losses)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">head</span>(<span class="dv">8</span>))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">loser_name</th>
+<th align="right">losses</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Paolo Lorenzi</td>
+<td align="right">35</td>
+</tr>
+<tr class="even">
+<td align="left">Joao Sousa</td>
+<td align="right">32</td>
+</tr>
+<tr class="odd">
+<td align="left">Mischa Zverev</td>
+<td align="right">32</td>
+</tr>
+<tr class="even">
+<td align="left">Albert Ramos</td>
+<td align="right">31</td>
+</tr>
+<tr class="odd">
+<td align="left">Benoit Paire</td>
+<td align="right">31</td>
+</tr>
+<tr class="even">
+<td align="left">Kyle Edmund</td>
+<td align="right">30</td>
+</tr>
+<tr class="odd">
+<td align="left">Robin Haase</td>
+<td align="right">30</td>
+</tr>
+<tr class="even">
+<td align="left">Jan Lennard Struff</td>
+<td align="right">29</td>
+</tr>
+</tbody>
+</table>
+<p>Paolo Lorenzi had the most losses in 2017 with 35 L’s. 7 players got defeated 30 or more times last year.</p>
+</div>
+<div id="match-duration" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> Match Duration</h3>
+<p>Next, I wanted to analyze the length of 2017 matches. I devided this into 2 separate parts: Best of 3 and Best of 5</p>
+<div id="best-of-3-matches" class="section level4">
+<h4><span class="header-section-number">7.2.2.1</span> Best of 3 Matches</h4>
+<p>Best of 3 matches are matches on the ATP (A) and Masters (M) levels. Below are the numerical and visual summaries of the duration (in minutes) of BO3 matches:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Bestof3 &lt;-<span class="st"> </span>ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(tourney_level <span class="op">==</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;M&quot;</span>))
+<span class="kw">kable</span>(<span class="kw">favstats</span>(<span class="op">~</span><span class="st"> </span>minutes, <span class="dt">data =</span> Bestof3))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">min</th>
+<th align="right">Q1</th>
+<th align="right">median</th>
+<th align="right">Q3</th>
+<th align="right">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n</th>
+<th align="right">missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="right">0</td>
+<td align="right">73</td>
+<td align="right">92</td>
+<td align="right">120</td>
+<td align="right">192</td>
+<td align="right">97.18857</td>
+<td align="right">32.01734</td>
+<td align="right">1050</td>
+<td align="right">14</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Bestof3 <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(minutes)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(minutes)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">25</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;tan&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-95-1.png" width="672" /></p>
+<p>The minute distribution of BO3 matches looks kind of normalish. The mean duration is about 97 minutes (1 hour and 37 minutes). The median duration is 92, which means half of the matches took place for more than 92 minutes and the other half was played in less than an hour and 32 minutes. The minimum time is 0, which means there was a withdrawal before the match started; whereas the maximum time is 192 minutes, meaning the longest Best of 3 match in 2007 lasted for 3 hours and 32 minutes.</p>
+</div>
+<div id="best-of-5-matches" class="section level4">
+<h4><span class="header-section-number">7.2.2.2</span> Best of 5 Matches</h4>
+<p>Best of 3 matches are Grand Slam (G) and Davis Cup (D) matches. Below are the numerical and visual summaries of the duration (in minutes) of BO5 matches:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Bestof5 &lt;-<span class="st"> </span>ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(tourney_level <span class="op">==</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;G&quot;</span>, <span class="st">&quot;D&quot;</span>))
+<span class="kw">kable</span>(<span class="kw">favstats</span>(<span class="op">~</span><span class="st"> </span>minutes, <span class="dt">data =</span> Bestof5))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">min</th>
+<th align="right">Q1</th>
+<th align="right">median</th>
+<th align="right">Q3</th>
+<th align="right">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n</th>
+<th align="right">missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="right">28</td>
+<td align="right">109</td>
+<td align="right">134</td>
+<td align="right">168.25</td>
+<td align="right">296</td>
+<td align="right">141.4973</td>
+<td align="right">49.01037</td>
+<td align="right">368</td>
+<td align="right">13</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Bestof5 <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(minutes)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(minutes)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">25</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;orange&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-97-1.png" width="672" /></p>
+<p>The minutes distribution of BO5 matches also has a normalish shape (and more normal than BO3’s). 141 minutes (2 hours and 21 minutes) is the average match duration. The median time is 134, which means half of the matches lasted longer than 134 minutes and the other half occured in less than 2 hours and 14 minutes. The minimum time is 28, which means the match actually took place and player(s) might have suffered from some sort of injury at the 28-minute mark. On the other hand, the longest match was lasted for 296 minutes (4 hours and 56 minutes) - almost 5 hours long.</p>
+</div>
+</div>
+<div id="number-of-aces-vs-height" class="section level3">
+<h3><span class="header-section-number">7.2.3</span> Number of Aces vs Height</h3>
+<p>My theory about tennis is that in order to win, you have to serve well. One of the main figures to show how well you serve is the number of aces you have in a match. And so ace is my favorite tennis stat. I also believe that taller players, because of their height advantage, tend to serve better and have more aces than shorter players. So I want to find out if there is any correlation between aces and height.</p>
+<p>My goal is to have a table in narrow format with 2 variables “ace” and “ht”. So I first selected the 4 variables “w_ace”, “l_ace”, “winner_ht” and “loser_ht” from the original table and then used 2 gather()’s and did some filtering to turn it into a tall table.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">AcevsHt &lt;-<span class="st"> </span>ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(w_ace, winner_ht, l_ace, loser_ht) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">gather</span>(w_ace, l_ace, <span class="dt">key =</span> who, <span class="dt">value =</span> ace) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">gather</span>(winner_ht, loser_ht, <span class="dt">key =</span> who, <span class="dt">value =</span> ht) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>who) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(ace), <span class="op">!</span><span class="kw">is.na</span>(ht))</code></pre></div>
+<p>Now let’s take a quick look at the table that was just created.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(AcevsHt <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">ace</th>
+<th align="right">ht</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">188</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">188</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">178</td>
+</tr>
+<tr class="even">
+<td align="right">23</td>
+<td align="right">196</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">188</td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="right">178</td>
+</tr>
+</tbody>
+</table>
+<p>Below is the ht vs ace plot:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">AcevsHt <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> ace , <span class="dt">y =</span> ht)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">stat_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>, <span class="dt">size =</span> <span class="dv">2</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-100-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lm</span>(ht <span class="op">~</span><span class="st"> </span>ace, <span class="dt">data =</span> AcevsHt)</code></pre></div>
+<pre><code>
+Call:
+lm(formula = ht ~ ace, data = AcevsHt)
+
+Coefficients:
+(Intercept)          ace  
+   184.2134       0.3199  </code></pre>
+<p>The plot above reveals a positive but weak relationship between aces and height. So we can say that the overall trend is the taller the player is, the more aces he makes. The regression equaiton is ht^ = 0.32*ace. This equation has a slope of 0.32, meaning that every extra ace is associated with 0.32 cm of taller height.</p>
+</div>
+<div id="roger-federer" class="section level3">
+<h3><span class="header-section-number">7.2.4</span> Roger Federer</h3>
+<p>Like I mentioned in my introduction, my favorite tennis player is Roger Federer. So I want to investigate a little bit in his successful 2017 season.</p>
+<div id="head-to-head" class="section level4">
+<h4><span class="header-section-number">7.2.4.1</span> Head to Head</h4>
+<p>First, let’s find out who got beaten by Federer the most in 2017.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(winner_name <span class="op">==</span><span class="st"> &quot;Roger Federer&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(loser_name) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Total_Wins =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Total_Wins <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(Total_Wins)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">loser_name</th>
+<th align="right">Total_Wins</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Rafael Nadal</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Francis Tiafoe</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Juan Martin Del Potro</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">Mischa Zverev</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Tomas Berdych</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">Alexander Zverev</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p>Surprisingly, Federer defeated his main rival Rafael Nadal 4 times, his most against any opponents in 2017. He also had 3 victories over 4 players (Tiafoe, Del Potro, Zverev and Berdych).</p>
+</div>
+<div id="surface-performance" class="section level4">
+<h4><span class="header-section-number">7.2.4.2</span> Surface Performance</h4>
+<p>Next, let’s look at Federer’s surface performance. Here are the numerical and visual summaries:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(winner_name <span class="op">==</span><span class="st"> &quot;Roger Federer&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(surface) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Matches =</span> <span class="kw">n</span>()))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">surface</th>
+<th align="right">Matches</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Grass</td>
+<td align="right">12</td>
+</tr>
+<tr class="even">
+<td align="left">Hard</td>
+<td align="right">41</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(winner_name <span class="op">==</span><span class="st"> &quot;Roger Federer&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(surface) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Matches =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> <span class="st">&quot;&quot;</span>, <span class="dt">y =</span> Matches, <span class="dt">fill =</span> surface)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">coord_polar</span>(<span class="st">&quot;y&quot;</span>, <span class="dt">start =</span> <span class="dv">0</span>) <span class="op">+</span><span class="st"> </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span><span class="st">&quot;Accent&quot;</span>) <span class="op">+</span><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-104-1.png" width="672" /></p>
+<p>In 2017, Federer won 41 matches on hard courts and 12 matches on grass courts. These 2 are his favorite surfaces. One more thing we need to notice is that Federer didn’t have any wins on clay, due to the fact that he skipped the entire clay-court season.</p>
+</div>
+<div id="aces" class="section level4">
+<h4><span class="header-section-number">7.2.4.3</span> Aces</h4>
+<p>As I mentioned in the previous part, my favorite tennis stat is number of aces. Roger Federer is a great server and is number 2 on the career aces list. So I wanted to find out about Federer’s aces in 2017.</p>
+<p>The first thing I did was creating a table in the narrow format with only 2 variables Ace and Player, and then got rid of every name but Roger Federer.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">FedAce &lt;-<span class="st"> </span>ATP2017 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(winner_name, loser_name, w_ace, l_ace) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">gather</span>(w_ace, l_ace, <span class="dt">key =</span> who, <span class="dt">value =</span> ace) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">gather</span>(winner_name, loser_name, <span class="dt">key =</span> who, <span class="dt">value =</span> Player) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>who) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Player <span class="op">==</span><span class="st"> &quot;Roger Federer&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(FedAce <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">head</span>())</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="right">ace</th>
+<th align="left">Player</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">Roger Federer</td>
+</tr>
+<tr class="even">
+<td align="right">17</td>
+<td align="left">Roger Federer</td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">Roger Federer</td>
+</tr>
+<tr class="even">
+<td align="right">24</td>
+<td align="left">Roger Federer</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">Roger Federer</td>
+</tr>
+<tr class="even">
+<td align="right">11</td>
+<td align="left">Roger Federer</td>
+</tr>
+</tbody>
+</table>
+<p>Now I had my table, and it’s time to check out the distribution of Federer’s 2017 aces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">FedAce <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="dt">mapping =</span> <span class="kw">aes</span>(ace)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">25</span>, <span class="dt">color =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">fill =</span> <span class="st">&quot;grey&quot;</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-107-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">favstats</span>(<span class="op">~</span><span class="st"> </span>ace, <span class="dt">data =</span> FedAce))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">min</th>
+<th align="right">Q1</th>
+<th align="right">median</th>
+<th align="right">Q3</th>
+<th align="right">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n</th>
+<th align="right">missing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">6.5</td>
+<td align="right">11</td>
+<td align="right">24</td>
+<td align="right">7.596491</td>
+<td align="right">4.807294</td>
+<td align="right">114</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<p>The shape of Federer’s 2017 aces distribution is skewed to the right. His average number of aces last year were 7.6, so about 8 aces per match. His highest number of aces in one match was 24. There were some matches that Federer did not have a single ace, that’s why the minimum aces in 0.</p>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="part-ii-grades.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
