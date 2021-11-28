@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://qntkhvn.netlify.app/blog.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -88,26 +87,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>The Q: Blog Posts</title>
+  <title>The Q: News</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="The Q: Blog Posts"/>
+  <meta property="og:title" content="The Q: News"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="The Q"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="The Q: Blog Posts"/>
+  <meta property="twitter:title" content="The Q: News"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog Posts"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["News"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2112,12 +2111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Blog Posts","authors":[]}
+{"title":"News","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2154,374 +2153,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Blog Posts">Blog Posts</h1>
-<a href="posts/2021-08-17-epl-scoring-time-shiny/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["shiny","football","goals"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 24, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-08-17-epl-scoring-time-shiny/shiny_screenshot.png"/>
-</div>
-<div class="description">
-<h2>EPL Goal Scoring Time Data Shiny App</h2>
-<div class="dt-tags">
-<div class="dt-tag">shiny</div>
-<div class="dt-tag">football</div>
-<div class="dt-tag">goals</div>
-</div>
-<p>My first Shiny app.</p>
-</div>
-</a>
-<a href="posts/2021-08-06-climbing-p3-swapping/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","rankings"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 7, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-08-06-climbing-p3-swapping/climbing-p3-swapping_files/figure-html5/unnamed-chunk-5-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part III: Rank Swapping</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">rankings</div>
-</div>
-<p>A competition of small margins.</p>
-</div>
-</a>
-<a href="posts/2021-07-31-climbing-p2-format/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","rankings"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-31-climbing-p2-format/climbing-p2-format_files/figure-html5/unnamed-chunk-2-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part II: Competition Format</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">rankings</div>
-</div>
-<p>Who's Suffering? Who's Relevant?</p>
-</div>
-</a>
-<a href="posts/2021-07-31-climbing-p1-sim/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["sport climbing","2020 olympics","simulation"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 31, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Quang Nguyen</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-31-climbing-p1-sim/climbing-p1-sim_files/figure-html5/unnamed-chunk-4-1.png"/>
-</div>
-<div class="description">
-<h2>Sport Climbing at Tokyo 2020, Part I: A Simulation Study</h2>
-<div class="dt-tags">
-<div class="dt-tag">sport climbing</div>
-<div class="dt-tag">2020 olympics</div>
-<div class="dt-tag">simulation</div>
-</div>
-<p>Simulation time!</p>
-</div>
-</a>
-<a href="posts/2021-07-05-sports-animations-june-2021/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data viz","ggplot2","gganimate","football","euro 2020","tennis"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 5, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-05-sports-animations-june-2021/euro_group_stage.png"/>
-</div>
-<div class="description">
-<h2>Sports Animation Gallery - June 2021</h2>
-<div class="dt-tags">
-<div class="dt-tag">data viz</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">gganimate</div>
-<div class="dt-tag">football</div>
-<div class="dt-tag">euro 2020</div>
-<div class="dt-tag">tennis</div>
-</div>
-<p>Leveling up with {gganimate}.</p>
-</div>
-</a>
-<a href="posts/2021-07-03-euro-groups/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data viz","ggplot2","football","euro 2020"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 3, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-07-03-euro-groups/euro_group.png"/>
-</div>
-<div class="description">
-<h2>EURO Group Tables and Knockout Performances</h2>
-<div class="dt-tags">
-<div class="dt-tag">data viz</div>
-<div class="dt-tag">ggplot2</div>
-<div class="dt-tag">football</div>
-<div class="dt-tag">euro 2020</div>
-</div>
-<p>Everybody loves cinderella stories and fairy-tale runs.</p>
-</div>
-</a>
-<a href="posts/2021-07-02-rules/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rules"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 2, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">qntkhvn</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-07-02-rules/rules.png"/>
-</div>
-<div class="description">
-<h2>Rules</h2>
-<div class="dt-tags">
-<div class="dt-tag">rules</div>
-</div>
-<p>Just a few simple rules on this blog.</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section subscribe">
-<h3>Subscribe</h3>
-<form method='post' action='https://blogtrottr.com'>
-  <p>Enjoy this blog? Get notified of new posts via email:</p>
-  <input type='text' name='btr_email' />
-  <input type='hidden' name='btr_url'
-         value='https://qntkhvn.netlify.app/index.xml'/>
-  <input type='hidden' name='schedule_type' value='0' />
-  <input type='submit' value='Subscribe' />
-</form>
-</div>
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(7)</span>
-</li>
-<li>
-<a href="#category:2020_olympics">2020 olympics</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:data_viz">data viz</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:euro_2020">euro 2020</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:football">football</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:gganimate">gganimate</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ggplot2">ggplot2</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:goals">goals</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:rankings">rankings</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rules">rules</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:shiny">shiny</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:simulation">simulation</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:sport_climbing">sport climbing</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:tennis">tennis</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Blog Posts</h1>
+<h1>News</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2529,6 +2163,15 @@ function init_posts_list() {
 
 
 <div class="d-article">
+<ul>
+<li><p><strong>Spring 2022</strong>: I will be staying at <a href="https://www.luc.edu">Loyola University Chicago</a> as an adjunct instructor in the <a href="https://www.luc.edu/math">Department of Mathematics and Statistics</a>, before (hopefully) starting my PhD in the fall.</p></li>
+<li><p><strong>12/2021</strong>: I am expected to finish my <a href="https://www.luc.edu/math/msappliedstat">MS in Applied Statistics</a> at Loyola.</p></li>
+<li><p><strong>11/2021</strong>: I won the Reproducible Research Competition (Open Methods Track) at the <a href="http://stat.cmu.edu/cmsac/conference/2021/">2021 Carnegie Mellon Sports Analytics Conferece</a> (CMSAC) with my paper <a href="http://stat.cmu.edu/cmsac/conference/2021/assets/pdf/QuangNguyen.pdf">An Examination of Sport Climbing’s Competition Format and Scoring System</a></p></li>
+<li><p><strong>10/2021</strong>: I won the Best Student Poster Award at the <a href="https://statds.org/events/ucsas2021">2021 UConn Sports Analytics Conferece</a> (UCSAS) with my poster <a href="https://statds.org/events/ucsas2021/posters/ucsas2021_08_Quang_Nguyen.pdf">Concerns Regarding Sport Climbing Competition Format and Scoring System: Who’s Suffering?</a></p></li>
+<li><p><strong>10/2021</strong>: I took part in the <a href="https://mays.tamu.edu/humana-tamu-analytics">2021 Humana-Mays Healthcare Analytics Case Competition</a> (organized by Texas A&amp;M University). Our team finished 2/50 in the <a href="http://mays.tamu.edu/humana-tamu-analytics/wp-content/uploads/sites/113/2021/10/Round1_Results_FINAL-1.pdf">First Round Leaderboard</a>, where the goal was to build a model for predicting vaccine hesitancy.</p></li>
+<li><p><strong>09/2021</strong>: I participated in a live coding session where I tried to predict the 2021 Brownlow Medal Wiiner for the Australian Football League (AFL). This was <a href="https://twitter.com/roberto_boberto">Rob Nguyen</a>’s idea, where he wanted to pair up a stats person without knowledge of Aussie rules with a journalist with domain expertise to see how well they can do at making sports predictions. Here are links to a <a href="https://www.youtube.com/watch?v=Cd9yLYPSosM">video recording</a> and an <a href="https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246">article</a> on ABC News (Australia).</p></li>
+<li><p><strong>07/2021</strong>: I <a href="https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard">ranked first in the Kaggle leaderboard</a> as an audience partipicant of SLICED, a data science show. The competition topic was <a href="https://www.kaggle.com/c/sliced-s01e09-playoffs-1">predicting baseball home runs</a>.</p></li>
+</ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

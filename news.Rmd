@@ -1,0 +1,17 @@
+---
+title: "News"
+---
+
+*   **Spring 2022**: I will be staying at [Loyola University Chicago](https://www.luc.edu) as an adjunct instructor in the [Department of Mathematics and Statistics](https://www.luc.edu/math), before (hopefully) starting my PhD in the fall.
+
+*   **12/2021**: I am expected to finish my [MS in Applied Statistics](https://www.luc.edu/math/msappliedstat) at Loyola.
+
+*   **11/2021**: I won the Reproducible Research Competition (Open Methods Track) at the [2021 Carnegie Mellon Sports Analytics Conferece](http://stat.cmu.edu/cmsac/conference/2021/) (CMSAC) with my paper [An Examination of Sport Climbing's Competition Format and Scoring System](http://stat.cmu.edu/cmsac/conference/2021/assets/pdf/QuangNguyen.pdf)
+
+*   **10/2021**: I won the Best Student Poster Award at the [2021 UConn Sports Analytics Conferece](https://statds.org/events/ucsas2021) (UCSAS) with my poster [Concerns Regarding Sport Climbing Competition Format and Scoring System: Who's Suffering?](https://statds.org/events/ucsas2021/posters/ucsas2021_08_Quang_Nguyen.pdf)
+
+*   **10/2021**: I took part in the [2021 Humana-Mays Healthcare Analytics Case Competition](https://mays.tamu.edu/humana-tamu-analytics) (organized by Texas A&M University). Our team finished 2/50 in the [First Round Leaderboard](http://mays.tamu.edu/humana-tamu-analytics/wp-content/uploads/sites/113/2021/10/Round1_Results_FINAL-1.pdf), where the goal was to build a model for predicting vaccine hesitancy.
+
+*   **09/2021**: I participated in a live coding session where I tried to predict the 2021 Brownlow Medal Wiiner for the Australian Football League (AFL). This was [Rob Nguyen](https://twitter.com/roberto_boberto)'s idea, where he wanted to pair up a stats person without knowledge of Aussie rules with a journalist with domain expertise to see how well they can do at making sports predictions. Here are links to a [video recording](https://www.youtube.com/watch?v=Cd9yLYPSosM) and an [article](https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246) on ABC News (Australia).
+
+*   **07/2021**: I [ranked first in the Kaggle leaderboard](https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard) as an audience partipicant of SLICED, a data science show. The competition topic was [predicting baseball home runs](https://www.kaggle.com/c/sliced-s01e09-playoffs-1).
