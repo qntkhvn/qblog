@@ -21,12 +21,12 @@ I am currently a graduate student at Loyola University Chicago, pursuing a Maste
 ## Education
 
 <i class="fas fa-graduation-cap"></i> &nbsp;
-MS in Applied Statistics, 2021 (Expected)
+MS in Applied Statistics, December 2021
 
 &nbsp; &nbsp; &nbsp; &nbsp; Loyola University Chicago
 
 <i class="fas fa-graduation-cap"></i> &nbsp;
-BS in Mathematics and Data Science, 2020
+BS in Mathematics and Data Science, May 2020
 
 &nbsp; &nbsp; &nbsp; &nbsp; Wittenberg University
 
@@ -37,6 +37,8 @@ BS in Mathematics and Data Science, 2020
 *   Data visualization
 
 *   Using R and RStudio for data science
+
+*   Statistics education
 
 ## Contact
 
