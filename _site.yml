@@ -22,7 +22,7 @@ navbar:
     - icon: fab fa-twitter
       href: https://twitter.com/qntkhvn
     - icon: fab fa-linkedin
-      href: https://www.linkedin.com/in/mqnnguyen
+      href: https://www.linkedin.com/in/qntkhvn
     - icon: fa fa-rss
       href: index.xml
 base_url: https://qntkhvn.netlify.app/

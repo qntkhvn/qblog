@@ -10,7 +10,7 @@ links:
   - label: '<i class="fab fa-twitter"></i> Twitter'
     url: "https://twitter.com/qntkhvn"
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
-    url: "https://www.linkedin.com/in/mqnnguyen"
+    url: "https://www.linkedin.com/in/qntkhvn"
 base_url: https://qntkhvn.netlify.app/
 preview: qpic2.png
 twitter:
