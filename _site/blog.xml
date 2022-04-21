@@ -7,7 +7,19 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>LaTeX Font for Data Viz in R</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2022-04-20-latex-plot</link>
+      <description>For future reference</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>LaTeX</category>
+      <guid>https://qntkhvn.netlify.app/posts/2022-04-20-latex-plot</guid>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2022-04-20-latex-plot/latex-ggplot.png" medium="image" type="image/png" width="960" height="960"/>
+    </item>
     <item>
       <title>EPL Goal Scoring Time Data Shiny App</title>
       <dc:creator>Quang Nguyen</dc:creator>

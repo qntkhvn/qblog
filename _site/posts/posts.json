@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2022-04-20-latex-plot/",
+    "title": "LaTeX Font for Data Viz in R",
+    "description": "For future reference",
+    "author": [
+      {
+        "name": "Quang Nguyen",
+        "url": "https://github.com/qntkhvn"
+      }
+    ],
+    "date": "2022-04-21",
+    "categories": [
+      "data viz",
+      "ggplot2",
+      "LaTeX"
+    ],
+    "contents": "\n\nContents\nSet up\nbase R\nggplot2\n\nSo… I had been wondering about how to change the font when making data viz in R to the \\(\\LaTeX\\) font (Computer Modern). Turns out, it’s not that complicated.\nSet up\n(Note: The set up shown below is for a Mac device. I imagine it’d be something similar for Windows.)\nI first downloaded the Computer Modern font (with .ttf file extension) from the internet. It is available on a few different websites, and the one I ended up with was https://www.fontsquirrel.com/fonts/computer-modern.\nI then imported the unzipped folder of the downloaded font file to the Font Book app.\nAnd… the set up is basically it. Now, let’s make some data viz. First, let’s quickly generate some data.\n\n\nset.seed(100)\nx <- rnorm(100)\ny <- x + rnorm(100)\n\n\n\nI’m going to illustrate this for both base plotting and ggplot2.\nbase R\nBy default, the font of a base R plot looks like this:\n\n\nplot(x,\n     y,\n     main = \"A simple scatterplot\",\n     xlab = \"Explanatory Variable\",\n     ylab = \"Response Variable\")\n\n\n\n\nTo apply the \\(\\LaTeX\\) font (or any font you want), use the good ol’ par() function, and specify family = \"the font name\" inside of par(). Here, the name of the font is “CMU Serif”.\n\n\npar(family = \"CMU Serif\")\nplot(x,\n     y,\n     main = \"A Simple Scatterplot\",\n     xlab = \"Explanatory Variable\",\n     ylab = \"Response Variable\")\n\n\n\n\n(I’m sure there are other ways of doing this in base R too…)\nggplot2\nFor ggplot2, the default theme appears like this:\n\n\nlibrary(tidyverse)\np <- tibble(x, y) %>% \n  ggplot(aes(x, y)) +\n  geom_point() +\n  labs(x = \"Explanatory Variable\",\n       y = \"Response Variable\",\n       title = \"A Simple Scatterplot\")\np\n\n\n\n\nWe can then call theme() to customize the text font.\n\n\np +\n  theme(text = element_text(family = \"CMU Serif\"))\n\n\n\n\nOf course, we can also do this separately for the different individual theme components (axis.text, plot.title, etc.) of ggplot2.\nTa-da!\n(I haven’t blogged in awhile. This is my first blog since last August, before I moved to Chicago. Feels great to be back blogging again.)\n\n\n\n",
+    "preview": "posts/2022-04-20-latex-plot/latex-ggplot.png",
+    "last_modified": "2022-04-21T00:05:50-05:00",
+    "input_file": "latex-plot.knit.md",
+    "preview_width": 960,
+    "preview_height": 960
+  },
+  {
     "path": "posts/2021-08-17-epl-scoring-time-shiny/",
     "title": "EPL Goal Scoring Time Data Shiny App",
     "description": "My first Shiny app.",
