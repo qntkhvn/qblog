@@ -19,4 +19,4 @@ output:
   postcards::jolla
 ---
 
-Welcome to my personal website! I recently finished my MS in Applied Statistics at Loyola University Chicago. I am spending my Spring 2022 semester working as an instructor in the Department of Mathematics and Statistics at Loyola. My interests include statistics in sports, supervised learning, data visualization, and using R and RStudio for data science.
+Welcome to my personal website! I am a first year student in the Department of Statistics & Data Science at Carnegie Mellon University. I previously completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. My interests include statistics in sports, data science, and computing.
