@@ -1512,8 +1512,8 @@ class="uri">https://github.com/qntkhvn</a>
 </div>
 
 <div class="d-article">
-<p>I did not know there were built in functions in base R for
-calculating the logit and expit… until today.</p>
+<p>I did not know there were built-in functions in base <code>R</code>
+for calculating the logit and expit… until today.</p>
 <p>First, recall that the <strong>logit</strong> function for any <span
 class="math inline">\(x \in (0,1)\)</span> is</p>
 <span class="math display">\[
@@ -1526,7 +1526,8 @@ logit(x) = log\left(\frac{x}{1-x}\right).
 class="math inline">\(x\)</span> here as a probability of success. Hence
 the logit of <span class="math inline">\(x\)</span> is the log odds
 ratio of the probability of success over the probability of failure.</p>
-<p>To obtain the log odds for a given probability, we could do…</p>
+<p>To obtain the log odds for a given probability in <code>R</code>, we
+could do…</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>prob</span> <span class='op'>&lt;-</span> <span class='fl'>0.2</span></span>
@@ -1534,7 +1535,7 @@ ratio of the probability of success over the probability of failure.</p>
 </div>
 <pre><code>[1] -1.386294</code></pre>
 </div>
-<p>or as I just discovered…</p>
+<p>or simply with <code>qlogis()</code>, as I just discovered…</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/stats/Logistic.html'>qlogis</a></span><span class='op'>(</span><span class='va'>prob</span><span class='op'>)</span></span></code></pre>
@@ -1564,7 +1565,7 @@ do.</p>
 </div>
 <pre><code>[1] 0.5744425</code></pre>
 </div>
-<p>or with a more simple function…</p>
+<p>or with a more simple function, <code>plogis()</code>…</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/stats/Logistic.html'>plogis</a></span><span class='op'>(</span><span class='va'>logit</span><span class='op'>)</span></span></code></pre>

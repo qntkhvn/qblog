@@ -17,7 +17,7 @@ categories:
   - functions
 ---
 
-I did not know there were built in functions in base R for calculating the logit and expit... until today.
+I did not know there were built-in functions in base `R` for calculating the logit and expit... until today.
 
 First, recall that the **logit** function for any $x \in (0,1)$ is
 
@@ -30,14 +30,14 @@ plot(\(x) log(x/(1-x)), ylab = "logit(x)")
 
 When working with categorical data, we can think of $x$ here as a probability of success. Hence the logit of $x$ is the log odds ratio of the probability of success over the probability of failure.
 
-To obtain the log odds for a given probability, we could do...
+To obtain the log odds for a given probability in `R`, we could do...
 
 ```{r}
 prob <- 0.2
 log(prob / (1 - prob))
 ```
 
-or as I just discovered...
+or simply with `qlogis()`, as I just discovered...
 
 ```{r}
 qlogis(prob)
@@ -63,7 +63,7 @@ logit <- 0.3
 exp(logit) / (1 + exp(logit))
 ```
 
-or with a more simple function...
+or with a more simple function, `plogis()`...
 
 ```{r}
 plogis(logit)
