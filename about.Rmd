@@ -34,11 +34,9 @@ BS in Mathematics and Data Science, May 2020
 
 *   Statistics in sports
 
-*   Data visualization
+*   Data science
 
-*   Using R and RStudio for data science
-
-*   Statistics education
+*   Computing
 
 ## Contact
 
