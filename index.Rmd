@@ -19,4 +19,4 @@ output:
   postcards::jolla
 ---
 
-Welcome to my personal website! I am a first year student in the Department of Statistics & Data Science at Carnegie Mellon University. I previously completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. My interests include statistics in sports, data science, and computing.
+Welcome to my personal website! I am a first year student in the Department of Statistics & Data Science at Carnegie Mellon University, starting in August 2022. I previously completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. My interests include statistics in sports, data science, and computing.
