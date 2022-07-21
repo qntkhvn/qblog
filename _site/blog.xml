@@ -7,7 +7,17 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Base R's built in logit and expit functions</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2022-07-21-logit-expit</link>
+      <description>`plogis()` and `qlogis()`</description>
+      <category>functions</category>
+      <guid>https://qntkhvn.netlify.app/posts/2022-07-21-logit-expit</guid>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2022-07-21-logit-expit/logit-expit_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="960"/>
+    </item>
     <item>
       <title>LaTeX Font for Data Viz in R</title>
       <dc:creator>Quang Nguyen</dc:creator>

@@ -1,0 +1,72 @@
+---
+title: "Base R's built in logit and expit functions"
+description: |
+  `plogis()` and `qlogis()`
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "July 21, 2022"
+output:
+  distill::distill_article:
+    highlight: rstudio
+    code_folding: false
+    self_contained: false
+    toc: true
+    toc_depth: 4
+categories:
+  - functions
+---
+
+I did not know there were built in functions in base R for calculating the logit and expit... until today.
+
+First, recall that the **logit** function for any $x \in (0,1)$ is
+
+$$
+logit(x) = log\left(\frac{x}{1-x}\right). 
+$$
+```{r, fig.height=5, echo = FALSE}
+plot(\(x) log(x/(1-x)), ylab = "logit(x)")
+```
+
+When working with categorical data, we can think of $x$ here as a probability of success. Hence the logit of $x$ is the log odds ratio of the probability of success over the probability of failure.
+
+To obtain the log odds for a given probability, we could do...
+
+```{r}
+prob <- 0.2
+log(prob / (1 - prob))
+```
+
+or as I just discovered...
+
+```{r}
+qlogis(prob)
+```
+
+On the other hand, the **expit** function for any $x \in \mathbb{R}$ is
+
+$$
+expit(x) = \frac{e^x}{1+e^x}.
+$$
+```{r, fig.height=5, echo = FALSE}
+plot(\(x) exp(x)/(1+exp(x)), ylab = "expit(x)", xlim = c(-5, 5))
+```
+
+The expit maps the real numbers to $(0, 1)$. It is also known as the inverse logit function, or the sigmoid function, which is very popular in deep nets.
+
+You've probably done this type of conversion before, in a logistic regression setting. When making a prediction after fitting a model and you're being ask to give a probability, this is exactly what you would do. 
+
+Just as before, we could do it "by hand"...
+
+```{r}
+logit <- 0.3
+exp(logit) / (1 + exp(logit))
+```
+
+or with a more simple function...
+
+```{r}
+plogis(logit)
+```
+
+From my personal experience, I have written down the full formula for both logit and expit many times and forgotten a parenthesis here and there every so often. This is where `plogis` and `qlogis` come in handy. More simple. Less code writing. And no more errors related to ()'s.
