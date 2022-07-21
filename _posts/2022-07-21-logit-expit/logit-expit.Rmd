@@ -1,5 +1,5 @@
 ---
-title: "Base R's built in logit and expit functions"
+title: "Base R's built-in logit and expit functions"
 description: |
   `plogis()` and `qlogis()`
 author:

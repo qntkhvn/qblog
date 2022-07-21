@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/2022-07-21-logit-expit/",
-    "title": "Base R's built in logit and expit functions",
+    "title": "Base R's built-in logit and expit functions",
     "description": "`plogis()` and `qlogis()`",
     "author": [
       {
@@ -15,7 +15,7 @@
     ],
     "contents": "\nI did not know there were built-in functions in base R\nfor calculating the logit and expit… until today.\nFirst, recall that the logit function for any \\(x \\in (0,1)\\) is\n\\[\nlogit(x) = log\\left(\\frac{x}{1-x}\\right).\n\\]\n\n\n\nWhen working with categorical data, we can think of \\(x\\) here as a probability of success. Hence\nthe logit of \\(x\\) is the log odds\nratio of the probability of success over the probability of failure.\nTo obtain the log odds for a given probability in R, we\ncould do…\n\n\nprob <- 0.2\nlog(prob / (1 - prob))\n\n[1] -1.386294\n\nor simply with qlogis(), as I just discovered…\n\n\nqlogis(prob)\n\n[1] -1.386294\n\nOn the other hand, the expit function for any \\(x \\in \\mathbb{R}\\) is\n\\[\nexpit(x) = \\frac{e^x}{1+e^x}.\n\\]\n\n\n\nThe expit maps the real numbers to \\((0,\n1)\\). It is also known as the inverse logit function, or the\nsigmoid function, which is very popular in deep nets.\nYou’ve probably done this type of conversion before, in a logistic\nregression setting. When making a prediction after fitting a model and\nyou’re being ask to give a probability, this is exactly what you would\ndo.\nJust as before, we could do it “by hand”…\n\n\nlogit <- 0.3\nexp(logit) / (1 + exp(logit))\n\n[1] 0.5744425\n\nor with a more simple function, plogis()…\n\n\nplogis(logit)\n\n[1] 0.5744425\n\nFrom my personal experience, I have written down the full formula for\nboth logit and expit many times and forgotten a parenthesis here and\nthere every so often. This is where plogis and\nqlogis will come in handy. More simple. Less code writing.\nAnd no more errors related to ()’s.\n\n\n\n",
     "preview": "posts/2022-07-21-logit-expit/logit-expit_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2022-07-21T23:43:06+07:00",
+    "last_modified": "2022-07-21T23:45:20+07:00",
     "input_file": {},
     "preview_width": 1248,
     "preview_height": 960
