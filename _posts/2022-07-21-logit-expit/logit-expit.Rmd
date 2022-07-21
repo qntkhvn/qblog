@@ -69,4 +69,4 @@ or with a more simple function, `plogis()`...
 plogis(logit)
 ```
 
-From my personal experience, I have written down the full formula for both logit and expit many times and forgotten a parenthesis here and there every so often. This is where `plogis` and `qlogis` come in handy. More simple. Less code writing. And no more errors related to ()'s.
+From my personal experience, I have written down the full formula for both logit and expit many times and forgotten a parenthesis here and there every so often. This is where `plogis` and `qlogis` will come in handy. More simple. Less code writing. And no more errors related to ()'s.
