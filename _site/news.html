@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -1027,10 +1028,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1.5em;
   }
 
-  .figure img {
-    width: 100%;
-  }
-
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
@@ -1860,6 +1857,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1874,6 +1877,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1973,6 +2001,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1995,7 +2025,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2034,7 +2064,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2163,16 +2193,67 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<p>Upcoming</p>
 <ul>
-<li><p><strong>Spring 2022</strong>: I will be staying at <a href="https://www.luc.edu">Loyola University Chicago</a> as an instructor in the <a href="https://www.luc.edu/math">Department of Mathematics and Statistics</a>, before (hopefully) starting my PhD in the fall.</p></li>
-<li><p><strong>12/2021</strong>: I completed my <a href="https://www.luc.edu/math/msappliedstat">MS in Applied Statistics</a> at Loyola University Chicago.</p></li>
-<li><p><strong>11/2021</strong>: I won the Reproducible Research Competition (Open Methods Track) at the <a href="http://stat.cmu.edu/cmsac/conference/2021/">2021 Carnegie Mellon Sports Analytics Conferece</a> (CMSAC) with my paper <a href="http://stat.cmu.edu/cmsac/conference/2021/assets/pdf/QuangNguyen.pdf">An Examination of Sport Climbing’s Competition Format and Scoring System</a></p></li>
-<li><p><strong>10/2021</strong>: I won the Best Student Poster Award at the <a href="https://statds.org/events/ucsas2021">2021 UConn Sports Analytics Conferece</a> (UCSAS) with my poster <a href="https://statds.org/events/ucsas2021/posters/ucsas2021_08_Quang_Nguyen.pdf">Concerns Regarding Sport Climbing Competition Format and Scoring System: Who’s Suffering?</a></p></li>
-<li><p><strong>10/2021</strong>: I took part in the <a href="https://mays.tamu.edu/humana-tamu-analytics">2021 Humana-Mays Healthcare Analytics Case Competition</a> (organized by Texas A&amp;M University). Our team finished 2/50 in the <a href="http://mays.tamu.edu/humana-tamu-analytics/wp-content/uploads/sites/113/2021/10/Round1_Results_FINAL-1.pdf">First Round Leaderboard</a>, where the goal was to build a model for predicting vaccine hesitancy.</p></li>
-<li><p><strong>09/2021</strong>: I participated in a live coding session where I tried to predict the 2021 Brownlow Medal Winner for the Australian Football League (AFL). This was <a href="https://twitter.com/roberto_boberto">Rob Nguyen</a>’s idea, where he wanted to pair up a stats person with no knowledge of Aussie rules with a journalist with domain expertise to see how well they can do at making predictions. Here are links to a <a href="https://www.youtube.com/watch?v=Cd9yLYPSosM">video recording</a> and an <a href="https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246">article</a> on ABC News (Australia).</p></li>
-<li><p><strong>07/2021</strong>: I <a href="https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard">ranked first in the Kaggle leaderboard</a> of SLICED (a data science show) as an audience partipicant. The competition topic was <a href="https://www.kaggle.com/c/sliced-s01e09-playoffs-1">predicting baseball home runs</a>.</p></li>
+<li><p><strong>09/2022</strong>: Invited talk at the <a
+href="http://www.cascadiasports.com/">2022 Cascadia Symposium on
+Statistics in Sports</a> (CASSIS).</p></li>
+<li><p><strong>08/2022</strong>: Starting my PhD in the <a
+href="https://www.stat.cmu.edu/">Department of Statistics and Data
+Science at Carnegie Mellon University</a>.</p></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Recent</p>
+<ul>
+<li><p><strong>05/2022</strong>: I was a guest on <a
+href="https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9">Episode
+IX of the Open Source Sports Podcast</a>.</p></li>
+<li><p><strong>03/2022</strong>: My paper <strong>An Examination of
+Olympic Sport Climbing Competition Format and Scoring System</strong>
+was accepted for <a
+href="https://jds-online.org/journal/JDS/article/1273">publication in
+the Journal of Data Science</a>.</p></li>
+<li><p><strong>Spring 2022</strong>: I spent a semester at <a
+href="https://www.luc.edu">Loyola University Chicago</a> as an
+instructor in the <a href="https://www.luc.edu/math">Department of
+Mathematics and Statistics</a>.</p></li>
+<li><p><strong>12/2021</strong>: I completed my <a
+href="https://www.luc.edu/math/msappliedstat">MS in Applied
+Statistics</a> at Loyola University Chicago.</p></li>
+<li><p><strong>11/2021</strong>: I won the Reproducible Research
+Competition (Open Methods Track) at the <a
+href="http://stat.cmu.edu/cmsac/conference/2021/">2021 Carnegie Mellon
+Sports Analytics Conferece</a> (CMSAC) with my paper <a
+href="http://stat.cmu.edu/cmsac/conference/2021/assets/pdf/QuangNguyen.pdf">An
+Examination of Sport Climbing’s Competition Format and Scoring
+System</a></p></li>
+<li><p><strong>10/2021</strong>: I won the Best Student Poster Award at
+the <a href="https://statds.org/events/ucsas2021">2021 UConn Sports
+Analytics Conferece</a> (UCSAS) with my poster <a
+href="https://statds.org/events/ucsas2021/posters/ucsas2021_08_Quang_Nguyen.pdf">Concerns
+Regarding Sport Climbing Competition Format and Scoring System: Who’s
+Suffering?</a></p></li>
+<li><p><strong>10/2021</strong>: I took part in the <a
+href="https://mays.tamu.edu/humana-tamu-analytics">2021 Humana-Mays
+Healthcare Analytics Case Competition</a> (organized by Texas A&amp;M
+University). Our team finished 2/50 in the <a
+href="http://mays.tamu.edu/humana-tamu-analytics/wp-content/uploads/sites/113/2021/10/Round1_Results_FINAL-1.pdf">First
+Round Leaderboard</a>, where the goal was to build a model for
+predicting vaccine hesitancy.</p></li>
+<li><p><strong>09/2021</strong>: I participated in a live coding session
+where I tried to predict the 2021 Brownlow Medal Winner for the
+Australian Football League (AFL). This was <a
+href="https://twitter.com/roberto_boberto">Rob Nguyen</a>’s idea, where
+he wanted to pair up a stats person with no knowledge of Aussie rules
+with a journalist with domain expertise to see how well they can do at
+making predictions. Here are links to a <a
+href="https://www.youtube.com/watch?v=Cd9yLYPSosM">video recording</a>
+and an <a
+href="https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246">article</a>
+on ABC News (Australia).</p></li>
+</ul>
+<!-- *   **07/2021**: I [ranked first in the Kaggle leaderboard](https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard) of SLICED (a data science show) as an audience partipicant. The competition topic was [predicting baseball home runs](https://www.kaggle.com/c/sliced-s01e09-playoffs-1). -->
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2188,7 +2269,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© 2022 • Made with the <a href="https://github.com/rstudio/distill">distill</a> <a href="https://cran.r-project.org"><svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:14px;width:15.89px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ededeb;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg></a> package.</p>
+<p>© 2022 • Made with the <a
+href="https://github.com/rstudio/distill">distill</a> <a
+href="https://cran.r-project.org"><svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:14px;width:15.89px;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#ededeb;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg></a>
+package.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

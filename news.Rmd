@@ -2,7 +2,19 @@
 title: "News"
 ---
 
-*   **Spring 2022**: I will be staying at [Loyola University Chicago](https://www.luc.edu) as an instructor in the [Department of Mathematics and Statistics](https://www.luc.edu/math), before (hopefully) starting my PhD in the fall.
+Upcoming
+
+*   **09/2022**: Invited talk at the [2022 Cascadia Symposium on Statistics in Sports](http://www.cascadiasports.com/) (CASSIS).
+
+*   **08/2022**: Starting my PhD in the [Department of Statistics and Data Science at Carnegie Mellon University](https://www.stat.cmu.edu/).
+
+Recent 
+
+*   **05/2022**: I was a guest on [Episode IX of the Open Source Sports Podcast](https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9).
+
+*   **03/2022**: My paper **An Examination of Olympic Sport Climbing Competition Format and Scoring System** was accepted for [publication in the Journal of Data Science](https://jds-online.org/journal/JDS/article/1273).
+
+*   **Spring 2022**: I spent a semester at [Loyola University Chicago](https://www.luc.edu) as an instructor in the [Department of Mathematics and Statistics](https://www.luc.edu/math).
 
 *   **12/2021**: I completed my [MS in Applied Statistics](https://www.luc.edu/math/msappliedstat) at Loyola University Chicago.
 
@@ -14,4 +26,4 @@ title: "News"
 
 *   **09/2021**: I participated in a live coding session where I tried to predict the 2021 Brownlow Medal Winner for the Australian Football League (AFL). This was [Rob Nguyen](https://twitter.com/roberto_boberto)'s idea, where he wanted to pair up a stats person with no knowledge of Aussie rules with a journalist with domain expertise to see how well they can do at making predictions. Here are links to a [video recording](https://www.youtube.com/watch?v=Cd9yLYPSosM) and an [article](https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246) on ABC News (Australia).
 
-*   **07/2021**: I [ranked first in the Kaggle leaderboard](https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard) of SLICED (a data science show) as an audience partipicant. The competition topic was [predicting baseball home runs](https://www.kaggle.com/c/sliced-s01e09-playoffs-1).
+<!-- *   **07/2021**: I [ranked first in the Kaggle leaderboard](https://www.kaggle.com/c/sliced-s01e09-playoffs-1/leaderboard) of SLICED (a data science show) as an audience partipicant. The competition topic was [predicting baseball home runs](https://www.kaggle.com/c/sliced-s01e09-playoffs-1). -->
