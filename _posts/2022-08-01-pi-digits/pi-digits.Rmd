@@ -67,14 +67,16 @@ Breakdown:
 
 *   With a bit of digging, I was able to figure out how to move the legend text inside the colored keys.
 
-Bonus: let's play the same game and plot the 100000 digits of $e$ (Euler's number).
+Bonus: let's play the same game and plot the first 100000 digits of $e$ (Euler's number).
 
 ```{r}
 e <- read_html("http://boston.conman.org/2004/11/12/e100k.txt") |> 
   html_text() |> 
-  str_remove("^[^\n]*\n") |> 
-  str_remove_all("\\s")
+  str_remove("^[^\n]*\n") |>  # remove first line 
+  str_remove_all("\\s")       # remove all whitespace
 
+# append 2 to the string of first 99999 digits
+# since these are digits after the decimal
 e_digit <- tibble(digit = str_c(2, str_sub(e, 1, 99999))) |> 
   mutate(digit = str_split(digit, "")) |> 
   unnest_longer(digit) |> 
