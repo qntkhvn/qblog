@@ -7,7 +7,19 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Heatmap of the first 100000 digits of pi and e.</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2022-08-01-pi-digits</link>
+      <description>Chaos of numbers</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>numbers</category>
+      <guid>https://qntkhvn.netlify.app/posts/2022-08-01-pi-digits</guid>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2022-08-01-pi-digits/pi-digits_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Base R's built-in logit and expit functions</title>
       <dc:creator>Quang Nguyen</dc:creator>
