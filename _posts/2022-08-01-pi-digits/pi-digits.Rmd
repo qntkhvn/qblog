@@ -1,5 +1,5 @@
 ---
-title: Heatmap of the first 100000 digits of pi and e.
+title: Heatmaps of the first 100000 digits of pi and e
 description: Chaos of numbers
 author:
   - name: Quang Nguyen
@@ -67,7 +67,7 @@ Breakdown:
 
 *   With a bit of digging, I was able to figure out how to move the legend text inside the colored keys.
 
-Bonus: let's also plot the 100000 digits of $e$ (Euler's number).
+Bonus: let's play the same game and plot the 100000 digits of $e$ (Euler's number).
 
 ```{r}
 e <- read_html("http://boston.conman.org/2004/11/12/e100k.txt") |> 
