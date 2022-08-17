@@ -1,7 +1,7 @@
 ---
 output: stevetemplates::cv
 geometry: margin=1in
-title: cv
+# title: cv
 author: Ngoc Minh Quang Nguyen \vspace{1mm}
 # jobtitle: First Year PhD Student
 address: Department of Statistics & Data Science, Carnegie Mellon University
