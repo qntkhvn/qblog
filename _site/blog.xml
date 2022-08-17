@@ -7,7 +7,7 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 31 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Heatmaps of the first 100000 digits of pi and e</title>
       <dc:creator>Quang Nguyen</dc:creator>
@@ -17,7 +17,7 @@
       <category>ggplot2</category>
       <category>numbers</category>
       <guid>https://qntkhvn.netlify.app/posts/2022-08-01-pi-digits</guid>
-      <pubDate>Sun, 31 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       <media:content url="https://qntkhvn.netlify.app/posts/2022-08-01-pi-digits/pi-digits_files/figure-html5/unnamed-chunk-2-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
