@@ -1,0 +1,248 @@
+---
+output: stevetemplates::cv
+geometry: margin=1in
+title: cv
+author: Ngoc Minh Quang Nguyen \vspace{1mm}
+# jobtitle: First Year PhD Student
+address: Department of Statistics & Data Science, Carnegie Mellon University
+fontawesome: yes
+email: nminhquang.99@gmail.com
+github: qntkhvn
+twitter: qntkhvn
+#osf: "Enter 5 digit osf string here"
+# phone: "+353 1 408 4800"
+web: qntkhvn.netlify.app
+# updated: TRUE
+# rdateformat: "`r format(Sys.time(), '%d %b %Y')`"
+# keywords: R Markdown, academic CV, template
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 11pt
+linkcolor: blue
+urlcolor: blue
+header-includes:
+  \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+  \usepackage{xcolor}
+---
+
+\pagestyle{plain}
+
+\vspace{4mm}
+
+# \textcolor{red}{EDUCATION}
+
+**Carnegie Mellon University**  \hfill 2022 -- present \newline
+PhD, Statistics & Data Science
+
+**Loyola University Chicago**  \hfill 2020 -- 2021 \newline
+MS, Applied Statistics
+
+**Wittenberg University**  \hfill 2017 -- 2020 \newline
+BS, Mathematics & Data Science
+
+\vspace{4mm}
+
+# \textcolor{red}{RESEARCH EXPERIENCE}
+
+**Loyola University Chicago**  \hfill 2020 -- 2021 \newline
+Graduate Research Assistant (Advisor: Gregory J. Matthews)
+
+**Wittenberg University**  \hfill 2019 -- 2020 \newline
+Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
+
+\vspace{4mm}
+
+# \textcolor{red}{ACADEMIC EXPERIENCE}
+
+**Carnegie Mellon University**  \hfill Fall 2022 \newline
+Teaching Assistant \newline
+36-401/607: Modern Regression
+
+**Loyola University Chicago**  \hfill Spring 2022 \newline
+Instructor \newline
+STAT 103: Fundamentals of Statistics (3 sections)
+
+**Wittenberg University**  \hfill 2018 -- 2020 \newline
+Math Workshop Head Tutor
+
+**Wittenberg University**  \hfill 2018 -- 2020 \newline
+Faculty Aide
+
+**Clarkston Senior High School**  \hfill 2017 \newline
+S.U.M. (Student Understanding Math) Assistant
+
+\vspace{4mm}
+
+# \textcolor{red}{PUBLICATIONS}
+
+<!-- Authors (Q bold) -->
+<!-- Title -->
+<!-- Year -->
+<!-- vol, pages, etc. -->
+<!-- journal -->
+<!-- doi/arxiv -->
+
+## \textcolor{magenta}{\textbf{Journal Articles}}
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+An Examination of Olympic Sport Climbing Competition Format and Scoring System.
+*Journal of Data Science* **20**(2), 156--167,
+2022.
+[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042).
+[arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
+
+**Q. Nguyen**. 
+Poisson Modeling and Predicting English Premier League Goal Scoring.
+*New England Journal of Statistics in Data Science*.
+2021+.
+[doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1).
+[arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
+
+## \textcolor{magenta}{\textbf{Submitted}}
+
+B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
+Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
+*Wiley Interdisciplinary Reviews: Computational Statistics*.
+2022.
+
+## \textcolor{magenta}{\textbf{Other}}
+
+B. S. Baumer, **Q. Nguyen**, G. J. Matthews.
+CRAN Task View: Sports Analytics.
+The Comprehensive R Archive Network.
+2022.
+https://cran.r-project.org/web/views/SportsAnalytics.html
+
+\vspace{4mm}
+
+# \textcolor{red}{SELECTED PRESENTATIONS}
+
+## \textcolor{magenta}{\textbf{Invited}}
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+An Examination of Olympic Sport Climbing Competition Format and Scoring System.
+*Cascadia Symposium on Statistics in Sports*.
+September 2022.
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+An Examination of Sport Climbing's Competition Format and Scoring System.
+*Carnegie Mellon Sports Analytics Conference*.
+November 2021.
+**Winner, Open Methodology Track, Reproducible Research Competition.**
+
+<!-- \vspace{2mm} -->
+
+<!-- ## ## \textcolor{magenta}{\textbf{Contributed}} -->
+
+## \textcolor{magenta}{\textbf{Posters}}
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+Concerns Regarding Sport Climbing Competition Format and Scoring System: Who's Suffering?
+*UConn Sports Analytics Conference*.
+October 2021.
+**Winner, Student Poster Award.**
+
+**Q. Nguyen**. 
+Poisson Modeling and Predicting English Premier League Goal Scoring.
+*NextGen: Data Science Day - New England Statistical Society*.
+November 2020.
+**Co-Winner, Poster Competition, Undergrad/MS Group.**
+
+**Q. Nguyen**. 
+Poisson Modeling and Predicting English Premier League Goal Scoring.
+*Carnegie Mellon Sports Analytics Conference*.
+October 2020.
+
+**Q. Nguyen**. 
+Poisson Modeling and Predicting English Premier League Goal Scoring.
+*UConn Sports Analytics Conference*.
+October 2020.
+
+\vspace{4mm}
+
+# \textcolor{red}{HONORS \& AWARDS}
+
+**Merit Award** \hfill 2020-2021 \newline MS in Applied Statistics Program, Loyola University Chicago
+
+**Summa Cum Laude** \hfill 2020 \newline
+Graduated with the highest distinction, Wittenberg University
+
+**Departmental Honors** \hfill 2020 \newline
+Department of Mathematics and Computer Science, Wittenberg University
+
+**Phi Beta Kappa** \hfill 2020 \newline
+Omicron of Ohio Chapter, Wittenberg University
+
+**Pi Mu Epsilon** \hfill 2020 \newline
+Ohio Upsilon Chapter, Wittenberg University
+
+**The Charles and Elsie Little Mathematics Award** \hfill 2020 \newline
+Department of Mathematics and Computer Science, Wittenberg University \newline
+Awarded to the most outstanding senior majoring in mathematics and data science
+
+**Pick and Pen** \hfill 2019 \newline
+Wittenberg University
+
+**Mathematics 202 Award** \hfill 2018 \newline
+Department of Mathematics and Computer Science, Wittenberg University \newline
+Awarded to an outstanding first-year student in the introductory calculus sequence
+
+**Textbook Award** \hfill 2018 \newline
+Department of Mathematics and Computer Science, Wittenberg University
+
+**Phi Eta Sigma** \hfill 2018 \newline
+Wittenberg University
+
+**Dean's List** \hfill  All semesters; 2017 -- 2020 \newline
+Wittenberg University
+
+\vspace{4mm}
+
+# \textcolor{red}{RESEARCH INTERESTS}
+
+Data science;
+supervised learning;
+statistical computing;
+statistics & data science education
+
+Applications in sports
+
+\vspace{4mm}
+
+# \textcolor{red}{SKILLS}
+
+R/RStudio (`tidyverse`); markdown, \LaTeX \ (proficient)
+
+shiny, Python; Java; SQL; SAS; Git/GitHub (intermediate)
+
+Bilingual: Vietnamese (native language) and English (proficient)
+
+\vspace{4mm}
+
+# \textcolor{red}{MENTORING}
+
+Women in Data Science (WiDS) Datathon \hfill 2022 \newline
+WiDS: Chicago. https://widschicago.org
+
+\vspace{4mm}
+
+# \textcolor{red}{MEDIA}
+
+<!-- jsm data art -->
+
+An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
+Open Source Sports Podcast,
+Episode IX. \newline
+https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9
+
+Viz Buzz \hfill 2022 \newline
+Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline
+https://www.youtube.com/c/NickWan/videos
+
+Can you pick the AFL's Brownlow Medal winner without knowing the first thing \hfill 2021 \newline about Australian rules? \newline
+ABC News (Australia) \newline
+https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246
+
+\vspace{4mm}
+
+\hfill \textit{Last updated August 17, 2022}
