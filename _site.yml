@@ -16,7 +16,7 @@ navbar:
     - text: "Projects"
       href: projects.html
     - text: "CV"
-      href: https://qntkhvn.netlify.app/docs/cv.pdf
+      href: https://qntkhvn.netlify.app/docs/qntkhvn_cv.pdf
     - icon: fab fa-github
       href: https://github.com/qntkhvn
     - icon: fab fa-twitter
