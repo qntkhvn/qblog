@@ -1,8 +1,8 @@
 ---
 output: stevetemplates::cv
-geometry: margin=1in
+geometry: margin=0.75in
 # title: cv
-author: Ngoc Minh Quang Nguyen \vspace{1mm}
+author: Ngoc Minh Quang Nguyen
 # jobtitle: First Year PhD Student
 address: Department of Statistics & Data Science, Carnegie Mellon University
 fontawesome: yes
@@ -211,9 +211,7 @@ Applications in sports
 
 # \textcolor{red}{SKILLS}
 
-R/RStudio (`tidyverse`); markdown, \LaTeX \ (proficient)
-
-shiny, Python; Java; SQL; SAS; Git/GitHub (intermediate)
+Computing: R/RStudio (expert); markdown, \LaTeX \ (proficient); Python, SQL, SAS, Git/GitHub (basic)
 
 Bilingual: Vietnamese (native language) and English (proficient)
 
@@ -232,7 +230,7 @@ WiDS: Chicago. https://widschicago.org
 
 An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
 Open Source Sports Podcast,
-Episode IX Guest. \newline
+Episode IX Guest \newline
 https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9
 
 Viz Buzz \hfill 2022 \newline
