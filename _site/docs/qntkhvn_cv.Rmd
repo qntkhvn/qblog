@@ -162,7 +162,7 @@ October 2020.
 
 # \textcolor{red}{HONORS \& AWARDS}
 
-**Merit Award** \hfill 2020-2021 \newline MS in Applied Statistics Program, Loyola University Chicago
+**Merit Award** \hfill 2020 -- 2021 \newline MS in Applied Statistics Program, Loyola University Chicago
 
 **Summa Cum Laude** \hfill 2020 \newline
 Graduated with the highest distinction, Wittenberg University
@@ -232,12 +232,12 @@ WiDS: Chicago. https://widschicago.org
 
 An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
 Open Source Sports Podcast,
-Episode IX. \newline
+Episode IX Guest. \newline
 https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9
 
 Viz Buzz \hfill 2022 \newline
 Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline
-https://www.youtube.com/c/NickWan/videos
+https://youtube.com/playlist?list=PL2rVQ3cmgOyx_CdtKOAOoX2pikOcc_xu-
 
 Can you pick the AFL's Brownlow Medal winner without knowing the first thing \hfill 2021 \newline about Australian rules? \newline
 ABC News (Australia) \newline
@@ -245,4 +245,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{4mm}
 
-\hfill \textit{Last updated August 17, 2022}
+\hfill \textit{Last updated August 18, 2022}

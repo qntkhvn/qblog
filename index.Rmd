@@ -1,7 +1,7 @@
 ---
 title: "Quang Nguyen"
 site: distill::distill_website
-image: "qpic2.png"
+image: "me.png"
 links:
   - label: '<i class="fas fa-envelope"></i> Email'
     url: "mailto:nminhquang.99@gmail.com"
@@ -12,11 +12,18 @@ links:
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
     url: "https://www.linkedin.com/in/qntkhvn"
 base_url: https://qntkhvn.netlify.app/
-preview: qpic2.png
+preview: me.png
 twitter:
   creator: "@qntkhvn"
 output:
   postcards::jolla
 ---
 
-Welcome to my personal website! I am a first year student in the Department of Statistics & Data Science at Carnegie Mellon University, starting in August 2022. I previously completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. My interests include statistics in sports, data science, and computing.
+<div style="text-align: left"> 
+
+Welcome to my personal website! 
+I am a first year student in the Department of Statistics & Data Science at Carnegie Mellon University. 
+Previously, I completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. 
+My interests include statistics in sports, data science, and statistical computing.
+
+ </div>
