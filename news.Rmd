@@ -6,15 +6,15 @@ Upcoming
 
 *   **09/2022**: Invited talk at the [2022 Cascadia Symposium on Statistics in Sports](http://www.cascadiasports.com/) (CASSIS).
 
-*   **08/2022**: Starting my PhD in the [Department of Statistics and Data Science at Carnegie Mellon University](https://www.stat.cmu.edu/).
-
 Recent 
+
+*   **08/2022**: Started my PhD in the [Department of Statistics and Data Science at Carnegie Mellon University](https://www.stat.cmu.edu/).
 
 *   **05/2022**: I was a guest on [Episode IX of the Open Source Sports Podcast](https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9).
 
-*   **03/2022**: My paper **An Examination of Olympic Sport Climbing Competition Format and Scoring System** was accepted for [publication in the Journal of Data Science](https://jds-online.org/journal/JDS/article/1273).
+*   **03/2022**: Paper **An Examination of Olympic Sport Climbing Competition Format and Scoring System** was accepted for [publication in the Journal of Data Science](https://jds-online.org/journal/JDS/article/1273).
 
-*   **Spring 2022**: I spent a semester at [Loyola University Chicago](https://www.luc.edu) as an instructor in the [Department of Mathematics and Statistics](https://www.luc.edu/math).
+*   **Spring 2022**: I worked as an instructor in the [Department of Mathematics and Statistics](https://www.luc.edu/math) at [Loyola University Chicago](https://www.luc.edu).
 
 *   **12/2021**: I completed my [MS in Applied Statistics](https://www.luc.edu/math/msappliedstat) at Loyola University Chicago.
 
