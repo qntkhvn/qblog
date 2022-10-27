@@ -80,7 +80,9 @@ What would the aging curve look like if players competed in every season from a 
 
 (i.e. What would have happened if a player who was forced to retire from their league at a certain age had played a full career?)
 
-&lt;img src="roy.gif" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;br style="line-height:-10px"&gt;
+
+&lt;img src="roy.gif" width="40%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -140,9 +142,11 @@ What would the aging curve look like if players competed in every season from a 
 
 .pull-left[
 
-*   Randomly removing players has very little effect
+*   Compare OPS aging curves (loess) for full data and data with only surviving players
 
-*   Dropout based on performance results in an overestimation
+    *   Randomly removing players has very little effect
+
+    *   Dropout based on performance results in an overestimation
 
 ]
 
@@ -258,13 +262,15 @@ Confidence intervals for combined estimates
 
 *   Functional data approach
 
+*   Extend to other sports
+
 ---
 
 ## Acknowledgements: Greg
 
 &lt;br&gt;
 
-&lt;img src="gjm.gif" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="gjm.gif" width="45%" style="display: block; margin: auto;" /&gt;
 
 &lt;body&gt;
 &lt;center&gt;
@@ -277,13 +283,55 @@ Confidence intervals for combined estimates
 
 ---
 
-## Cheers!
+## Links
 
-*   Paper: **[arxiv.org/abs/2210.02383](https://arxiv.org/abs/2210.02383)**
+*   Paper: [arxiv.org/abs/2210.02383](https://arxiv.org/abs/2210.02383)
 
-*   Code: **[github.com/qntkhvn/cmsac_rrc](https://github.com/qntkhvn/cmsac_rrc)**
+*   Code: [github.com/qntkhvn/cmsac_rrc](https://github.com/qntkhvn/cmsac_rrc)
 
-*   Slides: **[bit.ly/aging_cmsac22](https://bit.ly/aging_cmsac22)**
+*   Slides: [bit.ly/aging_cmsac22](https://bit.ly/aging_cmsac22)
+
+*   Contact:
+.pull-left[
+
+    * Quang
+      
+      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"/></svg> [@qntkhvn](https://twitter.com/qntkhvn)
+      
+      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg> [nmquang@cmu.edu](mailto:nmquang@cmu.edu)
+]
+.pull-right[
+
+    * Greg
+      
+      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"/></svg> [@statsinthewild](https://twitter.com/statsinthewild)
+      
+      <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg> [gmatthews1@luc.edu](mailto:gmatthews1@luc.edu)   
+      
+]
+
+---
+
+##  Cheers
+
+(Looking for Halloween costume ideas?)
+
+.pull-left[
+&lt;img src="lasso.png" width="85%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;br&gt;
+
+I'm a lasso model.
+
+Because I'm a bald cowboy.
+
+My hair is sparse.
+
+(My actual hair is like ridge.)
+
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
