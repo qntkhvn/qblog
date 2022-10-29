@@ -6,35 +6,35 @@
       "description": "Quang means bright/clear in Vietnamese",
       "author": [],
       "contents": "\nBiography\n\n\n\nI am a first year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University.\nI completed my Master of Science degree in Applied Statistics at Loyola University Chicago in December 2021. More previously, I graduated from Wittenberg University in Springfield, Ohio with a BS in Mathematics and Data Science in May 2020. I am originally from Nha Trang, Khanh Hoa, which is located in the South Central Coast of Vietnam (hence this is what qntkhvn represents). In my free time, you may find me watching sports, listening to podcasts, and cooking. I am a huge supporter of Manchester United F.C. of the English Premier League as well as NBA’s LA Clippers.\nEducation\n  \nPhD in Statistics and Data Science, in progress\n        Carnegie Mellon University\n  \nMS in Applied Statistics, December 2021\n        Loyola University Chicago\n  \nBS in Mathematics and Data Science, May 2020\n        Wittenberg University\nInterests\nStatistics in sports\nData science\nComputing\nContact\n   nminhquang.99@gmail.com\n   @qntkhvn\nMy old website: qntkhvn.github.io/quang\n\n\n\n",
-      "last_modified": "2022-10-26T23:12:47-04:00"
+      "last_modified": "2022-10-29T00:07:56-04:00"
     },
     {
       "path": "blog.html",
       "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-10-26T23:12:42-04:00"
+      "last_modified": "2022-10-29T00:07:50-04:00"
     },
     {
       "path": "index.html",
       "title": "Quang Nguyen",
       "author": [],
       "contents": "\n\n          \n          \n          The Q\n          \n          \n          Home\n          Blog\n          About\n          News\n          Projects\n          CV\n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Quang Nguyen\n          \n          \n            \n              \n              Welcome to my personal website! I am a first year PhD\n              student in the Department of Statistics & Data Science\n              at Carnegie Mellon University. Previously, I completed my\n              MS in Applied Statistics at Loyola University Chicago and\n              BS in Mathematics and Data Science at Wittenberg\n              University. My interests include statistics in sports,\n              data science, and statistical computing.\n              \n            \n            \n              \n              Welcome to my personal website! I am a first year PhD\n              student in the Department of Statistics & Data Science\n              at Carnegie Mellon University. Previously, I completed my\n              MS in Applied Statistics at Loyola University Chicago and\n              BS in Mathematics and Data Science at Wittenberg\n              University. My interests include statistics in sports,\n              data science, and statistical computing.\n              \n            \n          \n\n          \n            \n              \n                  \n                    \n                       Email\n                    \n                  \n                \n                                \n                  \n                    \n                       GitHub\n                    \n                  \n                \n                                \n                  \n                    \n                       Twitter\n                    \n                  \n                \n                                \n                  \n                    \n                       LinkedIn\n                    \n                  \n                \n                              \n          \n\n          \n            \n              \n                                \n                  \n                     Email\n                  \n                \n                                \n                  \n                     GitHub\n                  \n                \n                                \n                  \n                     Twitter\n                  \n                \n                                \n                  \n                     LinkedIn\n                  \n                \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          © 2022 • Made with the distill \n          package.\n          \n          \n\n    \n  ",
-      "last_modified": "2022-10-26T23:12:38-04:00"
+      "last_modified": "2022-10-29T00:07:45-04:00"
     },
     {
       "path": "news.html",
       "title": "News",
       "author": [],
       "contents": "\nUpcoming\n09/2022: Invited talk at the 2022 Cascadia Symposium on Statistics in Sports (CASSIS).\nRecent\n08/2022: Started my PhD in the Department of Statistics and Data Science at Carnegie Mellon University.\n05/2022: I was a guest on Episode IX of the Open Source Sports Podcast.\n03/2022: Paper An Examination of Olympic Sport Climbing Competition Format and Scoring System was accepted for publication in the Journal of Data Science.\nSpring 2022: I worked as an instructor in the Department of Mathematics and Statistics at Loyola University Chicago.\n12/2021: I completed my MS in Applied Statistics at Loyola University Chicago.\n11/2021: I won the Reproducible Research Competition (Open Methods Track) at the 2021 Carnegie Mellon Sports Analytics Conferece (CMSAC) with my paper An Examination of Sport Climbing’s Competition Format and Scoring System\n10/2021: I won the Best Student Poster Award at the 2021 UConn Sports Analytics Conferece (UCSAS) with my poster Concerns Regarding Sport Climbing Competition Format and Scoring System: Who’s Suffering?\n10/2021: I took part in the 2021 Humana-Mays Healthcare Analytics Case Competition (organized by Texas A&M University). Our team finished 2/50 in the First Round Leaderboard, where the goal was to build a model for predicting vaccine hesitancy.\n09/2021: I participated in a live coding session where I tried to predict the 2021 Brownlow Medal Winner for the Australian Football League (AFL). This was Rob Nguyen’s idea, where he wanted to pair up a stats person with no knowledge of Aussie rules with a journalist with domain expertise to see how well they can do at making predictions. Here are links to a video recording and an article on ABC News (Australia).\n\n\n\n",
-      "last_modified": "2022-10-26T23:12:57-04:00"
+      "last_modified": "2022-10-29T00:08:06-04:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\nBelow is a list of research, class, and fun projects that I’m either currently working on or have completed.\nResearch\nCurrent\nproject\nrepo\npdf\nslides\nEstimating the Baseball Aging Curves Using Missing Data Methods\n\n\n\nAn Examination of Sport Climbing Combined Format\n\n\n\nPast\nproject\nrepo\npdf\nhtml\nslides\nvideo\nPoisson Modeling and Predicting English Premier League Goal Scoring (poster presented at UCSAS 2020)\n\n\n\n\n\nAnalysis of Russell Westbrook’s Triple-Doubles\n\n\n\n\n\nAnalysis of CSV File Reading in R\n\n\n\n\n\nPredicting Vaccine Hesitancy (2021 Humana-Mays Healthcare Analytics Case Competition)\n\n\n\n\n\nTitanic - Machine Learning from Disaster (Kaggle Competition)\n\n\n\n\n\nMiscellaneous\nSHAP and Shapley values\nSentiment analysis\nMaking a bingo board with ggplot2\nWimbledon seeding heatmap (as of 2021)\nData wrangling with dplyr/tidyverse\nEssays on The Lady Tasting Tea\nGauss and the parallel postulate\nIntro to Proofs portfolio and reflections\nMe, myself, and Man United (written in 2018 - my first exposure to bookdown)\nIntro to Data Science portfolio\n\n\n\n",
-      "last_modified": "2022-10-26T23:12:52-04:00"
+      "last_modified": "2022-10-29T00:08:01-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
