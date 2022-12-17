@@ -24,6 +24,5 @@ output:
 Welcome to my personal website! 
 I am a first year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University. 
 Previously, I completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. 
-My interests include statistics in sports, data science, and statistical computing.
 
  </div>
