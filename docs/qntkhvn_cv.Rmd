@@ -119,6 +119,12 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 
 ## \textcolor{magenta}{\textbf{Invited}}
 
+**Q. Nguyen**, G. J. Matthews. 
+Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players
+*Carnegie Mellon Sports Analytics Conference*.
+October 2022. \newline
+**3rd Place, Open Methodology Track, Reproducible Research Competition.**
+
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 *Cascadia Symposium on Statistics in Sports*.
@@ -198,16 +204,16 @@ Wittenberg University
 
 \vspace{4mm}
 
-# \textcolor{red}{RESEARCH INTERESTS}
+<!-- # \textcolor{red}{RESEARCH INTERESTS} -->
 
-Data science;
-supervised learning;
-statistical computing;
-statistics & data science education
+<!-- Data science; -->
+<!-- supervised learning; -->
+<!-- statistical computing; -->
+<!-- statistics & data science education -->
 
-Applications in sports
+<!-- Applications in sports -->
 
-\vspace{4mm}
+<!-- \vspace{4mm} -->
 
 # \textcolor{red}{SKILLS}
 
@@ -217,8 +223,12 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{4mm}
 
-# \textcolor{red}{MENTORING}
+# \textcolor{red}{SERVICES}
 
+**Reviewer** \newline
+Journal of Quantitative Analysis in Sports
+
+**Mentoring** \newline
 Women in Data Science (WiDS) Datathon \hfill 2022 \newline
 WiDS: Chicago. https://widschicago.org
 
@@ -243,4 +253,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{4mm}
 
-\hfill \textit{Last updated August 18, 2022}
+\hfill \textit{Last updated December 16, 2022}
