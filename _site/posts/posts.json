@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2022-12-19-arg/",
+    "title": "Recreating a Terrible Map",
+    "description": "For fun only. Don't try this at home.",
+    "author": [
+      {
+        "name": "Quang Nguyen",
+        "url": "https://github.com/qntkhvn"
+      }
+    ],
+    "date": "2022-12-19",
+    "categories": [
+      "data viz",
+      "ggplot2",
+      "map"
+    ],
+    "contents": "\nArgentina just won the 2022 FIFA World Cup.\nWhile I was checking Twitter (which will probably be dead soon) today, I saw this post.\n\n\npic.twitter.com/Dd4rew5ADp\n\n— Terrible Maps (@TerribleMaps) December 19, 2022\n\nSince I have no motivation to do work today, I might as well attempt to recreate this awful data viz. \nAs stated in the description, this is just for fun.\nIn fact, don’t plot any nonsense like this for your project/research.\n(Although… this may be a useful tutorial for plotting maps in R.)\n\n\nlibrary(tidyverse)\ntheme_set(theme_minimal())\n# theme for later\ntheme_map <- theme(\n  plot.title = element_text(\n    face = \"bold\", \n    hjust = 0.5,\n    size = 18\n  ),\n  legend.position = \"none\",\n  axis.title = element_blank(),\n  axis.text = element_blank(),\n  axis.ticks = element_blank()\n)\n\n\nFirst, data for plotting a world map can be obtained from the function map_data of the ggplot2 package.\nHere’s a glimpse of our data.\n\n\nmap_data(\"world\") |> \n  glimpse()\n\nRows: 99,338\nColumns: 6\n$ long      <dbl> -69.89912, -69.89571, -69.94219, -70.00415, -70.06…\n$ lat       <dbl> 12.45200, 12.42300, 12.43853, 12.50049, 12.54697, …\n$ group     <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2,…\n$ order     <int> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16,…\n$ region    <chr> \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Aruba\", \"Arub…\n$ subregion <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…\n\nAs for data wrangling, the only task is to create an indicator column for whether or not a country is Argentina.\nThen, the key for making the map is to use geom_polygon(), with a specified group aesthetic for drawing the countries.\nThe so-called “base map” looks like this.\n\n\nbase <- map_data(\"world\") |> \n  mutate(arg = ifelse(region == \"Argentina\", \"y\", \"n\")) |> \n  ggplot(aes(long, lat, group = group, fill = arg)) +\n  geom_polygon() +\n  scale_x_continuous(breaks = seq(-360, 360, 40)) +\n  scale_y_continuous(breaks = seq(-90, 90, 30))\nbase\n\n\n\nThe next step is to transform the map from the current Cartesian coordinate to a new map projection.\nThe function coord_map() can be used to accomplish this.\nAfter some digging, I find that orthographic projection is the right representation here.\n(For more information about the different types of projection available, run ?coord_map and ?mapproject).\nI also use an online color picker to get the right colors for filling the countries.\n\n\nar <- base +\n  scale_fill_manual(values = c(\"#e0e0e0\", \"#176b2d\")) +\n  coord_map(\"orthographic\", orientation = c(-30, -60, 0)) +\n  labs(title = \"Argentina\") + \n  theme_map\nar\n\n\n\nNow, let’s quickly play the same game and make the second plot.\n\n\narent <- base +\n  scale_fill_manual(values = c(\"#176b2d\", \"#e0e0e0\")) +\n  coord_map(\"orthographic\", orientation = c(-15, -60, 0)) +\n  labs(title = \"Are'ntgentina\") + \n  theme_map\narent\n\n\n\nFinally, the two plots can be patched together to get the desired figure.\n\n\nlibrary(cowplot)\nplot_grid(ar, arent, nrow = 1)\n\n\n\nLooks great to me.\nMore work can be done regarding finding the correct rotation/projection angle, but this is good enough for now.\nBy the way, after finishing this map, I found out that coord_map() is superseded by coord_sf().\nI quickly looked into this function (and its relatives), and it appears that the syntax is a bit more complicated and somewhat dependent on the powerful sf package.\nI will certainly try this out at another time.\n\n\n\n",
+    "preview": "posts/2022-12-19-arg/argmap.png",
+    "last_modified": "2022-12-19T17:10:01-05:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/2022-08-01-pi-digits/",
     "title": "Heatmaps of the first 100000 digits of pi and e",
     "description": "Chaos of numbers",

@@ -38,11 +38,9 @@ BS in Mathematics and Data Science, May 2020
 
 ## Interests
 
-*   Statistics in sports
-
 *   Data science
 
-*   Computing
+*   Applications of statistics and machine learning in sports
 
 ## Contact
 

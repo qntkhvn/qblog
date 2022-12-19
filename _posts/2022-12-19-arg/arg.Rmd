@@ -1,0 +1,109 @@
+---
+title: "Recreating a Terrible Map"
+description: |
+  For fun only. Don't try this at home.
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "December 19, 2022"
+output:
+  distill::distill_article:
+    highlight: rstudio
+    code_folding: false
+    self_contained: false
+categories:
+  - data viz
+  - ggplot2
+  - map
+preview: argmap.png
+---
+
+Argentina just won the 2022 FIFA World Cup. 
+While I was checking Twitter (which will probably be dead soon) today, I saw this post.
+
+<blockquote class="twitter-tweet"><p lang="zxx" dir="ltr"><a href="https://t.co/Dd4rew5ADp">pic.twitter.com/Dd4rew5ADp</a></p>&mdash; Terrible Maps (@TerribleMaps) <a href="https://twitter.com/TerribleMaps/status/1604826383326515201?ref_src=twsrc%5Etfw">December 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Since I have no motivation to do work today, I might as well attempt to recreate this awful data viz. 
+As stated in the description, this is just for fun. 
+In fact, don't plot any nonsense like this for your project/research.
+(Although... this may be a useful tutorial for plotting maps in `R`.)
+
+```{r}
+library(tidyverse)
+theme_set(theme_minimal())
+# theme for later
+theme_map <- theme(
+  plot.title = element_text(
+    face = "bold", 
+    hjust = 0.5,
+    size = 18
+  ),
+  legend.position = "none",
+  axis.title = element_blank(),
+  axis.text = element_blank(),
+  axis.ticks = element_blank()
+)
+```
+
+First, data for plotting a world map can be obtained from the function `map_data` of the `ggplot2` package. 
+Here's a glimpse of our data.
+
+```{r}
+map_data("world") |> 
+  glimpse()
+```
+
+As for data wrangling, the only task is to create an indicator column for whether or not a country is Argentina.
+Then, the key for making the map is to use `geom_polygon()`, with a specified `group` aesthetic for drawing the countries.
+The so-called "base map" looks like this.
+
+```{r}
+base <- map_data("world") |> 
+  mutate(arg = ifelse(region == "Argentina", "y", "n")) |> 
+  ggplot(aes(long, lat, group = group, fill = arg)) +
+  geom_polygon() +
+  scale_x_continuous(breaks = seq(-360, 360, 40)) +
+  scale_y_continuous(breaks = seq(-90, 90, 30))
+base
+```
+
+The next step is to transform the map from the current Cartesian coordinate to a new map projection.
+The function `coord_map()` can be used to accomplish this.
+After some digging, I find that [orthographic projection](https://en.wikipedia.org/wiki/Orthographic_projection) is the right representation here.
+(For more information about the different types of projection available, run `?coord_map` and `?mapproject`).
+I also use an [online color picker](https://imagecolorpicker.com/en) to get the right colors for filling the countries.
+
+```{r, fig.height=3.5, fig.width=3.5, fig.align='center'}
+ar <- base +
+  scale_fill_manual(values = c("#e0e0e0", "#176b2d")) +
+  coord_map("orthographic", orientation = c(-30, -60, 0)) +
+  labs(title = "Argentina") + 
+  theme_map
+ar
+```
+
+Now, let's quickly play the same game and make the second plot.
+
+```{r, fig.height=3.5, fig.width=3.5, fig.align='center'}
+arent <- base +
+  scale_fill_manual(values = c("#176b2d", "#e0e0e0")) +
+  coord_map("orthographic", orientation = c(-15, -60, 0)) +
+  labs(title = "Are'ntgentina") + 
+  theme_map
+arent
+```
+
+Finally, the two plots can be patched together to get the desired figure.
+
+```{r}
+library(cowplot)
+plot_grid(ar, arent, nrow = 1)
+```
+
+Looks great to me.
+More work can be done regarding finding the correct rotation/projection angle, but this is good enough for now.
+
+By the way, after finishing this map, I found out that `coord_map()` is superseded by `coord_sf()`.
+I quickly looked into this function (and its relatives), and it appears that the syntax is a bit more complicated and somewhat dependent on the powerful `sf` package.
+I will certainly try this out at another time.
+

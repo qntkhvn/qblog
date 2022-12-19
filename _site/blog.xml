@@ -7,7 +7,19 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Recreating a Terrible Map</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2022-12-19-arg</link>
+      <description>For fun only. Don't try this at home.</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>map</category>
+      <guid>https://qntkhvn.netlify.app/posts/2022-12-19-arg</guid>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2022-12-19-arg/argmap.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Heatmaps of the first 100000 digits of pi and e</title>
       <dc:creator>Quang Nguyen</dc:creator>
@@ -117,16 +129,6 @@
       <guid>https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups</guid>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
       <media:content url="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/euro_group.png" medium="image" type="image/png" width="704" height="576"/>
-    </item>
-    <item>
-      <title>Rules</title>
-      <dc:creator>qntkhvn</dc:creator>
-      <link>https://qntkhvn.netlify.app/posts/2021-07-02-rules</link>
-      <description>Just a few simple rules on this blog.</description>
-      <category>rules</category>
-      <guid>https://qntkhvn.netlify.app/posts/2021-07-02-rules</guid>
-      <pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-02-rules/rules.png" medium="image" type="image/png" width="820" height="436"/>
     </item>
   </channel>
 </rss>
