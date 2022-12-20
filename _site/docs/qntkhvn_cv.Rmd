@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: margin=0.75in
+geometry: margin=1in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: First Year PhD Student
@@ -27,7 +27,7 @@ header-includes:
 
 \pagestyle{plain}
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{EDUCATION}
 
@@ -40,7 +40,7 @@ MS, Applied Statistics
 **Wittenberg University**  \hfill 2017 -- 2020 \newline
 BS, Mathematics & Data Science
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{RESEARCH EXPERIENCE}
 
@@ -50,7 +50,7 @@ Graduate Research Assistant (Advisor: Gregory J. Matthews)
 **Wittenberg University**  \hfill 2019 -- 2020 \newline
 Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{ACADEMIC EXPERIENCE}
 
@@ -71,7 +71,7 @@ Faculty Aide
 **Clarkston Senior High School**  \hfill 2017 \newline
 S.U.M. (Student Understanding Math) Assistant
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{PUBLICATIONS}
 
@@ -113,7 +113,7 @@ The Comprehensive R Archive Network.
 2022.
 https://cran.r-project.org/web/views/SportsAnalytics.html
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{SELECTED PRESENTATIONS}
 
@@ -136,7 +136,7 @@ An Examination of Sport Climbing's Competition Format and Scoring System.
 November 2021. \newline
 **Winner, Open Methodology Track, Reproducible Research Competition.**
 
-<!-- \vspace{2mm} -->
+<!-- \vspace{0mm} -->
 
 <!-- ## ## \textcolor{magenta}{\textbf{Contributed}} -->
 
@@ -164,7 +164,7 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 *UConn Sports Analytics Conference*.
 October 2020.
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{HONORS \& AWARDS}
 
@@ -202,7 +202,7 @@ Wittenberg University
 **Dean's List** \hfill  All semesters; 2017 -- 2020 \newline
 Wittenberg University
 
-\vspace{4mm}
+\vspace{0mm}
 
 <!-- # \textcolor{red}{RESEARCH INTERESTS} -->
 
@@ -213,15 +213,17 @@ Wittenberg University
 
 <!-- Applications in sports -->
 
-<!-- \vspace{4mm} -->
+<!-- \vspace{0mm} -->
 
 # \textcolor{red}{SKILLS}
 
-Computing: R/RStudio (expert); markdown, \LaTeX \ (proficient); Python, SQL, SAS, Git/GitHub (basic)
+Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (basic)
+
+Typesetting: markdown, \LaTeX \ (proficient)
 
 Bilingual: Vietnamese (native language) and English (proficient)
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{SERVICES}
 
@@ -232,7 +234,7 @@ Journal of Quantitative Analysis in Sports
 Women in Data Science (WiDS) Datathon \hfill 2022 \newline
 WiDS: Chicago. https://widschicago.org
 
-\vspace{4mm}
+\vspace{0mm}
 
 # \textcolor{red}{MEDIA}
 
@@ -247,10 +249,10 @@ Viz Buzz \hfill 2022 \newline
 Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline
 https://youtube.com/playlist?list=PL2rVQ3cmgOyx_CdtKOAOoX2pikOcc_xu-
 
-Can you pick the AFL's Brownlow Medal winner without knowing the first thing \hfill 2021 \newline about Australian rules? \newline
+Can you pick the AFL's Brownlow Medal winner without knowing the first thing about \hfill 2021 \newline Australian rules? \newline
 ABC News (Australia) \newline
 https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246
 
-\vspace{4mm}
+\vspace{0mm}
 
 \hfill \textit{Last updated December 16, 2022}
