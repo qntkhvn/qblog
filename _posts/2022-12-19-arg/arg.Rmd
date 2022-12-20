@@ -62,7 +62,7 @@ base <- map_data("world") |>
   mutate(arg = ifelse(region == "Argentina", "y", "n")) |> 
   ggplot(aes(long, lat, group = group, fill = arg)) +
   geom_polygon() +
-  scale_x_continuous(breaks = seq(-360, 360, 40)) +
+  scale_x_continuous(breaks = seq(-180, 180, 40)) +
   scale_y_continuous(breaks = seq(-90, 90, 30))
 base
 ```
