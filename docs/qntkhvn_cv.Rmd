@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: margin=1in
+geometry: margin=0.8in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: First Year PhD Student
@@ -31,18 +31,28 @@ header-includes:
 
 # \textcolor{red}{EDUCATION}
 
+\vspace{-2mm}
+
 **Carnegie Mellon University**  \hfill 2022 -- present \newline
 PhD, Statistics & Data Science
+<!-- GPA: 4.09/4.00 -->
 
 **Loyola University Chicago**  \hfill 2020 -- 2021 \newline
 MS, Applied Statistics
+<!-- GPA: 4.00/4.00 -->
 
 **Wittenberg University**  \hfill 2017 -- 2020 \newline
 BS, Mathematics & Data Science
+<!-- GPA: 3.97/4.00 -->
 
 \vspace{0mm}
 
 # \textcolor{red}{RESEARCH EXPERIENCE}
+
+\vspace{-2mm}
+
+**Carnegie Mellon University **  \hfill 2023 -- present \newline
+Advanced Data Analysis Project (Advisor: Nynke Niezink)
 
 **Loyola University Chicago**  \hfill 2020 -- 2021 \newline
 Graduate Research Assistant (Advisor: Gregory J. Matthews)
@@ -54,26 +64,31 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 # \textcolor{red}{ACADEMIC EXPERIENCE}
 
-**Carnegie Mellon University**  \hfill Fall 2022 \newline
+\vspace{-2mm}
+
+**Carnegie Mellon University**  \newline
 Teaching Assistant \newline
-36-401/607: Modern Regression
+Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
+Summer Undergraduate Research Experience (SURE) \newline
+36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
+36-401/607: Modern Regression \hfill Fall 2022
 
-**Loyola University Chicago**  \hfill Spring 2022 \newline
+**Loyola University Chicago** \newline
 Instructor \newline
-STAT 103: Fundamentals of Statistics (3 sections)
+STAT 103: Fundamentals of Statistics (3 sections) \hfill Spring 2022
 
-**Wittenberg University**  \hfill 2018 -- 2020 \newline
-Math Workshop Head Tutor
+**Wittenberg University**  \newline
+Math Workshop Head Tutor \hfill 2018 -- 2020 \newline
+Faculty Aide \hfill 2018 -- 2020
 
-**Wittenberg University**  \hfill 2018 -- 2020 \newline
-Faculty Aide
-
-**Clarkston Senior High School**  \hfill 2017 \newline
-S.U.M. (Student Understanding Math) Assistant
+**Clarkston Senior High School** \newline
+S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 \vspace{0mm}
 
 # \textcolor{red}{PUBLICATIONS}
+
+\vspace{-2mm}
 
 <!-- Authors (Q bold) -->
 <!-- Title -->
@@ -83,6 +98,13 @@ S.U.M. (Student Understanding Math) Assistant
 <!-- doi/arxiv -->
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
+
+B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
+Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
+*Wiley Interdisciplinary Reviews: Computational Statistics*.
+2023.
+[doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612).
+[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
@@ -94,18 +116,30 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *New England Journal of Statistics in Data Science*.
-2021+.
+2023.
 [doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1).
 [arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
 
 ## \textcolor{magenta}{\textbf{Submitted}}
 
-B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
-Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
-*Wiley Interdisciplinary Reviews: Computational Statistics*.
-2022.
+**Q. Nguyen**, R. Yurko, G. J. Matthews. 
+Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
+2023.
+(Under review.)
+[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262).
+
+**Q. Nguyen**, G. J. Matthews. 
+Filling in the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
+2023.
+(Under review.)
+[arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
 
 ## \textcolor{magenta}{\textbf{Other}}
+
+G. J. Matthews, **Q. Nguyen**.
+STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
+2023 NFL Big Data Bowl.
+https://www.kaggle.com/code/statsinthewild/strain-sacks-tackles-rushing-aggression-index
 
 B. S. Baumer, **Q. Nguyen**, G. J. Matthews.
 CRAN Task View: Sports Analytics.
@@ -117,10 +151,18 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 
 # \textcolor{red}{SELECTED PRESENTATIONS}
 
+\vspace{-2mm}
+
 ## \textcolor{magenta}{\textbf{Invited}}
 
+G. J. Matthews, **Q. Nguyen**.
+STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
+*2023 NFL Big Data Bowl Final*.
+March 2023. \newline
+**Finalist (Top 8; $10,000 prize)**
+
 **Q. Nguyen**, G. J. Matthews. 
-Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players
+Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
 *Carnegie Mellon Sports Analytics Conference*.
 October 2022. \newline
 **3rd Place, Open Methodology Track, Reproducible Research Competition.**
@@ -167,6 +209,10 @@ October 2020.
 \vspace{0mm}
 
 # \textcolor{red}{HONORS \& AWARDS}
+
+\vspace{-2mm}
+
+**University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports (CASSIS) 2022
 
 **Merit Award** \hfill 2020 -- 2021 \newline MS in Applied Statistics Program, Loyola University Chicago
 
@@ -217,6 +263,8 @@ Wittenberg University
 
 # \textcolor{red}{SKILLS}
 
+\vspace{-2mm}
+
 Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (basic)
 
 Typesetting: markdown, \LaTeX \ (proficient)
@@ -227,16 +275,19 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 # \textcolor{red}{SERVICES}
 
+\vspace{-2mm}
+
 **Reviewer** \newline
-Journal of Quantitative Analysis in Sports
+Journal of Quantitative Analysis in Sports \hfill 2022, 2023
 
 **Mentoring** \newline
-Women in Data Science (WiDS) Datathon \hfill 2022 \newline
-WiDS: Chicago. https://widschicago.org
+Women in Data Science (WiDS) Chicago Datathon \hfill 2022
 
 \vspace{0mm}
 
 # \textcolor{red}{MEDIA}
+
+\vspace{-2mm}
 
 <!-- jsm data art -->
 
@@ -255,4 +306,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated December 16, 2022}
+\hfill \textit{Last updated June 3, 2023}
