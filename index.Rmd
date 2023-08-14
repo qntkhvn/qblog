@@ -20,9 +20,7 @@ output:
 ---
 
 <div style="text-align: left"> 
-
 Welcome to The Q! 
-I am a first year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University. 
+I am a second year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University. 
 Previously, I completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. 
-
- </div>
+</div>

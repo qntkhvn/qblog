@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <!-- </center> -->
 
-I am a first year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University.
-I completed my Master of Science degree in Applied Statistics at Loyola University Chicago in December 2021. More previously, I graduated from Wittenberg University in Springfield, Ohio with a BS in Mathematics and Data Science in May 2020. I am originally from Nha Trang, Khanh Hoa, which is located in the South Central Coast of Vietnam (hence this is what `qntkhvn` represents). In my free time, you may find me watching sports, listening to podcasts, and cooking. I am a huge supporter of Manchester United F.C. of the English Premier League as well as NBA's LA Clippers.
+I am a second year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University.
+I completed my Master of Science degree in Applied Statistics at Loyola University Chicago in December 2021. More previously, I graduated from Wittenberg University in Springfield, Ohio with a BS in Mathematics and Data Science in May 2020. I am originally from Nha Trang, Khanh Hoa, which is located in the South Central Coast of Vietnam (hence this is what `qntkhvn` represents). In my free time, you may find me watching sports, listening to podcasts, and cooking. I am a huge supporter of Manchester United F.C. of the English Premier League.
 
 ## Education
 
@@ -35,12 +35,6 @@ MS in Applied Statistics, December 2021
 BS in Mathematics and Data Science, May 2020
 
 &nbsp; &nbsp; &nbsp; &nbsp; Wittenberg University
-
-## Interests
-
-*   Data science
-
-*   Applications of statistics and machine learning in sports
 
 ## Contact
 

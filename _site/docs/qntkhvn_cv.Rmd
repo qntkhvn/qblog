@@ -1,12 +1,12 @@
 ---
 output: stevetemplates::cv
-geometry: margin=0.8in
+geometry: margin=1in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: First Year PhD Student
 address: Department of Statistics & Data Science, Carnegie Mellon University
 fontawesome: yes
-email: nminhquang.99@gmail.com
+# email: nminhquang.99@gmail.com
 github: qntkhvn
 twitter: qntkhvn
 #osf: "Enter 5 digit osf string here"
@@ -17,7 +17,7 @@ web: qntkhvn.netlify.app
 # keywords: R Markdown, academic CV, template
 fontfamily: mathpazo
 fontfamilyoptions: sc, osf
-fontsize: 11pt
+fontsize: 10pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
@@ -99,34 +99,35 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
+**Q. Nguyen**, R. Yurko, G. J. Matthews. 
+Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
+*The American Statistician*.
+2023+.
+[doi: 10.1080/00031305.2023.2242442](https://doi.org/10.1080/00031305.2023.2242442);
+[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262).
+
 B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
 Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
 *Wiley Interdisciplinary Reviews: Computational Statistics*.
-2023.
-[doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612).
-[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
+2023+.
+[doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
+[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001);
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 *Journal of Data Science* **20**(2), 156--167,
 2022.
-[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042).
+[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
 [arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
-*New England Journal of Statistics in Data Science*.
+*New England Journal of Statistics in Data Science* **1**(1), 95--101.
 2023.
-[doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1).
+[doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1);
 [arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
 
 ## \textcolor{magenta}{\textbf{Submitted}}
-
-**Q. Nguyen**, R. Yurko, G. J. Matthews. 
-Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
-2023.
-(Under review.)
-[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262).
 
 **Q. Nguyen**, G. J. Matthews. 
 Filling in the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
@@ -154,6 +155,11 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 \vspace{-2mm}
 
 ## \textcolor{magenta}{\textbf{Invited}}
+
+**Q. Nguyen**, R. Yurko, G. J. Matthews. 
+Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
+*New England Symposium on Statistics in Sports*.
+September 2023.
 
 G. J. Matthews, **Q. Nguyen**.
 STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
@@ -306,4 +312,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated June 3, 2023}
+\hfill \textit{Last updated August 14, 2023}
