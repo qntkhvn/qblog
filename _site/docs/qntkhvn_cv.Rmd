@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: margin=1in
+geometry: margin=0.9in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: First Year PhD Student
@@ -44,6 +44,22 @@ MS, Applied Statistics
 **Wittenberg University**  \hfill 2017 -- 2020 \newline
 BS, Mathematics & Data Science
 <!-- GPA: 3.97/4.00 -->
+
+\vspace{0mm}
+
+# \textcolor{red}{INTERESTS}
+
+\vspace{-2mm}
+
+applied statistics;
+data science;
+graphics and visualization;
+machine learning;
+networks; 
+open source software;
+reproducible research;
+sports analytics;
+tracking data
 
 \vspace{0mm}
 
