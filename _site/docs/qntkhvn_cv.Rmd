@@ -84,6 +84,7 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 **Carnegie Mellon University**  \newline
 Teaching Assistant \newline
+36-468/668: Text Analysis \hfill Fall 2023 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
 Summer Undergraduate Research Experience (SURE) \newline
 36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
