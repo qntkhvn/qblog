@@ -21,7 +21,7 @@ fontsize: 10pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
-  \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+  \usepackage{hyperref}
   \usepackage{xcolor}
 ---
 
@@ -128,7 +128,7 @@ Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
 *Wiley Interdisciplinary Reviews: Computational Statistics*.
 2023+.
 [doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
-[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001);
+[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
@@ -147,7 +147,7 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 ## \textcolor{magenta}{\textbf{Submitted}}
 
 **Q. Nguyen**, G. J. Matthews. 
-Filling in the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
+Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
 2023.
 (Under review.)
 [arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
@@ -176,7 +176,8 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
 *New England Symposium on Statistics in Sports*.
-September 2023.
+September 2023. \newline
+**Featured talk**
 
 G. J. Matthews, **Q. Nguyen**.
 STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
@@ -188,7 +189,7 @@ March 2023. \newline
 Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
 *Carnegie Mellon Sports Analytics Conference*.
 October 2022. \newline
-**3rd Place, Open Methodology Track, Reproducible Research Competition.**
+**3rd Place, Open Methodology Track, Reproducible Research Competition**
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
@@ -199,7 +200,7 @@ September 2022.
 An Examination of Sport Climbing's Competition Format and Scoring System.
 *Carnegie Mellon Sports Analytics Conference*.
 November 2021. \newline
-**Winner, Open Methodology Track, Reproducible Research Competition.**
+**Winner, Open Methodology Track, Reproducible Research Competition**
 
 <!-- \vspace{0mm} -->
 
@@ -228,6 +229,13 @@ October 2020.
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *UConn Sports Analytics Conference*.
 October 2020.
+
+## \textcolor{magenta}{\textbf{Workshops}}
+
+**Q. Nguyen**. 
+Big Data Bowl Workshop.
+*Carnegie Mellon Sports Analytics Conference*.
+November 2023.
 
 \vspace{0mm}
 
@@ -306,6 +314,10 @@ Journal of Quantitative Analysis in Sports \hfill 2022, 2023
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
 
+**Statistical Consulting** \newline
+Loyola University Chicago \hfill 2021--2022 \newline
+Clients: Stritch School of Medicine; Department of Biology; City of Milwaukee Assessor's Office
+
 \vspace{0mm}
 
 # \textcolor{red}{MEDIA}
@@ -329,4 +341,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated August 14, 2023}
+\hfill \textit{Last updated August 31, 2023}
