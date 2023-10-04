@@ -6,9 +6,9 @@ title: "News"
 
 *   **11/2023**: Big Data Bowl workshop at the [2023 Carnegie Mellon Sports Analytics Conferece](http://stat.cmu.edu/cmsac/conference/2023/)
 
-*   **09/2023**: Invited talk at the [2023 New England Symposium on Statistics in Sports](https://www.nessis.org) (NESSIS)
-
 # Recent
+
+*   **09/2023**: Invited talk at the [2023 New England Symposium on Statistics in Sports](https://www.nessis.org) (NESSIS)
 
 *   **07/2023**: Paper *Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data* was accepted for [publication in The American Statistician](https://www.tandfonline.com/doi/full/10.1080/00031305.2023.2242442)
 
