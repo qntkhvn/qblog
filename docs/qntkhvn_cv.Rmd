@@ -47,21 +47,21 @@ BS, Mathematics & Data Science
 
 \vspace{0mm}
 
-# \textcolor{red}{INTERESTS}
+<!-- # \textcolor{red}{INTERESTS} -->
 
-\vspace{-2mm}
+<!-- \vspace{-2mm} -->
 
-applied statistics;
-data science;
-graphics and visualization;
-machine learning;
-networks; 
-open source software;
-reproducible research;
-sports analytics;
-tracking data
+<!-- applied statistics; -->
+<!-- data science; -->
+<!-- graphics and visualization; -->
+<!-- machine learning; -->
+<!-- networks;  -->
+<!-- open source software; -->
+<!-- reproducible research; -->
+<!-- sports analytics; -->
+<!-- tracking data -->
 
-\vspace{0mm}
+<!-- \vspace{0mm} -->
 
 # \textcolor{red}{RESEARCH EXPERIENCE}
 
@@ -121,12 +121,13 @@ Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with P
 *The American Statistician*.
 2023+.
 [doi: 10.1080/00031305.2023.2242442](https://doi.org/10.1080/00031305.2023.2242442);
-[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262).
+[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262). \newline
+**Editors’ Choice Collection**.
 
 B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
 Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
-*Wiley Interdisciplinary Reviews: Computational Statistics*.
-2023+.
+*Wiley Interdisciplinary Reviews: Computational Statistics* **15**(6).
+2023.
 [doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
 [arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
 
@@ -172,6 +173,11 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 \vspace{-2mm}
 
 ## \textcolor{magenta}{\textbf{Invited}}
+
+**Q. Nguyen**.
+Opportunities in sports analytics with player tracking data: A case study of NFL pass rush evaluation.
+*Data Science Seminar, Loyola University Chicago*.
+November 2023.
 
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
@@ -308,14 +314,21 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{-2mm}
 
+**Organizer** \newline
+Statistics in sports reading/research group \newline
+Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 -- present
+
 **Reviewer** \newline
 Journal of Quantitative Analysis in Sports \hfill 2022, 2023
+
+**Program Committee** \newline
+UConn Sports Analytics Conference \hfill 2024
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
 
 **Statistical Consulting** \newline
-Loyola University Chicago \hfill 2021--2022 \newline
+Loyola University Chicago \hfill 2021 -- 2022 \newline
 Clients: Stritch School of Medicine; Department of Biology; City of Milwaukee Assessor's Office
 
 \vspace{0mm}
@@ -341,4 +354,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated August 31, 2023}
+\hfill \textit{Last updated November 24, 2023}
