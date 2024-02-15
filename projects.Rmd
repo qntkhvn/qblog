@@ -49,6 +49,11 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 
 ### Other
 
+**Quang Nguyen**, Larry Jiang, Meg Ellingwood, Ron Yurko.
+"Momentum-based fractional tackles". 
+*NFL Big Data Bowl. Kaggle*, 2024.
+[[link](https://www.kaggle.com/code/tindata/momentum-based-fractional-tackles)]
+
 Gregory J. Matthews, **Quang Nguyen**.
 "STRAIN: Sacks, Tackles, Rushing, Aggression INdex". 
 *NFL Big Data Bowl. Kaggle*, 2023.

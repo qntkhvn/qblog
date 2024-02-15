@@ -84,6 +84,7 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 **Carnegie Mellon University**  \newline
 Teaching Assistant \newline
+36-460/660: Sports Analytics \hfill Spring 2024 \newline
 36-468/668: Text Analysis \hfill Fall 2023 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
 Summer Undergraduate Research Experience (SURE) \newline
@@ -155,9 +156,14 @@ Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in B
 
 ## \textcolor{magenta}{\textbf{Other}}
 
+**Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
+Momentum-based fractional tackles.
+NFL Big Data Bowl 2024.
+https://www.kaggle.com/code/tindata/momentum-based-fractional-tackles
+
 G. J. Matthews, **Q. Nguyen**.
 STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
-2023 NFL Big Data Bowl.
+NFL Big Data Bowl 2023.
 https://www.kaggle.com/code/statsinthewild/strain-sacks-tackles-rushing-aggression-index
 
 B. S. Baumer, **Q. Nguyen**, G. J. Matthews.
@@ -174,6 +180,17 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 
 ## \textcolor{magenta}{\textbf{Invited}}
 
+**Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
+Momentum-based fractional tackles.
+*UConn Sports Analytics Symposium*.
+April 2024.
+
+**Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
+Momentum-based fractional tackles.
+*NFL Big Data Bowl 2024 Final*.
+February 2024. \newline
+**Finalist (Top 5 + $12,500 prize)**
+
 **Q. Nguyen**.
 Opportunities in sports analytics with player tracking data: A case study of NFL pass rush evaluation.
 *Data Science Seminar, Loyola University Chicago*.
@@ -187,9 +204,9 @@ September 2023. \newline
 
 G. J. Matthews, **Q. Nguyen**.
 STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
-*2023 NFL Big Data Bowl Final*.
+*NFL Big Data Bowl 2023 Final*.
 March 2023. \newline
-**Finalist (Top 8; $10,000 prize)**
+**Finalist (Top 8 + $10,000 prize)**
 
 **Q. Nguyen**, G. J. Matthews. 
 Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
@@ -216,7 +233,7 @@ November 2021. \newline
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 Concerns Regarding Sport Climbing Competition Format and Scoring System: Who's Suffering?
-*UConn Sports Analytics Conference*.
+*UConn Sports Analytics Symposium*.
 October 2021. \newline
 **Winner, Student Poster Award.**
 
@@ -233,7 +250,7 @@ October 2020.
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
-*UConn Sports Analytics Conference*.
+*UConn Sports Analytics Symposium*.
 October 2020.
 
 ## \textcolor{magenta}{\textbf{Workshops}}
@@ -242,6 +259,20 @@ October 2020.
 Big Data Bowl Workshop.
 *Carnegie Mellon Sports Analytics Conference*.
 November 2023.
+
+## \textcolor{magenta}{\textbf{Guest Lectures}}
+
+**Q. Nguyen**.
+Big Data Bowl: Overview, Getting Started, My Experience, and more.
+*Summer Undergraduate Research Experience in Statistics (Carnegie Mellon Sports Analytics Camp)*.
+July 2023.
+
+**Q. Nguyen**.
+Web Scraping: A Primer.
+*Summer Undergraduate Research Experience in Statistics (Carnegie Mellon Sports Analytics Camp)*.
+July 2023.
+
+
 
 \vspace{0mm}
 
@@ -322,7 +353,7 @@ Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 
 Journal of Quantitative Analysis in Sports \hfill 2022, 2023
 
 **Program Committee** \newline
-UConn Sports Analytics Conference \hfill 2024
+UConn Sports Analytics Symposium \hfill 2024
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
@@ -339,6 +370,10 @@ Clients: Stritch School of Medicine; Department of Biology; City of Milwaukee As
 
 <!-- jsm data art -->
 
+Committee Collaboration Yields Editors’ Choice Collection \hfill 2024 \newline
+Amstat News (American Statistical Association) \newline
+https://magazine.amstat.org/blog/2024/01/02/editors-choice-collection
+
 An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
 Open Source Sports Podcast,
 Episode IX Guest \newline
@@ -354,4 +389,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated November 24, 2023}
+\hfill \textit{Last updated February 15, 2024}

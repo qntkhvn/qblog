@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.3.22)  14 AUG 2023 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.29)  15 FEB 2024 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **qntkhvn_cv.tex
 (./qntkhvn_cv.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2023-03-30> (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
@@ -647,15 +647,15 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(65.04256pt, 484.20988pt, 65.04256pt)
+* v-part:(T,H,B)=(65.04256pt, 664.88487pt, 65.04256pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=484.20988pt
+* \textheight=664.88487pt
+* \oddsidemargin=-7.22743pt
+* \evensidemargin=-7.22743pt
+* \topmargin=-44.22743pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -716,57 +716,57 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 LaTeX Font Warning: Font shape `T1/pplj/b/sc' undefined
-(Font)              using `T1/pplj/b/n' instead on input line 202.
+(Font)              using `T1/pplj/b/n' instead on input line 204.
 
 [1
 
 {/Users/qntkhvn/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{/Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 241.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 241.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 241.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 241.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 241.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 241.
+(Font)              scaled to size 10.42007pt on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 241.
+(Font)              scaled to size 7.91925pt on input line 244.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 241.
+(Font)              scaled to size 6.25204pt on input line 244.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 241.
+(Font)              scaled to size 10.42007pt on input line 244.
 (/Users/qntkhvn/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 241.
+(Font)              scaled to size 7.91925pt on input line 244.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 241.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 381--384
-[][]$\T1/pplj/m/n/10 (+20) https : / / anchor . fm / open -[] source -[] sports / episodes / An -[] Examination -[] of -[] Sport -[] Climbing -[] with -[] Quang -[]
+(Font)              scaled to size 6.25204pt on input line 244.
+[2] [3]
+Overfull \hbox (22.17314pt too wide) in paragraph at lines 431--434
+[][]$\T1/pplj/m/n/10 (-20) https : / / anchor . fm / open-[]source-[]sports / episodes / An-[]Examination-[]of-[]Sport-[]Climbing-[]with-[]Quang-[]Nguyen-[]e1injq9$[][] 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 389--393
-[][]$\T1/pplj/m/n/10 (+20) https : / / www . abc . net . au / news / 2021 -[] 09 -[] 19 / a^^] -[] trying -[] to -[] predict -[] the -[] 2021 -[] brownlow -[] medal -[] winner /
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--443
+[][]$\T1/pplj/m/n/10 (+20) https : / / www . abc . net . au / news / 2021-[]09-[]19 / a^^]-[]trying-[]to-[]predict-[]the-[]2021-[]brownlow-[]medal-[]winner /
  []
 
 [4] 
@@ -776,21 +776,21 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `qntkhvn_cv.out' has not changed.
-(rerunfilecheck)             Checksum: 8E3B0BA0E5D83DF580D966FE41854C5C;564.
+(rerunfilecheck)             Checksum: 2EC373D6349529E0AA77F27D6BD82FF3;660.
  ) 
 Here is how much of TeX's memory you used:
- 26598 strings out of 476025
- 489384 string characters out of 5786530
- 1861388 words of memory out of 5000000
- 46306 multiletter control sequences out of 15000+600000
- 558821 words of font info for 230 fonts, out of 8000000 for 9000
+ 26690 strings out of 476017
+ 490219 string characters out of 5786280
+ 1861666 words of memory out of 5000000
+ 46318 multiletter control sequences out of 15000+600000
+ 562712 words of font info for 296 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,6n,118p,1022b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></Users/qntkhvn/Library/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on qntkhvn_cv.pdf (4 pages, 150856 bytes).
+Output written on qntkhvn_cv.pdf (4 pages, 153389 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 61565 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 61581 words of extra memory for PDF output out of 61914 (max. 10000000)
 
