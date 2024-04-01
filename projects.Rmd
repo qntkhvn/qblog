@@ -8,7 +8,7 @@ title: "Projects"
 
 ### Publications
 
-**Quang Nguyen**, Ronald Yurko, Gregory J Matthews.
+**Quang Nguyen**, Ronald Yurko, Gregory J. Matthews.
 "Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data".
 *The American Statistician*, 2023+.
 [[arXiv](https://arxiv.org/abs/2305.10262); [journal](https://doi.org/10.1080/00031305.2023.2242442)]

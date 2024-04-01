@@ -7,7 +7,19 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>2022-12-19</lastBuildDate>
+    <lastBuildDate>2024-04-01</lastBuildDate>
+    <item>
+      <title>March Madness Seedigami</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2024-04-01-madness-heatmap</link>
+      <description>How does each seed perform?</description>
+      <category>data viz</category>
+      <category>ggplot2</category>
+      <category>heatmap</category>
+      <guid>https://qntkhvn.netlify.app/posts/2024-04-01-madness-heatmap</guid>
+      <pubDate>2024-04-01</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2024-04-01-madness-heatmap/seedigami.png" medium="image" type="image/png" width="1344" height="1344"/>
+    </item>
     <item>
       <title>Recreating a Terrible Map</title>
       <dc:creator>Quang Nguyen</dc:creator>
@@ -116,19 +128,6 @@
       <guid>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</guid>
       <pubDate>2021-07-05</pubDate>
       <media:content url="https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021/euro_group_stage.png" medium="image" type="image/png" width="1072" height="858"/>
-    </item>
-    <item>
-      <title>EURO Group Tables and Knockout Performances</title>
-      <dc:creator>qntkhvn</dc:creator>
-      <link>https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups</link>
-      <description>Everybody loves cinderella stories and fairy-tale runs.</description>
-      <category>data viz</category>
-      <category>ggplot2</category>
-      <category>football</category>
-      <category>euro 2020</category>
-      <guid>https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups</guid>
-      <pubDate>2021-07-03</pubDate>
-      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-03-euro-groups/euro_group.png" medium="image" type="image/png" width="704" height="576"/>
     </item>
   </channel>
 </rss>
