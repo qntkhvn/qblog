@@ -10,12 +10,19 @@ title: "Projects"
 
 **Quang Nguyen**, Ronald Yurko, Gregory J. Matthews.
 "Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data".
-*The American Statistician*, 2023+.
+*The American Statistician*, 2024.
 [[arXiv](https://arxiv.org/abs/2305.10262); [journal](https://doi.org/10.1080/00031305.2023.2242442)]
 <br>
 *(Editors’ Choice Collection)*
 <br>
 *(Finalist, NFL Big Data Bowl 2023)*
+
+**Quang Nguyen**, Gregory J. Matthews.
+"Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball".
+*arXiv preprint arXiv:2210.02383*, 2023.
+[[arXiv](https://arxiv.org/abs/2210.02383); [journal](https://doi.org/10.3233/JSA-240744)]
+<br>
+*(Third Place, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)*
 
 Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 "Big ideas in sports analytics and statistical tools for their investigation".
@@ -40,12 +47,13 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 
 ### Preprints
 
-**Quang Nguyen**, Gregory J. Matthews.
-"Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball".
-*arXiv preprint arXiv:2210.02383*, 2023.
-[[arXiv](https://arxiv.org/abs/2210.02383)]
+**Quang Nguyen**, Ruitong Jiang, Meg Ellingwood, Ronald Yurko.
+"Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football".
+*arXiv preprint arXiv:2403.14769*, 2024.
+[[arXiv](https://arxiv.org/abs/2403.14769)]
 <br>
-*(Third Place, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)*
+*(Finalist, NFL Big Data Bowl 2024)*
+
 
 ### Other
 

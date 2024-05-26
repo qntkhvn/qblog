@@ -4,13 +4,16 @@ site: distill::distill_website
 image: "me.png"
 links:
   - label: '<i class="fas fa-envelope"></i> Email'
-    url: "mailto:nminhquang.99@gmail.com"
+    url: "mailto:quang@stat.cmu.edu"
   - label: '<i class="fab fa-github"></i> GitHub'
     url: "https://github.com/qntkhvn"
   - label: '<i class="fab fa-twitter"></i> Twitter'
     url: "https://twitter.com/qntkhvn"
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
     url: "https://www.linkedin.com/in/qntkhvn"
+  - label: '<i class="fas fa-graduation-cap"></i> Google Scholar'
+    url: "https://scholar.google.com/citations?user=KjpapTcAAAAJ"
+    
 base_url: https://qntkhvn.netlify.app/
 preview: me.png
 twitter:
@@ -24,3 +27,5 @@ Welcome to The Q!
 I am a second year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University. 
 Previously, I completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University. 
 </div>
+
+

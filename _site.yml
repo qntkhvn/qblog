@@ -23,6 +23,8 @@ navbar:
       href: https://twitter.com/qntkhvn
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/qntkhvn
+    - icon: fas fa-graduation-cap
+      href: https://scholar.google.com/citations?user=KjpapTcAAAAJ
     - icon: fa fa-rss
       href: index.xml
 base_url: https://qntkhvn.netlify.app/

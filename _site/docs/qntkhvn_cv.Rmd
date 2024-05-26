@@ -3,10 +3,10 @@ output: stevetemplates::cv
 geometry: margin=0.9in
 # title: cv
 author: Ngoc Minh Quang Nguyen
-# jobtitle: First Year PhD Student
-address: Department of Statistics & Data Science, Carnegie Mellon University
+# jobtitle: PhD Student
+# address: Department of Statistics & Data Science, Carnegie Mellon University
 fontawesome: yes
-# email: nminhquang.99@gmail.com
+email: quang@stat.cmu.edu
 github: qntkhvn
 twitter: qntkhvn
 #osf: "Enter 5 digit osf string here"
@@ -68,6 +68,9 @@ BS, Mathematics & Data Science
 \vspace{-2mm}
 
 **Carnegie Mellon University **  \hfill 2023 -- present \newline
+Graduate Researcher (Advisor: Ron Yurko)
+
+**Carnegie Mellon University **  \hfill 2022 -- 2023 \newline
 Advanced Data Analysis Project (Advisor: Nynke Niezink)
 
 **Loyola University Chicago**  \hfill 2020 -- 2021 \newline
@@ -83,11 +86,14 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 \vspace{-2mm}
 
 **Carnegie Mellon University**  \newline
+Instructor \newline
+Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024
+
 Teaching Assistant \newline
 36-460/660: Sports Analytics \hfill Spring 2024 \newline
 36-468/668: Text Analysis \hfill Fall 2023 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
-Summer Undergraduate Research Experience (SURE) \newline
+Summer Undergraduate Research Experience (SURE) in Statistics \newline
 36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
 36-401/607: Modern Regression \hfill Fall 2022
 
@@ -119,11 +125,18 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
-*The American Statistician*.
-2023+.
+*The American Statistician* **78**(2), 199--208,
+2024.
 [doi: 10.1080/00031305.2023.2242442](https://doi.org/10.1080/00031305.2023.2242442);
 [arXiv: 2305.10262](https://arxiv.org/abs/2305.10262). \newline
 **Editors’ Choice Collection**.
+
+**Q. Nguyen**, G. J. Matthews. 
+Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
+*Journal of Sports Analytics* **10**(1), 77--85,
+2024.
+[doi: 10.3233/JSA-240744](https://doi.org/10.3233/JSA-240744);
+[arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
 
 B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
 Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
@@ -148,11 +161,11 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 
 ## \textcolor{magenta}{\textbf{Submitted}}
 
-**Q. Nguyen**, G. J. Matthews. 
-Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
-2023.
+**Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
+Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
+2024.
 (Under review.)
-[arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
+[arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
 
 ## \textcolor{magenta}{\textbf{Other}}
 
@@ -180,8 +193,13 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 
 ## \textcolor{magenta}{\textbf{Invited}}
 
+**Q. Nguyen**.
+Advances in pass rush and tackling evaluation in American football with player tracking data.
+*2024 Joint Statistical Meetings.*
+August 2024.
+
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
-Momentum-based fractional tackles.
+Fractional tackles.
 *UConn Sports Analytics Symposium*.
 April 2024.
 
@@ -212,7 +230,7 @@ March 2023. \newline
 Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
 *Carnegie Mellon Sports Analytics Conference*.
 October 2022. \newline
-**3rd Place, Open Methodology Track, Reproducible Research Competition**
+**Third Place, Open Methodology Track, Reproducible Research Competition**
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
@@ -279,6 +297,8 @@ July 2023.
 # \textcolor{red}{HONORS \& AWARDS}
 
 \vspace{-2mm}
+
+**UCSAS 2024 Student Travel Support** \hfill 2024 \newline UConn Sports Analytics Symposium 2024
 
 **University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports (CASSIS) 2022
 
@@ -349,11 +369,16 @@ Bilingual: Vietnamese (native language) and English (proficient)
 Statistics in sports reading/research group \newline
 Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 -- present
 
-**Reviewer** \newline
-Journal of Quantitative Analysis in Sports \hfill 2022, 2023
-
 **Program Committee** \newline
 UConn Sports Analytics Symposium \hfill 2024
+
+**Reviewer** \newline
+Journal of Quantitative Analysis in Sports \hfill 2022, 2023 \newline
+Machine Learning \hfill 2024
+
+**Judge** \newline
+USOPC Data Challenge \hfill 2024 \newline
+UCSAS 2024 Student Poster Award \hfill 2024
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
@@ -377,7 +402,7 @@ https://magazine.amstat.org/blog/2024/01/02/editors-choice-collection
 An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
 Open Source Sports Podcast,
 Episode IX Guest \newline
-https://anchor.fm/open-source-sports/episodes/An-Examination-of-Sport-Climbing-with-Quang-Nguyen-e1injq9
+https://opensourcesports.substack.com/p/an-examination-of-sport-climbing-a1e
 
 Viz Buzz \hfill 2022 \newline
 Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline
@@ -389,4 +414,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated February 15, 2024}
+\hfill \textit{Last updated May 26, 2024}
