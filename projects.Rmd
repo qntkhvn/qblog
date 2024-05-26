@@ -13,16 +13,16 @@ title: "Projects"
 *The American Statistician*, 2024.
 [[arXiv](https://arxiv.org/abs/2305.10262); [journal](https://doi.org/10.1080/00031305.2023.2242442)]
 <br>
-*(Editors’ Choice Collection)*
+***(Editors’ Choice Collection)***
 <br>
-*(Finalist, NFL Big Data Bowl 2023)*
+***(Finalist, NFL Big Data Bowl 2023)***
 
 **Quang Nguyen**, Gregory J. Matthews.
 "Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball".
-*arXiv preprint arXiv:2210.02383*, 2023.
+*Journal of Sports Analytics*, 2024.
 [[arXiv](https://arxiv.org/abs/2210.02383); [journal](https://doi.org/10.3233/JSA-240744)]
 <br>
-*(Third Place, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)*
+***(Third Place, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)***
 
 Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 "Big ideas in sports analytics and statistical tools for their investigation".
@@ -34,16 +34,16 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 *Journal of Data Science*, 2022. 
 [[arXiv](https://arxiv.org/abs/2111.05310); [journal](https://doi.org/10.6339/22-JDS1042)]
 <br>
-*(Winner, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2021)*
+***(Winner, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2021)***
 <br>
-*(Winner, Student Poster Award, UConn Sports Analytics Symposium 2021)*
+***(Winner, Student Poster Award, UConn Sports Analytics Symposium 2021)***
 
 **Quang Nguyen**.
 "Poisson Modeling and Predicting English Premier League Goal Scoring".
 *New England Journal of Statistics in Data Science*, 2023.
 [[arXiv](https://arxiv.org/abs/2105.09881); [journal](https://doi.org/10.51387/21-NEJSDS1)]
 <br>
-*(Co-winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)*
+***(Co-winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
 
 ### Preprints
 
@@ -52,7 +52,7 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 *arXiv preprint arXiv:2403.14769*, 2024.
 [[arXiv](https://arxiv.org/abs/2403.14769)]
 <br>
-*(Finalist, NFL Big Data Bowl 2024)*
+***(Finalist, NFL Big Data Bowl 2024)***
 
 
 ### Other
