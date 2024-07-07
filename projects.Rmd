@@ -47,9 +47,14 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 
 ### Preprints
 
+ Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
+"NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation".
+*arXiv preprint arXiv:2406.17220*, 2024+.
+[[arXiv](https://arxiv.org/abs/2406.17220)]
+
 **Quang Nguyen**, Ruitong Jiang, Meg Ellingwood, Ronald Yurko.
 "Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football".
-*arXiv preprint arXiv:2403.14769*, 2024.
+*arXiv preprint arXiv:2403.14769*, 2024+.
 [[arXiv](https://arxiv.org/abs/2403.14769)]
 <br>
 ***(Finalist, NFL Big Data Bowl 2024)***

@@ -159,12 +159,16 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 [doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1);
 [arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
 
-## \textcolor{magenta}{\textbf{Submitted}}
+## \textcolor{magenta}{\textbf{Preprints}}
+
+R. Yurko, **Q. Nguyen**, K. Pelechrinis.
+NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
+2024+.
+[arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
 
 **Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
 Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
-2024.
-(Under review.)
+2024+.
 [arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
 
 ## \textcolor{magenta}{\textbf{Other}}
@@ -373,8 +377,9 @@ Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 
 UConn Sports Analytics Symposium \hfill 2024
 
 **Reviewer** \newline
-Journal of Quantitative Analysis in Sports \hfill 2022, 2023 \newline
-Machine Learning \hfill 2024
+Journal of Quantitative Analysis in Sports \newline
+Machine Learning \newline
+The American Statistician
 
 **Judge** \newline
 USOPC Data Challenge \hfill 2024 \newline
@@ -414,4 +419,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated May 26, 2024}
+\hfill \textit{Last updated July 3, 2024}
