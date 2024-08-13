@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: margin=0.9in
+geometry: margin=0.85in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
@@ -17,7 +17,7 @@ web: qntkhvn.netlify.app
 # keywords: R Markdown, academic CV, template
 fontfamily: mathpazo
 fontfamilyoptions: sc, osf
-fontsize: 10pt
+fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
@@ -302,6 +302,10 @@ July 2023.
 
 \vspace{-2mm}
 
+**ASA Section on Statistics in Sports Student Funding** \hfill 2024 \newline ASA Section on Statistics in Sports
+
+**Graduate Student Assembly/Provost Conference Funds** \hfill 2024 \newline Carnegie Mellon University
+
 **UCSAS 2024 Student Travel Support** \hfill 2024 \newline UConn Sports Analytics Symposium 2024
 
 **University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports (CASSIS) 2022
@@ -357,7 +361,7 @@ Wittenberg University
 
 \vspace{-2mm}
 
-Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (basic)
+Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
 
 Typesetting: markdown, \LaTeX \ (proficient)
 
@@ -419,4 +423,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated July 3, 2024}
+\hfill \textit{Last updated August 13, 2024}

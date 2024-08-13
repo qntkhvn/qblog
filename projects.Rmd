@@ -13,7 +13,7 @@ title: "Projects"
 *The American Statistician*, 2024.
 [[arXiv](https://arxiv.org/abs/2305.10262); [journal](https://doi.org/10.1080/00031305.2023.2242442)]
 <br>
-***(Editors’ Choice Collection)***
+***(Editors' Choice Collection)***
 <br>
 ***(Finalist, NFL Big Data Bowl 2023)***
 
