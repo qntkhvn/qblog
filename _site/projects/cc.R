@@ -1,3 +1,0 @@
-
-plot(cars)
-lm(cars)
