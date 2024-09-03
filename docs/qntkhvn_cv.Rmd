@@ -200,12 +200,14 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 **Q. Nguyen**.
 Advances in pass rush and tackling evaluation in American football with player tracking data.
 *2024 Joint Statistical Meetings.*
-August 2024.
+August 2024. \newline
+**Invited Paper Session**
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Fractional tackles.
 *UConn Sports Analytics Symposium*.
-April 2024.
+April 2024. \newline
+**Big Data Bowl Finalists Session**
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Momentum-based fractional tackles.
@@ -423,4 +425,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated August 13, 2024}
+\hfill \textit{Last updated September 3, 2024}
