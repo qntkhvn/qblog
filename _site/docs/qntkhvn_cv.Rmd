@@ -125,7 +125,7 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
-*The American Statistician* **78**(2), 199--208,
+*The American Statistician* **78**(2), 199--208.
 2024.
 [doi: 10.1080/00031305.2023.2242442](https://doi.org/10.1080/00031305.2023.2242442);
 [arXiv: 2305.10262](https://arxiv.org/abs/2305.10262). \newline
@@ -133,21 +133,27 @@ Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with P
 
 **Q. Nguyen**, G. J. Matthews. 
 Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
-*Journal of Sports Analytics* **10**(1), 77--85,
+*Journal of Sports Analytics* **10**(1), 77--85.
 2024.
 [doi: 10.3233/JSA-240744](https://doi.org/10.3233/JSA-240744);
 [arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
 
+N. M. Lemon, L. K. Taylor, M. A. Rech, **Q. Nguyen**, G. J. Matthews, G. Lew, S. Lovett.
+Utility of D-dimer in predicting pulmonary embolism in patients with COVID-19 presenting to the emergency department.
+*Journal of the American College of Emergency Physicians Open* **5**(4), e13237.
+2024.
+[doi:10.1002/emp2.13237](https://doi.org/10.1002/emp2.13237)
+
 B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
 Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
-*Wiley Interdisciplinary Reviews: Computational Statistics* **15**(6).
+*Wiley Interdisciplinary Reviews: Computational Statistics* **15**(6), e1612.
 2023.
 [doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
 [arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
-*Journal of Data Science* **20**(2), 156--167,
+*Journal of Data Science* **20**(2), 156--167.
 2022.
 [doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
 [arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
@@ -380,7 +386,8 @@ Statistics in sports reading/research group \newline
 Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 -- present
 
 **Program Committee** \newline
-UConn Sports Analytics Symposium \hfill 2024
+UConn Sports Analytics Symposium \hfill 2024 \newline
+Connecticut Sports Analytics Symposium \hfill 2025
 
 **Reviewer** \newline
 Journal of Quantitative Analysis in Sports \newline
@@ -389,7 +396,8 @@ The American Statistician
 
 **Judge** \newline
 USOPC Data Challenge \hfill 2024 \newline
-UCSAS 2024 Student Poster Award \hfill 2024
+UCSAS 2024 Student Poster Award \hfill 2024 \newline
+CMSAC 2024 Reproducible Research Competition \hfill 2024
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
@@ -425,4 +433,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated September 3, 2024}
+\hfill \textit{Last updated October 18, 2024}
