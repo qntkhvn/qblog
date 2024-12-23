@@ -90,7 +90,7 @@ Instructor \newline
 Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024
 
 Teaching Assistant \newline
-36-460/660: Sports Analytics \hfill Spring 2024 \newline
+36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025 \newline
 36-468/668: Text Analysis \hfill Fall 2023, Fall 2024 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
 Summer Undergraduate Research Experience (SURE) in Statistics \newline
@@ -178,6 +178,11 @@ Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Eva
 [arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
 
 ## \textcolor{magenta}{\textbf{Other}}
+
+**Q. Nguyen**, R. Yurko.
+Down, set, hut! Explaining variability in snap timing on plays with motion.
+NFL Big Data Bowl 2025.
+https://www.kaggle.com/code/tindata/down-set-hut
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Momentum-based fractional tackles.
@@ -284,6 +289,11 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 October 2020.
 
 ## \textcolor{magenta}{\textbf{Workshops}}
+
+**Q. Nguyen**. 
+Building a performance metric with player tracking data.
+*Connecticut Sports Analytics Symposium*.
+April 2025.
 
 **Q. Nguyen**. 
 Big Data Bowl Workshop.
@@ -433,4 +443,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated October 18, 2024}
+\hfill \textit{Last updated December 23, 2024}

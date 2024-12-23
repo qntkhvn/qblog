@@ -62,6 +62,11 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 
 ### Other
 
+**Quang Nguyen**, Ron Yurko.
+"Down, set, hut! Explaining variability in snap timing on plays with motion". 
+*NFL Big Data Bowl. Kaggle*, 2025.
+[[link](https://www.kaggle.com/code/tindata/down-set-hut)]
+
 **Quang Nguyen**, Larry Jiang, Meg Ellingwood, Ron Yurko.
 "Momentum-based fractional tackles". 
 *NFL Big Data Bowl. Kaggle*, 2024.
