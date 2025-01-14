@@ -7,17 +7,19 @@ links:
     url: "mailto:quang@stat.cmu.edu"
   - label: '<i class="fab fa-github"></i> GitHub'
     url: "https://github.com/qntkhvn"
-  - label: '<i class="fab fa-twitter"></i> Twitter'
-    url: "https://twitter.com/qntkhvn"
+  # - label: '<i class="fab fa-twitter"></i> Twitter'
+  #   url: "https://twitter.com/qntkhvn"
+  - label: '<i class="fab fa-bluesky"></i> Bluesky'
+    url: "https://bsky.app/profile/qntkhvn.bsky.social"
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
     url: "https://www.linkedin.com/in/qntkhvn"
-  - label: '<i class="fas fa-graduation-cap"></i> Google Scholar'
+  - label: '<i class="fab fa-google-scholar"></i> Google Scholar'
     url: "https://scholar.google.com/citations?user=KjpapTcAAAAJ"
     
 base_url: https://qntkhvn.netlify.app/
 preview: me.png
-twitter:
-  creator: "@qntkhvn"
+# twitter:
+#   creator: "@qntkhvn"
 output:
   postcards::jolla
 ---

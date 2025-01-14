@@ -17,18 +17,20 @@ navbar:
       href: docs/qntkhvn_cv.pdf
     - icon: fab fa-github
       href: https://github.com/qntkhvn
-    - icon: fab fa-twitter
-      href: https://twitter.com/qntkhvn
+    # - icon: fab fa-twitter
+    #   href: https://twitter.com/qntkhvn
+    - icon: fab fa-bluesky
+      href: https://bsky.app/profile/qntkhvn.bsky.social
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/qntkhvn
-    - icon: fas fa-graduation-cap
+    - icon: fab fa-google-scholar
       href: https://scholar.google.com/citations?user=KjpapTcAAAAJ
     - icon: fa fa-rss
       href: index.xml
 base_url: https://qntkhvn.netlify.app/
 collections:
   posts:
-    share: [twitter, linkedin]
+    share: [linkedin]
     subscribe: _subscribe.html
     feed_items_max: 10
 output: 
