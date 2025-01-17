@@ -123,6 +123,13 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
+**Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
+Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
+*Scientific Reports (Nature Portfolio)* **15**, 2148.
+2025.
+[doi.org/10.1038/s41598-025-85993-1](https://doi.org/10.1038/s41598-025-85993-1);
+[arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
+
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
 *The American Statistician* **78**(2), 199--208.
@@ -171,11 +178,6 @@ R. Yurko, **Q. Nguyen**, K. Pelechrinis.
 NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
 2024+.
 [arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
-
-**Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
-Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
-2024+.
-[arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
 
 ## \textcolor{magenta}{\textbf{Other}}
 
