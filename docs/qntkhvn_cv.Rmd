@@ -249,7 +249,7 @@ March 2023. \newline
 Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
 *Carnegie Mellon Sports Analytics Conference*.
 October 2022. \newline
-**Third Place, Open Methodology Track, Reproducible Research Competition**
+**Finalist, Open Methodology Track, Reproducible Research Competition**
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
@@ -321,13 +321,23 @@ July 2023.
 
 \vspace{-2mm}
 
+**NFL Big Data Bowl Finalist** \hfill 2023, 2024 \newline Invited to present at NFL Scouting Combine
+
 **ASA Section on Statistics in Sports Student Funding** \hfill 2024 \newline ASA Section on Statistics in Sports
 
 **Graduate Student Assembly/Provost Conference Funds** \hfill 2024 \newline Carnegie Mellon University
 
-**UCSAS 2024 Student Travel Support** \hfill 2024 \newline UConn Sports Analytics Symposium 2024
+**Student Travel Support** \hfill 2024 \newline UConn Sports Analytics Symposium 2024
 
-**University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports (CASSIS) 2022
+**Reproducible Research Competition Finalist (Open Methodology Track)** \hfill 2022 \newline Carnegie Mellon Sports Analytics Conference 2022
+
+**University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports 2022
+
+**Reproducible Research Competition Winner (Open Methodology Track)** \hfill 2021 \newline Carnegie Mellon Sports Analytics Conference 2021
+
+**Student Poster Award Winner** \hfill 2021 \newline UConn Sports Analytics Symposium 2021
+
+**Poster Competition Co-Winner (Undergrad/MS Group)** \hfill 2021 \newline NextGen: Data Science Day 2021 (New England Statistical Society)
 
 **Merit Award** \hfill 2020 -- 2021 \newline MS in Applied Statistics Program, Loyola University Chicago
 
@@ -445,4 +455,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated January 14, 2025}
+\hfill \textit{Last updated January 19, 2025}
