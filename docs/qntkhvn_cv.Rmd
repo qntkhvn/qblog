@@ -17,7 +17,7 @@ web: qntkhvn.netlify.app
 # keywords: R Markdown, academic CV, template
 fontfamily: mathpazo
 fontfamilyoptions: sc, osf
-fontsize: 11pt
+fontsize: 10pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
@@ -337,9 +337,9 @@ July 2023.
 
 **Student Poster Award Winner** \hfill 2021 \newline UConn Sports Analytics Symposium 2021
 
-**Poster Competition Co-Winner (Undergrad/MS Group)** \hfill 2021 \newline NextGen: Data Science Day 2021 (New England Statistical Society)
-
 **Merit Award** \hfill 2020 -- 2021 \newline MS in Applied Statistics Program, Loyola University Chicago
+
+**Poster Competition Co-Winner (Undergrad/MS Group)** \hfill 2020 \newline NextGen: Data Science Day 2020 (New England Statistical Society)
 
 **Summa Cum Laude** \hfill 2020 \newline
 Graduated with the highest distinction, Wittenberg University
