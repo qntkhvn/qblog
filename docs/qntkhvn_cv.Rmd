@@ -158,19 +158,19 @@ Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
 [doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
 [arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
 
-**Q. Nguyen**, H. Butler, G. J. Matthews. 
-An Examination of Olympic Sport Climbing Competition Format and Scoring System.
-*Journal of Data Science* **20**(2), 156--167.
-2022.
-[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
-[arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
-
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *New England Journal of Statistics in Data Science* **1**(1), 95--101.
 2023.
 [doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1);
 [arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+An Examination of Olympic Sport Climbing Competition Format and Scoring System.
+*Journal of Data Science* **20**(2), 156--167.
+2022.
+[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
+[arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
 
 ## \textcolor{magenta}{\textbf{Preprints}}
 
@@ -357,6 +357,9 @@ Ohio Upsilon Chapter, Wittenberg University
 Department of Mathematics and Computer Science, Wittenberg University \newline
 Awarded to the most outstanding senior majoring in mathematics and data science
 
+**Mortar Board** \hfill 2020 \newline
+Wittenberg University
+
 **Pick and Pen** \hfill 2019 \newline
 Wittenberg University
 
@@ -393,6 +396,8 @@ Wittenberg University
 Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
 
 Typesetting: markdown, \LaTeX \ (proficient)
+
+Kaggle Notebooks Expert
 
 Bilingual: Vietnamese (native language) and English (proficient)
 
@@ -455,4 +460,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated January 19, 2025}
+\hfill \textit{Last updated January 20, 2025}
