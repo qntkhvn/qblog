@@ -149,7 +149,7 @@ N. M. Lemon, L. K. Taylor, M. A. Rech, **Q. Nguyen**, G. J. Matthews, G. Lew, S.
 Utility of D-dimer in predicting pulmonary embolism in patients with COVID-19 presenting to the emergency department.
 *Journal of the American College of Emergency Physicians Open* **5**(4), e13237.
 2024.
-[doi:10.1002/emp2.13237](https://doi.org/10.1002/emp2.13237)
+[doi:10.1002/emp2.13237](https://doi.org/10.1002/emp2.13237).
 
 B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
 Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
@@ -214,7 +214,7 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 Advances in pass rush and tackling evaluation in American football with player tracking data.
 *2024 Joint Statistical Meetings.*
 August 2024. \newline
-**Invited Paper Session**
+**Invited Paper Session: Leveraging Player Tracking Data in Sports: Challenges and Opportunities**
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Fractional tackles.
@@ -272,13 +272,13 @@ November 2021. \newline
 Concerns Regarding Sport Climbing Competition Format and Scoring System: Who's Suffering?
 *UConn Sports Analytics Symposium*.
 October 2021. \newline
-**Winner, Student Poster Award.**
+**Winner, Student Poster Award**
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *NextGen: Data Science Day - New England Statistical Society*.
 November 2020. \newline
-**Co-Winner, Poster Competition, Undergrad/MS Group.**
+**Co-Winner, Poster Competition, Undergrad/MS Group**
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
@@ -295,12 +295,14 @@ October 2020.
 **Q. Nguyen**. 
 Building a performance metric with player tracking data.
 *Connecticut Sports Analytics Symposium*.
-April 2025.
+April 2025. \newline
+**Player Tracking Data in Sports Analytics Workshop (Advanced Level)**
 
-**Q. Nguyen**. 
-Big Data Bowl Workshop.
+**Q. Nguyen**.
+Get Trained & Get Strained: The Ingredients of a Big Data Bowl Metric.
 *Carnegie Mellon Sports Analytics Conference*.
-November 2023.
+November 2023. \newline
+**Big Data Bowl Workshop Sponsored by SumerSports**
 
 ## \textcolor{magenta}{\textbf{Guest Lectures}}
 
@@ -430,8 +432,9 @@ CMSAC 2024 Reproducible Research Competition \hfill 2024
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
 
 **Statistical Consulting** \newline
+Carnegie Mellon University Athletics \hfill 2024 \newline
 Loyola University Chicago \hfill 2021 -- 2022 \newline
-Clients: Stritch School of Medicine; Department of Biology; City of Milwaukee Assessor's Office
+(Clients: Stritch School of Medicine; Department of Biology; City of Milwaukee Assessor's Office)
 
 \vspace{0mm}
 
