@@ -29,7 +29,7 @@ title: "Projects"
 *Journal of Sports Analytics*, 2024.
 [[arXiv](https://arxiv.org/abs/2210.02383); [journal](https://doi.org/10.3233/JSA-240744)]
 <br>
-***(Third Place, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)***
+***(Finalist, Open Methodology Track, Reproducible Research Competition, Carnegie Mellon Sports Analytics Conference 2022)***
 
 Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 "Big ideas in sports analytics and statistical tools for their investigation".
@@ -50,7 +50,7 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 *New England Journal of Statistics in Data Science*, 2023.
 [[arXiv](https://arxiv.org/abs/2105.09881); [journal](https://doi.org/10.51387/21-NEJSDS1)]
 <br>
-***(Co-winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
+***(Co-Winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
 
 ### Preprints
 
