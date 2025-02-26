@@ -54,6 +54,13 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 
 ### Preprints
 
+**Quang Nguyen**, Ronald Yurko.
+"A multilevel model with heterogeneous variances for snap timing in the National Football League".
+*arXiv preprint arXiv:2502.16313*, 2025+.
+[[arXiv](https://arxiv.org/abs/2502.16313)]
+<br>
+***(Semifinalist, NFL Big Data Bowl 2025)***
+
 Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
 "NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation".
 *arXiv preprint arXiv:2406.17220*, 2024+.

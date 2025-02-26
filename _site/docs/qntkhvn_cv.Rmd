@@ -174,6 +174,11 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 
 ## \textcolor{magenta}{\textbf{Preprints}}
 
+**Q. Nguyen**, R. Yurko.
+A multilevel model with heterogeneous variances for snap timing in the National Football League.
+2025+.
+[arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
+
 R. Yurko, **Q. Nguyen**, K. Pelechrinis.
 NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
 2024+.
@@ -323,6 +328,8 @@ July 2023.
 
 \vspace{-2mm}
 
+**NFL Big Data Bowl Semifinalist** \hfill 2025
+
 **NFL Big Data Bowl Finalist** \hfill 2023, 2024 \newline Invited to present at NFL Scouting Combine
 
 **ASA Section on Statistics in Sports Student Funding** \hfill 2024 \newline ASA Section on Statistics in Sports
@@ -397,9 +404,7 @@ Wittenberg University
 
 Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
 
-Typesetting: markdown, \LaTeX \ (proficient)
-
-Kaggle Notebooks Expert
+Typesetting: markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
 
 Bilingual: Vietnamese (native language) and English (proficient)
 
@@ -410,12 +415,12 @@ Bilingual: Vietnamese (native language) and English (proficient)
 \vspace{-2mm}
 
 **Organizer** \newline
-Statistics in sports reading/research group \newline
-Department of Statistics & Data Science, Carnegie Mellon University \hfill 2023 -- present
+Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- present \newline
+(formerly Statistics in sports reading/research group)
 
 **Program Committee** \newline
-UConn Sports Analytics Symposium \hfill 2024 \newline
-Connecticut Sports Analytics Symposium \hfill 2025
+Connecticut Sports Analytics Symposium \hfill 2025 \newline
+UConn Sports Analytics Symposium \hfill 2024
 
 **Reviewer** \newline
 Journal of Quantitative Analysis in Sports \newline
@@ -424,9 +429,10 @@ The American Statistician \newline
 WIREs Computational Statistics
 
 **Judge** \newline
-USOPC Data Challenge \hfill 2024 \newline
+CSAS 2025 Data Challenge \hfill \2025 \newline
+CMSAC 2024 Reproducible Research Competition \hfill 2024 \newline
 UCSAS 2024 Student Poster Award \hfill 2024 \newline
-CMSAC 2024 Reproducible Research Competition \hfill 2024
+UCSAS 2024 USOPC Data Challenge \hfill 2024
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
@@ -463,4 +469,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated January 20, 2025}
+\hfill \textit{Last updated February 25, 2025}
