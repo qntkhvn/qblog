@@ -87,7 +87,7 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 **Carnegie Mellon University**  \newline
 Instructor \newline
-Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024
+Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024, Summer 2025
 
 Teaching Assistant \newline
 36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025 \newline
@@ -213,7 +213,22 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 
 \vspace{-2mm}
 
-## \textcolor{magenta}{\textbf{Invited}}
+## \textcolor{magenta}{\textbf{Talks}}
+
+<!-- **Q. Nguyen**, R. Yurko. -->
+<!-- Down, set, hut! Explaining variability in snap timing on plays with motion. -->
+<!-- *2025 Joint Statistical Meetings.* -->
+<!-- August 2025. -->
+
+<!-- **Q. Nguyen**, R. Yurko. -->
+<!-- Step-and-turn modeling of individual player movement in American football. -->
+<!-- *Conference on Predictive Inference in Sports.* -->
+<!-- June 2025. -->
+
+<!-- **Q. Nguyen**, R. Yurko. -->
+<!-- TBD. -->
+<!-- *CMSAC Football Analytics Workshop 2025.* -->
+<!-- May 2025. -->
 
 **Q. Nguyen**.
 Advances in pass rush and tackling evaluation in American football with player tracking data.
@@ -310,6 +325,11 @@ November 2023. \newline
 **Big Data Bowl Workshop Sponsored by SumerSports**
 
 ## \textcolor{magenta}{\textbf{Guest Lectures}}
+
+**Q. Nguyen**.
+Bayesian multilevel modeling in the wild: Beyond homogeneity.
+*Special Topics: Sports Analytics*.
+March 2025.
 
 **Q. Nguyen**.
 Big Data Bowl: Overview, Getting Started, My Experience, and more.
@@ -429,7 +449,8 @@ The American Statistician \newline
 WIREs Computational Statistics
 
 **Judge** \newline
-CSAS 2025 Data Challenge \hfill \2025 \newline
+CSAS 2025 Student Poster Award \hfill 2025 \newline
+CSAS 2025 Data Challenge \hfill 2025 \newline
 CMSAC 2024 Reproducible Research Competition \hfill 2024 \newline
 UCSAS 2024 Student Poster Award \hfill 2024 \newline
 UCSAS 2024 USOPC Data Challenge \hfill 2024
@@ -469,4 +490,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated February 25, 2025}
+\hfill \textit{Last updated April 18, 2025}
