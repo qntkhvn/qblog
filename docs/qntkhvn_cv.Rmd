@@ -175,6 +175,11 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 ## \textcolor{magenta}{\textbf{Preprints}}
 
 **Q. Nguyen**, R. Yurko.
+A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
+2025+.
+[arXiv: 2507.06122](https://arxiv.org/abs/2507.06122).
+
+**Q. Nguyen**, R. Yurko.
 A multilevel model with heterogeneous variances for snap timing in the National Football League.
 2025+.
 [arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
@@ -214,6 +219,11 @@ https://cran.r-project.org/web/views/SportsAnalytics.html
 \vspace{-2mm}
 
 ## \textcolor{magenta}{\textbf{Talks}}
+
+**Q. Nguyen**.
+Advances in pass rush and change of direction evaluation in American football with player tracking data.
+*U.S. Olympic and Paralympic Performance Innovation Summit.*
+August 2025.
 
 **Q. Nguyen**, R. Yurko.
 Down, set, hut! Explaining variability in snap timing on plays with motion.
