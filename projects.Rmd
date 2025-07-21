@@ -52,12 +52,16 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 <br>
 ***(Co-Winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
 
-### Preprints
+### Under Review
 
 **Quang Nguyen**, Ronald Yurko.
 "A Bayesian circular mixed-effects model for explaining variability in directional movement in American football".
 *arXiv preprint arXiv:2507.06122*, 2025+.
 [[arXiv](https://arxiv.org/abs/2507.06122)]
+
+<!-- **Quang Nguyen**, Paolo Campana, Nynke M. D. Niezink. -->
+<!-- "Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom". -->
+<!-- 2025+. -->
 
 **Quang Nguyen**, Ronald Yurko.
 "A multilevel model with heterogeneous variances for snap timing in the National Football League".

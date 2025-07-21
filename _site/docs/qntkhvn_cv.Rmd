@@ -172,12 +172,16 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 [doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
 [arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
 
-## \textcolor{magenta}{\textbf{Preprints}}
+## \textcolor{magenta}{\textbf{Under Review}}
 
 **Q. Nguyen**, R. Yurko.
 A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
 2025+.
 [arXiv: 2507.06122](https://arxiv.org/abs/2507.06122).
+
+**Q. Nguyen**, P. Campana, N. M. D. Niezink.
+Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
+2025+.
 
 **Q. Nguyen**, R. Yurko.
 A multilevel model with heterogeneous variances for snap timing in the National Football League.
@@ -500,4 +504,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated July 14, 2025}
+\hfill \textit{Last updated July 20, 2025}
