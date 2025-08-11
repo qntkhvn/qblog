@@ -26,11 +26,11 @@ output:
 
 <div style="text-align: left"> 
 Welcome to The Q! 
-I am a third-year PhD student in the Department of Statistics & Data Science at Carnegie Mellon University. 
+I am a fourth-year PhD candidate in the Department of Statistics & Data Science at Carnegie Mellon University. 
 Previously, I completed my MS in Applied Statistics at Loyola University Chicago and BS in Mathematics and Data Science at Wittenberg University.
 
-I am broadly interested in statistical modeling in complex and high-dimensional settings.
-During my PhD, I have worked on problems in areas such as tracking data in sports and social networks.
+I am broadly interested in statistical modeling problems in complex and high-dimensional settings.
+During my PhD, I have worked on topics such as tracking data in sports and social networks.
 
 I am a member of the [Carnegie Mellon Sports Analytics Center](https://www.stat.cmu.edu/cmsac) and an organizer of the [CMSAC Research Lab](https://cmsac-research-lab.github.io).
 </div>
