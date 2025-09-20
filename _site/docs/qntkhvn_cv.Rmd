@@ -91,7 +91,7 @@ Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024
 
 Teaching Assistant \newline
 36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025 \newline
-36-468/668: Text Analysis \hfill Fall 2023, Fall 2024 \newline
+36-468/668: Text Analysis \hfill Fall 2023, Fall 2024, Fall 2025 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
 Summer Undergraduate Research Experience (SURE) in Statistics \newline
 36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
@@ -473,6 +473,7 @@ The American Statistician \newline
 WIREs Computational Statistics
 
 **Judge** \newline
+CMSAC 2025 Reproducible Research Competition \hfill 2025 \newline
 CSAS 2025 Student Poster Award \hfill 2025 \newline
 CSAS 2025 Data Challenge \hfill 2025 \newline
 CMSAC 2024 Reproducible Research Competition \hfill 2024 \newline
@@ -495,6 +496,10 @@ Loyola University Chicago \hfill 2021 -- 2022 \newline
 
 <!-- jsm data art -->
 
+Watt vs. Garrett? Metcalf vs. Pickens? Quang Nguyen Uses Next Gen Stats \hfill 2025 \newline To Evaluate Player Performance \newline
+Dietrich College of Humanities and Social Sciences, Carnegie Mellon University \newline
+https://www.cmu.edu/dietrich/statistics-datascience/news/2025/sports-analytics-quang-nguyen.html
+
 Committee Collaboration Yields Editors’ Choice Collection \hfill 2024 \newline
 Amstat News (American Statistical Association) \newline
 https://magazine.amstat.org/blog/2024/01/02/editors-choice-collection
@@ -514,4 +519,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated August 11, 2025}
+\hfill \textit{Last updated September 20, 2025}
