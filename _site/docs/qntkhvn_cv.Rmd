@@ -372,6 +372,8 @@ July 2023.
 
 \vspace{-2mm}
 
+**Sports Analytics Student Award** \hfill 2025 \newline Carnegie Mellon Statistics & Data Science (Funded by the Richardson Matano Family)
+
 **NFL Big Data Bowl Semifinalist** \hfill 2025
 
 **NFL Big Data Bowl Finalist** \hfill 2023, 2024 \newline Invited to present at NFL Scouting Combine
@@ -519,4 +521,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated September 20, 2025}
+\hfill \textit{Last updated September 24, 2025}
