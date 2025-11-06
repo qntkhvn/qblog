@@ -8,6 +8,13 @@ title: "Projects"
 
 ### Publications
 
+**Quang Nguyen**, Ronald Yurko.
+"A multilevel model with heterogeneous variances for snap timing in the National Football League".
+*Journal of the Royal Statistical Society Series A*, 2025+.
+[[arXiv](https://arxiv.org/abs/2502.16313); [journal](https://doi.org/10.1093/jrsssa/qnaf185)]
+<br>
+***(Semifinalist, NFL Big Data Bowl 2025)***
+
 **Quang Nguyen**, Ruitong Jiang, Meg Ellingwood, Ronald Yurko.
 "Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football".
 *Scientific Reports (Nature Portfolio)*, 2025.
@@ -62,13 +69,6 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 <!-- **Quang Nguyen**, Paolo Campana, Nynke M. D. Niezink. -->
 <!-- "Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom". -->
 <!-- 2025+. -->
-
-**Quang Nguyen**, Ronald Yurko.
-"A multilevel model with heterogeneous variances for snap timing in the National Football League".
-*arXiv preprint arXiv:2502.16313*, 2025+.
-[[arXiv](https://arxiv.org/abs/2502.16313)]
-<br>
-***(Semifinalist, NFL Big Data Bowl 2025)***
 
 Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
 "NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation".

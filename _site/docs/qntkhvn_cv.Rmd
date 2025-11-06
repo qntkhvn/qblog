@@ -123,11 +123,18 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
+**Q. Nguyen**, R. Yurko.
+A multilevel model with heterogeneous variances for snap timing in the National Football League.
+2025+.
+*Journal of the Royal Statistical Society Series A*.
+[doi: 10.1093/jrsssa/qnaf185](https://doi.org/10.1093/jrsssa/qnaf185);
+[arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
+
 **Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
 Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
 *Scientific Reports (Nature Portfolio)* **15**, 2148.
 2025.
-[doi.org/10.1038/s41598-025-85993-1](https://doi.org/10.1038/s41598-025-85993-1);
+[doi: 10.1038/s41598-025-85993-1](https://doi.org/10.1038/s41598-025-85993-1);
 [arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
 
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
@@ -183,11 +190,6 @@ A Bayesian circular mixed-effects model for explaining variability in directiona
 Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
 2025+.
 
-**Q. Nguyen**, R. Yurko.
-A multilevel model with heterogeneous variances for snap timing in the National Football League.
-2025+.
-[arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
-
 R. Yurko, **Q. Nguyen**, K. Pelechrinis.
 NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
 2024+.
@@ -236,7 +238,7 @@ August 2025.
 
 **Q. Nguyen**.
 NFL CoD.
-*Uncontrolled Variables.*
+*Uncontrolled Variables: A Science & Comedy Show.*
 August 2025.
 
 **Q. Nguyen**, R. Yurko.
@@ -334,7 +336,12 @@ Poisson Modeling and Predicting English Premier League Goal Scoring.
 *UConn Sports Analytics Symposium*.
 October 2020.
 
-## \textcolor{magenta}{\textbf{Workshops}}
+## \textcolor{magenta}{\textbf{Tutorials and Workshops}}
+
+**Q. Nguyen**. 
+Rcpp: A primer.
+*StatBytes Statistical Computing Seminars (Department of Statistics & Data Science, Carnegie Mellon University)*.
+November 2025.
 
 **Q. Nguyen**. 
 Building a performance metric with player tracking data.
@@ -521,4 +528,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated September 24, 2025}
+\hfill \textit{Last updated November 6, 2025}
