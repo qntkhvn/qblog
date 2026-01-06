@@ -90,7 +90,7 @@ Instructor \newline
 Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024, Summer 2025
 
 Teaching Assistant \newline
-36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025 \newline
+36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025, Spring 2026 \newline
 36-468/668: Text Analysis \hfill Fall 2023, Fall 2024, Fall 2025 \newline
 Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
 Summer Undergraduate Research Experience (SURE) in Statistics \newline
@@ -123,10 +123,17 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
+R. Yurko, **Q. Nguyen**, K. Pelechrinis.
+NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
+2025+.
+*Annals of Applied Statistics*.
+[doi: TBA](https://www.e-publications.org/ims/submission/AOAS/user/submissionFile/70786?confirm=5d1c9ec1);
+[arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
+
 **Q. Nguyen**, R. Yurko.
 A multilevel model with heterogeneous variances for snap timing in the National Football League.
 2025+.
-*Journal of the Royal Statistical Society Series A*.
+*Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
 [doi: 10.1093/jrsssa/qnaf185](https://doi.org/10.1093/jrsssa/qnaf185);
 [arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
 
@@ -189,11 +196,6 @@ A Bayesian circular mixed-effects model for explaining variability in directiona
 **Q. Nguyen**, P. Campana, N. M. D. Niezink.
 Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
 2025+.
-
-R. Yurko, **Q. Nguyen**, K. Pelechrinis.
-NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
-2024+.
-[arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
 
 ## \textcolor{magenta}{\textbf{Other}}
 
@@ -339,15 +341,19 @@ October 2020.
 ## \textcolor{magenta}{\textbf{Tutorials and Workshops}}
 
 **Q. Nguyen**. 
+Unsupervised learning with tracking data (Advanced level).
+*Connecticut Sports Analytics Symposium*.
+April 2026.
+
+**Q. Nguyen**. 
 Rcpp: A primer.
 *StatBytes Statistical Computing Seminars (Department of Statistics & Data Science, Carnegie Mellon University)*.
 November 2025.
 
 **Q. Nguyen**. 
-Building a performance metric with player tracking data.
+Building a performance metric with player tracking data (Advanced level).
 *Connecticut Sports Analytics Symposium*.
-April 2025. \newline
-**Player Tracking Data in Sports Analytics Workshop (Advanced Level)**
+April 2025.
 
 **Q. Nguyen**.
 Get Trained & Get Strained: The Ingredients of a Big Data Bowl Metric.
@@ -472,8 +478,7 @@ Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- pres
 (formerly Statistics in sports reading/research group)
 
 **Program Committee** \newline
-Connecticut Sports Analytics Symposium \hfill 2025 \newline
-UConn Sports Analytics Symposium \hfill 2024
+UConn/Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
 
 **Reviewer** \newline
 Journal of Quantitative Analysis in Sports \newline
@@ -482,12 +487,16 @@ The American Statistician \newline
 WIREs Computational Statistics
 
 **Judge** \newline
-CMSAC 2025 Reproducible Research Competition \hfill 2025 \newline
-CSAS 2025 Student Poster Award \hfill 2025 \newline
-CSAS 2025 Data Challenge \hfill 2025 \newline
-CMSAC 2024 Reproducible Research Competition \hfill 2024 \newline
-UCSAS 2024 Student Poster Award \hfill 2024 \newline
-UCSAS 2024 USOPC Data Challenge \hfill 2024
+CMSAC Reproducible Research Competition \hfill 2024, 2025 \newline
+CSAS Student Poster Award \hfill 2024, 2025 \newline
+CSAS Data Challenge \hfill 2024, 2025
+
+<!-- CMSAC 2025 Reproducible Research Competition \hfill 2025 \newline -->
+<!-- CSAS 2025 Student Poster Award \hfill 2025 \newline -->
+<!-- CSAS 2025 Data Challenge \hfill 2025 \newline -->
+<!-- CMSAC 2024 Reproducible Research Competition \hfill 2024 \newline -->
+<!-- UCSAS 2024 Student Poster Award \hfill 2024 \newline -->
+<!-- UCSAS 2024 USOPC Data Challenge \hfill 2024 -->
 
 **Mentoring** \newline
 Women in Data Science (WiDS) Chicago Datathon \hfill 2022
@@ -528,4 +537,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated November 6, 2025}
+\hfill \textit{Last updated January 6, 2026}
