@@ -8,8 +8,9 @@ title: "Teaching"
 
 * Summer Undergraduate Research Experience in Statistics (x2)
 
-  * Summer 2024: [website](https://36-sure.github.io/2024) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2024/showcase)
   * Summer 2025: [website](https://36-sure.github.io/2025) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2025/showcase)
+  
+  * Summer 2024: [website](https://36-sure.github.io/2024) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2024/showcase)
 
 This program is an eight-week summer initiative that provides students with hands-on training on statistical and data science methodology, culminating in a final capstone project on a real-world research question.
 The program offered two themes: Carnegie Mellon Sports Analytics Camp and UnitedHealth Group Bridges to Healthcare Technology Program.
@@ -32,6 +33,6 @@ The program offered two themes: Carnegie Mellon Sports Analytics Camp and United
 
 Over the years, I have given several workshops on player tracking data at sports analytics conferences
 
-* [CMSAC 2023](http://getstrained.github.io/talks/cmsac)
-* [CSAS 2025](https://getstrained.github.io/talks/csas)
 * [CSAS 2026](https://qntkhvn.github.io/timing/csas)
+* [CSAS 2025](https://getstrained.github.io/talks/csas)
+* [CMSAC 2023](http://getstrained.github.io/talks/cmsac)
