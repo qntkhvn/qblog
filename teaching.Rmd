@@ -1,0 +1,37 @@
+---
+title: "Teaching"
+---
+
+## Instructor
+
+### Carnegie Mellon University
+
+* Summer Undergraduate Research Experience in Statistics (x2)
+
+  * Summer 2024: [website](https://36-sure.github.io/2024) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2024/showcase)
+  * Summer 2025: [website](https://36-sure.github.io/2025) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2025/showcase)
+
+This program is an eight-week summer initiative that provides students with hands-on training on statistical and data science methodology, culminating in a final capstone project on a real-world research question.
+The program offered two themes: Carnegie Mellon Sports Analytics Camp and UnitedHealth Group Bridges to Healthcare Technology Program.
+
+### Loyola University Chicago
+
+* STAT 103: Fundamentals of Statistics (3 sections, Spring 2022)
+
+## Graduate Teaching Assistant
+
+### Carnegie Mellon University
+
+* 36-460/660: Sports Analytics (x3, Spring 2024--2026)
+* 36-468/668: Text Analysis (x3, Fall 2023--2025)
+* Summer Undergraduate Research Experience in Statistics (Summer 2023)
+* 36-402/608: Advanced Methods for Data Analysis (Spring 2023)
+* 36-401/607: Modern Regression (Fall 2022)
+
+## Workshops
+
+Over the years, I have given several workshops on player tracking data at sports analytics conferences
+
+* [CMSAC 2023](http://getstrained.github.io/talks/cmsac)
+* [CSAS 2025](https://getstrained.github.io/talks/csas)
+* [CSAS 2026](https://qntkhvn.github.io/timing/csas)
