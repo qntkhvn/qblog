@@ -31,7 +31,7 @@ The program offered two themes: Carnegie Mellon Sports Analytics Camp and United
 
 ## Workshops
 
-Over the years, I have given several workshops on player tracking data at sports analytics conferences
+Over the years, I have given workshops on player tracking data at various sports analytics conferences.
 
 * [CSAS 2026](https://qntkhvn.github.io/timing/csas)
 * [CSAS 2025](https://getstrained.github.io/talks/csas)

@@ -4,7 +4,7 @@ title: "Research"
 
 <!-- Below is a list of research and miscellaneous projects that I'm either currently working on or have completed. -->
 
-## Publications
+### Publications
 
 Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
 "NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation".
