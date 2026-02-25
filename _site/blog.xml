@@ -7,7 +7,20 @@
     <description>Blog Posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>NFL CoD, Gaussian version</title>
+      <dc:creator>Quang Nguyen</dc:creator>
+      <link>https://qntkhvn.netlify.app/posts/2026-02-24-nfl-cod-gaussian</link>
+      <description>Modeling highly concentrated angular data</description>
+      <category>Bayesian statistics</category>
+      <category>circular statistics</category>
+      <category>mixed-effects models</category>
+      <category>tracking data</category>
+      <guid>https://qntkhvn.netlify.app/posts/2026-02-24-nfl-cod-gaussian</guid>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://qntkhvn.netlify.app/posts/2026-02-24-nfl-cod-gaussian/nfl-cod-gaussian_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="960" height="960"/>
+    </item>
     <item>
       <title>March Madness Seedigami</title>
       <dc:creator>Quang Nguyen</dc:creator>
@@ -113,21 +126,6 @@
       <guid>https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim</guid>
       <pubDate>Sat, 31 Jul 2021 00:00:00 +0000</pubDate>
       <media:content url="https://qntkhvn.netlify.app/posts/2021-07-31-climbing-p1-sim/climbing-p1-sim_files/figure-html5/unnamed-chunk-4-1.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>Sports Animation Gallery - June 2021</title>
-      <dc:creator>qntkhvn</dc:creator>
-      <link>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</link>
-      <description>Leveling up with {gganimate}.</description>
-      <category>data viz</category>
-      <category>ggplot2</category>
-      <category>gganimate</category>
-      <category>football</category>
-      <category>euro 2020</category>
-      <category>tennis</category>
-      <guid>https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021</guid>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-      <media:content url="https://qntkhvn.netlify.app/posts/2021-07-05-sports-animations-june-2021/euro_group_stage.png" medium="image" type="image/png" width="1072" height="858"/>
     </item>
   </channel>
 </rss>

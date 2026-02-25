@@ -1,0 +1,204 @@
+---
+title: "NFL CoD, Gaussian version"
+description: |
+  Modeling highly concentrated angular data
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "February 24, 2026"
+output:
+  distill::distill_article:
+    math_method: katex
+    highlight: rstudio
+    code_folding: true
+    self_contained: false
+categories:
+  - Bayesian statistics
+  - circular statistics
+  - mixed-effects models
+  - tracking data
+# preview: seedigami.png
+---
+
+So, I've been working a lot with angular/circular/directional data for my PhD dissertation, which focuses on modeling and evaluating player movement in sports with tracking data.
+Last summer, I wrote a [paper](https://arxiv.org/abs/2507.06122) on evaluating change of direction (CoD) of NFL ball carriers.
+I also gave a [talk](https://youtu.be/mIn-d7iBt1g) on this same topic at Harvard last fall (and even presented about it during a science & comedy [show](https://bsky.app/profile/qntkhvn.bsky.social/post/3lvyw7tt3g22t) when I visited Chicago last summer.)
+
+At the heart of my paper is the following model:
+$$
+\begin{aligned}
+\varphi_{ijt} &\sim \textsf{von Mises}(\mu_{ijt}, \kappa_{ijt}),\\
+\tan \frac{\mu_{ijt}}{2} &= \alpha_0 + \mathbf{x}_{ijt}^\top \boldsymbol{\beta},\\
+\log \kappa_{ijt} &= \gamma_0 + \mathbf{z}_{ijt}^\top \boldsymbol{\psi} + u_j,\\
+u_j &\sim \mathcal N\left(0, \tau^2_{p[j]}\right).\\
+\end{aligned}
+$$
+To quickly summarize (taken shamelessly straight from my paper):
+
+* I use a von Mises distribution to model the turn angle $\varphi_{ijt}$ for ball carrier $j$ at frame $t$ of play $i$.
+* I explicitly model both the mean $\mu$ and concentration $\kappa$ parameters with various covariates (see my paper for full details).
+* The model includes a random intercept $u_j$ with variance $\tau^2_{p[j]}$ depending on player position, where $p[j]$ denotes position group of ball carrier $j$, so each position (RB, WR, TE) has its own variance.
+* I can then identify the shiftiest ball carriers with high variability (low concentration) in CoD.
+* The model is implemented in a Bayesian framework, and the full [code](https://github.com/qntkhvn/turn-angle) is available on GitHub.
+
+I personally think this is a super neat model and a cool application of directional statistics in sports.
+The paper has also been well-received by the football analytics community (see, e.g., [here](https://x.com/tejfbanalytics/status/1990917024977956889)).
+
+The only con of this model, though, is that it took forever to fit.
+Thus, I've been looking for ways to speed up the computation.
+This would be especially helpful because, in another project, I’m using this model as a piece to simulate player movement.
+
+Here is a nice way to achieve this.
+It is known that as $\kappa \rightarrow \infty$, a $\textsf{von Mises}(\mu, \kappa)$ distribution converges to a $\mathcal N(\mu, \sigma^2 = 1/\kappa)$ distribution.
+(Side note: as $\kappa \rightarrow 0$, the von Mises distribution converges to a uniform.)
+This can be easily be found on the von Mises distribution's [Wikipedia](https://en.wikipedia.org/wiki/Von_Mises_distribution).
+The Stan [documentation](https://mc-stan.org/docs/functions-reference/circular_distributions.html#numerical-stability) even recommends using a Gaussian in place of von Mises when $\kappa$ is large for the sake of numerical stability.
+
+Anyway, since the observed turn angle distribution in my data is highly concentrated (around 0), I can rely on this fact and fit the following Gaussian model:
+$$
+\begin{aligned}
+\varphi_{ijt} &\sim \mathcal N(\mu_{ijt}, \sigma_{ijt}),\\
+\mu_{ijt} &= \alpha_0 + \mathbf{x}_{ijt}^\top \boldsymbol{\beta},\\
+\log \sigma_{ijt} &= \gamma_0 + \mathbf{z}_{ijt}^\top \boldsymbol{\psi} + u_j,\\
+u_j &\sim \mathcal N\left(0, \tau^2_{p[j]}\right).\\
+\end{aligned}
+$$
+After fitting, I get basically the same results as what I presented in my paper using the von Mises model.
+What's nice about this is that the Gaussian model fit about three times faster.
+(Well, it still took a couple of hours, but the point is that it's way faster.)
+
+Below, I provide the full code for model fitting and some analyses.
+Again, these should match the results shown in my paper.
+
+**Model fitting with `brms`**
+
+```{r, eval=FALSE}
+library(tidyverse)
+theme_set(theme_light())
+
+library(brms)
+angle_gaussian <- brm(
+  bf(
+    turn_angle ~ prev_angle + adj_bc_x + adj_bc_y + adj_bc_x_from_first_down +
+      n_left_bc_defense + n_front_bc_defense + n_left_bc_offense + 
+      n_front_bc_offense + adj_x + adj_y + adj_x_change + adj_y_change_abs + 
+      dist_to_bc + def_s + angle_with_bc,
+    sigma ~ bc_s + bc_a + bc_cum_dis + bc_type + bc_position + 
+      (1 | gr(bc_id, by = bc_position)), 
+    decomp = "QR"
+  ),
+  chains = 4,
+  iter = 4000,
+  warmup = 2000,
+  seed = 60660,
+  cores = 4,
+  init = "0",
+  control = list(adapt_delta = 0.9),
+  backend = "cmdstanr",
+  data = tracking_angle
+)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+theme_set(theme_light())
+
+angle_gaussian <- read_rds("angle_gaussian.rds")
+```
+
+**Fixed effect coefficients when modeling the Gaussian standard deviation parameter**
+
+* Higher variability in CoD is associated with lower speed, higher acceleration, and higher cumulative distance covered.
+
+* Players on run plays display less variability in CoD (relative to pass plays).
+
+* WRs display more variability in CoD (relative to RBs).
+
+```{r}
+angle_gaussian |> 
+  summary() |> 
+  pluck("fixed") |> 
+  rownames_to_column(var = "term") |> 
+  filter(str_detect(term , "sigma_")) |> 
+  mutate(across(where(is.numeric), ~ round(.x, 3)))
+```
+
+**Positional differences in random effect variance**
+
+* There’s more within-position variation among TEs and WRs, compared to RBs.
+
+* This makes total sense given the types of movement of ball carriers in these position groups. (RB movements are typically more structured. TE and WR movements are often in the open-field.)
+
+
+```{r, fig.height=5, fig.width=5}
+angle_gaussian |> 
+  as_tibble() |> 
+  select(contains("sd_")) |> 
+  pivot_longer(everything(), names_to = "position") |> 
+  mutate(position = str_remove(position, "sd_bc_id__sigma_Intercept:bc_position")) |> 
+  ggplot(aes(value)) +
+  geom_histogram(alpha = 0.7, bins = 60, show.legend = FALSE) +
+  facet_wrap(~ position, nrow = 3) +
+  labs(x = "Within-position standard deviation",
+       y = "Frequency")
+```
+
+```{r, include=FALSE}
+wr_filtered <- c(38696, 39989, 40488, 41233, 41246, 41282, 42347, 42412, 42489, 43344, 43454, 44819, 44849, 44852, 44874, 44881, 44896, 44930, 44931, 45052, 46093, 46109, 46116, 46263, 46705, 47808, 47819, 47834, 47839, 47842, 47847, 47849, 47859, 48097, 48646, 52423, 52425, 52430, 52433, 52441, 52442, 52457, 52581, 53434, 53435, 53439, 53478, 53506, 53541, 53678, 54473, 54475, 54517, 54597)
+```
+
+**Ball carrier ratings: wide receivers (top/bottom 10)**
+
+* Higher estimates now corresponds directly to higher variance in CoD.
+
+* George Pickens is the shiftiest. DK Metcalf is the least shifty. (Curious, Steelers...)
+
+```{r, fig.height=7}
+library(tidybayes)
+players <- read_csv("players.csv")
+
+# wr_filtered <- tracking_angle |> 
+#   distinct(gameId, playId, bc_id, bc_position, bc_type) |> 
+#   filter(bc_position == "WR") |> 
+#   count(bc_id) |> 
+#   filter(n >= 15) |> 
+#   pull(bc_id)
+
+wr_posterior <- angle_gaussian |> 
+  spread_draws(r_bc_id__sigma[nflId,term]) |>
+  left_join(players) |> 
+  filter(nflId %in% wr_filtered) |>
+  group_by(nflId, displayName, position) |> 
+  summarize(posterior_mean = mean(r_bc_id__sigma)) |> 
+  ungroup() |> 
+  arrange(posterior_mean)
+
+wr_top_bottom <- wr_posterior |> 
+  slice(c(1:10, (n()-9):n())) |> 
+  pull(nflId)
+
+angle_gaussian |> 
+  spread_draws(r_bc_id__sigma[nflId,term]) |> 
+  ungroup() |> 
+  left_join(players) |> 
+  filter(nflId %in% wr_top_bottom) |> 
+  mutate(displayName = factor(displayName, 
+                              levels = wr_posterior$displayName)) |> 
+  ggplot(aes(x = r_bc_id__sigma, y = displayName)) +
+  ggridges::geom_density_ridges(rel_min_height = 0.01, alpha = 0.7) +
+  labs(x = "Ball carrier standard deviation random effect",
+       y = NULL)
+```
+
+Lastly, a quick note on prediction.
+
+The Gaussian distribution defined over the entire real line. 
+When making angular predictions with the Gaussian model, there will be values that leak past the circular boundaries $[-\pi, \pi]$. 
+(The proportion of these values should be super small if the data are highly concentrated.)
+If this happens, just simply wrap those values back into the circle. 
+(Use `atan2(sin(x), cos(x))` in `R`.)
+Think of this as follows:
+In a linear world, the number line goes on forever in both directions.
+In a circular world, that line is "glued" to the surface of a circle.
+
+Enjoy this [clip](https://www.dropbox.com/scl/fi/1rk08qjylifqbq0h189og/vonmises.mov?rlkey=ozpdchwwqb91tsf4x6tqchjw1&st=6yzxy4r5&dl=0) from [Uncontrolled Variables](https://www.uncontrolledvariables.com/)---the science & comedy show I mentioned at the start of this post.
