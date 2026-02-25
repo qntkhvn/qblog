@@ -149,7 +149,7 @@ wr_filtered <- c(38696, 39989, 40488, 41233, 41246, 41282, 42347, 42412, 42489, 
 
 **Ball carrier ratings: wide receivers (top/bottom 10)**
 
-* Higher estimates now corresponds directly to higher variance in CoD.
+* Higher estimates now correspond directly to higher variance in CoD.
 
 * George Pickens is the shiftiest. DK Metcalf is the least shifty. (Curious, Steelers...)
 
@@ -192,7 +192,7 @@ angle_gaussian |>
 
 Lastly, a quick note on prediction.
 
-The Gaussian distribution defined over the entire real line. 
+The Gaussian distribution is defined over the entire real line. 
 When making angular predictions with the Gaussian model, there will be values that leak past the circular boundaries $[-\pi, \pi]$. 
 (The proportion of these values should be super small if the data are highly concentrated.)
 If this happens, just simply wrap those values back into the circle. 
