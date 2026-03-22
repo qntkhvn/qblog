@@ -125,14 +125,14 @@ S.U.M. (Student Understanding Math) Assistant \hfill 2017
 
 R. Yurko, **Q. Nguyen**, K. Pelechrinis.
 NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
-2025+.
-*Annals of Applied Statistics*.
-[doi: TBA](https://www.e-publications.org/ims/submission/AOAS/user/submissionFile/70786?confirm=5d1c9ec1);
+2026.
+*Annals of Applied Statistics* **20**(1), 873--892.
+[doi: 10.1214/25-AOAS2132](https://doi.org/10.1214/25-AOAS2132);
 [arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
 
 **Q. Nguyen**, R. Yurko.
 A multilevel model with heterogeneous variances for snap timing in the National Football League.
-2025+.
+2025.
 *Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
 [doi: 10.1093/jrsssa/qnaf185](https://doi.org/10.1093/jrsssa/qnaf185);
 [arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
@@ -186,7 +186,13 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 [doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
 [arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
 
-## \textcolor{magenta}{\textbf{Under Review}}
+<!-- ## \textcolor{magenta}{\textbf{Under Review}} -->
+## \textcolor{magenta}{\textbf{Working Papers}}
+
+**Q. Nguyen**, R. Yurko.
+Bayesian multilevel step-and-turn models for evaluating player movement in American football.
+2026+.
+[arXiv: 2603.17866](https://arxiv.org/abs/2603.17866).
 
 **Q. Nguyen**, R. Yurko.
 A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
@@ -365,8 +371,8 @@ November 2023. \newline
 
 **Q. Nguyen**.
 Bayesian multilevel modeling in the wild: Beyond homogeneity.
-*Special Topics: Sports Analytics*.
-March 2025.
+*Special Topics: Sports Analytics (36-460/660, Carnegie Mellon University)*.
+March 2025 & March 2026.
 
 **Q. Nguyen**.
 Big Data Bowl: Overview, Getting Started, My Experience, and more.
@@ -537,4 +543,4 @@ https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-m
 
 \vspace{0mm}
 
-\hfill \textit{Last updated January 6, 2026}
+\hfill \textit{Last updated March 22, 2026}

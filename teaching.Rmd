@@ -36,3 +36,9 @@ Over the years, I have given workshops on player tracking data at various sports
 * [CSAS 2026](https://qntkhvn.github.io/timing/csas)
 * [CSAS 2025](https://getstrained.github.io/talks/csas)
 * [CMSAC 2023](http://getstrained.github.io/talks/cmsac)
+
+## Tutorials
+
+* [Bayesian multilevel modeling in the wild: Beyond homogeneity](https://qntkhvn.github.io/nfl-cod)
+* [`Rcpp`: A primer](http://qntkhvn.github.io/Rcpp-primer/slides.pdf)
+* [Web scraping: A primer](https://qntkhvn.github.io/webscraping)

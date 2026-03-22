@@ -8,12 +8,15 @@ title: "Research"
 
 Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
 "NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation".
-*Annals of Applied Statistics*, 2025+.
-[[arXiv](https://arxiv.org/abs/2406.17220); [journal](https://www.e-publications.org/ims/submission/AOAS/user/submissionFile/70786?confirm=5d1c9ec1)]
+*Annals of Applied Statistics*, 2026.
+[[arXiv](https://arxiv.org/abs/2406.17220);
+[journal](https://doi.org/10.1214/25-AOAS2132)]
+
+<!-- [journal](https://www.e-publications.org/ims/submission/AOAS/user/submissionFile/70786?confirm=5d1c9ec1)] -->
 
 **Quang Nguyen**, Ronald Yurko.
 "A multilevel model with heterogeneous variances for snap timing in the National Football League".
-*Journal of the Royal Statistical Society: Series A (Statistics in Society)*, 2025+.
+*Journal of the Royal Statistical Society: Series A (Statistics in Society)*, 2025.
 [[arXiv](https://arxiv.org/abs/2502.16313); [journal](https://doi.org/10.1093/jrsssa/qnaf185)]
 <br>
 ***(Semifinalist, NFL Big Data Bowl 2025)***
@@ -62,7 +65,12 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 <br>
 ***(Co-Winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
 
-### Under Review
+### Preprints
+
+**Quang Nguyen**, Ronald Yurko.
+"Bayesian multilevel step-and-turn models for evaluating player movement in American football".
+*arXiv preprint arXiv:2603.17866*, 2026+.
+[[arXiv](https://arxiv.org/abs/2603.17866)]
 
 **Quang Nguyen**, Ronald Yurko.
 "A Bayesian circular mixed-effects model for explaining variability in directional movement in American football".
