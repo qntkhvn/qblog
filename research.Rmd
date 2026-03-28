@@ -4,6 +4,22 @@ title: "Research"
 
 <!-- Below is a list of research and miscellaneous projects that I'm either currently working on or have completed. -->
 
+### Preprints
+
+**Quang Nguyen**, Ronald Yurko.
+"Bayesian multilevel step-and-turn models for evaluating player movement in American football".
+*arXiv preprint arXiv:2603.17866*, 2026+.
+[[arXiv](https://arxiv.org/abs/2603.17866)]
+
+**Quang Nguyen**, Ronald Yurko.
+"A Bayesian circular mixed-effects model for explaining variability in directional movement in American football".
+*arXiv preprint arXiv:2507.06122*, 2025+.
+[[arXiv](https://arxiv.org/abs/2507.06122)]
+
+<!-- **Quang Nguyen**, Paolo Campana, Nynke M. D. Niezink. -->
+<!-- "Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom". -->
+<!-- 2025+. -->
+
 ### Publications
 
 Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
@@ -64,22 +80,6 @@ Benjamin S. Baumer, Gregory J. Matthews, **Quang Nguyen**.
 [[arXiv](https://arxiv.org/abs/2105.09881); [journal](https://doi.org/10.51387/21-NEJSDS1)]
 <br>
 ***(Co-Winner, Poster Competition, Undergrad/MS Group, New England Statistical Society NextGen: Data Science Day 2020)***
-
-### Preprints
-
-**Quang Nguyen**, Ronald Yurko.
-"Bayesian multilevel step-and-turn models for evaluating player movement in American football".
-*arXiv preprint arXiv:2603.17866*, 2026+.
-[[arXiv](https://arxiv.org/abs/2603.17866)]
-
-**Quang Nguyen**, Ronald Yurko.
-"A Bayesian circular mixed-effects model for explaining variability in directional movement in American football".
-*arXiv preprint arXiv:2507.06122*, 2025+.
-[[arXiv](https://arxiv.org/abs/2507.06122)]
-
-<!-- **Quang Nguyen**, Paolo Campana, Nynke M. D. Niezink. -->
-<!-- "Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom". -->
-<!-- 2025+. -->
 
 
 ### Other
