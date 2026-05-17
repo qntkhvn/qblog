@@ -1564,8 +1564,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 
 <div class="d-article">
 <p>I’m currently teaching a <a href="https://36-315-summer26.netlify.app/">class</a> on statistical graphics and visualization during the summer semester.
-The class begins with common visualizations categorical and quantitative data, before moving on to more complex data structures.</p>
-<p>Over the last few days, I’ve been preparing materials for categorical data visualization.
+The class begins with common visualizations for categorical and quantitative data, before moving on to more complex data structures.</p>
+<p>Over the last few days, I’ve been prepping materials for categorical data viz.
 A common graphic for plotting two or more categorical variables is a <a href="https://en.wikipedia.org/wiki/Mosaic_plot">mosaic plot</a>.
 (I also just learned that mosaic plots are also called <a href="https://en.wikipedia.org/wiki/Marimekko">Marimekko</a>.)</p>
 <p>Here is an example of a mosaic plot, taken from its <a href="https://en.wikipedia.org/wiki/Mosaic_plot">Wikipedia page</a>.
@@ -1614,7 +1614,7 @@ Show code
 </details>
 <p><img src="mosaic-ggplot2_files/figure-html5/unnamed-chunk-2-1.png" alt="" width="1152" /></p>
 </div>
-<p>There are other packages for making mosaic plots in <code>R</code>, such as <a href="https://cran.r-project.org/web/packages/vcd"><code>vcd</code></a> and <a href="https://friendly.github.io/vcdExtra"><code>vcdExtra</code></a>.</p>
+<p>There are other packages for making mosaic plots in <code>R</code> such as <a href="https://cran.r-project.org/web/packages/vcd"><code>vcd</code></a> and <a href="https://friendly.github.io/vcdExtra"><code>vcdExtra</code></a>.</p>
 <p>As a <code>ggplot2</code> guru, I of course prefer to make my data viz with <code>ggplot2</code> when possible.
 For mosaic plots, the <a href="https://haleyjeppson.github.io/ggmosaic/"><code>ggmosaic</code></a> package has been around for awhile.
 However, <code>ggmosaic</code> has had recurring issues and has periodically been archived from CRAN.</p>
@@ -1656,7 +1656,7 @@ Show code
 <p>Let’s break it down:</p>
 <ul>
 <li><p>I first calculated the total for each decade (<code>decade_total</code>) in order to size the x-axis.</p></li>
-<li><p>I created a stacked bar chart with <code>geom_col()</code>, where <code>x</code> is mapped to the center of the total (<code>decade_total / 2</code>), and <code>width</code> is set to <code>decade_total</code>.</p></li>
+<li><p>I created a stacked bar chart with <code>geom_col()</code>, where <code>x</code> is mapped to the center of the total (<code>decade_total / 2</code>), and <code>width</code> is mapped to <code>decade_total</code>.</p></li>
 <li><p><strong>The trick is here faceting. I faceted by <code>decade</code> and most importantly, specified <code>scales = "free_x"</code> and <code>space = "free_x"</code> to allow the panels to have different widths.</strong></p></li>
 <li><p>I then enhanced the plot by trimming off different axis elements and adding labels and colors.</p></li>
 <li><p>I also found out that specifying <code>strip.clip = "off"</code> within <code>theme()</code> enables strip text to run off the panel (see “1910s-50s” in the plot).</p></li>

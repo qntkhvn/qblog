@@ -19,9 +19,9 @@ preview: mosaic.png
 ---
 
 I'm currently teaching a [class](https://36-315-summer26.netlify.app/) on statistical graphics and visualization during the summer semester.
-The class begins with common visualizations categorical and quantitative data, before moving on to more complex data structures.
+The class begins with common visualizations for categorical and quantitative data, before moving on to more complex data structures.
 
-Over the last few days, I've been preparing materials for categorical data visualization.
+Over the last few days, I've been prepping materials for categorical data viz.
 A common graphic for plotting two or more categorical variables is a [mosaic plot](https://en.wikipedia.org/wiki/Mosaic_plot).
 (I also just learned that mosaic plots are also called [Marimekko](https://en.wikipedia.org/wiki/Marimekko).)
 
@@ -67,7 +67,7 @@ songs |>
   mosaicplot(cex = 1.2, las = 1, main = NULL, col = box_colors)
 ```
 
-There are other packages for making mosaic plots in `R`, such as [`vcd`](https://cran.r-project.org/web/packages/vcd) and [`vcdExtra`](https://friendly.github.io/vcdExtra).
+There are other packages for making mosaic plots in `R` such as [`vcd`](https://cran.r-project.org/web/packages/vcd) and [`vcdExtra`](https://friendly.github.io/vcdExtra).
 
 As a `ggplot2` guru, I of course prefer to make my data viz with `ggplot2` when possible.
 For mosaic plots, the [`ggmosaic`](https://haleyjeppson.github.io/ggmosaic/) package has been around for awhile.
@@ -111,7 +111,7 @@ Let's break it down:
 
 * I first calculated the total for each decade (`decade_total`) in order to size the x-axis.
 
-* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`decade_total / 2`), and `width` is set to `decade_total`.
+* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`decade_total / 2`), and `width` is mapped to `decade_total`.
 
 * **The trick is here faceting. I faceted by `decade` and most importantly, specified `scales = "free_x"` and `space = "free_x"` to allow the panels to have different widths.**
 
