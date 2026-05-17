@@ -1,0 +1,122 @@
+---
+title: "Mosaic plots from scratch with ggplot2"
+description: "Marimekko ab initio"
+author:
+  - name: Quang Nguyen
+    url: https://github.com/qntkhvn
+date: "May 17, 2026"
+output:
+  distill::distill_article:
+    math_method: katex
+    highlight: rstudio
+    code_folding: true
+    self_contained: false
+categories:
+  - data viz
+  - ggplot2
+  - mosaic plots
+preview: mosaic.png
+---
+
+I'm currently teaching a [class](https://36-315-summer26.netlify.app/) on statistical graphics and visualization during the summer semester.
+The class begins with common visualizations categorical and quantitative data, before moving on to more complex data structures.
+
+Over the last few days, I've been preparing materials for categorical data visualization.
+A common graphic for plotting two or more categorical variables is a [mosaic plot](https://en.wikipedia.org/wiki/Mosaic_plot).
+(I also just learned that mosaic plots are also called [Marimekko](https://en.wikipedia.org/wiki/Marimekko).)
+
+Here is an example of a mosaic plot, taken from its [Wikipedia page](https://en.wikipedia.org/wiki/Mosaic_plot). 
+This is taken from [The Guardian's article](https://www.theguardian.com/news/datablog/2009/mar/20/1) on "1000 songs to hear before you die".
+
+<center>
+![](https://upload.wikimedia.org/wikipedia/commons/8/84/Mosaic-big.png?20090726044211){height=500}
+</center>
+
+If you're new to mosaic plots:
+
+* A mosaic plot is a spine plot of spine plots.
+
+* Column widths represent the marginal distribution of a variable `x`.
+
+* Within each column, rectangle heights represent a conditional distribution `y|x`.
+
+* Rectangle area represents the joint distribution of the variables.
+
+* Mosaic plots are useful for visualizing independence: if proportions are the same across groups, the boxes line up into a grid.
+
+Anyway, let's try to recreate the mosaic plot above.
+
+First, here are the data for plotting.
+
+```{r}
+library(tidyverse)
+
+songs <- read_csv("https://raw.githubusercontent.com/qntkhvn/36-315-summer26/refs/heads/master/data/songs.csv") |> 
+  mutate(decade = cut(YEAR, right = TRUE, breaks = c(-Inf, 1959, 1969, 1979, 1989, 1999, Inf),
+                      labels = c("1910s-50s", "1960s", "1970s", "1980s", "1990s", "2000s")))
+```
+
+In base `R`, this is straightforward with `mosaicplot()`.
+(In fact, I think they used this exact function to make the plot.)
+
+```{r, fig.height=10, fig.width=12}
+box_colors <- c("red", "gold1", "greenyellow", "lightgreen", "dodgerblue2", "blue3", "magenta2")
+songs |> 
+  select(decade, THEME) |> 
+  table() |> 
+  mosaicplot(cex = 1.2, las = 1, main = NULL, col = box_colors)
+```
+
+There are other packages for making mosaic plots in `R`, such as [`vcd`](https://cran.r-project.org/web/packages/vcd) and [`vcdExtra`](https://friendly.github.io/vcdExtra).
+
+As a `ggplot2` guru, I of course prefer to make my data viz with `ggplot2` when possible.
+For mosaic plots, the [`ggmosaic`](https://haleyjeppson.github.io/ggmosaic/) package has been around for awhile.
+However, `ggmosaic` has had recurring issues and has periodically been archived from CRAN.
+
+I also recently came across the [`marimekko`](https://gogonzo.github.io/marimekko/) package.
+Still, I find the syntax (of both `ggmosaic` and `marimekko`) somewhat unintuitive.
+For new users in particular, the highly specialized variable-mapping syntax can create a fairly steep learning curve.
+
+So, why not just create a mosaic plot from scratch with `ggplot2`?
+As it turns out, this is not that difficult.
+(I'm sure I'm not the first person to do this.)
+
+```{r, include=FALSE}
+theme_set(theme_minimal(base_size = 12))
+```
+
+```{r, fig.height=5.5, fig.width=7}
+songs |> 
+  count(decade, THEME) |>
+  group_by(decade = str_c(decade, "\n")) |>
+  mutate(decade_total = sum(n)) |>
+  ggplot(aes(decade_total / 2, n, fill = THEME, width = decade_total)) +
+  geom_col(position = "fill", color = "white", linewidth = 2, show.legend = FALSE) +
+  facet_wrap(~ decade, scales = "free_x", space = "free_x") +
+  scale_x_continuous(expand = c(0, 0), breaks = NULL) +
+  scale_y_continuous(expand = c(0, 0), 
+                     breaks = c(0.03, 0.12, 0.35, 0.56, 0.67, 0.85, 0.96),
+                     labels = rev(sort(unique(songs$THEME)))) +
+  scale_fill_manual(values = c("red", "gold1", "greenyellow", "lightgreen", "dodgerblue2", "blue3", "magenta2")) +
+  labs(x = NULL, y = NULL) +
+  theme(strip.background = element_rect(fill = "transparent", color = NA),
+        strip.text.x = element_text(color = "black"),
+        strip.clip = "off",
+        panel.grid = element_blank(),
+        axis.ticks.y = element_line(color = NA),
+        axis.text.y = element_text(hjust = 0))
+```
+
+Let's break it down:
+
+* I first calculated the total for each decade (`decade_total`) in order to size the x-axis.
+
+* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`decade_total / 2`), and `width` is set to `decade_total`.
+
+* **The trick is here faceting. I faceted by `decade` and most importantly, specified `scales = "free_x"` and `space = "free_x"` to allow the panels to have different widths.**
+
+* I then enhanced the plot by trimming off different axis elements and adding labels and colors.
+
+* I also found out that specifying `strip.clip = "off"` within `theme()` enables strip text to run off the panel (see "1910s-50s" in the plot).
+
+That's it!
