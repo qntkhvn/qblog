@@ -97,7 +97,7 @@ songs |>
   scale_y_continuous(expand = c(0, 0), 
                      breaks = c(0.03, 0.12, 0.35, 0.56, 0.67, 0.85, 0.96),
                      labels = rev(sort(unique(songs$THEME)))) +
-  scale_fill_manual(values = c("red", "gold1", "greenyellow", "lightgreen", "dodgerblue2", "blue3", "magenta2")) +
+  scale_fill_manual(values = box_colors) +
   labs(x = NULL, y = NULL) +
   theme(strip.background = element_rect(fill = "transparent", color = NA),
         strip.text.x = element_text(color = "black"),
