@@ -110,7 +110,7 @@ Let's break it down:
 
 * I first calculated the total for each decade (`n_decade`) in order to size the x-axis.
 
-* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`n_decade / 2`), and `width` is mapped to `n_decade`.
+* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the decade total (`n_decade / 2`) and `width` is mapped to `n_decade`.
 
 * **The trick is here faceting. I faceted by `decade` and most importantly, specified `scales = "free_x"` and `space = "free_x"` to allow the panels to have different widths.**
 
@@ -158,9 +158,9 @@ songs |>
 
 Here, I simply added and modified a few lines of code from the previous version. In particular:
 
-* I calculated expected count for each `decade` and `THEME` combination under independence (s/o to `add_count()`), and compute the corresponding residuals.
+* I calculated expected count for each `decade` and `THEME` combination under independence (s/o to `add_count()`) and the corresponding residuals.
 
-* I then changed the color palette so that cell with positive and negative residuals are shaded blue and red, respectively.
+* I then changed `fill` and the color gradient so that cells with positive and negative residuals are shaded blue and red, respectively.
 
 * Note that the residuals can also be binned to show their direction and magnitude. That is, whether the observed counts are substantially, moderately, or slightly higher or lower than expected.
 

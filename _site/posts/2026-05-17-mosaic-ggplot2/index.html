@@ -2370,7 +2370,7 @@ Show code
 <p>Let’s break it down:</p>
 <ul>
 <li><p>I first calculated the total for each decade (<code>n_decade</code>) in order to size the x-axis.</p></li>
-<li><p>I created a stacked bar chart with <code>geom_col()</code>, where <code>x</code> is mapped to the center of the total (<code>n_decade / 2</code>), and <code>width</code> is mapped to <code>n_decade</code>.</p></li>
+<li><p>I created a stacked bar chart with <code>geom_col()</code>, where <code>x</code> is mapped to the center of the decade total (<code>n_decade / 2</code>) and <code>width</code> is mapped to <code>n_decade</code>.</p></li>
 <li><p><strong>The trick is here faceting. I faceted by <code>decade</code> and most importantly, specified <code>scales = "free_x"</code> and <code>space = "free_x"</code> to allow the panels to have different widths.</strong></p></li>
 <li><p>I then enhanced the plot by trimming off different axis elements and adding labels and colors.</p></li>
 <li><p>I also found out that specifying <code>strip.clip = "off"</code> within <code>theme()</code> enables strip text to run off the panel (see “1910s-50s” in the plot).</p></li>
@@ -2415,8 +2415,8 @@ Show code
 </div>
 <p>Here, I simply added and modified a few lines of code from the previous version. In particular:</p>
 <ul>
-<li><p>I calculated expected count for each <code>decade</code> and <code>THEME</code> combination under independence (s/o to <code>add_count()</code>), and compute the corresponding residuals.</p></li>
-<li><p>I then changed the color palette so that cell with positive and negative residuals are shaded blue and red, respectively.</p></li>
+<li><p>I calculated expected count for each <code>decade</code> and <code>THEME</code> combination under independence (s/o to <code>add_count()</code>) and the corresponding residuals.</p></li>
+<li><p>I then changed <code>fill</code> and the color gradient so that cells with positive and negative residuals are shaded blue and red, respectively.</p></li>
 <li><p>Note that the residuals can also be binned to show their direction and magnitude. That is, whether the observed counts are substantially, moderately, or slightly higher or lower than expected.</p></li>
 </ul>
 <p>Neat.</p>
