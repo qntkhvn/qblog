@@ -87,10 +87,9 @@ theme_set(theme_minimal(base_size = 12))
 
 ```{r, fig.height=5.5, fig.width=7}
 songs |> 
-  count(decade, THEME) |>
-  group_by(decade = str_c(decade, "\n")) |>
-  mutate(decade_total = sum(n)) |>
-  ggplot(aes(decade_total / 2, n, fill = THEME, width = decade_total)) +
+  count(decade = str_c(decade, "\n"), THEME) |> 
+  add_count(decade, wt = n, name = "n_decade") |>
+  ggplot(aes(n_decade / 2, n, fill = THEME, width = n_decade)) +
   geom_col(position = "fill", color = "white", linewidth = 2, show.legend = FALSE) +
   scale_x_continuous(expand = c(0, 0), breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), 
@@ -109,9 +108,9 @@ songs |>
 
 Let's break it down:
 
-* I first calculated the total for each decade (`decade_total`) in order to size the x-axis.
+* I first calculated the total for each decade (`n_decade`) in order to size the x-axis.
 
-* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`decade_total / 2`), and `width` is mapped to `decade_total`.
+* I created a stacked bar chart with `geom_col()`, where `x` is mapped to the center of the total (`n_decade / 2`), and `width` is mapped to `n_decade`.
 
 * **The trick is here faceting. I faceted by `decade` and most importantly, specified `scales = "free_x"` and `space = "free_x"` to allow the panels to have different widths.**
 
@@ -135,20 +134,17 @@ theme_set(theme_minimal(base_size = 14))
 ```{r, fig.height=5.5, fig.width=9}
 songs |> 
   count(decade, THEME = fct_rev(THEME)) |>
-  group_by(decade) |> 
-  mutate(decade_total = sum(n)) |> 
-  group_by(THEME) |> 
-  mutate(theme_total = sum(n)) |> 
-  ungroup() |> 
-  mutate(expected = (decade_total * theme_total) / nrow(songs),
-         residual = (n - expected) / sqrt(expected)) |> 
-  ggplot(aes(x = decade_total / 2, y = n, fill = residual, width = decade_total)) +
+  add_count(decade, wt = n, name = "n_decade") |>
+  add_count(THEME, wt = n, name = "n_theme") |> 
+  mutate(n_expected = (n_decade * n_theme) / nrow(songs),
+         residual = (n - n_expected) / sqrt(n_expected)) |> 
+  ggplot(aes(x = n_decade / 2, y = n, fill = residual, width = n_decade)) +
   geom_col(position = "fill", color = "white", linewidth = 2) +
   scale_x_continuous(expand = c(0, 0), breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), 
                      breaks = c(0.03, 0.12, 0.35, 0.56, 0.67, 0.85, 0.96),
                      labels = rev(sort(unique(songs$THEME)))) +
-  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0) +
+  scale_fill_gradient2(high = "blue", mid = "white", low = "red", midpoint = 0) +
   facet_wrap(~ decade, scales = "free_x", space = "free_x") +
   labs(x = NULL, y = NULL, fill = "Residuals") +
   theme(strip.background = element_rect(fill = "transparent", color = NA),
@@ -161,7 +157,7 @@ songs |>
 
 Here, I simply added and modified a few lines of code from the previous version. In particular:
 
-* I calculated expected count for each `decade` and `THEME` combination under independence, and compute the corresponding residuals.
+* I calculated expected count for each `decade` and `THEME` combination under independence (s/o to `add_count()`), and compute the corresponding residuals.
 
 * I then changed the color palette so that cell with positive and negative residuals are shaded blue and red, respectively.
 
