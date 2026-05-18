@@ -92,19 +92,19 @@ songs |>
   mutate(decade_total = sum(n)) |>
   ggplot(aes(decade_total / 2, n, fill = THEME, width = decade_total)) +
   geom_col(position = "fill", color = "white", linewidth = 2, show.legend = FALSE) +
-  facet_wrap(~ decade, scales = "free_x", space = "free_x") +
   scale_x_continuous(expand = c(0, 0), breaks = NULL) +
   scale_y_continuous(expand = c(0, 0), 
                      breaks = c(0.03, 0.12, 0.35, 0.56, 0.67, 0.85, 0.96),
                      labels = rev(sort(unique(songs$THEME)))) +
   scale_fill_manual(values = box_colors) +
+  facet_wrap(~ decade, scales = "free_x", space = "free_x") +
   labs(x = NULL, y = NULL) +
   theme(strip.background = element_rect(fill = "transparent", color = NA),
         strip.text.x = element_text(color = "black"),
         strip.clip = "off",
         panel.grid = element_blank(),
         axis.ticks.y = element_line(color = NA),
-        axis.text.y = element_text(hjust = 0))
+        axis.text.y = element_text(color = "black", hjust = 0))
 ```
 
 Let's break it down:
@@ -120,3 +120,51 @@ Let's break it down:
 * I also found out that specifying `strip.clip = "off"` within `theme()` enables strip text to run off the panel (see "1910s-50s" in the plot).
 
 That's it!
+
+Next, let's color the rectangles by Pearson residuals.
+
+Recall that Pearson residuals ($r_{ij}$) measure the discrepancy between the observed ($n_{ij}$) and expected ($\hat n_{ij}$) frequencies under independence, where
+$$
+r_{ij} = \frac{n_{ij} - \hat{n}_{ij}}{\sqrt{\hat n_{ij}}}.
+$$
+
+```{r, include=FALSE}
+theme_set(theme_minimal(base_size = 14))
+```
+
+```{r, fig.height=5.5, fig.width=9}
+songs |> 
+  count(decade, THEME = fct_rev(THEME)) |>
+  group_by(decade) |> 
+  mutate(decade_total = sum(n)) |> 
+  group_by(THEME) |> 
+  mutate(theme_total = sum(n)) |> 
+  ungroup() |> 
+  mutate(expected = (decade_total * theme_total) / nrow(songs),
+         residual = (n - expected) / sqrt(expected)) |> 
+  ggplot(aes(x = decade_total / 2, y = n, fill = residual, width = decade_total)) +
+  geom_col(position = "fill", color = "white", linewidth = 2) +
+  scale_x_continuous(expand = c(0, 0), breaks = NULL) +
+  scale_y_continuous(expand = c(0, 0), 
+                     breaks = c(0.03, 0.12, 0.35, 0.56, 0.67, 0.85, 0.96),
+                     labels = rev(sort(unique(songs$THEME)))) +
+  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0) +
+  facet_wrap(~ decade, scales = "free_x", space = "free_x") +
+  labs(x = NULL, y = NULL, fill = "Residuals") +
+  theme(strip.background = element_rect(fill = "transparent", color = NA),
+        strip.text.x = element_text(color = "black"),
+        strip.clip = "off",
+        panel.grid = element_blank(),
+        axis.ticks.y = element_line(color = NA),
+        axis.text.y = element_text(color = "black", hjust = 0))
+```
+
+Here, I simply added and modified a few lines of code from the previous version. In particular:
+
+* I calculated expected count for each `decade` and `THEME` combination under independence, and compute the corresponding residuals.
+
+* I then changed the color palette so that cell with positive and negative residuals are shaded blue and red, respectively.
+
+* Note that the residuals can also be binned to show their direction and magnitude. That is, whether the observed counts are substantially, moderately, or slightly higher or lower than expected.
+
+Neat.
