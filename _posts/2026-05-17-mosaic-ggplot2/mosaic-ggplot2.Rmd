@@ -64,7 +64,8 @@ box_colors <- c("red", "gold1", "greenyellow", "lightgreen", "dodgerblue2", "blu
 songs |> 
   select(decade, THEME) |> 
   table() |> 
-  mosaicplot(cex = 1.2, las = 1, main = NULL, col = box_colors)
+  mosaicplot(cex = 1.2, las = 1, col = box_colors,
+             xlab = "", ylab = "", main = "")
 ```
 
 There are other packages for making mosaic plots in `R` such as [`vcd`](https://cran.r-project.org/web/packages/vcd) and [`vcdExtra`](https://friendly.github.io/vcdExtra).
