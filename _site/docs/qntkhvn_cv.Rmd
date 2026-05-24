@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: margin=0.9in
+geometry: margin=0.95in
 # title: cv
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
@@ -15,14 +15,15 @@ web: qntkhvn.netlify.app
 # updated: TRUE
 # rdateformat: "`r format(Sys.time(), '%d %b %Y')`"
 # keywords: R Markdown, academic CV, template
-fontfamily: mathpazo
-fontfamilyoptions: sc, osf
+fontfamily: libertine
+# fontfamilyoptions: sc, osf
 fontsize: 10pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
   \usepackage{hyperref}
   \usepackage{xcolor}
+  \usepackage{inconsolata}
 ---
 
 \pagestyle{plain}
@@ -63,6 +64,170 @@ BS, Mathematics & Data Science
 
 <!-- \vspace{0mm} -->
 
+# \textcolor{red}{PUBLICATIONS}
+
+\vspace{-2mm}
+
+<!-- Authors (Q bold) -->
+<!-- Title -->
+<!-- Year -->
+<!-- vol, pages, etc. -->
+<!-- journal -->
+<!-- doi/arxiv -->
+
+## \textcolor{magenta}{\textbf{Journal Articles}}
+
+R. Yurko, **Q. Nguyen**, K. Pelechrinis.
+NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
+2026.
+*Annals of Applied Statistics* **20**(1), 873--892.
+[`doi:10.1214/25-AOAS2132`](https://doi.org/10.1214/25-AOAS2132);
+[`arXiv:2406.17220`](https://arxiv.org/abs/2406.17220).
+
+**Q. Nguyen**, R. Yurko.
+A multilevel model with heterogeneous variances for snap timing in the National Football League.
+2025.
+*Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
+[`doi:10.1093/jrsssa/qnaf185`](https://doi.org/10.1093/jrsssa/qnaf185);
+[`arXiv:2502.16313`](https://arxiv.org/abs/2502.16313).
+
+**Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
+Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
+*Scientific Reports (Nature Portfolio)* **15**, 2148.
+2025.
+[`doi:10.1038/s41598-025-85993-1`](https://doi.org/10.1038/s41598-025-85993-1);
+[`arXiv:2403.14769`](https://arxiv.org/abs/2403.14769).
+
+**Q. Nguyen**, R. Yurko, G. J. Matthews. 
+Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
+*The American Statistician* **78**(2), 199--208.
+2024.
+[`doi:10.1080/00031305.2023.2242442`](https://doi.org/10.1080/00031305.2023.2242442);
+[`arXiv:2305.10262`](https://arxiv.org/abs/2305.10262). \newline
+**Editors’ Choice Collection**.
+
+**Q. Nguyen**, G. J. Matthews. 
+Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
+*Journal of Sports Analytics* **10**(1), 77--85.
+2024.
+[`doi:10.3233/JSA-240744`](https://doi.org/10.3233/JSA-240744);
+[`arXiv: 2210.02383`](https://arxiv.org/abs/2210.02383).
+
+N. M. Lemon, L. K. Taylor, M. A. Rech, **Q. Nguyen**, G. J. Matthews, G. Lew, S. Lovett.
+Utility of D-dimer in predicting pulmonary embolism in patients with COVID-19 presenting to the emergency department.
+*Journal of the American College of Emergency Physicians Open* **5**(4), e13237.
+2024.
+[`doi:10.1002/emp2.13237`](https://doi.org/10.1002/emp2.13237).
+
+B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
+Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
+*Wiley Interdisciplinary Reviews: Computational Statistics* **15**(6), e1612.
+2023.
+[`doi:10.1002/wics.1612`](https://doi.org/10.1002/wics.1612);
+[`arXiv:2301.04001`](https://arxiv.org/abs/2301.04001).
+
+**Q. Nguyen**. 
+Poisson Modeling and Predicting English Premier League Goal Scoring.
+*New England Journal of Statistics in Data Science* **1**(1), 95--101.
+2023.
+[`doi:10.51387/21-NEJSDS1`](https://doi.org/10.51387/21-NEJSDS1);
+[`arXiv:2105.09881`](https://arxiv.org/abs/2105.09881).
+
+**Q. Nguyen**, H. Butler, G. J. Matthews. 
+An Examination of Olympic Sport Climbing Competition Format and Scoring System.
+*Journal of Data Science* **20**(2), 156--167.
+2022.
+[`doi:10.6339/22-JDS1042`](https://doi.org/10.6339/22-JDS1042);
+[`arXiv:2111.05310`](https://arxiv.org/abs/2111.05310).
+
+## \textcolor{magenta}{\textbf{Preprints \& Working Papers}}
+
+**Q. Nguyen**, R. Yurko.
+Bayesian multilevel step-and-turn models for evaluating player movement in American football.
+2026+.
+[`arXiv:2603.17866`](https://arxiv.org/abs/2603.17866).
+
+**Q. Nguyen**, R. Yurko.
+A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
+2025+.
+[`arXiv:2507.06122`](https://arxiv.org/abs/2507.06122).
+
+**Q. Nguyen**, P. Campana, N. M. D. Niezink.
+Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
+2025+.
+
+<!-- ## \textcolor{magenta}{\textbf{Under Review}} -->
+
+## \textcolor{magenta}{\textbf{Other}}
+
+**Q. Nguyen**, R. Yurko (collaboration between CMSAC and NFL).
+Introducing the NFL Draft Tier Chart.
+NFL Football Operations.
+2026.
+[`https://operations.nfl.com/updates/football-ops/introducing-the-nfl-draft-tier-chart`](https://operations.nfl.com/updates/football-ops/introducing-the-nfl-draft-tier-chart)
+
+**Q. Nguyen**, R. Yurko (collaboration between CMSAC and NFL).
+Building an NFL Draft Value Chart.
+NFL Football Operations.
+2026.
+[`https://operations.nfl.com/updates/football-ops/building-an-nfl-draft-value-chart`](https://operations.nfl.com/updates/football-ops/building-an-nfl-draft-value-chart)
+
+**Q. Nguyen**, R. Yurko.
+Down, set, hut! Explaining variability in snap timing on plays with motion.
+NFL Big Data Bowl 2025.
+[`https://www.kaggle.com/code/tindata/down-set-hut`](https://www.kaggle.com/code/tindata/down-set-hut)
+
+**Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
+Momentum-based fractional tackles.
+NFL Big Data Bowl 2024.
+[`https://www.kaggle.com/code/tindata/momentum-based-fractional-tackles`](https://www.kaggle.com/code/tindata/momentum-based-fractional-tackles)
+
+G. J. Matthews, **Q. Nguyen**.
+STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
+NFL Big Data Bowl 2023.
+[`https://www.kaggle.com/code/statsinthewild/strain-sacks-tackles-rushing-aggression-index`](https://www.kaggle.com/code/statsinthewild/strain-sacks-tackles-rushing-aggression-index)
+
+B. S. Baumer, **Q. Nguyen**, G. J. Matthews.
+CRAN Task View: Sports Analytics.
+The Comprehensive R Archive Network.
+2022.
+[`https://cran.r-project.org/web/views/SportsAnalytics.html`](https://cran.r-project.org/web/views/SportsAnalytics.html)
+
+\vspace{0mm}
+
+# \textcolor{red}{ACADEMIC EXPERIENCE}
+
+\vspace{-2mm}
+
+## \textcolor{magenta}{\textbf{Instructor}}
+
+**Carnegie Mellon University** \newline
+36-315: Statistics Graphics and Visualization \hfill Summer 2026 \newline
+Summer Undergraduate Research Experience in Statistics \hfill Summer 2024, Summer 2025
+
+**Loyola University Chicago** \newline
+STAT 103: Fundamentals of Statistics (3 sections) \hfill Spring 2022
+
+## \textcolor{magenta}{\textbf{Graduate Teaching Assistant}}
+
+**Carnegie Mellon University** \newline
+36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025, Spring 2026 \newline
+36-468/668: Text Analysis \hfill Fall 2023, Fall 2024, Fall 2025 \newline
+Summer Undergraduate Research Experience in Statistics \hfill Summer 2023 \newline
+36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
+36-401/607: Modern Regression \hfill Fall 2022
+
+## \textcolor{magenta}{\textbf{Other}}
+
+**Wittenberg University**  \newline
+Math Workshop Head Tutor \hfill 2018 -- 2020 \newline
+Faculty Aide \hfill 2018 -- 2020
+
+**Clarkston Senior High School** \newline
+S.U.M. (Student Understanding Math) Assistant \hfill 2017
+
+\vspace{0mm}
+
 # \textcolor{red}{RESEARCH EXPERIENCE}
 
 \vspace{-2mm}
@@ -81,239 +246,136 @@ Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 \vspace{0mm}
 
-# \textcolor{red}{ACADEMIC EXPERIENCE}
-
-\vspace{-2mm}
-
-**Carnegie Mellon University**  \newline
-Instructor \newline
-Summer Undergraduate Research Experience (SURE) in Statistics \hfill Summer 2024, Summer 2025
-
-Teaching Assistant \newline
-36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025, Spring 2026 \newline
-36-468/668: Text Analysis \hfill Fall 2023, Fall 2024, Fall 2025 \newline
-Carnegie Mellon Sports Analytics Camp (CMSACamp)/ \hfill Summer 2023 \newline
-Summer Undergraduate Research Experience (SURE) in Statistics \newline
-36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
-36-401/607: Modern Regression \hfill Fall 2022
-
-**Loyola University Chicago** \newline
-Instructor \newline
-STAT 103: Fundamentals of Statistics (3 sections) \hfill Spring 2022
-
-**Wittenberg University**  \newline
-Math Workshop Head Tutor \hfill 2018 -- 2020 \newline
-Faculty Aide \hfill 2018 -- 2020
-
-**Clarkston Senior High School** \newline
-S.U.M. (Student Understanding Math) Assistant \hfill 2017
-
-\vspace{0mm}
-
-# \textcolor{red}{PUBLICATIONS}
-
-\vspace{-2mm}
-
-<!-- Authors (Q bold) -->
-<!-- Title -->
-<!-- Year -->
-<!-- vol, pages, etc. -->
-<!-- journal -->
-<!-- doi/arxiv -->
-
-## \textcolor{magenta}{\textbf{Journal Articles}}
-
-R. Yurko, **Q. Nguyen**, K. Pelechrinis.
-NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
-2026.
-*Annals of Applied Statistics* **20**(1), 873--892.
-[doi: 10.1214/25-AOAS2132](https://doi.org/10.1214/25-AOAS2132);
-[arXiv: 2406.17220](https://arxiv.org/abs/2406.17220).
-
-**Q. Nguyen**, R. Yurko.
-A multilevel model with heterogeneous variances for snap timing in the National Football League.
-2025.
-*Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
-[doi: 10.1093/jrsssa/qnaf185](https://doi.org/10.1093/jrsssa/qnaf185);
-[arXiv: 2502.16313](https://arxiv.org/abs/2502.16313).
-
-**Q. Nguyen**, R. Jiang, M. Ellingwood, R. Yurko. 
-Fractional Tackles: Leveraging Player Tracking Data for Within-Play Tackling Evaluation in American Football.
-*Scientific Reports (Nature Portfolio)* **15**, 2148.
-2025.
-[doi: 10.1038/s41598-025-85993-1](https://doi.org/10.1038/s41598-025-85993-1);
-[arXiv: 2403.14769](https://arxiv.org/abs/2403.14769).
-
-**Q. Nguyen**, R. Yurko, G. J. Matthews. 
-Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
-*The American Statistician* **78**(2), 199--208.
-2024.
-[doi: 10.1080/00031305.2023.2242442](https://doi.org/10.1080/00031305.2023.2242442);
-[arXiv: 2305.10262](https://arxiv.org/abs/2305.10262). \newline
-**Editors’ Choice Collection**.
-
-**Q. Nguyen**, G. J. Matthews. 
-Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in Baseball.
-*Journal of Sports Analytics* **10**(1), 77--85.
-2024.
-[doi: 10.3233/JSA-240744](https://doi.org/10.3233/JSA-240744);
-[arXiv: 2210.02383](https://arxiv.org/abs/2210.02383).
-
-N. M. Lemon, L. K. Taylor, M. A. Rech, **Q. Nguyen**, G. J. Matthews, G. Lew, S. Lovett.
-Utility of D-dimer in predicting pulmonary embolism in patients with COVID-19 presenting to the emergency department.
-*Journal of the American College of Emergency Physicians Open* **5**(4), e13237.
-2024.
-[doi:10.1002/emp2.13237](https://doi.org/10.1002/emp2.13237).
-
-B. S. Baumer, G. J. Matthews, **Q. Nguyen**.
-Big Ideas in Sports Analytics and Statistical Tools for their Investigation.
-*Wiley Interdisciplinary Reviews: Computational Statistics* **15**(6), e1612.
-2023.
-[doi: 10.1002/wics.1612](https://doi.org/10.1002/wics.1612);
-[arXiv: 2301.04001](https://arxiv.org/abs/2301.04001).
-
-**Q. Nguyen**. 
-Poisson Modeling and Predicting English Premier League Goal Scoring.
-*New England Journal of Statistics in Data Science* **1**(1), 95--101.
-2023.
-[doi: 10.51387/21-NEJSDS1](https://doi.org/10.51387/21-NEJSDS1);
-[arXiv: 2105.09881](https://arxiv.org/abs/2105.09881).
-
-**Q. Nguyen**, H. Butler, G. J. Matthews. 
-An Examination of Olympic Sport Climbing Competition Format and Scoring System.
-*Journal of Data Science* **20**(2), 156--167.
-2022.
-[doi: 10.6339/22-JDS1042](https://doi.org/10.6339/22-JDS1042);
-[arXiv: 2111.05310](https://arxiv.org/abs/2111.05310).
-
-<!-- ## \textcolor{magenta}{\textbf{Under Review}} -->
-## \textcolor{magenta}{\textbf{Working Papers}}
-
-**Q. Nguyen**, R. Yurko.
-Bayesian multilevel step-and-turn models for evaluating player movement in American football.
-2026+.
-[arXiv: 2603.17866](https://arxiv.org/abs/2603.17866).
-
-**Q. Nguyen**, R. Yurko.
-A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
-2025+.
-[arXiv: 2507.06122](https://arxiv.org/abs/2507.06122).
-
-**Q. Nguyen**, P. Campana, N. M. D. Niezink.
-Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
-2025+.
-
-## \textcolor{magenta}{\textbf{Other}}
-
-**Q. Nguyen**, R. Yurko.
-Down, set, hut! Explaining variability in snap timing on plays with motion.
-NFL Big Data Bowl 2025.
-https://www.kaggle.com/code/tindata/down-set-hut
-
-**Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
-Momentum-based fractional tackles.
-NFL Big Data Bowl 2024.
-https://www.kaggle.com/code/tindata/momentum-based-fractional-tackles
-
-G. J. Matthews, **Q. Nguyen**.
-STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
-NFL Big Data Bowl 2023.
-https://www.kaggle.com/code/statsinthewild/strain-sacks-tackles-rushing-aggression-index
-
-B. S. Baumer, **Q. Nguyen**, G. J. Matthews.
-CRAN Task View: Sports Analytics.
-The Comprehensive R Archive Network.
-2022.
-https://cran.r-project.org/web/views/SportsAnalytics.html
-
-\vspace{0mm}
-
-# \textcolor{red}{SELECTED PRESENTATIONS}
+# \textcolor{red}{PRESENTATIONS}
 
 \vspace{-2mm}
 
 ## \textcolor{magenta}{\textbf{Talks}}
 
 **Q. Nguyen**, R. Yurko.
+A Bayesian circular mixed-effects model for evaluating change of direction in American football.
+*Joint Statistical Meetings.*
+Boston, MA.
+August 2026.
+(Contributed)
+
+**Q. Nguyen**, R. Yurko.
 NFL CoD: A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
 *New England Symposium on Statistics in Sports*.
+Cambridge, MA.
 September 2025.
+(Invited)
 
 **Q. Nguyen**.
 Advances in pass rush and change of direction evaluation in American football with player tracking data.
 *U.S. Olympic and Paralympic Performance Innovation Summit.*
+Colorado Springs, CO.
 August 2025.
+(Invited)
 
 **Q. Nguyen**.
 NFL CoD.
 *Uncontrolled Variables: A Science & Comedy Show.*
+Chicago, IL.
 August 2025.
+(Invited)
 
 **Q. Nguyen**, R. Yurko.
 Down, set, hut! Explaining variability in snap timing on plays with motion.
-*2025 Joint Statistical Meetings.*
+*Joint Statistical Meetings.*
+Nashville, TN.
 August 2025.
+(Contributed)
 
 **Q. Nguyen**, R. Yurko.
 Step-and-turn modeling of individual player movement in American football.
 *Conference on Predictive Inference in Sports.*
+Ames, IA.
 June 2025.
+(Invited)
 
 **Q. Nguyen**, R. Yurko.
 Explaining variability in player turning behavior in the National Football League.
-*CMSAC Football Analytics Workshop 2025.*
+*CMSAC Football Analytics Workshop.*
+Pittsburgh, PA.
 May 2025.
+(Invited)
 
 **Q. Nguyen**.
 Advances in pass rush and tackling evaluation in American football with player tracking data.
 *2024 Joint Statistical Meetings.*
-August 2024. \newline
-**Invited Paper Session: Leveraging Player Tracking Data in Sports: Challenges and Opportunities**
+Portland, OR.
+August 2024.
+(Invited)
+<!-- \newline -->
+<!-- **Invited Paper Session: Leveraging Player Tracking Data in Sports: Challenges and Opportunities** -->
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Fractional tackles.
 *UConn Sports Analytics Symposium*.
-April 2024. \newline
-**Big Data Bowl Finalists Session**
+Storrs, CT.
+April 2024.
+(Invited)
+<!-- \newline -->
+<!-- **Big Data Bowl Finalists Session** -->
 
 **Q. Nguyen**, L. Jiang, M. Ellingwood, R. Yurko.
 Momentum-based fractional tackles.
-*NFL Big Data Bowl 2024 Final*.
-February 2024. \newline
+*NFL Big Data Bowl 2024*.
+Indianapolis, IN.
+February 2024.
+(Invited)
+\newline
 **Finalist (Top 5 + $12,500 prize + Presented at 2024 NFL Scouting Combine)**
 
 **Q. Nguyen**.
 Opportunities in sports analytics with player tracking data: A case study of NFL pass rush evaluation.
 *Data Science Seminar, Loyola University Chicago*.
+Chicago, IL.
 November 2023.
+(Invited)
 
 **Q. Nguyen**, R. Yurko, G. J. Matthews. 
 Here Comes the STRAIN: Analyzing Defensive Pass Rush in American Football with Player Tracking Data.
 *New England Symposium on Statistics in Sports*.
-September 2023. \newline
-**Featured talk**
+Cambridge, MA.
+September 2023.
+(Invited, featured talk)
+<!-- \newline -->
+<!-- **Featured talk** -->
 
 G. J. Matthews, **Q. Nguyen**.
 STRAIN: Sacks, Tackles, Rushing, Aggression INdex.
-*NFL Big Data Bowl 2023 Final*.
-March 2023. \newline
+*NFL Big Data Bowl 2023*.
+Indianapolis, IN.
+March 2023.
+(Invited)
+\newline
 **Finalist (Top 8 + $10,000 prize + Presented at 2023 NFL Scouting Combine)**
 
 **Q. Nguyen**, G. J. Matthews. 
 Estimating Aging Curves: Using Multiple Imputation to Examine Career Trajectories of MLB Offensive Players.
 *Carnegie Mellon Sports Analytics Conference*.
-October 2022. \newline
+Pittsburgh, PA.
+October 2022.
+(Invited)
+\newline
 **Finalist, Open Methodology Track, Reproducible Research Competition**
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 *Cascadia Symposium on Statistics in Sports*.
+Vancouver, BC.
 September 2022.
+(Invited)
 
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 An Examination of Sport Climbing's Competition Format and Scoring System.
 *Carnegie Mellon Sports Analytics Conference*.
-November 2021. \newline
+Pittsburgh, PA.
+November 2021. 
+(Invited, virtual talk)
+\newline
 **Winner, Open Methodology Track, Reproducible Research Competition**
 
 <!-- \vspace{0mm} -->
@@ -325,47 +387,58 @@ November 2021. \newline
 **Q. Nguyen**, H. Butler, G. J. Matthews. 
 Concerns Regarding Sport Climbing Competition Format and Scoring System: Who's Suffering?
 *UConn Sports Analytics Symposium*.
-October 2021. \newline
+October 2021.
+(Virtual)
+\newline
 **Winner, Student Poster Award**
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
-*NextGen: Data Science Day - New England Statistical Society*.
-November 2020. \newline
+*NextGen: Data Science Day, New England Statistical Society*.
+November 2020.
+(Virtual)
+\newline
 **Co-Winner, Poster Competition, Undergrad/MS Group**
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *Carnegie Mellon Sports Analytics Conference*.
 October 2020.
+(Virtual)
 
 **Q. Nguyen**. 
 Poisson Modeling and Predicting English Premier League Goal Scoring.
 *UConn Sports Analytics Symposium*.
 October 2020.
+(Virtual)
 
-## \textcolor{magenta}{\textbf{Tutorials and Workshops}}
+## \textcolor{magenta}{\textbf{Tutorials \& Workshops}}
 
 **Q. Nguyen**. 
 Unsupervised learning with tracking data (Advanced level).
 *Connecticut Sports Analytics Symposium*.
+Storrs, CT.
 April 2026.
 
 **Q. Nguyen**. 
 Rcpp: A primer.
 *StatBytes Statistical Computing Seminars (Department of Statistics & Data Science, Carnegie Mellon University)*.
+Pittsburgh, PA.
 November 2025.
 
 **Q. Nguyen**. 
 Building a performance metric with player tracking data (Advanced level).
 *Connecticut Sports Analytics Symposium*.
+New Haven, CT.
 April 2025.
 
 **Q. Nguyen**.
 Get Trained & Get Strained: The Ingredients of a Big Data Bowl Metric.
 *Carnegie Mellon Sports Analytics Conference*.
-November 2023. \newline
-**Big Data Bowl Workshop Sponsored by SumerSports**
+Pittsburgh, PA.
+November 2023.
+<!-- \newline -->
+<!-- **Big Data Bowl Workshop Sponsored by SumerSports** -->
 
 ## \textcolor{magenta}{\textbf{Guest Lectures}}
 
@@ -391,64 +464,59 @@ July 2023.
 
 \vspace{-2mm}
 
-**Sports Analytics Student Award** \hfill 2025 \newline Carnegie Mellon Statistics & Data Science (Funded by the Richardson Matano Family)
+**Sports Analytics Student Award**, Carnegie Mellon Statistics & Data Science \hfill 2025 \newline Funded by the Richardson Matano Family
 
 **NFL Big Data Bowl Semifinalist** \hfill 2025
 
-**NFL Big Data Bowl Finalist** \hfill 2023, 2024 \newline Invited to present at NFL Scouting Combine
+**NFL Big Data Bowl Finalist** \hfill 2023, 2024
 
-**ASA Section on Statistics in Sports Student Funding** \hfill 2024 \newline ASA Section on Statistics in Sports
+<!-- \newline Invited to present at NFL Scouting Combine -->
 
-**Graduate Student Assembly/Provost Conference Funds** \hfill 2024 \newline Carnegie Mellon University
+**ASA Section on Statistics in Sports Student Funding** \hfill 2024
 
-**Student Travel Support** \hfill 2024 \newline UConn Sports Analytics Symposium 2024
+**Graduate Student Assembly/Provost Conference Funds**, Carnegie Mellon University \hfill 2024
 
-**Reproducible Research Competition Finalist (Open Methodology Track)** \hfill 2022 \newline Carnegie Mellon Sports Analytics Conference 2022
+**Student Travel Support**, UConn Sports Analytics Symposium \hfill 2024
 
-**University of Toronto Sports Analytics Group (UTSPAN) Scholarship** \hfill 2022 \newline Cascadia Symposium on Statistics in Sports 2022
+**Reproducible Research Competition Finalist**, Carnegie Mellon Sports Analytics Conference \hfill 2022
 
-**Reproducible Research Competition Winner (Open Methodology Track)** \hfill 2021 \newline Carnegie Mellon Sports Analytics Conference 2021
+**University of Toronto Sports Analytics Group Scholarship**, Cascadia Symposium on Statistics in Sports \hfill 2022
 
-**Student Poster Award Winner** \hfill 2021 \newline UConn Sports Analytics Symposium 2021
+**Reproducible Research Competition Winner**, Carnegie Mellon Sports Analytics Conference \hfill 2021
 
-**Merit Award** \hfill 2020 -- 2021 \newline MS in Applied Statistics Program, Loyola University Chicago
+**Student Poster Award Winner**, UConn Sports Analytics Symposium \hfill 2021
 
-**Poster Competition Co-Winner (Undergrad/MS Group)** \hfill 2020 \newline NextGen: Data Science Day 2020 (New England Statistical Society)
+**Merit Award**, MS in Applied Statistics Program, Loyola University Chicago \hfill 2020 -- 2021
 
-**Summa Cum Laude** \hfill 2020 \newline
-Graduated with the highest distinction, Wittenberg University
+**Poster Competition Co-Winner**, NextGen: Data Science Day, New England Statistical Society \hfill 2020
 
-**Departmental Honors** \hfill 2020 \newline
-Department of Mathematics and Computer Science, Wittenberg University
+**Summa Cum Laude**, Wittenberg University \hfill 2020
+<!-- Graduated with the highest distinction -->
 
-**Phi Beta Kappa** \hfill 2020 \newline
-Omicron of Ohio Chapter, Wittenberg University
+**Departmental Honors**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2020
 
-**Pi Mu Epsilon** \hfill 2020 \newline
-Ohio Upsilon Chapter, Wittenberg University
+**Phi Beta Kappa**, Omicron of Ohio Chapter, Wittenberg University \hfill 2020
+
+**Pi Mu Epsilon**, Ohio Upsilon Chapter, Wittenberg University \hfill 2020
 
 **The Charles and Elsie Little Mathematics Award** \hfill 2020 \newline
 Department of Mathematics and Computer Science, Wittenberg University \newline
 Awarded to the most outstanding senior majoring in mathematics and data science
 
-**Mortar Board** \hfill 2020 \newline
-Wittenberg University
+**Mortar Board**, Wittenberg University \hfill 2020
 
-**Pick and Pen** \hfill 2019 \newline
-Wittenberg University
+**Pick and Pen**, Wittenberg University \hfill 2019
 
-**Mathematics 202 Award** \hfill 2018 \newline
-Department of Mathematics and Computer Science, Wittenberg University \newline
-Awarded to an outstanding first-year student in the introductory calculus sequence
+**Mathematics 202 Award**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2018 
 
-**Textbook Award** \hfill 2018 \newline
-Department of Mathematics and Computer Science, Wittenberg University
+<!-- \newline -->
+<!-- Awarded to an outstanding first-year student in the introductory calculus sequence -->
 
-**Phi Eta Sigma** \hfill 2018 \newline
-Wittenberg University
+**Textbook Award**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2018
 
-**Dean's List** \hfill  All semesters; 2017 -- 2020 \newline
-Wittenberg University
+**Phi Eta Sigma**, Wittenberg University \hfill 2018
+
+**Dean's List**, Wittenberg University \hfill  All semesters; 2017 -- 2020
 
 \vspace{0mm}
 
@@ -463,34 +531,20 @@ Wittenberg University
 
 <!-- \vspace{0mm} -->
 
-# \textcolor{red}{SKILLS}
-
-\vspace{-2mm}
-
-Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
-
-Typesetting: markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
-
-Bilingual: Vietnamese (native language) and English (proficient)
-
-\vspace{0mm}
-
 # \textcolor{red}{SERVICES}
 
 \vspace{-2mm}
 
 **Organizer** \newline
-Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- present \newline
-(formerly Statistics in sports reading/research group)
+Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- present
+<!-- \newline -->
+<!-- (formerly Statistics in sports reading/research group) -->
 
 **Program Committee** \newline
 UConn/Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
 
 **Reviewer** \newline
-Journal of Quantitative Analysis in Sports \newline
-Machine Learning \newline
-The American Statistician \newline
-WIREs Computational Statistics
+Journal of Quantitative Analysis in Sports, Machine Learning, The American Statistician, WIREs Computational Statistics
 
 **Judge** \newline
 CMSAC Reproducible Research Competition \hfill 2024, 2025 \newline
@@ -514,33 +568,47 @@ Loyola University Chicago \hfill 2021 -- 2022 \newline
 
 \vspace{0mm}
 
-# \textcolor{red}{MEDIA}
+# \textcolor{red}{SKILLS}
 
 \vspace{-2mm}
 
-<!-- jsm data art -->
+Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
 
-Watt vs. Garrett? Metcalf vs. Pickens? Quang Nguyen Uses Next Gen Stats \hfill 2025 \newline To Evaluate Player Performance \newline
-Dietrich College of Humanities and Social Sciences, Carnegie Mellon University \newline
-https://www.cmu.edu/dietrich/statistics-datascience/news/2025/sports-analytics-quang-nguyen.html
+Typesetting: markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
 
-Committee Collaboration Yields Editors’ Choice Collection \hfill 2024 \newline
-Amstat News (American Statistical Association) \newline
-https://magazine.amstat.org/blog/2024/01/02/editors-choice-collection
-
-An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline
-Open Source Sports Podcast,
-Episode IX Guest \newline
-https://opensourcesports.substack.com/p/an-examination-of-sport-climbing-a1e
-
-Viz Buzz \hfill 2022 \newline
-Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline
-https://youtube.com/playlist?list=PL2rVQ3cmgOyx_CdtKOAOoX2pikOcc_xu-
-
-Can you pick the AFL's Brownlow Medal winner without knowing the first thing about \hfill 2021 \newline Australian rules? \newline
-ABC News (Australia) \newline
-https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246
+Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{0mm}
 
-\hfill \textit{Last updated March 22, 2026}
+<!-- # \textcolor{red}{MEDIA} -->
+
+<!-- \vspace{-2mm} -->
+
+<!-- jsm data art -->
+
+<!-- Watt vs. Garrett? Metcalf vs. Pickens? Quang Nguyen Uses Next Gen Stats \hfill 2025 \newline To Evaluate Player Performance \newline -->
+<!-- Dietrich College of Humanities and Social Sciences, Carnegie Mellon University \newline -->
+<!-- https://www.cmu.edu/dietrich/statistics-datascience/news/2025/sports-analytics-quang-nguyen.html -->
+
+<!-- Committee Collaboration Yields Editors’ Choice Collection \hfill 2024 \newline -->
+<!-- Amstat News (American Statistical Association) \newline -->
+<!-- https://magazine.amstat.org/blog/2024/01/02/editors-choice-collection -->
+
+<!-- An Examination of Sport Climbing with Quang Nguyen \hfill 2022 \newline -->
+<!-- Open Source Sports Podcast, -->
+<!-- Episode IX Guest \newline -->
+<!-- https://opensourcesports.substack.com/p/an-examination-of-sport-climbing-a1e -->
+
+<!-- Viz Buzz \hfill 2022 \newline -->
+<!-- Episodes 2, 3, 4, 5 Contestant (Episodes 3 & 4 Lap Winner) \newline -->
+<!-- https://youtube.com/playlist?list=PL2rVQ3cmgOyx_CdtKOAOoX2pikOcc_xu- -->
+
+<!-- Can you pick the AFL's Brownlow Medal winner without knowing the first thing about \hfill 2021 \newline Australian rules? \newline -->
+<!-- ABC News (Australia) \newline -->
+<!-- https://www.abc.net.au/news/2021-09-19/afl-trying-to-predict-the-2021-brownlow-medal-winner/100472246 -->
+
+<!-- \vspace{0mm} -->
+
+\vspace{2mm}
+
+\hfill \textit{Last updated May 24, 2026}

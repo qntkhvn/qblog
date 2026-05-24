@@ -6,7 +6,9 @@ title: "Teaching"
 
 ### Carnegie Mellon University
 
-* Summer Undergraduate Research Experience in Statistics (x2)
+* 36-315: Statistical Graphics and Visualization (Summer 2026) [website](https://36-315-summer26.netlify.app)
+
+* Summer Undergraduate Research Experience in Statistics (x2, Summer 2024--2025)
 
   * Summer 2025: [website](https://36-sure.github.io/2025) and [project showcase](https://www.stat.cmu.edu/cmsac/sure/2025/showcase)
   
