@@ -4,7 +4,7 @@ title: "Research"
 
 <!-- Below is a list of research and miscellaneous projects that I'm either currently working on or have completed. -->
 
-### Preprints
+### Preprints & Working Papers
 
 **Quang Nguyen**, Ronald Yurko.
 "Bayesian multilevel step-and-turn models for evaluating player movement in American football".

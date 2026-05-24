@@ -445,16 +445,19 @@ November 2023.
 **Q. Nguyen**.
 Bayesian multilevel modeling in the wild: Beyond homogeneity.
 *Special Topics: Sports Analytics (36-460/660, Carnegie Mellon University)*.
+Pittsburgh, PA.
 March 2025 & March 2026.
 
 **Q. Nguyen**.
 Big Data Bowl: Overview, Getting Started, My Experience, and more.
 *Summer Undergraduate Research Experience in Statistics (Carnegie Mellon Sports Analytics Camp)*.
+Pittsburgh, PA.
 July 2023.
 
 **Q. Nguyen**.
 Web Scraping: A Primer.
 *Summer Undergraduate Research Experience in Statistics (Carnegie Mellon Sports Analytics Camp)*.
+Pittsburgh, PA.
 July 2023.
 
 
