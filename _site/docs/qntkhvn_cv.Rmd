@@ -571,6 +571,18 @@ Loyola University Chicago \hfill 2021 -- 2022 \newline
 
 \vspace{0mm}
 
+# \textcolor{red}{MEDIA}
+
+\vspace{-2mm}
+
+**Coverage & Mentions** \newline
+NBC Sports, Carnegie Mellon University, Knowable Magazine, Amstat News, ABC News (Australia)
+
+**Podcast & Show Appearances** \newline
+Open Source Sports Podcast, Viz Buzz (data science game show; multiple seasons)
+
+\vspace{0mm}
+
 # \textcolor{red}{SKILLS}
 
 \vspace{-2mm}
@@ -582,10 +594,6 @@ Typesetting: markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
 Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{0mm}
-
-<!-- # \textcolor{red}{MEDIA} -->
-
-<!-- \vspace{-2mm} -->
 
 <!-- jsm data art -->
 
