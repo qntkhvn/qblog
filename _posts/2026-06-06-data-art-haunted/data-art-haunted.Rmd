@@ -102,7 +102,7 @@ haunted_places |>
         panel.background = element_rect(fill = "black"))
 ```
 
-Here, I chose an foggy monochromatic color gradient (ranging from ghost lavender to full-intensity white) to give it a spooky vibe, with high values (in white) denoting heavily haunted areas.
+Here, I chose a foggy monochromatic color gradient (ranging from ghost lavender to full-intensity white) to give it a spooky vibe, with high values (in white) denoting heavily haunted areas.
 I also messed around with transparency so the contours look more like eerie spirits emerging from the mist.
 
 Kinda dig it.
