@@ -467,6 +467,8 @@ July 2023.
 
 \vspace{-2mm}
 
+**Student Travel Support**, Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
+
 **Sports Analytics Student Award**, Carnegie Mellon Statistics & Data Science \hfill 2025 \newline Funded by the Richardson Matano Family
 
 **NFL Big Data Bowl Semifinalist** \hfill 2025
@@ -478,8 +480,6 @@ July 2023.
 **ASA Section on Statistics in Sports Student Funding** \hfill 2024
 
 **Graduate Student Assembly/Provost Conference Funds**, Carnegie Mellon University \hfill 2024
-
-**Student Travel Support**, UConn Sports Analytics Symposium \hfill 2024
 
 **Reproducible Research Competition Finalist**, Carnegie Mellon Sports Analytics Conference \hfill 2022
 
@@ -622,4 +622,4 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated May 24, 2026}
+\hfill \textit{Last updated June 8, 2026}

@@ -34,5 +34,3 @@ During my PhD, I have worked on topics such as tracking data in sports and socia
 
 I am a member of the [Carnegie Mellon Sports Analytics Center](https://www.stat.cmu.edu/cmsac) and an organizer of the [CMSAC Research Lab](https://cmsac-research-lab.github.io).
 </div>
-
-
