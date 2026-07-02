@@ -35,8 +35,8 @@ header-includes:
 \vspace{-2mm}
 
 **Ph.D. Statistics**, Carnegie Mellon University  \hfill 2022 -- present \newline
-Thesis: Statistical modeling problems for player movement in sports with tracking data \newline
-Committee: Ron Yurko (chair), Will Townes, Chad Schafer, Sam Ventura, Jun Yan
+*Thesis:* Statistical modeling problems for player movement in sports with tracking data \newline
+*Committee:* Ron Yurko (chair), Will Townes, Chad Schafer, Sam Ventura, Jun Yan
 <!-- GPA: 4.09/4.00 -->
 
 **M.S. Statistics**, Carnegie Mellon University  \hfill 2022 -- 2024
@@ -44,7 +44,8 @@ Committee: Ron Yurko (chair), Will Townes, Chad Schafer, Sam Ventura, Jun Yan
 **M.S. Applied Statistics**, Loyola University Chicago  \hfill 2020 -- 2021
 <!-- GPA: 4.00/4.00 -->
 
-**B.S. Mathematics & Data Science**, Wittenberg University  \hfill 2017 -- 2020
+**B.S. Mathematics & Data Science**, Wittenberg University  \hfill 2017 -- 2020 \newline
+*Summa Cum Laude, Departmental Honors, Phi Beta Kappa*
 
 <!-- GPA: 3.97/4.00 -->
 
@@ -239,22 +240,21 @@ Undergraduate course on introductory statistics. Taught 3 sections.
 
 <!-- **Carnegie Mellon University** \newline -->
 
-36-460/660: Sports Analytics, Carnegie Mellon University \hfill Spring 2024, Spring 2025, Spring 2026 \newline
-36-468/668: Text Analysis, Carnegie Mellon University \hfill Fall 2023, Fall 2024, Fall 2025 \newline
-Summer Undergraduate Research in Statistics, Carnegie Mellon University \hfill Summer 2023 \newline
-36-402/608: Advanced Methods for Data Analysis, Carnegie Mellon University \hfill Spring 2023 \newline
-36-401/607: Modern Regression, Carnegie Mellon University \hfill Fall 2022
+**36-460/660: Sports Analytics**, Carnegie Mellon University \hfill Spring 2024, Spring 2025, Spring 2026 \newline
+**36-468/668: Text Analysis**, Carnegie Mellon University \hfill Fall 2023, Fall 2024, Fall 2025 \newline
+**Summer Undergraduate Research in Statistics**, Carnegie Mellon University \hfill Summer 2023 \newline
+**36-402/608: Advanced Methods for Data Analysis**, Carnegie Mellon University \hfill Spring 2023 \newline
+**36-401/607: Modern Regression**, Carnegie Mellon University \hfill Fall 2022
 
 ## \textcolor{magenta}{\textbf{Academic Support}}
 
 <!-- **Wittenberg University**  \newline -->
 
-Math Workshop Head Tutor, Wittenberg University \hfill 2018 -- 2020 \newline
-Faculty Aide, Wittenberg University \hfill 2018 -- 2020 \newline
-S.U.M. (Student Understanding Math) Assistant, Clarkston Senior High School \hfill 2017
+**Math Workshop Head Tutor**, Wittenberg University \hfill 2018 -- 2020 \newline
+**Faculty Aide**, Wittenberg University \hfill 2018 -- 2020 \newline
+**S.U.M. (Student Understanding Math) Assistant**, Clarkston Senior High School \hfill 2017
 
 <!-- **Clarkston Senior High School** \newline -->
-
 
 \vspace{0mm}
 
@@ -526,26 +526,25 @@ July 2023.
 **Summa Cum Laude**, Wittenberg University \hfill 2020
 <!-- Graduated with the highest distinction -->
 
-**Departmental Honors**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2020
+**Departmental Honors**, Wittenberg Mathematics and Computer Science \hfill 2020
 
 **Phi Beta Kappa**, Omicron of Ohio Chapter, Wittenberg University \hfill 2020
 
 **Pi Mu Epsilon**, Ohio Upsilon Chapter, Wittenberg University \hfill 2020
 
-**The Charles and Elsie Little Mathematics Award** \hfill 2020 \newline
-Department of Mathematics and Computer Science, Wittenberg University \newline
+**Charles and Elsie Little Mathematics Award**, Wittenberg Mathematics and Computer Science \hfill 2020 \newline
 Awarded to the most outstanding senior majoring in mathematics and data science
 
 **Mortar Board**, Wittenberg University \hfill 2020
 
 **Pick and Pen**, Wittenberg University \hfill 2019
 
-**Mathematics 202 Award**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2018 
+**Mathematics 202 Award**, Wittenberg Mathematics and Computer Science \hfill 2018 
 
 <!-- \newline -->
 <!-- Awarded to an outstanding first-year student in the introductory calculus sequence -->
 
-**Textbook Award**, Department of Mathematics and Computer Science, Wittenberg University \hfill 2018
+**Textbook Award**, Wittenberg Mathematics and Computer Science \hfill 2018
 
 **Phi Eta Sigma**, Wittenberg University \hfill 2018
 
