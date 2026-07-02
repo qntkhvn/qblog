@@ -1,7 +1,7 @@
 ---
 output: stevetemplates::cv
-geometry: margin=0.95in
-# title: cv
+geometry: margin=1in
+# title: cv "left=0.95in,right=0.95in,top=1in,bottom=1.25in"
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
 # address: Department of Statistics & Data Science, Carnegie Mellon University
@@ -17,13 +17,13 @@ web: qntkhvn.netlify.app
 # keywords: R Markdown, academic CV, template
 fontfamily: libertine
 # fontfamilyoptions: sc, osf
-fontsize: 10pt
+fontsize: 11pt
 linkcolor: blue
 urlcolor: blue
 header-includes:
   \usepackage{hyperref}
   \usepackage{xcolor}
-  \usepackage{inconsolata}
+  \usepackage[scaled=0.9]{inconsolata}
 ---
 
 \pagestyle{plain}
@@ -34,16 +34,18 @@ header-includes:
 
 \vspace{-2mm}
 
-**Carnegie Mellon University**  \hfill 2022 -- present \newline
-PhD, Statistics & Data Science
+**Ph.D. Statistics**, Carnegie Mellon University  \hfill 2022 -- present \newline
+Thesis: Statistical modeling problems for player movement in sports with tracking data \newline
+Committee: Ron Yurko (chair), Will Townes, Chad Schafer, Sam Ventura, Jun Yan
 <!-- GPA: 4.09/4.00 -->
 
-**Loyola University Chicago**  \hfill 2020 -- 2021 \newline
-MS, Applied Statistics
+**M.S. Statistics**, Carnegie Mellon University  \hfill 2022 -- 2024
+
+**M.S. Applied Statistics**, Loyola University Chicago  \hfill 2020 -- 2021
 <!-- GPA: 4.00/4.00 -->
 
-**Wittenberg University**  \hfill 2017 -- 2020 \newline
-BS, Mathematics & Data Science
+**B.S. Mathematics & Data Science**, Wittenberg University  \hfill 2017 -- 2020
+
 <!-- GPA: 3.97/4.00 -->
 
 \vspace{0mm}
@@ -156,17 +158,21 @@ A Bayesian circular mixed-effects model for explaining variability in directiona
 Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
 2025+.
 
+R. Yurko, R. Jiang, M. Ellingwood, **Q. Nguyen**.
+Momentum Interference: A Hierarchical Framework for Modeling Tackling Ability in American Football.
+2024+.
+
 <!-- ## \textcolor{magenta}{\textbf{Under Review}} -->
 
 ## \textcolor{magenta}{\textbf{Other}}
 
-**Q. Nguyen**, R. Yurko (collaboration between CMSAC and NFL).
+**Q. Nguyen**, R. Yurko (joint work with NFL).
 Introducing the NFL Draft Tier Chart.
 NFL Football Operations.
 2026.
 [`https://operations.nfl.com/updates/football-ops/introducing-the-nfl-draft-tier-chart`](https://operations.nfl.com/updates/football-ops/introducing-the-nfl-draft-tier-chart)
 
-**Q. Nguyen**, R. Yurko (collaboration between CMSAC and NFL).
+**Q. Nguyen**, R. Yurko (joint work with NFL).
 Building an NFL Draft Value Chart.
 NFL Football Operations.
 2026.
@@ -195,56 +201,80 @@ The Comprehensive R Archive Network.
 
 \vspace{0mm}
 
-# \textcolor{red}{ACADEMIC EXPERIENCE}
+# \textcolor{red}{TEACHING EXPERIENCE}
 
 \vspace{-2mm}
 
-## \textcolor{magenta}{\textbf{Instructor}}
+## \textcolor{magenta}{\textbf{At Carnegie Mellon University}}
 
-**Carnegie Mellon University** \newline
-36-315: Statistics Graphics and Visualization \hfill Summer 2026 \newline
-Summer Undergraduate Research Experience in Statistics \hfill Summer 2024, Summer 2025
+<!-- **Carnegie Mellon University** -->
 
-**Loyola University Chicago** \newline
-STAT 103: Fundamentals of Statistics (3 sections) \hfill Spring 2022
+**36-315: Statistics Graphics and Visualization** \hfill Summer 2026 \newline
+Undergraduate course on creating, critiquing, and presenting data visualizations from a statistical perspective.
+[`http://36-315-summer26.netlify.app`](http://36-315-summer26.netlify.app)
+
+**Summer Undergraduate Research Experience in Statistics** \hfill Summer 2024, Summer 2025 \newline
+Two-month summer initiative with 35--40 students selected each year nationally with an emphasis on diversity, offering two themes: [Carnegie Mellon Sports Analytics Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and [UnitedHealth Group Bridges to Healthcare Technology](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/bridges-to-healthcare-technology.html). Student experience includes hands-on training on statistics and data science, culminating in a client-facing capstone with real-world problems and datasets. Coordinated program curriculum and schedule, developed lecture and lab materials, taught daily lectures, and advised student projects. [`https://36-sure.github.io/2025`](https://36-sure.github.io/2025)
+
+## \textcolor{magenta}{\textbf{Conference Workshops}}
+
+**Player tracking data workshops**, Connecticut Sports Analytics Symposium \hfill April 2026 & April 2025 \newline
+Advanced-level workshops on unsupervised learning (2026; [`https://qntkhvn.github.io/timing/csas`](https://qntkhvn.github.io/timing/csas)) and building a performance metric (2025; [`http://getstrained.github.io/talks/csas`](http://getstrained.github.io/talks/csas)) with tracking data. Developed workshop materials and delivered live instruction with hands-on code demo.
+
+**Big Data Bowl workshop**, Carnegie Mellon Sports Analytics Conference \hfill November 2023 \newline
+Workshop sponsored by SumerSports on tracking data and the NFL Big Data Bowl. Developed workshop materials and delivered live instruction with hands-on code demo. [`http://getstrained.github.io/talks/cmsac`](http://getstrained.github.io/talks/cmsac)
+
+## \textcolor{magenta}{\textbf{At Loyola University Chicago}}
+
+<!-- **Loyola University Chicago** -->
+
+**STAT 103: Fundamentals of Statistics** \hfill Spring 2022 \newline
+Undergraduate course on introductory statistics. Taught 3 sections.
+
+# \textcolor{red}{OTHER ACADEMIC EXPERIENCE}
+
+\vspace{-2mm}
 
 ## \textcolor{magenta}{\textbf{Graduate Teaching Assistant}}
 
-**Carnegie Mellon University** \newline
-36-460/660: Sports Analytics \hfill Spring 2024, Spring 2025, Spring 2026 \newline
-36-468/668: Text Analysis \hfill Fall 2023, Fall 2024, Fall 2025 \newline
-Summer Undergraduate Research Experience in Statistics \hfill Summer 2023 \newline
-36-402/608: Advanced Methods for Data Analysis \hfill Spring 2023 \newline
-36-401/607: Modern Regression \hfill Fall 2022
+<!-- **Carnegie Mellon University** \newline -->
 
-## \textcolor{magenta}{\textbf{Other}}
+36-460/660: Sports Analytics, Carnegie Mellon University \hfill Spring 2024, Spring 2025, Spring 2026 \newline
+36-468/668: Text Analysis, Carnegie Mellon University \hfill Fall 2023, Fall 2024, Fall 2025 \newline
+Summer Undergraduate Research in Statistics, Carnegie Mellon University \hfill Summer 2023 \newline
+36-402/608: Advanced Methods for Data Analysis, Carnegie Mellon University \hfill Spring 2023 \newline
+36-401/607: Modern Regression, Carnegie Mellon University \hfill Fall 2022
 
-**Wittenberg University**  \newline
-Math Workshop Head Tutor \hfill 2018 -- 2020 \newline
-Faculty Aide \hfill 2018 -- 2020
+## \textcolor{magenta}{\textbf{Academic Support}}
 
-**Clarkston Senior High School** \newline
-S.U.M. (Student Understanding Math) Assistant \hfill 2017
+<!-- **Wittenberg University**  \newline -->
 
-\vspace{0mm}
+Math Workshop Head Tutor, Wittenberg University \hfill 2018 -- 2020 \newline
+Faculty Aide, Wittenberg University \hfill 2018 -- 2020 \newline
+S.U.M. (Student Understanding Math) Assistant, Clarkston Senior High School \hfill 2017
 
-# \textcolor{red}{RESEARCH EXPERIENCE}
+<!-- **Clarkston Senior High School** \newline -->
 
-\vspace{-2mm}
-
-**Carnegie Mellon University **  \hfill 2023 -- present \newline
-Graduate Researcher (Advisor: Ron Yurko)
-
-**Carnegie Mellon University **  \hfill 2022 -- 2023 \newline
-Advanced Data Analysis Project (Advisor: Nynke Niezink)
-
-**Loyola University Chicago**  \hfill 2020 -- 2021 \newline
-Graduate Research Assistant (Advisor: Gregory J. Matthews)
-
-**Wittenberg University**  \hfill 2019 -- 2020 \newline
-Senior Honors Thesis Research (Advisor: Douglas M. Andrews)
 
 \vspace{0mm}
+
+<!-- # \textcolor{red}{RESEARCH EXPERIENCE} -->
+
+<!-- \vspace{-2mm} -->
+
+<!-- **Carnegie Mellon University **  \hfill 2023 -- present \newline -->
+<!-- Graduate Researcher (Advisor: Ron Yurko) -->
+
+<!-- **Carnegie Mellon University **  \hfill 2022 -- 2023 \newline -->
+<!-- Advanced Data Analysis Project (Advisor: Nynke Niezink) -->
+
+<!-- **Loyola University Chicago**  \hfill 2020 -- 2021 \newline -->
+<!-- Graduate Research Assistant (Advisor: Gregory J. Matthews) -->
+
+<!-- **Wittenberg University**  \hfill 2019 -- 2020 \newline -->
+<!-- Senior Honors Thesis Research (Advisor: Douglas M. Andrews) -->
+
+<!-- \vspace{0mm} -->
 
 # \textcolor{red}{PRESENTATIONS}
 
@@ -273,12 +303,12 @@ Colorado Springs, CO.
 August 2025.
 (Invited)
 
-**Q. Nguyen**.
-NFL CoD.
-*Uncontrolled Variables: A Science & Comedy Show.*
-Chicago, IL.
-August 2025.
-(Invited)
+<!-- **Q. Nguyen**. -->
+<!-- NFL CoD. -->
+<!-- *Uncontrolled Variables: A Science & Comedy Show.* -->
+<!-- Chicago, IL. -->
+<!-- August 2025. -->
+<!-- (Invited) -->
 
 **Q. Nguyen**, R. Yurko.
 Down, set, hut! Explaining variability in snap timing on plays with motion.
@@ -483,7 +513,7 @@ July 2023.
 
 **Reproducible Research Competition Finalist**, Carnegie Mellon Sports Analytics Conference \hfill 2022
 
-**University of Toronto Sports Analytics Group Scholarship**, Cascadia Symposium on Statistics in Sports \hfill 2022
+**University of Toronto Sports Analytics Scholarship**, Cascadia Symposium on Statistics in Sports \hfill 2022
 
 **Reproducible Research Competition Winner**, Carnegie Mellon Sports Analytics Conference \hfill 2021
 
@@ -622,4 +652,4 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated June 8, 2026}
+\hfill \textit{Last updated July 1, 2026}
