@@ -113,7 +113,7 @@ Filling the Gaps: A Multiple Imputation Approach to Estimating Aging Curves in B
 *Journal of Sports Analytics* **10**(1), 77--85.
 2024.
 [`doi:10.3233/JSA-240744`](https://doi.org/10.3233/JSA-240744);
-[`arXiv: 2210.02383`](https://arxiv.org/abs/2210.02383).
+[`arXiv:2210.02383`](https://arxiv.org/abs/2210.02383).
 
 N. M. Lemon, L. K. Taylor, M. A. Rech, **Q. Nguyen**, G. J. Matthews, G. Lew, S. Lovett.
 Utility of D-dimer in predicting pulmonary embolism in patients with COVID-19 presenting to the emergency department.
@@ -214,7 +214,7 @@ Undergraduate course on creating, critiquing, and presenting data visualizations
 [`http://36-315-summer26.netlify.app`](http://36-315-summer26.netlify.app)
 
 **Summer Undergraduate Research Experience in Statistics** \hfill Summer 2024, Summer 2025 \newline
-Two-month summer initiative with 35--40 students selected each year nationally with an emphasis on diversity, offering two themes: [Carnegie Mellon Sports Analytics Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and [UnitedHealth Group Bridges to Healthcare Technology](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/bridges-to-healthcare-technology.html). Student experience includes hands-on training on statistics and data science, culminating in a client-facing capstone with real-world problems and datasets. Coordinated program curriculum and schedule, developed lecture and lab materials, taught daily lectures, and advised student projects. [`https://36-sure.github.io/2025`](https://36-sure.github.io/2025)
+Two-month summer initiative with 35--40 students selected each year nationally with an emphasis on diversity, offering two themes: [Carnegie Mellon Sports Analytics Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and [UnitedHealth Group Bridges to Healthcare Technology](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/bridges-to-healthcare-technology.html). Student experience includes hands-on training on statistics and data science, culminating in a client-facing capstone with real-world problems and datasets. Coordinated program curriculum and schedule, developed lecture and lab materials, taught daily lectures, and advised student projects. [`https://36-sure.github.io`](https://36-sure.github.io)
 
 ## \textcolor{magenta}{\textbf{Conference Workshops}}
 
