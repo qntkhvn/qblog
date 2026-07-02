@@ -227,16 +227,19 @@ The Comprehensive R Archive Network.
 Undergraduate course on creating, critiquing, and presenting data visualizations from a statistical perspective.
 [`http://36-315-summer26.netlify.app`](http://36-315-summer26.netlify.app)
 
-**Summer Undergraduate Research Experience in Statistics** \hfill Summer 2024, Summer 2025 \newline
-Two-month summer initiative with 35--40 students selected each year nationally with an emphasis on diversity, offering two themes: [Carnegie Mellon Sports Analytics Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and [UnitedHealth Group Bridges to Healthcare Technology](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/bridges-to-healthcare-technology.html). Student experience includes hands-on training on statistics and data science, culminating in a client-facing capstone with real-world problems and datasets. Coordinated program curriculum and schedule, developed lecture and lab materials, taught daily lectures, and advised student projects. [`https://36-sure.github.io`](https://36-sure.github.io)
+**Summer Undergraduate Research Experience in Statistics** \hfill Summer 2024 & 2025 \newline
+Two-month summer initiative with 35--40 students selected each year nationally with an emphasis on diversity.
+Program offers two themes: [Carnegie Mellon Sports Analytics Camp](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/cmsa-camp.html) and [UnitedHealth Group Bridges to Healthcare Technology](https://www.cmu.edu/dietrich/statistics-datascience/engagement/summer/bridges-to-healthcare-technology.html).
+Student experience includes hands-on training on statistics and data science, culminating in a client-facing capstone with real-world problems and datasets.\newline
+*Responsibilities*: coordinated program curriculum and schedule, developed lecture and lab materials, taught daily lectures, and advised student projects. [`https://36-sure.github.io`](https://36-sure.github.io)
 
 ## \textcolor{magenta}{\textbf{Conference Workshops}}
 
-**Player tracking data workshops**, Connecticut Sports Analytics Symposium \hfill April 2026 & April 2025 \newline
-Advanced-level workshops on unsupervised learning (2026; [`https://qntkhvn.github.io/timing/csas`](https://qntkhvn.github.io/timing/csas)) and building a performance metric (2025; [`http://getstrained.github.io/talks/csas`](http://getstrained.github.io/talks/csas)) with tracking data. Developed workshop materials and delivered live instruction with hands-on code demo.
+**Player Tracking Data Workshop**, Connecticut Sports Analytics Symposium \hfill April 2025 & 2026 \newline
+Advanced-level workshops on building metrics (2025; [`http://getstrained.github.io/talks/csas`](http://getstrained.github.io/talks/csas)) and unsupervised learning (2026; [`https://qntkhvn.github.io/timing/csas`](https://qntkhvn.github.io/timing/csas)) with tracking data. Developed materials and delivered live instruction with hands-on code demo.
 
-**Big Data Bowl workshop**, Carnegie Mellon Sports Analytics Conference \hfill November 2023 \newline
-Workshop sponsored by SumerSports on tracking data and the NFL Big Data Bowl. Developed workshop materials and delivered live instruction with hands-on code demo. [`http://getstrained.github.io/talks/cmsac`](http://getstrained.github.io/talks/cmsac)
+**Big Data Bowl Workshop**, Carnegie Mellon Sports Analytics Conference \hfill November 2023 \newline
+Workshop sponsored by SumerSports on tracking data and NFL Big Data Bowl. Developed materials and delivered live instruction with hands-on code demo. [`http://getstrained.github.io/talks/cmsac`](http://getstrained.github.io/talks/cmsac)
 
 ## \textcolor{magenta}{\textbf{At Loyola University Chicago}}
 
@@ -253,8 +256,8 @@ Undergraduate course on introductory statistics. Taught 3 sections.
 
 <!-- **Carnegie Mellon University** \newline -->
 
-**36-460/660: Sports Analytics**, Carnegie Mellon University \hfill Spring 2024, Spring 2025, Spring 2026 \newline
-**36-468/668: Text Analysis**, Carnegie Mellon University \hfill Fall 2023, Fall 2024, Fall 2025 \newline
+**36-460/660: Sports Analytics**, Carnegie Mellon University \hfill Spring 2024, 2025 & 2026 \newline
+**36-468/668: Text Analysis**, Carnegie Mellon University \hfill Fall 2023, 2024 & 2025 \newline
 **Summer Undergraduate Research in Statistics**, Carnegie Mellon University \hfill Summer 2023 \newline
 **36-402/608: Advanced Methods for Data Analysis**, Carnegie Mellon University \hfill Spring 2023 \newline
 **36-401/607: Modern Regression**, Carnegie Mellon University \hfill Fall 2022
