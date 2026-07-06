@@ -468,7 +468,7 @@ November 2023.
 ## \textcolor{magenta}{\textbf{Guest Lectures}}
 
 **Q. Nguyen**.
-Player tracking data: lessons learned, tips, tricks & shameless self-promotion.
+Player tracking data: space, time, interactions & heterogeneity.
 *Summer Undergraduate Research Experience in Statistics: Carnegie Mellon Sports Analytics Camp*.
 Pittsburgh, PA.
 July 2026.
@@ -481,7 +481,7 @@ March 2025 & 2026.
 
 **Q. Nguyen**.
 Web Scraping: A Primer.
-*DSCI 401: Introduction to Data Science, Loyola University Chicago)*.
+*DSCI 401: Introduction to Data Science, Loyola University Chicago*.
 Chicago, IL.
 November 2023.
 
@@ -708,4 +708,4 @@ Bilingual: Vietnamese (native language) and English (proficient)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated July 1, 2026}
+\hfill \textit{Last updated July 6, 2026}
