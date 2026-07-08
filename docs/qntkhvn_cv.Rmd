@@ -1,7 +1,7 @@
 ---
 output: stevetemplates::cv
-geometry: margin=1in
-# title: cv "left=0.95in,right=0.95in,top=1in,bottom=1.25in"
+geometry: "left=1in,right=1in,top=0.9in,bottom=0.9in"
+# title: "left=0.95in,right=0.95in,top=0.95in,bottom=0.95in"
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
 # address: Department of Statistics & Data Science, Carnegie Mellon University
@@ -28,11 +28,13 @@ header-includes:
 
 \pagestyle{plain}
 
-\vspace{0mm}
+\vspace{2mm}
 
 # \textcolor{red}{EDUCATION}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
 
 **Ph.D. Statistics**, Carnegie Mellon University  \hfill 2022 -- present \newline
 *Thesis:* Statistical modeling problems for player movement in sports with tracking data \newline
@@ -69,7 +71,11 @@ header-includes:
 
 # \textcolor{red}{PUBLICATIONS}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
+
+\vspace{-3mm}
 
 <!-- Authors (Q bold) -->
 <!-- Title -->
@@ -182,7 +188,11 @@ Momentum Interference: A Hierarchical Framework for Modeling Tackling Ability in
 
 # \textcolor{red}{TEACHING EXPERIENCE}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+\vspace{-3mm}
+
+<!-- \vspace{-2mm} -->
 
 ## \textcolor{magenta}{\textbf{At Carnegie Mellon University}}
 
@@ -215,7 +225,11 @@ Undergraduate course on introductory statistics. Taught 3 sections.
 
 # \textcolor{red}{OTHER ACADEMIC EXPERIENCE}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+\vspace{-3mm}
+
+<!-- \vspace{-2mm} -->
 
 ## \textcolor{magenta}{\textbf{Graduate Teaching Assistant}}
 
@@ -259,7 +273,11 @@ Undergraduate course on introductory statistics. Taught 3 sections.
 
 # \textcolor{red}{PRESENTATIONS}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+\vspace{-3mm}
+
+<!-- \vspace{-2mm} -->
 
 ## \textcolor{magenta}{\textbf{Talks}}
 
@@ -515,6 +533,10 @@ March 2022.
 
 # \textcolor{red}{MISCELLANEOUS ARTICLES}
 
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
+
 **Q. Nguyen**, R. Yurko (joint work with NFL).
 Introducing the NFL Draft Tier Chart.
 NFL Football Operations.
@@ -552,7 +574,9 @@ The Comprehensive R Archive Network.
 
 # \textcolor{red}{HONORS \& AWARDS}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
 
 **Student Travel Support**, Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
 
@@ -622,7 +646,9 @@ Awarded to the most outstanding senior majoring in mathematics and data science
 
 # \textcolor{red}{SERVICES}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
 
 **Organizer** \newline
 Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- present
@@ -659,7 +685,9 @@ Loyola University Chicago \hfill 2021 -- 2022 \newline
 
 # \textcolor{red}{MEDIA}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
+
+<!-- \vspace{-2mm} -->
 
 **Coverage & Mentions** \newline
 NBC Sports, Carnegie Mellon University, Knowable Magazine, Amstat News, ABC News (Australia)
@@ -671,13 +699,21 @@ Open Source Sports Podcast, Viz Buzz (data science game show; multiple seasons)
 
 # \textcolor{red}{SKILLS}
 
-\vspace{-2mm}
+\vspace{-7mm}\hrulefill
 
-Computing: R/RStudio (expert); Python, SQL, SAS, Git/GitHub (intermediate)
+<!-- \vspace{-2mm} -->
 
-Typesetting: markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
+**Programming** \newline
+R (expert); Python, SQL, SAS (experienced)
 
-Bilingual: Vietnamese (native language) and English (proficient)
+**Tools** \newline
+git/GitHub, Linux/bash (experienced)
+
+**Typesetting** \newline
+markdown, \LaTeX \ (proficient) <!-- Kaggle Notebooks Expert -->
+
+**Bilingual** \newline
+Vietnamese (native language) and English (fluent)
 
 \vspace{0mm}
 
