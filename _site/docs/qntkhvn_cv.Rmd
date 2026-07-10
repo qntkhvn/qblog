@@ -486,7 +486,13 @@ November 2023.
 ## \textcolor{magenta}{\textbf{Guest Lectures}}
 
 **Q. Nguyen**.
-Player tracking data: space, time, interactions & heterogeneity.
+Player tracking data: circles and heterogeneity.
+*Summer Undergraduate Research Experience in Statistics: Carnegie Mellon Sports Analytics Camp*.
+Pittsburgh, PA.
+July 2026.
+
+**Q. Nguyen**.
+Player tracking data: 1302 days later.
 *Summer Undergraduate Research Experience in Statistics: Carnegie Mellon Sports Analytics Camp*.
 Pittsburgh, PA.
 July 2026.
@@ -744,4 +750,4 @@ Vietnamese (native language) and English (fluent)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated July 6, 2026}
+\hfill \textit{Last updated July 9, 2026}
