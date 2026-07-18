@@ -32,7 +32,7 @@ Ronald Yurko, **Quang Nguyen**, Konstantinos Pelechrinis.
 
 **Quang Nguyen**, Ronald Yurko.
 "A multilevel model with heterogeneous variances for snap timing in the National Football League".
-*Journal of the Royal Statistical Society: Series A (Statistics in Society)*, 2025.
+*Journal of the Royal Statistical Society: Series A (Statistics in Society)*, 2026.
 [[arXiv](https://arxiv.org/abs/2502.16313); [journal](https://doi.org/10.1093/jrsssa/qnaf185)]
 <br>
 ***(Semifinalist, NFL Big Data Bowl 2025)***

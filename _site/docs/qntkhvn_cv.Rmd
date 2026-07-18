@@ -95,8 +95,8 @@ NFL Ghosts: A framework for evaluating defender positioning with conditional den
 
 **Q. Nguyen**, R. Yurko.
 A multilevel model with heterogeneous variances for snap timing in the National Football League.
-2025.
-*Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
+2026
+*Journal of the Royal Statistical Society: Series A (Statistics in Society)* **189**(3), 1988--2000.
 [`doi:10.1093/jrsssa/qnaf185`](https://doi.org/10.1093/jrsssa/qnaf185);
 [`arXiv:2502.16313`](https://arxiv.org/abs/2502.16313).
 
@@ -584,6 +584,8 @@ The Comprehensive R Archive Network.
 
 <!-- \vspace{-2mm} -->
 
+**ASA Section on Statistics in Sports Student Funding** \hfill 2024, 2026
+
 **Student Travel Support**, Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
 
 **Sports Analytics Student Award**, Carnegie Mellon Statistics & Data Science \hfill 2025 \newline Funded by the Richardson Matano Family
@@ -593,8 +595,6 @@ The Comprehensive R Archive Network.
 **NFL Big Data Bowl Finalist** \hfill 2023, 2024
 
 <!-- \newline Invited to present at NFL Scouting Combine -->
-
-**ASA Section on Statistics in Sports Student Funding** \hfill 2024
 
 **Graduate Student Assembly/Provost Conference Funds**, Carnegie Mellon University \hfill 2024
 
@@ -750,4 +750,4 @@ Vietnamese (native language) and English (fluent)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated July 9, 2026}
+\hfill \textit{Last updated July 17, 2026}
