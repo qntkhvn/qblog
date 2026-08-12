@@ -1,7 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: "left=1in,right=1in,top=0.9in,bottom=0.9in"
-# title: "left=0.95in,right=0.95in,top=0.95in,bottom=0.95in"
+geometry: "left=0.8in,right=0.8in,top=0.75in,bottom=0.95in"
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
 # address: Department of Statistics & Data Science, Carnegie Mellon University
@@ -86,6 +85,12 @@ header-includes:
 
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
+**Q. Nguyen**, P. Campana, N. M. D. Niezink.
+Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
+2026.
+*Social Networks* **87**, 241--251.
+[`doi:10.1016/j.socnet.2026.07.005`](https://doi.org/10.1016/j.socnet.2026.07.005).
+
 R. Yurko, **Q. Nguyen**, K. Pelechrinis.
 NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation.
 2026.
@@ -167,14 +172,6 @@ A Bayesian circular mixed-effects model for explaining variability in directiona
 <!-- Under review -->
 <!-- R&R submitted -->
 <!-- Special issue on Directional Statistics -->
-
-**Q. Nguyen**, P. Campana, N. M. D. Niezink.
-Co-evolution of cooperation and conflict among organized crime groups: Evidence from the United Kingdom.
-2025+.
-
-<!-- R&R, *Social Networks*. -->
-<!-- Under review -->
-<!-- second R&R submitted -->
 
 R. Yurko, R. Jiang, M. Ellingwood, **Q. Nguyen**.
 Momentum Interference: A Hierarchical Framework for Modeling Tackling Ability in American Football.
@@ -750,4 +747,4 @@ Vietnamese (native language) and English (fluent)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated July 17, 2026}
+\hfill \textit{Last updated August 12, 2026}
