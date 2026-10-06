@@ -1,6 +1,6 @@
 ---
 output: stevetemplates::cv
-geometry: "left=0.8in,right=0.8in,top=0.75in,bottom=0.95in"
+geometry: "left=0.9in,right=0.9in,top=0.8in,bottom=0.9in"
 author: Ngoc Minh Quang Nguyen
 # jobtitle: PhD Student
 # address: Department of Statistics & Data Science, Carnegie Mellon University
@@ -83,6 +83,27 @@ header-includes:
 <!-- journal -->
 <!-- doi/arxiv -->
 
+## \textcolor{magenta}{\textbf{Under Review}}
+
+**Q. Nguyen**, R. Yurko.
+NFL step-and-turn: A generative framework for evaluating player movement with tracking data.
+2026+.
+Submitted to *Journal of the Royal Statistical Society: Series A (Statistics in Society)*.
+[`arXiv:2603.17866`](https://arxiv.org/abs/2603.17866).
+
+<!-- To be submitted to *TBA* -->
+
+**Q. Nguyen**, R. Yurko.
+A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
+2025+.
+Submitted to *Journal of the Royal Statistical Society: Series C (Applied Statistics)*.
+[`arXiv:2507.06122`](https://arxiv.org/abs/2507.06122).
+
+<!-- R&R, *Journal of the Royal Statistical Society: Series C (Applied Statistics)*. -->
+<!-- Under review -->
+<!-- R&R submitted -->
+<!-- Special issue on Directional Statistics -->
+
 ## \textcolor{magenta}{\textbf{Journal Articles}}
 
 **Q. Nguyen**, P. Campana, N. M. D. Niezink.
@@ -154,28 +175,9 @@ An Examination of Olympic Sport Climbing Competition Format and Scoring System.
 [`doi:10.6339/22-JDS1042`](https://doi.org/10.6339/22-JDS1042);
 [`arXiv:2111.05310`](https://arxiv.org/abs/2111.05310).
 
-## \textcolor{magenta}{\textbf{Submitted \& Working Papers}}
-
-**Q. Nguyen**, R. Yurko.
-Bayesian multilevel step-and-turn models for evaluating player movement in American football.
-2026+.
-[`arXiv:2603.17866`](https://arxiv.org/abs/2603.17866).
-
-<!-- To be submitted to *TBA* -->
-
-**Q. Nguyen**, R. Yurko.
-A Bayesian circular mixed-effects model for explaining variability in directional movement in American football.
-2025+.
-[`arXiv:2507.06122`](https://arxiv.org/abs/2507.06122).
-
-<!-- R&R, *Journal of the Royal Statistical Society: Series C (Applied Statistics)*. -->
-<!-- Under review -->
-<!-- R&R submitted -->
-<!-- Special issue on Directional Statistics -->
-
-R. Yurko, R. Jiang, M. Ellingwood, **Q. Nguyen**.
-Momentum Interference: A Hierarchical Framework for Modeling Tackling Ability in American Football.
-2024+.
+<!-- R. Yurko, R. Jiang, M. Ellingwood, **Q. Nguyen**. -->
+<!-- Momentum Interference: A Hierarchical Framework for Modeling Tackling Ability in American Football. -->
+<!-- 2024+. -->
 
 <!-- To be submitted to *TBA* -->
 
@@ -581,6 +583,8 @@ The Comprehensive R Archive Network.
 
 <!-- \vspace{-2mm} -->
 
+**Student Conference Travel Award**, Collaborative for Sport Data Science \hfill 2026
+
 **ASA Section on Statistics in Sports Student Funding** \hfill 2024, 2026
 
 **Student Travel Support**, Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
@@ -659,13 +663,13 @@ Carnegie Mellon Sports Analytics Center (CMSAC) Research Lab \hfill 2023 -- pres
 <!-- (formerly Statistics in sports reading/research group) -->
 
 **Program Committee** \newline
-UConn/Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026
+UConn/Connecticut Sports Analytics Symposium \hfill 2024, 2025, 2026, 2027
 
 **Reviewer** \newline
 Journal of Quantitative Analysis in Sports, Machine Learning, The American Statistician, WIREs Computational Statistics
 
 **Judge** \newline
-CMSAC Reproducible Research Competition \hfill 2024, 2025 \newline
+CMSAC Reproducible Research Competition \hfill 2024, 2025, 2026 \newline
 CSAS Student Poster Award \hfill 2024, 2025 \newline
 CSAS Data Challenge \hfill 2024, 2025
 
@@ -747,4 +751,4 @@ Vietnamese (native language) and English (fluent)
 
 \vspace{2mm}
 
-\hfill \textit{Last updated August 12, 2026}
+\hfill \textit{Last updated September 25, 2026}
